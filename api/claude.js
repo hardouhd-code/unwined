@@ -1,27 +1,29 @@
-module.exports = async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).send('Method Not Allowed');
 
-  if (req.method === "OPTIONS") return res.status(200).end();
-  if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
-
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return res.status(500).json({ error: "ANTHROPIC_API_KEY manquante" });
+  // Ta clé API Google (à ajouter dans les variables Vercel sous GEMINI_API_KEY)
+  const apiKey = process.env.GEMINI_API_KEY; 
+  const { image, vibe, styleId, budget } = req.body;
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify(req.body),
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{
+          parts: [
+            { text: `Tu es le Sommelier d'Unwine-d. Analyse ce vin pour une vibe ${vibe}. Réponds UNIQUEMENT en JSON strict.` },
+            { inline_data: { mime_type: "image/jpeg", data: image } }
+          ]
+        }],
+        generationConfig: { response_mime_type: "application/json" } // Force le JSON
+      })
     });
+
     const data = await response.json();
-    return res.status(response.status).json(data);
-  } catch (e) {
-    return res.status(500).json({ error: e.message });
+    // Gemini renvoie le texte dans candidates[0].content.parts[0].text
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
-};
+}
