@@ -1,1 +1,47 @@
+name: 🍷 Update Wine Catalog
 
+on:
+  schedule:
+    - cron: '0 3 * * *'   # Tous les jours à 3h00 UTC (5h Bruxelles en été)
+  workflow_dispatch:        # Déclenchement manuel depuis l'onglet Actions
+
+jobs:
+  update-catalog:
+    name: Sync Boir.be → boirCatalog.js
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run catalog sync
+        run: node scripts/sync-catalog.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/lib/boirCatalog.js || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'Unwine-D Bot 🤖'
+          git config --global user.email 'bot@unwine-d.com'
+          git add src/lib/boirCatalog.js
+          WINE_COUNT=$(node -e "const f=require('fs').readFileSync('src/lib/boirCatalog.js','utf8'); const m=f.match(/\/\/ (\d+) vins/); console.log(m?m[1]:'?')")
+          git commit -m "🤖 Catalogue Boir.be — ${WINE_COUNT} vins [$(date +'%Y-%m-%d')]"
+          git push
+
+      - name: No changes
+        if: steps.changes.outputs.changed != 'true'
+        run: echo "✅ Catalogue déjà à jour, aucun commit nécessaire."
