@@ -107,7 +107,7 @@ const QUICK = [
   { label:'🥂 Sancerre',  q:'sancerre'  },
 ];
 
-export default function Decouvrir() {
+export function Decouvrir() {
   const [query,    setQuery]    = useState('');
   const [results,  setResults]  = useState([]);
   const [searched, setSearched] = useState(false);
