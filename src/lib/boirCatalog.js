@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-13T12:50:02.866Z
-// 904 vins en stock
+// Boir.be catalog — auto-generated 2026-03-14T05:36:52.421Z
+// 903 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -7797,23 +7797,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/39fd725b95b093e22fba526c0cf0b4a5.png?v=1741621274",
     "c": "France",
     "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Domaine du Clos Frantin - Vosne-Romanée 1er Cru \"Les Malconsorts\" 2019",
-    "y": "",
-    "p": 159,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-du-clos-frantin-vosne-romanee-1er-cru-les-malcosorts-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41b8023c8e9877ea5c94bc12da9c4c94.png?v=1733467805",
-    "c": "France",
-    "r": "Bourgogne",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
