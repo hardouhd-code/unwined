@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-14T05:36:52.421Z
-// 903 vins en stock
+// Boir.be catalog — auto-generated 2026-03-15T06:12:28.504Z
+// 902 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -10466,23 +10466,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/470619_Laroche.png?v=1750935779",
     "c": "France",
     "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Laurent Perrachon - Julienas \"Roche Bleue\" 2021",
-    "y": "",
-    "p": 11.95,
-    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
-    "u": "https://boir.be/fr/products/laurent-perrachon-julienas-roche-bleue-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Laurent_Perrachon_Julienas_Roche_Bleue_2021.png?v=1760947826",
-    "c": "France",
-    "r": "Beaujolais",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
