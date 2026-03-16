@@ -1,7 +1,24 @@
-// Boir.be catalog — auto-generated 2026-03-15T06:12:28.504Z
-// 902 vins en stock
+// Boir.be catalog — auto-generated 2026-03-16T07:56:04.819Z
+// 903 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
+  {
+    "t": "El Coto de Rioja \"Tempranillo 875 m\" 2021",
+    "y": "",
+    "p": 14.5,
+    "v": "BARON DE LEY SA",
+    "u": "https://boir.be/fr/products/el-coto-de-rioja-875-m-tempranillo-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f7c020ce79e45d24ead9546770b1c4a.png?v=1742030538",
+    "c": "Espagne",
+    "r": "Rioja",
+    "type": "rouge",
+    "grapes": "",
+    "aromas": "",
+    "pairings": "",
+    "service": "",
+    "aging": "",
+    "profile": ""
+  },
   {
     "t": "ADE vocht- en thermometer",
     "y": "",
