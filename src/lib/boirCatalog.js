@@ -1,4 +1,4 @@
-// Boir.be catalog — auto-generated 2026-03-16T07:56:04.819Z
+// Boir.be catalog — auto-generated 2026-03-17T06:15:48.999Z
 // 903 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
