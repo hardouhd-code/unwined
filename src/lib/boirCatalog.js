@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-17T06:15:48.999Z
-// 903 vins en stock
+// Boir.be catalog — auto-generated 2026-03-18T06:17:08.709Z
+// 902 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -11486,23 +11486,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c283a5bc98606f9faba54825c8d8522b.png?v=1733466650",
     "c": "Italie",
     "r": "Campanie",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Paul Thomas - Sancerre \"Tradition\" 2022",
-    "y": "",
-    "p": 18.95,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/paul-thomas-sancerre-tradition-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0b4b8fdad2482700935dc72193096996.png?v=1733411151",
-    "c": "France",
-    "r": "Loire",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
