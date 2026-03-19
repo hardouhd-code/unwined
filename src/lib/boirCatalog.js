@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-18T06:17:08.709Z
-// 902 vins en stock
+// Boir.be catalog — auto-generated 2026-03-19T06:12:54.898Z
+// 901 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -6829,23 +6829,6 @@ export const BOIR_CATALOG = [
     "c": "France",
     "r": "",
     "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Domaine Albert Mann \"Muscat\" 2020",
-    "y": "",
-    "p": 17.95,
-    "v": "DOMAINE DE SUREMAIN",
-    "u": "https://boir.be/fr/products/domaine-albert-mann-muscat-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2a2f4cb7a97ed885631a396d513c860a.png?v=1733323351",
-    "c": "France",
-    "r": "",
-    "type": "doux",
     "grapes": "",
     "aromas": "",
     "pairings": "",
