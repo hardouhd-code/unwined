@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-19T06:12:54.898Z
-// 901 vins en stock
+// Boir.be catalog — auto-generated 2026-03-20T06:07:31.485Z
+// 900 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -1437,23 +1437,6 @@ export const BOIR_CATALOG = [
     "v": "SARMENTS WINE TRADING SAS",
     "u": "https://boir.be/fr/products/chateau-cos-labory-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e3afca6f5690c119391cd39a541326bb.png?v=1733322688",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château Cos Labory 2022",
-    "y": "",
-    "p": 37.95,
-    "v": "CASTEL FRERES SAS",
-    "u": "https://boir.be/fr/products/chateau-cos-labory-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7da5478a4d8956a48a06fdba399e6653.png?v=1756736549",
     "c": "France",
     "r": "",
     "type": "rouge",
