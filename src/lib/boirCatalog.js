@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-21T05:32:20.518Z
-// 924 vins en stock
+// Boir.be catalog — auto-generated 2026-03-22T06:06:29.874Z
+// 920 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -122,23 +122,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Château Cambon La Pelouse 2021",
-    "y": "",
-    "p": 18.5,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/chateau-cambon-la-pelouse-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9abb15c6f4ef07ce28383237f5d7fdfa.png?v=1733321293",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Château de Jau - Côtes du Roussillon 2022",
     "y": "",
     "p": 10.95,
@@ -147,23 +130,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_de_Jau_Cotes_du_Roussillon_2022.png?v=1754474898",
     "c": "France",
     "r": "Languedoc-Roussillon",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château La Genestière - Lirac \"Cuvée Raphaël\" 2021",
-    "y": "",
-    "p": 10.95,
-    "v": "DOMAINE DENIS CARRE EARL",
-    "u": "https://boir.be/fr/products/chateau-la-genestiere-lirac-cuvee-raphael-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ch_teau_La_Genesti_re_-_Lirac_Cuv_e_Rapha_l_2021.png?v=1745956960",
-    "c": "France",
-    "r": "Rhône",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
@@ -436,23 +402,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3a9fa023c3c6870700936db1061acbdd.png?v=1733322378",
     "c": "France",
     "r": "Douro",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Tenuta Ulisse - Montepulciano d'Abruzzo \"Sassofino\" 2020",
-    "y": "",
-    "p": 14.99,
-    "v": "ALERAMICO SRL",
-    "u": "https://boir.be/fr/products/tenuta-ulisse-montepulciano-dabruzzo-sassofino-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3683e70eb406fc83c02ad7e94c1ae1e2.png?v=1733407837",
-    "c": "Italie",
-    "r": "Abruzzes",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
@@ -10906,23 +10855,6 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/laurent-perrachon-morgon-cote-de-py-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322373_Perrachon.png?v=1769518929",
-    "c": "France",
-    "r": "Beaujolais",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Laurent Perrachon - Morgon \"Côte du Py\" 2021",
-    "y": "",
-    "p": 14.5,
-    "v": "ACCOLADE WINES EUR TRAD LTD BO",
-    "u": "https://boir.be/fr/products/laurent-perrachon-moulin-a-vent-cote-du-py-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Laurent_Perrachon_Morgon_Cote_du_Py_2021.png?v=1760947905",
     "c": "France",
     "r": "Beaujolais",
     "type": "rouge",
