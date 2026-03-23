@@ -1,5 +1,5 @@
-// Boir.be catalog — auto-generated 2026-03-22T06:06:29.874Z
-// 920 vins en stock
+// Boir.be catalog — auto-generated 2026-03-23T06:53:02.307Z
+// 916 vins en stock
 // Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
 export const BOIR_CATALOG = [
   {
@@ -54,23 +54,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Bodegas Fariña \"Gran Colegiata\" 2016",
-    "y": "",
-    "p": 19.95,
-    "v": "MAISON GINESTET SA",
-    "u": "https://boir.be/fr/products/bodegas-farina-gran-colegiata-2016",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9edf10e7295d07dbd4e875d60dc2661.png?v=1733411414",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Castellu d'Alba - Corse 2019",
     "y": "",
     "p": 17,
@@ -97,23 +80,6 @@ export const BOIR_CATALOG = [
     "c": "France",
     "r": "Champagne",
     "type": "effervescent",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château Baret 2019",
-    "y": "",
-    "p": 17.5,
-    "v": "DOMAINE FRANCOIS LEGROS EARL",
-    "u": "https://boir.be/fr/products/chateau-baret-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c03ee0d1ebacfac6ac0c3ddd3eef3613.png?v=1733321229",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
     "grapes": "",
     "aromas": "",
     "pairings": "",
@@ -241,23 +207,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Domaine Le Champ des Murailles - Languedoc \"Camin Nòstre\" 2022",
-    "y": "",
-    "p": 10.49,
-    "v": "PASCAL PRUNIER BONHEUR SARL",
-    "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-languedoc-camin-nostre-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/379ab0d4febf7aa5db1b24df71bb5bc4.png?v=1733466242",
-    "c": "France",
-    "r": "Languedoc-Roussillon",
-    "type": "rosé",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Donnafugata - Cerasuolo di Vittoria \"Floramundi\" 2020",
     "y": "",
     "p": 16.95,
@@ -368,23 +317,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b8e9d83ed2ce012ed10f292cf3dc170c.png?v=1733466620",
     "c": "France",
     "r": "Bourgogne",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Paul Thomas - Sancerre \"Tradition\" 2022",
-    "y": "",
-    "p": 18.95,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/paul-thomas-sancerre-tradition-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0b4b8fdad2482700935dc72193096996.png?v=1733411151",
-    "c": "France",
-    "r": "Loire",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
