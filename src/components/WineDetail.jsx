@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { C, WINE_TYPES, COUNTRIES } from "../lib/constants";
 import { t } from "../lib/i18n";
 import { haptic, typeColor, typeLight, typeEmoji } from "../lib/helpers";
-import { Tag, StarRating, WineInfoCard } from "./UI";
+import { Tag, StarRating } from "./UI";
 
 const WineDetail=({wine,onBack,onUpdateRating,onDelete,onUpdateWine})=>{
   const [rating,setRating]=useState(wine.rating??null);
@@ -52,7 +52,7 @@ const WineDetail=({wine,onBack,onUpdateRating,onDelete,onUpdateWine})=>{
             ):(<div style={{textAlign:"center"}}><div style={{fontSize:30,marginBottom:8}}>🗄️</div><div style={{fontSize:14,color:C.cream,fontFamily:"Playfair Display,serif",marginBottom:6}}>En cave</div><div style={{fontSize:14,color:C.subtext,fontFamily:"Cormorant Garamond,serif",fontStyle:"italic",marginBottom:14}}>Stocké pour plus tard</div><button onClick={()=>setShowRate(true)} style={{background:`linear-gradient(135deg,${C.terra},${C.terraD})`,color:"#fff",border:"none",padding:"10px 22px",borderRadius:50,fontSize:14,letterSpacing:".15em",textTransform:"uppercase",fontFamily:"Cormorant Garamond,serif"}}>Je l'ai goûté !</button></div>)}
           </div>
 
-          <WineInfoCard wine={wine}/>
+         
 
           {wine.story&&(<div style={{background:"rgba(200,80,58,.06)",borderLeft:`3px solid ${C.terra}`,borderRadius:"0 14px 14px 0",padding:"14px 16px",marginBottom:14}}><div style={{fontSize:14,color:C.terra,letterSpacing:".22em",textTransform:"uppercase",marginBottom:8,fontFamily:"Cormorant Garamond,serif"}}>{t("terroir")}</div><p style={{fontSize:14,color:C.subtext,fontFamily:"Cormorant Garamond,serif",fontStyle:"italic",lineHeight:1.85}}>{wine.story}</p></div>)}
           {wine.anecdote&&(<div style={{background:"rgba(184,134,42,.07)",border:`1px solid rgba(184,134,42,.2)`,borderRadius:14,padding:"13px 15px",marginBottom:14}}><div style={{fontSize:14,color:C.gold,letterSpacing:".18em",textTransform:"uppercase",marginBottom:6,fontFamily:"Cormorant Garamond,serif"}}>✦ Le saviez-vous ?</div><p style={{fontSize:14,color:C.subtext,fontFamily:"Cormorant Garamond,serif",lineHeight:1.75}}>{wine.anecdote}</p></div>)}
