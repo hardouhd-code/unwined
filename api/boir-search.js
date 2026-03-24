@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     
     // On demande 20 résultats à Shopify, en ajoutant un timestamp (?_t=...) 
     // pour être sûr que Shopify ne nous donne pas une vieille réponse en cache
-    const url = `https://boir.be/search/suggest.json?q=${encodeURIComponent(searchTerm)}&resources[type]=product&resources[limit]=20&_t=${Date.now()}`;
+    const url = `https://boir.be/search/suggest.json?q=${encodeURIComponent(searchTerm)}&resources[type]=product&resources[limit]=100&_t=${Date.now()}`;
 
     const response = await fetch(url, {
       headers: {
