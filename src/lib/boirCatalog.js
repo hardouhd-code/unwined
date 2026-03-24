@@ -1,7 +1,47 @@
-// Boir.be catalog — auto-generated 2026-03-24T06:16:42.441Z
-// 891 vins en stock
-// Ne pas modifier manuellement — fichier géré par scripts/sync-catalog.js
+// Boir.be catalog — 882 vins actifs
 export const BOIR_CATALOG = [
+  {
+    "t": "Champagne Soutiran \"Perle Noir\" Grand Cru Brut",
+    "p": 42.95,
+    "v": "VIGNOBLES JP HEMBISE SARL",
+    "u": "https://boir.be/fr/products/champagne-soutiran-perle-noir-grand-cru-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Soutiran_Perle_Noir_Grand_Cru_Brut.png?v=1750078259",
+    "c": "France",
+    "r": "Champagne",
+    "type": "effervescent",
+    "grapes": "",
+    "aromas": "",
+    "pairings": "",
+    "profile": ""
+  },
+  {
+    "t": "Château Coufran 2020",
+    "p": 99.95,
+    "v": "CHATEAU COUFRAN SCEA",
+    "u": "https://boir.be/fr/products/chateau-coufran-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-3-tran.png?v=1755674815",
+    "c": "France",
+    "r": "Bordeaux",
+    "type": "rouge",
+    "grapes": "",
+    "aromas": "",
+    "pairings": "",
+    "profile": ""
+  },
+  {
+    "t": "Schott Zwiesel - Classico decanteerkaraf",
+    "p": 44.95,
+    "v": "Home & Table by Meyhui",
+    "u": "https://boir.be/fr/products/schott-zwiesel-classico-decanteerkaraf",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Zwiesel_karaf.png?v=1740669083",
+    "c": "France",
+    "r": "",
+    "type": "rouge",
+    "grapes": "",
+    "aromas": "",
+    "pairings": "",
+    "profile": ""
+  },
   {
     "t": "Azienda Vinicola Cantele - Salento \"Amativo\" 2021",
     "y": "",
@@ -1941,40 +1981,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Château d'Arsac 2020",
-    "y": "",
-    "p": 23.65,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/chateau-darsac-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1b77e40dbe7e2eeb7a4fc61b99a5b314.png?v=1733322787",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château d'Arsac 2022",
-    "y": "",
-    "p": 25.95,
-    "v": "SAS SALIN",
-    "u": "https://boir.be/fr/products/chateau-darsac-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1b77e40dbe7e2eeb7a4fc61b99a5b314_3c88fabf-c695-4aa3-b539-f66e42229aff.png?v=1741691169",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Château d'Issan 2021",
     "y": "",
     "p": 67.95,
@@ -2066,40 +2072,6 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/chateau-de-beaucastel-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/23d72a29cc0ede4d4d755181b12626d7.png?v=1733322792",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château de Camensac 2018",
-    "y": "",
-    "p": 36.95,
-    "v": "INVINITY NV",
-    "u": "https://boir.be/fr/products/chateau-de-camensac-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2dfe24f2aacc2a04660a09a4830591ba.png?v=1733264093",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château de Camensac 2019",
-    "y": "",
-    "p": 29.99,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/chateau-de-camensac-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0ae61bbf384ec20bcc91c9e1a65b3510.png?v=1733322797",
     "c": "France",
     "r": "",
     "type": "rouge",
@@ -2281,40 +2253,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Château de Lussac \"Le Blanc\" 2021",
-    "y": "",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/chateau-de-lussac-le-blanc-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c653ba3a66e786d19f91c7ba833df3d2.png?v=1733408271",
-    "c": "France",
-    "r": "",
-    "type": "blanc",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château de Lussac \"Le Blanc\" 2021",
-    "y": "",
-    "p": 15.95,
-    "v": "AZ MADREVITE CHIUCCHIURLOTTO",
-    "u": "https://boir.be/fr/products/chateau-de-lussac-le-blanc-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/43810e5cf54173ac79dd2c4b0b9e374a.png?v=1733409396",
-    "c": "France",
-    "r": "",
-    "type": "blanc",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Château de Malleret 2023",
     "y": "",
     "p": 21.95,
@@ -2374,23 +2312,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d10b0e0da17c6205e1bbcc93315b512c.png?v=1733410625",
     "c": "France",
     "r": "Beaujolais",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château de Pressac 2022",
-    "y": "",
-    "p": 41.95,
-    "v": "J.J.M & CIE SA",
-    "u": "https://boir.be/fr/products/chateau-de-pressac-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/03c8bf572954ae348b7d443fa2f5de80_78f45b80-93d2-426c-b7b7-23f55ebb2d49.png?v=1749802583",
-    "c": "France",
-    "r": "",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
@@ -3579,23 +3500,6 @@ export const BOIR_CATALOG = [
     "v": "JP Mouiex",
     "u": "https://boir.be/fr/products/chateau-la-fleur-petrus-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4dec1e89ba6b2383aac9e986cad4c616_851ec64b-ece5-444e-89d2-08f646ffb476.png?v=1748598230",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château La Gaffelière 2020",
-    "y": "",
-    "p": 79.95,
-    "v": "DOMAINE DENIS CARRE EARL",
-    "u": "https://boir.be/fr/products/chateau-la-gaffeliere-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/71564cf9bdf9d8550b6565f167f26c44.png?v=1733323505",
     "c": "France",
     "r": "",
     "type": "rouge",
@@ -5500,23 +5404,6 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/chateau-pontoise-cabarrus-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c679f8d75a49e0f91c99e6a3f893e836.png?v=1733322713",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château Potensac 2022",
-    "y": "",
-    "p": 34.5,
-    "v": "J.J.M & CIE SA",
-    "u": "https://boir.be/fr/products/chateau-potensac-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5aa2711744765dad321c9ea09a520710_5805220c-7fd9-4cd6-a72f-fcc07bfdf790.png?v=1749801152",
     "c": "France",
     "r": "",
     "type": "rouge",
@@ -13280,23 +13167,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Viñas Leizaola \"El Sacramento\" 2015",
-    "y": "",
-    "p": 46.95,
-    "v": "SENSI VIGNE E VINI SRL",
-    "u": "https://boir.be/fr/products/vinas-leizaola-el-sacramento-2015",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5d53ac0ceaa0a12cc9f75d081b93cd9a.png?v=1733417882",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Weingut Allram \"Renner Single Vineyard Grüner Veltliner\" 2022",
     "y": "",
     "p": 21.95,
@@ -14315,38 +14185,6 @@ export const BOIR_CATALOG = [
     "profile": ""
   },
   {
-    "t": "Bestheim Crémant d'Alsace \"Grand Prestige Rosé\" Brut",
-    "y": "",
-    "p": 17.99,
-    "v": "ROQUETA ORIGEN SL",
-    "u": "https://boir.be/fr/products/bestheim-cremant-dalsace-grand-prestige-rose-brut-1",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d62c671e311c9bf9afa5ffea49854000_52abeac0-d2e6-4ace-9b36-28bffc561145.png?v=1734019941",
-    "c": "France",
-    "type": "rosé",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Bestheim Crémant d'Alsace \"Grand Prestige\" Brut",
-    "y": "",
-    "p": 17.99,
-    "v": "VINICOLE BESTHEIM COOP",
-    "u": "https://boir.be/fr/products/bestheim-cremant-dalsace-grand-prestige-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4391496ff2ef84656dc4e42756a6a9c6.png?v=1733263927",
-    "c": "France",
-    "type": "effervescent",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
     "t": "Black Cottage \"Pinot Noir\" 2022",
     "y": "",
     "p": 14.95,
@@ -15052,42 +14890,21 @@ export const BOIR_CATALOG = [
   }
 ];
 
-export function searchBoirLocal(query, limit = 12) {
+export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
-  const terms = query
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .split(/\s+/)
-    .filter(t => t.length > 1);
+  const terms = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/);
   return BOIR_CATALOG
     .map(w => {
+      // Zone de recherche étendue : Titre, Vendeur, Pays, Région, Cépages, Profil
       const hay = [w.t, w.v, w.c, w.r, w.grapes, w.aromas, w.type, w.profile, w.pairings]
         .join(' ')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '');
+        .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
       const score = terms.reduce((s, t) => s + (hay.includes(t) ? 2 : 0), 0);
       return { ...w, score };
     })
-    .filter(w => w.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
+    .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
     .map(({ score, ...w }) => ({
-      title: w.t,
-      year: w.y,
-      price: w.p,
-      vendor: w.v,
-      url: w.u,
-      image: w.img,
-      country: w.c,
-      region: w.r,
-      type: w.type,
-      grapes: w.grapes,
-      aromas: w.aromas,
-      pairings: w.pairings,
-      service: w.service,
-      aging: w.aging,
-      profile: w.profile
+      title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, 
+      country: w.c, region: w.r, type: w.type, grapes: w.grapes, aromas: w.aromas, profile: w.profile, pairings: w.pairings
     }));
 }
