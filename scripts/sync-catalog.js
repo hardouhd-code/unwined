@@ -1,17 +1,13 @@
-// scripts/sync-catalog.js
-// Version "Expert" pour Unwine-D — Détection par Tags & Recherche Locale Étendue
 const fs = require('fs');
 const path = require('path');
 
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const MODEL = 'claude-3-5-sonnet-20240620'; 
-const BATCH_SIZE = 10;
 const MAX_NEW_PER_RUN = 20; 
-const DELAY_MS = 500;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// 1. Liste des 60 régions pour l'automatisation (basée sur votre snapshot)
+// 1. Liste des régions pour l'automatisation (Source : votre snapshot)
 const KNOWN_REGIONS = [
   'Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Jura', 'Savoie', 
   'Languedoc-Roussillon', 'Provence', 'Sud-Ouest', 'Beaujolais', 'Corse', 'Crémant',
@@ -25,7 +21,6 @@ const KNOWN_REGIONS = [
 // ─── Helpers de Classification ──────────────────────────────────────────────
 
 function detectRegion(p) {
-  // On fusionne titre et tags (les badges du site) pour ne rien rater
   const tagsStr = Array.isArray(p.tags) ? p.tags.join(' ') : (p.tags || '');
   const haystack = (p.title + ' ' + tagsStr).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   
@@ -33,7 +28,6 @@ function detectRegion(p) {
     const search = r.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     if (haystack.includes(search)) return r;
   }
-  // Fallback pour les Châteaux sans tag explicite
   if (haystack.includes('chateau') && !haystack.includes('bourgogne') && !haystack.includes('rhone')) return 'Bordeaux';
   return '';
 }
@@ -57,7 +51,7 @@ function inferCountry(name, vendor) {
 // ─── Logique de Synchronisation ─────────────────────────────────────────────
 
 async function fetchBoirCatalog() {
-  console.log('🍇 Récupération du catalogue complet Boir.be...');
+  console.log('🍇 Récupération du catalogue Boir.be...');
   let allProducts = [];
   let page = 1;
   let hasMore = true;
@@ -78,33 +72,6 @@ async function fetchBoirCatalog() {
   return allProducts;
 }
 
-async function enrichBatchWithClaude(batch) {
-  if (!process.env.ANTHROPIC_API_KEY) return batch;
-  const wineList = batch.map((w, i) => `${i + 1}. "${w.t}" (${w.r || 'Région inconnue'})`).join('\n');
-  const prompt = `Tu es sommelier. Pour chaque vin, retourne JSON avec: "grapes" (cépages), "aromas" (3-arômes), "pairings" (accords), "profile" (1 mot). Vins:\n${wineList}`;
-
-  try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01'
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        max_tokens: 1500,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-    const data = await res.json();
-    return JSON.parse(data.content[0].text);
-  } catch (e) {
-    console.error('Erreur Claude enrichment:', e.message);
-    return batch;
-  }
-}
-
 async function updateCatalog() {
   console.log('\n🍷 Unwine-D — Mise à jour du catalogue');
   
@@ -123,8 +90,7 @@ async function updateCatalog() {
   const allInStock = rawProducts
     .filter(p => {
       const n = (p.title || '').toLowerCase();
-      // FILTRE ACCESSOIRES : On jette les verres, crachoirs et bouchons
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','sac'].some(k => n.includes(k));
+      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem'].some(k => n.includes(k));
       return p.variants?.some(v => v.available) && !isAcc;
     })
     .map(p => ({
@@ -142,25 +108,16 @@ async function updateCatalog() {
   const newWines = allInStock.filter(w => !existingUrls.has(w.u));
   const existingInStock = oldCatalog.filter(w => allInStock.some(nw => nw.u === w.u));
 
-  const toEnrich = newWines.slice(0, MAX_NEW_PER_RUN);
-  const toKeepSimple = newWines.slice(MAX_NEW_PER_RUN);
+  const finalCatalog = [...newWines, ...existingInStock];
 
-  let enriched = toEnrich;
-  if (toEnrich.length > 0 && process.env.ANTHROPIC_API_KEY) {
-    enriched = await enrichBatchWithClaude(toEnrich);
-    enriched = toEnrich.map((w, i) => ({ ...w, ...enriched[i] }));
-  }
-
-  const finalCatalog = [...enriched, ...toKeepSimple, ...existingInStock];
-
-  // LE MOTEUR DE RECHERCHE LOCAL : Cherche enfin dans la RÉGION (w.r) et le VENDEUR (w.v)
+  // LE FIX : Inclusion de w.r (région) et w.v (vendeur) dans la recherche
   const searchFn = `
 export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').split(/\\s+/);
   return BOIR_CATALOG
     .map(w => {
-      // Zone de recherche étendue : Titre, Vendeur, Pays, Région, Cépages, Profil
+      // Zone de recherche étendue : Titre + Vendeur + Pays + Région + Cépages
       const hay = [w.t, w.v, w.c, w.r, w.grapes, w.aromas, w.type, w.profile, w.pairings]
         .join(' ')
         .toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
@@ -176,7 +133,7 @@ export function searchBoirLocal(query, limit = 100) {
 
   const fileContent = `// Boir.be catalog — ${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = ${JSON.stringify(finalCatalog, null, 2)};\n${searchFn}`;
   fs.writeFileSync(CATALOG_PATH, fileContent, 'utf8');
-  console.log(`✅ Succès : ${finalCatalog.length} vins synchronisés avec détection régionale.`);
+  console.log(`✅ Succès : ${finalCatalog.length} vins synchronisés.`);
 }
 
 updateCatalog().catch(err => { console.error(err); process.exit(1); });
