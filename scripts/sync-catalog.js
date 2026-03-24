@@ -7,7 +7,6 @@ const MAX_NEW_PER_RUN = 20;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// 1. Liste des régions pour l'automatisation (Source : votre snapshot)
 const KNOWN_REGIONS = [
   'Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Jura', 'Savoie', 
   'Languedoc-Roussillon', 'Provence', 'Sud-Ouest', 'Beaujolais', 'Corse', 'Crémant',
@@ -18,12 +17,9 @@ const KNOWN_REGIONS = [
   'Hongrie', 'Grèce', 'Liban', 'Géorgie'
 ];
 
-// ─── Helpers de Classification ──────────────────────────────────────────────
-
 function detectRegion(p) {
   const tagsStr = Array.isArray(p.tags) ? p.tags.join(' ') : (p.tags || '');
   const haystack = (p.title + ' ' + tagsStr).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  
   for (const r of KNOWN_REGIONS) {
     const search = r.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     if (haystack.includes(search)) return r;
@@ -35,8 +31,8 @@ function detectRegion(p) {
 function inferType(name, productType) {
   const n = (name + ' ' + (productType || '')).toLowerCase();
   if (n.includes('rosé') || n.includes('rose')) return 'rosé';
-  if (['champagne', 'crémant', 'cremant', 'prosecco', 'cava', 'pétillant', 'brut'].some(k => n.includes(k))) return 'effervescent';
-  if (['sauternes', 'barsac', 'vendanges tardives', 'porto', 'vin doux'].some(k => n.includes(k))) return 'doux';
+  if (['champagne', 'crémant', 'prosecco', 'cava', 'pétillant', 'brut'].some(k => n.includes(k))) return 'effervescent';
+  if (['sauternes', 'barsac', 'porto', 'vin doux'].some(k => n.includes(k))) return 'doux';
   if (['blanc', 'chardonnay', 'sauvignon', 'riesling', 'chablis'].some(k => n.includes(k))) return 'blanc';
   return 'rouge';
 }
@@ -48,14 +44,11 @@ function inferCountry(name, vendor) {
   return 'France';
 }
 
-// ─── Logique de Synchronisation ─────────────────────────────────────────────
-
 async function fetchBoirCatalog() {
   console.log('🍇 Récupération du catalogue Boir.be...');
   let allProducts = [];
   let page = 1;
   let hasMore = true;
-
   while (hasMore) {
     const url = `https://boir.be/collections/all/products.json?limit=250&page=${page}`;
     const res = await fetch(url, { headers: { 'User-Agent': 'Unwine-D/5.0' } });
@@ -64,9 +57,7 @@ async function fetchBoirCatalog() {
       allProducts = [...allProducts, ...data.products];
       console.log(`  Page ${page}: ${data.products.length} produits trouvés`);
       page++;
-    } else {
-      hasMore = false;
-    }
+    } else { hasMore = false; }
     await sleep(300);
   }
   return allProducts;
@@ -74,7 +65,6 @@ async function fetchBoirCatalog() {
 
 async function updateCatalog() {
   console.log('\n🍷 Unwine-D — Mise à jour du catalogue');
-  
   let oldCatalog = [];
   if (fs.existsSync(CATALOG_PATH)) {
     try {
@@ -84,47 +74,49 @@ async function updateCatalog() {
     } catch (err) {}
   }
   const existingUrls = new Set(oldCatalog.map(w => w.u));
-
   const rawProducts = await fetchBoirCatalog();
 
   const allInStock = rawProducts
     .filter(p => {
       const n = (p.title || '').toLowerCase();
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem'].some(k => n.includes(k));
+      // Filtre accessoires renforcé (exclut verres, crachoirs, sacs)
+      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','sac','etui','capsule','accessoire'].some(k => n.includes(k));
       return p.variants?.some(v => v.available) && !isAcc;
     })
     .map(p => ({
-      t: p.title, 
-      p: p.variants[0]?.price ? parseFloat(p.variants[0].price) : 0,
-      v: p.vendor || '', 
-      u: `https://boir.be/fr/products/${p.handle}`,
-      img: p.images[0]?.src || null, 
-      c: inferCountry(p.title, p.vendor),
-      r: detectRegion(p), 
-      type: inferType(p.title, p.product_type),
+      t: p.title, p: p.variants[0]?.price ? parseFloat(p.variants[0].price) : 0,
+      v: p.vendor || '', u: `https://boir.be/fr/products/${p.handle}`,
+      img: p.images[0]?.src || null, c: inferCountry(p.title, p.vendor),
+      r: detectRegion(p), type: inferType(p.title, p.product_type),
       grapes: '', aromas: '', pairings: '', profile: ''
     }));
 
-  const newWines = allInStock.filter(w => !existingUrls.has(w.u));
-  const existingInStock = oldCatalog.filter(w => allInStock.some(nw => nw.u === w.u));
+  const finalCatalog = [...allInStock.filter(w => !existingUrls.has(w.u)), ...oldCatalog.filter(w => allInStock.some(nw => nw.u === w.u))];
 
-  const finalCatalog = [...newWines, ...existingInStock];
-
-  // LE FIX : Inclusion de w.r (région) et w.v (vendeur) dans la recherche
+  // LOGIQUE DE RECHERCHE AVEC SCORE PONDÉRÉ
   const searchFn = `
 export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').split(/\\s+/);
+  
   return BOIR_CATALOG
     .map(w => {
-      // Zone de recherche étendue : Titre + Vendeur + Pays + Région + Cépages
-      const hay = [w.t, w.v, w.c, w.r, w.grapes, w.aromas, w.type, w.profile, w.pairings]
-        .join(' ')
-        .toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-      const score = terms.reduce((s, t) => s + (hay.includes(t) ? 2 : 0), 0);
+      let score = 0;
+      const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+      const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+      const other = [w.v, w.c, w.grapes, w.aromas, w.type, w.profile, w.pairings].join(' ').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+
+      terms.forEach(term => {
+        if (r === term || r.includes(term)) score += 100; // Boost massif si la région correspond
+        if (t.includes(term)) score += 10;                // Score fort pour le titre
+        if (other.includes(term)) score += 1;             // Score faible pour les autres champs
+      });
+
       return { ...w, score };
     })
-    .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
+    .filter(w => w.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
     .map(({ score, ...w }) => ({
       title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, 
       country: w.c, region: w.r, type: w.type, grapes: w.grapes, aromas: w.aromas, profile: w.profile, pairings: w.pairings
