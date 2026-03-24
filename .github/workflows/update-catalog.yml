@@ -2,38 +2,36 @@ name: Update Wine Catalog
 
 on:
   schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '0 3 * * *' # S'exécute tous les jours à 3h00 UTC
+  workflow_dispatch:      # Permet de le lancer manuellement
 
 jobs:
   update-catalog:
-    name: Sync Boir.be
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write    # Crucial pour que le script puisse enregistrer les vins
+    
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '24' # Mise à jour vers la version 24
 
-      - name: Run catalog sync
-        run: node scripts/sync-catalog.js
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Sync Script
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/sync-catalog.js
 
-      - name: Commit and push if changed
+      - name: Commit and Push changes
         run: |
-          git config --global user.name 'Unwine-D Bot'
-          git config --global user.email 'bot@unwine-d.com'
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add src/lib/boirCatalog.js
-          git diff --staged --quiet || (git commit -m "Auto-update catalogue Boir.be" && git push)
+          # On ne commit que s'il y a des changements (nouveaux vins)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🍇 Mise à jour auto : Catalogue vins" && git push)
