@@ -1,9 +1,13 @@
 // api/boir-search.js — Vercel serverless
-// Proxy vers l'API Shopify publique de boir.be (pas de clé requise)
 
 export default async function handler(req, res) {
+  // 1. Tuer absolument TOUS les caches (Vercel, Navigateur, Edge)
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+  res.setHeader("Pragma", "no-cache");
+  res.setHeader("Expires", "0");
+
   if (req.method === "OPTIONS") return res.status(200).end();
 
   const { q } = req.query;
@@ -12,15 +16,18 @@ export default async function handler(req, res) {
   }
 
   try {
-    // 1. On augmente la limite à 15 et on cache les produits en rupture de stock
-    const limit = 15;
-    const url = `https://boir.be/search/suggest.json?q=${encodeURIComponent(q)}&resources[type]=product&resources[limit]=${limit}&resources[options][unavailable_products]=hide`;
+    const searchTerm = q.toLowerCase().trim();
+    
+    // On demande 20 résultats à Shopify, en ajoutant un timestamp (?_t=...) 
+    // pour être sûr que Shopify ne nous donne pas une vieille réponse en cache
+    const url = `https://boir.be/search/suggest.json?q=${encodeURIComponent(searchTerm)}&resources[type]=product&resources[limit]=20&_t=${Date.now()}`;
 
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; UnwineD/1.0)",
+        "User-Agent": "Mozilla/5.0 (compatible; UnwineD/2.0)",
         "Accept": "application/json",
       },
+      cache: "no-store" // Force le serveur à refaire la requête
     });
 
     if (!response.ok) {
@@ -30,24 +37,18 @@ export default async function handler(req, res) {
     const data = await response.json();
     const products = data?.resources?.results?.products || [];
 
-    // 2. Filtre de pertinence STRICT
-    // On s'assure que ce que l'utilisateur cherche est vraiment dans le titre, le vendeur ou le type.
-    // Ça évite à Shopify de nous renvoyer un Sancerre parce qu'il a un tag caché lié à Bordeaux.
-    const searchTerms = q.toLowerCase().trim().split(" ");
-    
+    // 2. FILTRE INTRAITABLE : On supprime les Sancerre, Rully, etc.
     const filteredProducts = products.filter(p => {
-      // On regroupe les infos visibles du produit
-      const textToSearch = `${p.title} ${p.vendor} ${p.product_type}`.toLowerCase();
-      // On vérifie que TOUS les mots cherchés sont bien présents dans le texte du produit
-      return searchTerms.every(term => textToSearch.includes(term));
+      // On regroupe tout le texte du produit
+      const text = `${p.title} ${p.vendor} ${p.product_type}`.toLowerCase();
+      // Si le mot "bordeaux" n'est pas dans le texte, on le jette !
+      return text.includes(searchTerm);
     });
 
     // 3. Normaliser les résultats
     const results = filteredProducts.map(p => {
-      // Gestion sécurisée du prix (si Shopify renvoie une string ou un entier)
       let formattedPrice = null;
       if (p.price) {
-        // Si le prix n'a pas de point/virgule, c'est souvent en centimes sur Shopify
         const priceNum = String(p.price).includes('.') ? parseFloat(p.price) : parseInt(p.price) / 100;
         formattedPrice = `${priceNum.toFixed(2)}€`;
       }
@@ -55,7 +56,6 @@ export default async function handler(req, res) {
       return {
         title:      p.title || "",
         handle:     p.handle || "",
-        // L'URL Shopify
         url:        p.url ? `https://boir.be${p.url}` : `https://boir.be/fr/products/${p.handle}`,
         price:      formattedPrice,
         image:      p.featured_image?.url || p.image || null,
@@ -65,11 +65,11 @@ export default async function handler(req, res) {
       };
     });
 
+    // On renvoie les résultats filtrés
     return res.status(200).json({ q, results });
 
   } catch (err) {
     console.error("boir-search error:", err.message);
-    // On retourne un tableau vide proprement — l'app continue sans crash
     return res.status(200).json({ q, results: [], error: err.message });
   }
 }
