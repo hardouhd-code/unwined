@@ -59,7 +59,7 @@ export function Decouvrir() {
       const mPrice = price === 'under25' ? w.price < 25 : 
                     price === '25to50' ? (w.price >= 25 && w.price <= 50) : 
                     price === 'above50' ? w.price > 50 : true;
-      const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+      const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
       const mRegion = region === 'Toutes' || norm(w.region) === norm(region);
       return mPrice && mRegion;
     }).sort((a, b) => sort === 'asc' ? a.price - b.price : b.price - a.price);
