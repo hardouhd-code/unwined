@@ -48,7 +48,7 @@ async function fetchBoirCatalog() {
   let page = 1;
   let hasMore = true;
   while (hasMore) {
-    const url = `https://boir.be/collections/all/products.json?limit=250&page=${page}`;
+    const url = "https://boir.be/collections/all/products.json?limit=250&page=" + page;
     const res = await fetch(url, { headers: { 'User-Agent': 'Unwine-D/5.0' } });
     const data = await res.json();
     if (data.products && data.products.length > 0) {
@@ -78,7 +78,7 @@ async function updateCatalog() {
     })
     .map(p => ({
       t: p.title, p: p.variants[0]?.price ? parseFloat(p.variants[0].price) : 0,
-      v: p.vendor || '', u: `https://boir.be/fr/products/${p.handle}`,
+      v: p.vendor || '', u: "https://boir.be/fr/products/" + p.handle,
       img: p.images[0]?.src || null, c: inferCountry(p.title, p.vendor),
       r: detectRegion(p), type: inferType(p.title, p.product_type),
       grapes: '', aromas: '', pairings: '', profile: ''
@@ -110,9 +110,9 @@ export function searchBoirLocal(query, limit = 100) {
     }));
 }`;
 
-  const fileContent = \`// Boir.be catalog — \${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = \${JSON.stringify(finalCatalog, null, 2)};\n\${searchFn}\`;
+  const fileContent = "// Boir.be catalog — " + finalCatalog.length + " vins actifs\nexport const BOIR_CATALOG = " + JSON.stringify(finalCatalog, null, 2) + ";\n" + searchFn;
   fs.writeFileSync(CATALOG_PATH, fileContent, 'utf8');
-  console.log('✅ Catalogue mis à jour.');
+  console.log('✅ Succès : ' + finalCatalog.length + ' vins synchronisés.');
 }
 
 updateCatalog().catch(err => { console.error(err); process.exit(1); });
