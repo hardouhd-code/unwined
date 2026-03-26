@@ -43,6 +43,7 @@ function detectLocation(p) {
       break;
     }
   }
+  // Correction ici : changement de haystack en hay pour éviter le plantage
   if (res.region === 'Autre' && hay.includes('chateau') && !hay.includes('bourgogne')) {
     res.region = 'Bordeaux'; res.country = 'France';
   }
@@ -52,28 +53,32 @@ function detectLocation(p) {
 async function update() {
   let all = []; let page = 1; let more = true;
   while (more) {
-    const res = await fetch(`https://boir.be/collections/all/products.json?limit=250&page=${page}`);
-    const data = await res.json();
-    if (data.products?.length > 0) { all = [...all, ...data.products]; page++; } else { more = false; }
-    await sleep(200);
+    try {
+      const res = await fetch(`https://boir.be/collections/all/products.json?limit=250&page=${page}`);
+      const data = await res.json();
+      if (data.products?.length > 0) { all = [...all, ...data.products]; page++; } else { more = false; }
+      await sleep(200);
+    } catch (e) { more = false; }
   }
   
   const catalog = all.filter(p => {
-    const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','sac','etui'].some(k => p.title.toLowerCase().includes(k));
+    const n = (p.title || '').toLowerCase();
+    const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','sac','etui'].some(k => n.includes(k));
     return p.variants?.some(v => v.available) && !isAcc;
   }).map(p => {
     const loc = detectLocation(p);
     return {
-      t: p.title, p: parseFloat(p.variants[0].price), v: p.vendor,
-      u: `https://boir.be/fr/products/${p.handle}`, img: p.images[0]?.src || null,
-      r: loc.region, c: loc.country, type: p.title.toLowerCase().includes('blanc') ? 'blanc' : 'rouge'
+      t: p.title, p: p.variants[0]?.price ? parseFloat(p.variants[0].price) : 0,
+      v: p.vendor || 'Boir', u: `https://boir.be/fr/products/${p.handle}`,
+      img: p.images[0]?.src || null, r: loc.region, c: loc.country,
+      type: (p.title || '').toLowerCase().includes('blanc') ? 'blanc' : 'rouge'
     };
   });
 
   const searchFn = `export function searchBoirLocal(query, limit = 500) {
     if (!query || query.length < 2) return [];
     const term = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-    return BOIR_CATALOG.filter(w => {
+    return (BOIR_CATALOG || []).filter(w => {
       const hay = (w.t + " " + w.r + " " + w.c + " " + w.v).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       return hay.includes(term);
     }).sort((a,b) => (a.r.toLowerCase() === term ? -1 : 0)).slice(0,limit)
