@@ -31,8 +31,7 @@ function detectRegion(p) {
 function inferType(name, productType) {
   const n = (name + ' ' + (productType || '')).toLowerCase();
   if (n.includes('rosé') || n.includes('rose')) return 'rosé';
-  if (['champagne', 'crémant', 'prosecco', 'cava', 'pétillant', 'brut'].some(k => n.includes(k))) return 'effervescent';
-  if (['sauternes', 'barsac', 'porto', 'vin doux'].some(k => n.includes(k))) return 'doux';
+  if (['champagne', 'crémant', 'prosecco', 'cava', 'pétillant'].some(k => n.includes(k))) return 'effervescent';
   if (['blanc', 'chardonnay', 'sauvignon', 'riesling', 'chablis'].some(k => n.includes(k))) return 'blanc';
   return 'rouge';
 }
@@ -45,7 +44,6 @@ function inferCountry(name, vendor) {
 }
 
 async function fetchBoirCatalog() {
-  console.log('🍇 Récupération du catalogue Boir.be...');
   let allProducts = [];
   let page = 1;
   let hasMore = true;
@@ -55,7 +53,6 @@ async function fetchBoirCatalog() {
     const data = await res.json();
     if (data.products && data.products.length > 0) {
       allProducts = [...allProducts, ...data.products];
-      console.log(`  Page ${page}: ${data.products.length} produits trouvés`);
       page++;
     } else { hasMore = false; }
     await sleep(300);
@@ -64,14 +61,11 @@ async function fetchBoirCatalog() {
 }
 
 async function updateCatalog() {
-  console.log('\n🍷 Unwine-D — Mise à jour du catalogue');
   let oldCatalog = [];
   if (fs.existsSync(CATALOG_PATH)) {
-    try {
-      const content = fs.readFileSync(CATALOG_PATH, 'utf8');
-      const match = content.match(/export const BOIR_CATALOG = (\[[\s\S]*?\]);/);
-      if (match) oldCatalog = JSON.parse(match[1]);
-    } catch (err) {}
+    const content = fs.readFileSync(CATALOG_PATH, 'utf8');
+    const match = content.match(/export const BOIR_CATALOG = (\[[\s\S]*?\]);/);
+    if (match) oldCatalog = JSON.parse(match[1]);
   }
   const existingUrls = new Set(oldCatalog.map(w => w.u));
   const rawProducts = await fetchBoirCatalog();
@@ -79,8 +73,8 @@ async function updateCatalog() {
   const allInStock = rawProducts
     .filter(p => {
       const n = (p.title || '').toLowerCase();
-      // Filtre accessoires renforcé (exclut verres, crachoirs, sacs)
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','sac','etui','capsule','accessoire'].some(k => n.includes(k));
+      // Filtre accessoires renforcé
+      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','accessoire'].some(k => n.includes(k));
       return p.variants?.some(v => v.available) && !isAcc;
     })
     .map(p => ({
@@ -93,39 +87,33 @@ async function updateCatalog() {
 
   const finalCatalog = [...allInStock.filter(w => !existingUrls.has(w.u)), ...oldCatalog.filter(w => allInStock.some(nw => nw.u === w.u))];
 
-  // LOGIQUE DE RECHERCHE AVEC SCORE PONDÉRÉ
   const searchFn = `
 export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').split(/\\s+/);
-  
   return BOIR_CATALOG
     .map(w => {
       let score = 0;
-      const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+      const r = (w.region || w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       const other = [w.v, w.c, w.grapes, w.aromas, w.type, w.profile, w.pairings].join(' ').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-
       terms.forEach(term => {
-        if (r === term || r.includes(term)) score += 100; // Boost massif si la région correspond
-        if (t.includes(term)) score += 10;                // Score fort pour le titre
-        if (other.includes(term)) score += 1;             // Score faible pour les autres champs
+        if (r === term || r.includes(term)) score += 100; // BOOST RÉGION
+        if (t.includes(term)) score += 10;
+        if (other.includes(term)) score += 1;
       });
-
       return { ...w, score };
     })
-    .filter(w => w.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
+    .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
     .map(({ score, ...w }) => ({
       title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, 
-      country: w.c, region: w.r, type: w.type, grapes: w.grapes, aromas: w.aromas, profile: w.profile, pairings: w.pairings
+      country: w.c, region: w.r, type: w.type, aromas: w.aromas, profile: w.profile
     }));
 }`;
 
-  const fileContent = `// Boir.be catalog — ${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = ${JSON.stringify(finalCatalog, null, 2)};\n${searchFn}`;
+  const fileContent = \`// Boir.be catalog — \${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = \${JSON.stringify(finalCatalog, null, 2)};\n\${searchFn}\`;
   fs.writeFileSync(CATALOG_PATH, fileContent, 'utf8');
-  console.log(`✅ Succès : ${finalCatalog.length} vins synchronisés.`);
+  console.log('✅ Catalogue mis à jour.');
 }
 
 updateCatalog().catch(err => { console.error(err); process.exit(1); });
