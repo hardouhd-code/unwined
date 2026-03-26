@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
+// On importe le catalogue avec une sécurité maximale
 import * as WineData from '../lib/boirCatalog';
 
-// --- THEME CLAIRE (Identique à Ma Cave) ---
 const THEME = {
   card: '#ffffff',
   text: '#452b00',
@@ -19,12 +19,18 @@ const REGIONS_BY_COUNTRY = {
   'Portugal': ['Douro', 'Alentejo'],
 };
 
+// Composant Carte avec sécurité sur les données
 function WineCard({ wine }) {
-  const p = wine.price || wine.p || 0;
-  const title = wine.title || wine.t || '';
-  const vendor = wine.vendor || wine.v || '';
-  const region = wine.region || wine.r || '';
-  const country = wine.country || wine.c || '';
+  if (!wine) return null;
+  
+  // Sécurisation des valeurs pour éviter le crash .toFixed()
+  const priceVal = wine.price || wine.p || 0;
+  const displayPrice = typeof priceVal === 'number' ? priceVal.toFixed(2) : parseFloat(priceVal || 0).toFixed(2);
+  
+  const title = wine.title || wine.t || 'Vin sans nom';
+  const region = wine.region || wine.r || 'Région';
+  const country = wine.country || wine.c || 'France';
+  const vendor = wine.vendor || wine.v || 'Boir';
   const url = wine.url || wine.u || '#';
   const img = wine.image || wine.img || '';
 
@@ -40,24 +46,24 @@ function WineCard({ wine }) {
            <img src={img} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: 16, fontWeight: '700', color: THEME.text, fontFamily: 'Playfair Display, serif', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          <div style={{ fontSize: 16, fontWeight: 'bold', color: THEME.text, fontFamily: 'serif', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             {title}
           </div>
-          <div style={{ fontSize: 12, color: THEME.muted, fontFamily: 'Cormorant Garamond, serif' }}>
+          <div style={{ fontSize: 12, color: THEME.muted, fontFamily: 'serif' }}>
             {region.toUpperCase()} · {vendor}
           </div>
         </div>
-        <div style={{ fontSize: 18, fontWeight: '700', color: THEME.accent, fontFamily: 'Playfair Display, serif' }}>
-          {p.toFixed(2)}€
+        <div style={{ fontSize: 18, fontWeight: 'bold', color: THEME.accent, fontFamily: 'serif' }}>
+          {displayPrice}€
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <span style={{ fontSize: 11, color: THEME.muted, background: '#f9f7f2', padding: '4px 12px', borderRadius: 20, fontFamily: 'Cormorant Garamond, serif' }}>
+        <span style={{ fontSize: 11, color: THEME.muted, background: '#f9f7f2', padding: '4px 12px', borderRadius: 20 }}>
           {FLAGS[country] || '🍷'} {country}
         </span>
         <a href={url} target="_blank" rel="noopener noreferrer" style={{ 
           padding: '8px 20px', borderRadius: '24px', background: THEME.accent, 
-          color: '#ffffff', fontSize: 12, textDecoration: 'none', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px'
+          color: '#ffffff', fontSize: 12, textDecoration: 'none', fontWeight: 'bold'
         }}>Acheter</a>
       </div>
     </div>
@@ -69,54 +75,58 @@ export function Decouvrir() {
   const [country, setCountry] = useState('Tous');
   const [region, setRegion] = useState('Toutes');
 
+  // Sécurité sur les données importées
   const catalog = WineData?.BOIR_CATALOG || [];
   const searchFn = WineData?.searchBoirLocal || (() => []);
 
   useEffect(() => { setRegion('Toutes'); }, [country]);
 
+  // Moteur de recherche robuste
   const results = useMemo(() => {
     const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     
-    // 1. Base de recherche : soit la saisie, soit tout le catalogue
-    let list = (query.length >= 2) ? searchFn(query) : catalog;
+    // Si on a tapé quelque chose, on utilise la fonction de recherche
+    let baseList = (query.trim().length >= 2) ? searchFn(query.trim()) : catalog;
 
-    // 2. Filtrage intelligent (Boutons Pays & Région)
-    return list.filter(w => {
+    // Si rien n'est sélectionné et pas de recherche, on montre une liste vide
+    if (query.trim().length < 2 && country === 'Tous') return [];
+
+    return baseList.filter(w => {
       const wCountry = w.country || w.c || '';
       const wRegion = w.region || w.r || '';
       const wTitle = w.title || w.t || '';
 
-      // Match Pays
       const matchCountry = country === 'Tous' || norm(wCountry) === norm(country);
-      
-      // Match Région : On cherche dans le champ Région OU dans le Titre (pour éviter les 0 résultats)
       const matchRegion = region === 'Toutes' || 
                           norm(wRegion).includes(norm(region)) || 
                           norm(wTitle).includes(norm(region));
-
-      // Si on n'a ni recherche ni pays sélectionné, on ne montre rien par défaut (optionnel)
-      if (query.length < 2 && country === 'Tous') return false;
 
       return matchCountry && matchRegion;
     });
   }, [query, country, region, catalog, searchFn]);
 
   return (
-    <div style={{ padding: '0 20px 140px', boxSizing: 'border-box' }}>
+    <div style={{ padding: '0 20px 140px', boxSizing: 'border-box', width: '100%' }}>
       
+      {/* 1. Barre de Recherche */}
       <div style={{ marginBottom: 20 }}>
         <input 
-          type="text" value={query} onChange={e => {setQuery(e.target.value); if(e.target.value.length >= 2) setCountry('Tous');}} 
-          placeholder="Rechercher un domaine, un cépage..." 
+          type="text" value={query} 
+          onChange={e => {
+            setQuery(e.target.value);
+            if (e.target.value.length >= 2) setCountry('Tous');
+          }} 
+          placeholder="Un domaine, une région..." 
           style={{ 
             width: '100%', padding: '16px', background: THEME.card, 
             border: `1px solid ${THEME.border}`, borderRadius: '16px', 
             color: THEME.text, fontSize: 16, outline: 'none', boxSizing: 'border-box',
-            boxShadow: '0 4px 12px rgba(139,90,60,0.05)', fontFamily: 'Cormorant Garamond, serif'
+            boxShadow: '0 4px 12px rgba(139,90,60,0.05)'
           }} 
         />
       </div>
 
+      {/* 2. Boutons Pays */}
       <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 12, scrollbarWidth: 'none' }}>
         {['Tous', ...Object.keys(FLAGS)].map(c => (
           <button key={c} onClick={() => {setCountry(c); setQuery('');}} style={{ 
@@ -124,13 +134,14 @@ export function Decouvrir() {
             background: country === c ? THEME.accent : THEME.card, 
             color: country === c ? '#fff' : THEME.muted,
             border: `1px solid ${country === c ? THEME.accent : THEME.border}`,
-            fontWeight: '600', transition: 'all 0.2s'
+            fontWeight: '600'
           }}>
             {c}
           </button>
         ))}
       </div>
 
+      {/* 3. Boutons Régions */}
       {country !== 'Tous' && REGIONS_BY_COUNTRY[country] && (
         <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '10px 0', borderTop: `1px solid ${THEME.border}`, scrollbarWidth: 'none' }}>
           {['Toutes', ...REGIONS_BY_COUNTRY[country]].map(r => (
@@ -139,7 +150,7 @@ export function Decouvrir() {
               background: 'transparent', 
               color: region === r ? THEME.accent : THEME.muted, 
               border: `1px solid ${region === r ? THEME.accent : 'transparent'}`,
-              fontWeight: region === r ? '700' : '400'
+              fontWeight: region === r ? 'bold' : 'normal'
             }}>
               {r.toUpperCase()}
             </button>
@@ -147,17 +158,19 @@ export function Decouvrir() {
         </div>
       )}
 
+      {/* 4. Liste des Vins */}
       <div style={{ marginTop: 20 }}>
-        <p style={{ fontSize: 13, color: THEME.muted, marginBottom: 15, fontFamily: 'Cormorant Garamond, serif', fontStyle: 'italic' }}>
+        <p style={{ fontSize: 13, color: THEME.muted, marginBottom: 15, fontStyle: 'italic' }}>
           {results.length} pépites trouvées
         </p>
+        
         {results.map((w, i) => <WineCard key={i} wine={w} />)}
         
         {results.length === 0 && (
-          <div style={{ textAlign: 'center', padding: '60px 20px', color: THEME.muted, fontFamily: 'Cormorant Garamond, serif' }}>
+          <div style={{ textAlign: 'center', padding: '60px 20px', color: THEME.muted }}>
             {query.length < 2 && country === 'Tous' 
-              ? "Commencez par choisir un pays ou tapez une recherche." 
-              : "Aucun vin ne correspond à cette sélection."}
+              ? "Choisissez un pays ou recherchez un vin." 
+              : "Aucune bouteille trouvée."}
           </div>
         )}
       </div>
