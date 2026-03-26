@@ -10,6 +10,12 @@ const TYPE_COLOR = {
   doux:         { bg: 'rgba(180,140,60,0.15)',   border: 'rgba(180,140,60,0.4)', text: '#c8a848' },
 };
 
+// Liste des pays basée sur ton screenshot
+const COUNTRIES = [
+  'Tous', 'France', 'Italie', 'Espagne', 'Portugal', 'Afrique du Sud', 
+  'Argentine', 'Chili', 'Allemagne', 'Autriche', 'États-Unis', 'Grèce', 'Georgie'
+];
+
 function WineCard({ wine }) {
   const colors = TYPE_COLOR[wine.type] || TYPE_COLOR.rouge;
   const emoji = TYPE_EMOJI[wine.type] || '🍷';
@@ -33,7 +39,9 @@ function WineCard({ wine }) {
         </div>
       </div>
       <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginTop:4 }}>
-        <span style={{ fontSize:11, color:'#7a6040', background:'rgba(255,255,255,0.05)', padding:'2px 8px', borderRadius:10 }}>📍 {wine.region}</span>
+        <span style={{ fontSize:10, color:'#7a6040', background:'rgba(255,255,255,0.05)', padding:'2px 8px', borderRadius:10, textTransform:'uppercase', letterSpacing:'0.05em' }}>
+          {wine.country || 'France'} · {wine.region}
+        </span>
         <a href={wine.url} target="_blank" rel="noopener noreferrer" style={{ 
           padding:'6px 12px', borderRadius:8, background:colors.bg, border:`1px solid ${colors.border}`, 
           color:colors.text, fontSize:12, textDecoration:'none', fontWeight:'bold' 
@@ -48,22 +56,26 @@ export function Decouvrir() {
   const [results, setResults] = useState([]);
   const [searched, setSearched] = useState(false);
   const [priceRange, setPriceRange] = useState('all');
-  const [sortOrder, setSortOrder] = useState('asc'); // 'asc' ou 'desc'
+  const [selectedCountry, setSelectedCountry] = useState('Tous');
+  const [sortOrder, setSortOrder] = useState('asc');
   const debounceRef = useRef(null);
 
-  // LOGIQUE : Filtre + Tri combinés
+  // LOGIQUE : Recherche + Pays + Prix + Tri combinés
   const processedResults = useMemo(() => {
     let list = results.filter(wine => {
-      if (priceRange === 'under25') return wine.price < 25;
-      if (priceRange === '25to50') return wine.price >= 25 && wine.price <= 50;
-      if (priceRange === 'above50') return wine.price > 50;
-      return true;
+      // Filtre Prix
+      const matchPrice = priceRange === 'under25' ? wine.price < 25 :
+                        priceRange === '25to50' ? wine.price >= 25 && wine.price <= 50 :
+                        priceRange === 'above50' ? wine.price > 50 : true;
+      
+      // Filtre Pays
+      const matchCountry = selectedCountry === 'Tous' || (wine.country && wine.country === selectedCountry);
+      
+      return matchPrice && matchCountry;
     });
 
-    return list.sort((a, b) => {
-      return sortOrder === 'asc' ? a.price - b.price : b.price - a.price;
-    });
-  }, [results, priceRange, sortOrder]);
+    return list.sort((a, b) => sortOrder === 'asc' ? a.price - b.price : b.price - a.price);
+  }, [results, priceRange, selectedCountry, sortOrder]);
 
   const handleSearch = useCallback((value) => {
     setQuery(value);
@@ -81,15 +93,12 @@ export function Decouvrir() {
 
   return (
     <div style={{ padding:'20px 16px', maxWidth:700, margin:'0 auto', fontFamily:'Georgia, serif' }}>
-      <div style={{ textAlign:'center', marginBottom:20 }}>
-        <h2 style={{ fontSize:22, color:'#c8956c', margin:'0 0 6px' }}>Découvrir</h2>
-        <p style={{ color:'#7a6040', fontSize:13 }}>Le catalogue complet de Boir.be (891 vins)</p>
-      </div>
-
-      <div style={{ position:'relative', marginBottom:16 }}>
+      
+      {/* Barre de recherche */}
+      <div style={{ position:'relative', marginBottom:12 }}>
         <input
           type="text" value={query} onChange={e => handleSearch(e.target.value)}
-          placeholder="Recherchez une région, un château..."
+          placeholder="Région, cépage ou appellation..."
           style={{ 
             width:'100%', padding:'13px 44px', background:'#1a1510', border:'1px solid #3d2f1f', 
             borderRadius:12, color:'#e8d5b7', fontSize:15, outline:'none' 
@@ -98,32 +107,45 @@ export function Decouvrir() {
         <span style={{ position:'absolute', left:14, top:'50%', transform:'translateY(-50%)' }}>🔍</span>
       </div>
 
-      {/* FILTRES PRIX */}
-      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:8, marginBottom:8 }}>
-        {['all', 'under25', '25to50', 'above50'].map(id => (
-          <button key={id} onClick={() => setPriceRange(id)} style={{
+      {/* FILTRES PAYS (Horizontal Scroll) */}
+      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:12, marginBottom:4, scrollbarWidth:'none' }}>
+        {COUNTRIES.map(c => (
+          <button key={c} onClick={() => setSelectedCountry(c)} style={{
             padding:'6px 14px', borderRadius:20, whiteSpace:'nowrap', fontSize:12, cursor:'pointer',
-            background: priceRange === id ? '#c8956c' : '#1a1510',
-            color: priceRange === id ? '#1a1510' : '#c8b48a',
-            border: `1px solid ${priceRange === id ? '#c8956c' : '#3d2f1f'}`,
+            transition:'all 0.2s',
+            background: selectedCountry === c ? '#c8956c' : '#1a1510',
+            color: selectedCountry === c ? '#1a1510' : '#c8b48a',
+            border: `1px solid ${selectedCountry === c ? '#c8956c' : '#3d2f1f'}`,
           }}>
-            {id === 'all' ? 'Tous' : id === 'under25' ? '< 25€' : id === '25to50' ? '25-50€' : '50€+'}
+            {c}
           </button>
         ))}
       </div>
 
-      {/* OPTIONS DE TRI */}
+      {/* FILTRES PRIX */}
+      <div style={{ display:'flex', gap:8, marginBottom:16 }}>
+        {['all', 'under25', '25to50', 'above50'].map(id => (
+          <button key={id} onClick={() => setPriceRange(id)} style={{
+            flex:1, padding:'6px 8px', borderRadius:10, fontSize:11, cursor:'pointer',
+            background: priceRange === id ? '#3d2f1f' : 'transparent',
+            color: priceRange === id ? '#e8d5b7' : '#7a6040',
+            border: `1px solid ${priceRange === id ? '#c8956c' : '#3d2f1f'}`,
+          }}>
+            {id === 'all' ? 'Tous prix' : id === 'under25' ? '< 25€' : id === '25to50' ? '25-50€' : '50€+'}
+          </button>
+        ))}
+      </div>
+
+      {/* COMPTEUR ET TRI */}
       <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:16, borderTop:'1px solid #3d2f1f', paddingTop:12 }}>
-        <span style={{ color:'#7a6040', fontSize:12 }}>{processedResults.length} vins trouvés</span>
-        <div style={{ display:'flex', gap:4 }}>
-           <button onClick={() => setSortOrder('asc')} style={{ 
-             background: sortOrder === 'asc' ? '#3d2f1f' : 'transparent', border:'none', color:'#c8b48a', 
-             padding:'4px 8px', borderRadius:6, fontSize:11, cursor:'pointer' 
-           }}>Prix ↗</button>
-           <button onClick={() => setSortOrder('desc')} style={{ 
-             background: sortOrder === 'desc' ? '#3d2f1f' : 'transparent', border:'none', color:'#c8b48a', 
-             padding:'4px 8px', borderRadius:6, fontSize:11, cursor:'pointer' 
-           }}>Prix ↘</button>
+        <span style={{ color:'#7a6040', fontSize:12 }}>{processedResults.length} pépites trouvées</span>
+        <div style={{ display:'flex', gap:8 }}>
+           <button onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')} style={{ 
+             background:'#1a1510', border:'1px solid #3d2f1f', color:'#c8b48a', 
+             padding:'4px 10px', borderRadius:8, fontSize:11, cursor:'pointer' 
+           }}>
+             Prix {sortOrder === 'asc' ? '↗' : '↘'}
+           </button>
         </div>
       </div>
 
