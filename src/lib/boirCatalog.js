@@ -1,4 +1,4 @@
-// Boir.be catalog — 881 vins actifs
+// Boir.be catalog — 880 vins actifs
 export const BOIR_CATALOG = [
   {
     "t": "San Luciano \"Luna di Monte\" 2021",
@@ -133,23 +133,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_de_Jau_Cotes_du_Roussillon_2022.png?v=1754474898",
     "c": "France",
     "r": "Languedoc-Roussillon",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Château la Genestière - Lirac 2023",
-    "y": "",
-    "p": 10.95,
-    "v": "TENUTA DI DONNAFUGATA SRL",
-    "u": "https://boir.be/fr/products/chateau-la-genestiere-lirac-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_la_Genestiere_Lirac_2023.png?v=1757497497",
-    "c": "France",
-    "r": "Rhône",
     "type": "rouge",
     "grapes": "",
     "aromas": "",
@@ -14873,27 +14856,22 @@ export const BOIR_CATALOG = [
 export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/);
-  
   return BOIR_CATALOG
     .map(w => {
       let score = 0;
       const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
       const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
       const other = [w.v, w.c, w.grapes, w.aromas, w.type, w.profile, w.pairings].join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
       terms.forEach(term => {
-        if (r === term || r.includes(term)) score += 100; // Boost massif si la région correspond
-        if (t.includes(term)) score += 10;                // Score fort pour le titre
-        if (other.includes(term)) score += 1;             // Score faible pour les autres champs
+        if (r === term || r.includes(term)) score += 100;
+        if (t.includes(term)) score += 10;
+        if (other.includes(term)) score += 1;
       });
-
       return { ...w, score };
     })
-    .filter(w => w.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
+    .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
     .map(({ score, ...w }) => ({
       title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, 
-      country: w.c, region: w.r, type: w.type, grapes: w.grapes, aromas: w.aromas, profile: w.profile, pairings: w.pairings
+      country: w.c, region: w.r, type: w.type, aromas: w.aromas, profile: w.profile
     }));
 }
