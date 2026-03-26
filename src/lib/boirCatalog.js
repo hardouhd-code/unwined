@@ -1,4 +1,4 @@
-// Catalogue Boir.be - 891 vins
+// Boir.be - 890 vins actifs
 export const BOIR_CATALOG = [
   {
     "t": "ADE vocht- en thermometer",
@@ -80,15 +80,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fce4000c417af5f7805f572731dc391b.png?v=1769768575",
     "r": "",
     "type": "blanc"
-  },
-  {
-    "t": "ALT \"Orange Spritz\"",
-    "p": 12.5,
-    "v": "Brandstof",
-    "u": "https://boir.be/fr/products/alt-orange-spritz",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c86ceee014e671591d44c53a69f82553.png?v=1769768635",
-    "r": "",
-    "type": "rouge"
   },
   {
     "t": "ALT \"Rosé\"",
@@ -636,7 +627,7 @@ export const BOIR_CATALOG = [
     "v": "CANALS & MUNNE SL",
     "u": "https://boir.be/fr/products/canals-munne-cava-dionysus-reserva-brut-nature",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Canals_Munne_Cava_Dionysus_Reserva_Brut_Nature.png?v=1754914304",
-    "r": "Cava",
+    "r": "",
     "type": "rouge"
   },
   {
@@ -3066,7 +3057,7 @@ export const BOIR_CATALOG = [
     "v": "JP Mouiex",
     "u": "https://boir.be/fr/products/chateau-latour-a-pomerol-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6741bd6ef930ed3edd2411bc608ec5c0_6b5175ea-5b27-4e91-b13e-2541fd3f5248.png?v=1749746624",
-    "r": "Bordeaux",
+    "r": "Pomerol",
     "type": "rouge"
   },
   {
@@ -4263,7 +4254,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-rheingau-riesling-remastered-r3-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69126c0df37fc2ec4a9ae0ae91fb5d75.png?v=1758537702",
-    "r": "Rheingau",
+    "r": "",
     "type": "rouge"
   },
   {
@@ -4722,7 +4713,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-clos-des-rochers-cremant-de-luxembourg-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/082ae8fecbed79765a92a6ff5824d987.png?v=1733413131",
-    "r": "Crémant",
+    "r": "",
     "type": "rouge"
   },
   {
@@ -8020,18 +8011,26 @@ export const BOIR_CATALOG = [
     "type": "rouge"
   }
 ];
+
 export function searchBoirLocal(query, limit = 100) {
   if (!query || query.length < 2) return [];
-  const terms = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/\s+/);
+  const terms = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/);
+  const bdxSubs = ["saint-emilion","pomerol","medoc","graves","pessac","margaux","pauillac","saint-julien","saint-estephe","sauternes","barsac","canon-fronsac"];
+  
   return BOIR_CATALOG.map(w => {
     let score = 0;
-    const r = (w.r || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    const t = (w.t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    
     terms.forEach(term => {
-      if (r === term || r.includes(term)) score += 100;
-      if (t.includes(term)) score += 10;
+      // Si on cherche "Bordeaux", on booste aussi les sous-appellations
+      const isBdxSub = bdxSubs.some(sub => r.includes(sub.replace('-', ' ')));
+      if (term === 'bordeaux' && (r === 'bordeaux' || isBdxSub)) score += 100;
+      else if (r.includes(term)) score += 80;
+      if (t.includes(term)) score += 20;
     });
     return { ...w, score };
-  }).filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
+  })
+  .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
   .map(({ score, ...w }) => ({ title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, type: w.type }));
 }
