@@ -12,27 +12,17 @@ jobs:
       contents: write
     
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '24'
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Sync Script
-        run: node scripts/sync-catalog.js
-
-      - name: Commit and Push changes
+      - run: npm install
+      - run: node scripts/sync-catalog.js
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add src/lib/boirCatalog.js
-          git commit -m "🌍 Mise à jour auto : Catalogue International" || exit 0
+          git commit -m "🌍 Synchro Internationale" || exit 0
           git pull --rebase origin main
           git push origin main
