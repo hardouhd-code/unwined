@@ -1,4 +1,4 @@
-// Boir.be - 890 vins actifs
+// Catalogue Universel Unwine-D - 890 vins
 export const BOIR_CATALOG = [
   {
     "t": "ADE vocht- en thermometer",
@@ -6,7 +6,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/ade-vocht-en-thermometer",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ADE_1.png?v=1740661460",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -15,7 +15,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/adrien-vacher-savoie-apremont-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ab6d339bec60ea7fd5aac55e7d540ef6.png?v=1733129085",
-    "r": "Savoie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -24,7 +24,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-gevrey-chambertin-les-evocelles-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Evocelles.png?v=1773232819",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -33,7 +33,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-hautes-cotes-de-nuits-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/77c6dc5264a4d6eb56da29c022a6d949.png?v=1743755410",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -42,7 +42,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-latricieres-chambertin-grand-cru-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1be2560a6320f433d55fcc2ca86f9b38.png?v=1742552833",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -51,7 +51,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-morey-saint-denis-1er-cru-les-sorbets-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/77edb775fc28fd9af4d45c8701416707.png?v=1742909041",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -60,7 +60,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-santenay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600020.png?v=1750840060",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -69,7 +69,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/albert-bichot-cremant-de-bourgogne-rose-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1702371444_CremantBrutRose-_NouvelleE-dition_1_1.png?v=1767018049",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -78,7 +78,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/alt-blanc-de-blancs",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fce4000c417af5f7805f572731dc391b.png?v=1769768575",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -87,7 +87,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/alt-rose",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/700039_ALT.png?v=1770119347",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -96,7 +96,7 @@ export const BOIR_CATALOG = [
     "v": "Archipel Kombucha (SAS POLYFERMENTATION )",
     "u": "https://boir.be/fr/products/archipel-kombucha-brut-bio",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Archipel_Kombucha_Brut.png?v=1757500128",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -105,7 +105,7 @@ export const BOIR_CATALOG = [
     "v": "Archipel Kombucha (SAS POLYFERMENTATION )",
     "u": "https://boir.be/fr/products/archipel-kombucha-feuilles-de-clementine-bio",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Archipel_Kombucha_Feuilles_de_Clementine.png?v=1752239619",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -114,7 +114,7 @@ export const BOIR_CATALOG = [
     "v": "Archipel Kombucha (SAS POLYFERMENTATION )",
     "u": "https://boir.be/fr/products/archipel-kombucha-feuilles-de-figuier-bio",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Archipel_Kombucha_Feuilles_de_Figuier.png?v=1752239489",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -123,7 +123,7 @@ export const BOIR_CATALOG = [
     "v": "ARENSBAK ApS",
     "u": "https://boir.be/fr/products/degustatiebox-arensbak",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Degustatiebox_ARENSBAK.png?v=1769692894",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -132,7 +132,7 @@ export const BOIR_CATALOG = [
     "v": "ARENSBAK ApS",
     "u": "https://boir.be/fr/products/arensbak-effervescent",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ARENSBAK_Effervescent.png?v=1767968696",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -141,7 +141,7 @@ export const BOIR_CATALOG = [
     "v": "ARENSBAK ApS",
     "u": "https://boir.be/fr/products/arensbak-red",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ARENSBAK_Red.png?v=1757500171",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -150,7 +150,7 @@ export const BOIR_CATALOG = [
     "v": "ARENSBAK ApS",
     "u": "https://boir.be/fr/products/arensbak-rose",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3cd83d7161fa89bc7e1903e17dbc54ab.png?v=1733151544",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -159,7 +159,7 @@ export const BOIR_CATALOG = [
     "v": "ARENSBAK ApS",
     "u": "https://boir.be/fr/products/arensbak-white",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ce434c2bef137025a5c86bb742c36930.png?v=1733321309",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -168,7 +168,7 @@ export const BOIR_CATALOG = [
     "v": "Chateaux Partners",
     "u": "https://boir.be/fr/products/aromes-de-pavie-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4ffc2138ab4e6e7a222b16b3b60e1149.png?v=1748418860",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -177,7 +177,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/arthur-metz-sylvaner-vieilles-vignes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bb2942b245de6b81acbc7eec02bf5dcc_580a24db-0566-4931-980d-04154b3349da.png?v=1770039391",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -186,7 +186,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/terra-nature-vin-de-france-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c2123ed461c3c3bca1ad64904d5a3475.png?v=1733322974",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -195,7 +195,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/terra-nature-vin-de-france-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0e23beaff18949e6d85c1731a56597cc.png?v=1733322979",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -204,7 +204,7 @@ export const BOIR_CATALOG = [
     "v": "VINS JEAN LUC COLOMBO SARL",
     "u": "https://boir.be/fr/products/terra-nature-vin-de-france-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/26251eb2003d7ae4e7ec53436b7137bc.png?v=1733322982",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -213,7 +213,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/aubert-mathieu-grouve-rose",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1431d4e3045608ef912d1af4488e59cd.png?v=1736975811",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -222,7 +222,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/aubert-mathieu-grouve",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Aubert_Mathieu_Grouve.png?v=1754914169",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -231,7 +231,7 @@ export const BOIR_CATALOG = [
     "v": "AZIENDA VINICOLA CANTELE SRL",
     "u": "https://boir.be/fr/products/azienda-vinicola-cantele-salento-amativo-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b79d913de35458c7b45731af86a3c34_b4e18322-bdbb-436d-9f46-fcbf42ea916a.png?v=1773244189",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -240,7 +240,7 @@ export const BOIR_CATALOG = [
     "v": "AZIENDA VINICOLA CANTELE SRL",
     "u": "https://boir.be/fr/products/azienda-vinicola-cantele-salento-teresa-manara-chardonnay-vt-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bc4a30f4e0e08fef5ebfce6a2433e12e.png?v=1773245058",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -249,7 +249,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/azienda-vinicola-cantele-salento-teresa-manara-negroamaro-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ada815ee87e087aabb122b04549e72a8.png?v=1733321177",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -258,7 +258,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bareksten-absint",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dffc22748d8ae12ee0e1c7fcf4972426.png?v=1733263341",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -267,7 +267,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bareksten-botanical-gin",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerpzondertitel_24.png?v=1739795481",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -276,7 +276,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bareksten-botanical-vodka",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Bareksten_vodka.png?v=1735894413",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -285,7 +285,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bareksten-elderflower",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_12.png?v=1737047299",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -294,7 +294,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bareksten-sloe-gin",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Bareksten_Sloe_Gin.png?v=1757501617",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -303,7 +303,7 @@ export const BOIR_CATALOG = [
     "v": "CHATEAU DE BARTHES EARL",
     "u": "https://boir.be/fr/products/bergerie-des-cistes-pic-saint-loup-sous-le-pic-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb41562c82c0f6a2ee053343057f6869.png?v=1762772775",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -312,7 +312,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bergerie-des-cistes-pic-saint-loup-sous-le-pic-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f742eb176bfc19cc610206bad1dfc5dd.png?v=1762791208",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -321,7 +321,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/beskows-symfoni-grace-rose",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/de694752ea317b85b72b1e93a448a117.png?v=1769776149",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -330,7 +330,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/beskows-vy-apple-hops",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cfb6f17d17ee90dc1931d3b4695bb1f7.png?v=1769776179",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -339,7 +339,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/beskows-vy-apple-sloe",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2563069994391b80c1ba7ea49b3b0195.png?v=1769776206",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -348,7 +348,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE BOUCHIE CHATELLIER",
     "u": "https://boir.be/fr/products/bestheim-gewurztraminer-vendages-tardives-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/aad36da14f35bffb77083946880b774e.png?v=1733413103",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -357,7 +357,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/bestheim-pinot-noir-limpatient-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2017c95381cb399b920006507c260e1b.png?v=1733411431",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -384,7 +384,7 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/bilame-gitano-kurkentrekker-oude-flessen",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Bilame_1.png?v=1740658139",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -393,7 +393,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/black-cottage-pinot-noir-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9b4a83bc00aded02ab7480039c99db9d.png?v=1733407606",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -402,7 +402,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/black-cottage-rose-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/38710bfd01312fea38b6992335d89253.png?v=1733323333",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -411,7 +411,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/black-cottage-sauvignon-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/476a710696fd363bbbcc1b6fca19fd24.png?v=1733323339",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -420,7 +420,7 @@ export const BOIR_CATALOG = [
     "v": "VINS & PASSIONS SAS",
     "u": "https://boir.be/fr/products/blason-dissan-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7584ed385123f59c1d48871fedf326dc.png?v=1733321184",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -429,7 +429,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/blason-dissan-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/08c91d59b39cac994e3374455293677f.png?v=1748418955",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -438,7 +438,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-argento-single-block-no-1-malbec-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea3b2af9d038838b0c2b6dfdea0ceacf.png?v=1733321186",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -447,7 +447,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/arg-malbec-s-block-21",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea3b2af9d038838b0c2b6dfdea0ceacf_47b8e962-f906-4ce3-8787-1ee6c9f02673.png?v=1769597301",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -456,7 +456,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-argento-single-vineyard-finca-gualtallary-chardonnay-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bfe33c116de6931f1d34276d0de35f6a.png?v=1733321189",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -465,7 +465,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/bodega-atamisque-atamisque-malbec-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce_67708e54-1a44-481c-8017-3f575435abf3.png?v=1773243308",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -474,7 +474,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-malbec-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce.png?v=1773235359",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -483,7 +483,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-cabernet-franc-alta-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/42a6f3fd41fb584c1180b94104e58df8.png?v=1733264271",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -492,7 +492,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-cabernet-sauvignon-alta-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5db3f08a9374d71449329c32ad02aa7e.png?v=1733423039",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -501,7 +501,7 @@ export const BOIR_CATALOG = [
     "v": "INVINITY NV",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-chardonnay-alta-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d45c46651a37b2a2fb7adff8c54f008a.png?v=1733423041",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -510,7 +510,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-malbec-alta-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0937b3848d63d24020c946634559a3e1.png?v=1733423046",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -519,7 +519,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-d-v-catena-cabernet-sauvignon-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ab91c0f11e0f6db5503dc75d7de2e242.png?v=1733407574",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -528,7 +528,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-ribera-del-cuarzo-especial-malbec-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cf028a42a7b4b94570399357f0ffd3da.png?v=1733321194",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -537,7 +537,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/bodegas-raices-ibericas-carlos-ruben-la-cuna",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b7def2c8bccb9052a313393a96b52196.png?v=1733423063",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -546,7 +546,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/boir-box-voorjaar-2025",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/KopievanWijnenfoodpairing_9.png?v=1741272457",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -555,7 +555,7 @@ export const BOIR_CATALOG = [
     "v": "BODEGAS FARINA SL",
     "u": "https://boir.be/fr/products/borie-la-vitarele-languedoc-le-grand-mayol-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/11fa5e04e55b0fa62fffe60a9ebd6370.png?v=1733321197",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -564,7 +564,7 @@ export const BOIR_CATALOG = [
     "v": "ROQUETA ORIGEN SL",
     "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-cres-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/11b04ef18a4cdde288b176a55289db0e.png?v=1733321200",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -573,7 +573,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-schistes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/803ab2d3b3cd7d782cacbd6d09b61e4e.png?v=1733321202",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -582,7 +582,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE GRANDES MAISONS SARL",
     "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-terres-blanches-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/58aaab32c712f37565fcec17c0cc091a.png?v=1733321206",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -591,7 +591,7 @@ export const BOIR_CATALOG = [
     "v": "VINS & PASSIONS SAS",
     "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-terres-blanches-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8a8eda38c7990e297def734caee18fd5.png?v=1733321208",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -600,7 +600,7 @@ export const BOIR_CATALOG = [
     "v": "BV Brouwerij De Dochter van de Korenaar",
     "u": "https://boir.be/fr/products/brouwerij-dochter-van-de-korenaar-tout-va-bien",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Brouwerij_Dochter_van_de_Korenaar_-_Tous_vas_bien.png?v=1757501107",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -609,7 +609,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/cadeaubon-mail",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir_giftcard.png?v=1734960990",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -618,7 +618,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/cadeaubon-per-post",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/mockup1a_fa3cbca1-79bd-421c-9960-d32f00068d19.jpg?v=1763719993",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -627,7 +627,7 @@ export const BOIR_CATALOG = [
     "v": "CANALS & MUNNE SL",
     "u": "https://boir.be/fr/products/canals-munne-cava-dionysus-reserva-brut-nature",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Canals_Munne_Cava_Dionysus_Reserva_Brut_Nature.png?v=1754914304",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -636,7 +636,7 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES DELAY SAS",
     "u": "https://boir.be/fr/products/carmes-de-rieussec-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41f1125d9d6939a73a6636b483ab79c1.png?v=1735041489",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -645,7 +645,7 @@ export const BOIR_CATALOG = [
     "v": "DESPERTAR DOS SENTIDOS LDA",
     "u": "https://boir.be/fr/products/casal-amado-alvarinho-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600356_CasalAmado.png?v=1769769222",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -654,7 +654,7 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES ARBEAU SAS",
     "u": "https://boir.be/fr/products/castellu-dalba-corse-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29559664d9fac144c2da57d73a430f54.png?v=1733414589",
-    "r": "Corse",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -663,7 +663,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/castellu-dalba-corse-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c5f6161c7b73613c058140bac3a90a85.png?v=1733410412",
-    "r": "Corse",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -672,7 +672,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/castellucci-miano-miano-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29bc35a2db4d164fabbc947b9cc33cf8.png?v=1733406681",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -681,7 +681,7 @@ export const BOIR_CATALOG = [
     "v": "CASTELLUCCI MIANO SPA",
     "u": "https://boir.be/fr/products/castellucci-miano-valledolmo-contea-di-sclafani-catarratto-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/98383b1c0674f5cf50f795ce2fd62db9_813c5b55-b2e3-4d7b-b9a2-2108e81c3ef8.png?v=1761147221",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -690,7 +690,7 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES JP HEMBISE SARL",
     "u": "https://boir.be/fr/products/cave-de-crouseilles-cahors-crouzeilles-cote-abeilles-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ffd1b59e8814e22efe3d38fd6b6a4f71.png?v=1733423092",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -699,7 +699,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/cave-de-crouseilles-pacherenc-du-vic-bilh-grains-de-roy-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6d95e242756f3c45fdd6d6ab8624548c.png?v=1733406024",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -708,7 +708,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/champ-divin-cotes-de-jura-savagnin-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champ_Divin_Savagnin_2023.png?v=1740040145",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -717,7 +717,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/champ-divin-cotes-de-jura-castor-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champ_Divin_Cuvee_castor_2022.png?v=1740040145",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -726,7 +726,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/champ-divin-cotes-de-jura-chardonnay-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champ_Divin_Chardonnay_2023.png?v=1740040144",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -735,7 +735,7 @@ export const BOIR_CATALOG = [
     "v": "EARL FABRICE ET VALERIE CLOSSET",
     "u": "https://boir.be/fr/products/champ-divin-cotes-du-jura-soleil-jaune-vin-jaune-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/551044d68cbc2ef5758688635b679784.png?v=1761146632",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -744,7 +744,7 @@ export const BOIR_CATALOG = [
     "v": "EARL FABRICE ET VALERIE CLOSSET",
     "u": "https://boir.be/fr/products/champ-divin-cremant-de-jura-zero-dosage-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d0843522cd07c91b9a12a6203fbcc07c.png?v=1761146217",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -2301,7 +2301,7 @@ export const BOIR_CATALOG = [
     "v": "INVINITY NV",
     "u": "https://boir.be/fr/products/chateau-grand-corbin-despagne-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9a66c5505d506b15aa6bf01fb672f02c_21845a9d-7918-43de-9729-d8dcfe39465b.png?v=1733423668",
-    "r": "Bordeaux",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -2310,7 +2310,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/chateau-grand-corbin-despagne-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/62c85d80cc6f5e798b8b2fe21930ff32.png?v=1741686074",
-    "r": "Bordeaux",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -2490,7 +2490,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/chateau-juvenal-cotes-de-ventoux-nature-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Nature_packshot.png?v=1737407737",
-    "r": "Bordeaux",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -2670,7 +2670,7 @@ export const BOIR_CATALOG = [
     "v": "AZIENDA VINICOLA UMANI RONCHI",
     "u": "https://boir.be/fr/products/chateau-la-genestiere-chateauneuf-du-pape-cuvee-raphael-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_La_Genestiere_-_Chateauneuf-du-Pape_Cuvee_Raphael_2022_wit.png?v=1746536691",
-    "r": "Bordeaux",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -2679,7 +2679,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/chateau-la-genestiere-chateauneuf-du-pape-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/28d594fc12c7a907f96ddeec01587962.png?v=1733323510",
-    "r": "Bordeaux",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -3057,7 +3057,7 @@ export const BOIR_CATALOG = [
     "v": "JP Mouiex",
     "u": "https://boir.be/fr/products/chateau-latour-a-pomerol-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6741bd6ef930ed3edd2411bc608ec5c0_6b5175ea-5b27-4e91-b13e-2541fd3f5248.png?v=1749746624",
-    "r": "Pomerol",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -4047,7 +4047,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/chateau-gris-nuits-saint-georges-les-terrasses-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e8088876ce3889cfe73072bbc17cfa06_956bb7a0-d242-4834-b4ab-185a12b28b89.png?v=1773157406",
-    "r": "Bordeaux",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4056,7 +4056,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/chateau-gris-nuits-saint-georges-1er-cru-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_Gris_Nuits-Saint_Georges_1er_Cru_2022_1d403168-1cb5-4d1f-badd-d5d1a8c23e20.png?v=1771403367",
-    "r": "Bordeaux",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4065,7 +4065,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/chateau-gris-nuits-saint-georges-1er-cru-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/chateaugris_ed97541a-a0ca-4946-938a-10a745dc352f.png?v=1773157060",
-    "r": "Bordeaux",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4074,7 +4074,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/chateau-gris-nuits-saint-georges-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e8088876ce3889cfe73072bbc17cfa06.png?v=1741621995",
-    "r": "Bordeaux",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4083,7 +4083,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDIO QUARTA VIGNAIOLO SRL",
     "u": "https://boir.be/fr/products/claudio-quarta-salice-salento-riserva-moros-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32220a92f4bc91e266fb79a8a1600c8d.png?v=1759321251",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4092,7 +4092,7 @@ export const BOIR_CATALOG = [
     "v": "PLAIMONT PRODUCT SARL",
     "u": "https://boir.be/fr/products/clos-de-loratoire-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/20f843282e2fee3fd0a5d0d5daee8efd.png?v=1733467244",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4101,7 +4101,7 @@ export const BOIR_CATALOG = [
     "v": "S DELAFONT ARTISAN NEGOCIANT",
     "u": "https://boir.be/fr/products/clos-de-loratoire-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/017ec075436893e3bf60351740ccd2ed.png?v=1733467283",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4110,7 +4110,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/clos-de-loratoire-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a51b74112d3387a019d0b87f8b39c15d.png?v=1741687081",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4119,7 +4119,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/chateau-clos-de-sarpe-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChclosdesSarpe.png?v=1772120363",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4128,7 +4128,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/clos-des-jacobins-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dbec42c742c1394b98caf66d676ac784.png?v=1741688728",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4137,7 +4137,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/clos-du-marquis-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5c091ba0e00372cd095b0997584387cc.png?v=1733467570",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4146,7 +4146,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON GINESTET SA",
     "u": "https://boir.be/fr/products/clos-du-marquis-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b7e45fbb0fb7e64da472d71605d156cb.png?v=1741726055",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4155,7 +4155,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/clos-la-gaffeliere-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9fed1becce88cddea3ccadad6f1945b5.png?v=1741685150",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4164,7 +4164,7 @@ export const BOIR_CATALOG = [
     "v": "TERROIR DE CRUS THIENPONT SARL",
     "u": "https://boir.be/fr/products/clos-marsalette-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dc4c107b20c7a6b874604cb64cc45e30.png?v=1733412699",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4173,7 +4173,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/clos-marsalette-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1d3b01544f4c8a6a2410851670b79c39.png?v=1733412897",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4182,7 +4182,7 @@ export const BOIR_CATALOG = [
     "v": "VIGN GUY MOUSSET EARL",
     "u": "https://boir.be/fr/products/clos-saint-michel-chateauneuf-du-pape-cuvee-reservee-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b432b930-2b8b-40bf-963a-703f9aea350a_77982806-bc18-4b9b-89ac-fbf4d1ea1556.png?v=1769520625",
-    "r": "Bordeaux",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4191,7 +4191,7 @@ export const BOIR_CATALOG = [
     "v": "VIGN GUY MOUSSET EARL",
     "u": "https://boir.be/fr/products/clos-saint-michel-chateauneuf-du-pape-blanc-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6abe7840428c82f181d987e8894401e0.png?v=1769519710",
-    "r": "Bordeaux",
+    "r": "Rhône",
     "type": "blanc"
   },
   {
@@ -4200,7 +4200,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/cockburns-20-year-old-tawny-port",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Cockburn_s_20_Year_Old_Tawny_Port.png?v=1760947969",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4209,7 +4209,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/conde-de-san-cristobal-880-m-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/623f8b906d232a55ca4d1f1aaa0ababa.png?v=1733411468",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4218,7 +4218,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/cono-sur-8-grapes-single-vineyard-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Cono_Sur_Single_Vineyard_8_Grapes_2019.png?v=1760626796",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4227,7 +4227,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/cono-sur-single-vineyard-no-25-la-palma-syrah-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/77d1e3aa04d82a12b652c480bae1a01a.png?v=1733405889",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4236,7 +4236,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/cono-sur-single-vineyard-no-28-la-rinconada-carmenere-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f6a0316cc242f2f0c2be7f6025321a9.png?v=1733405945",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4245,7 +4245,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-drachenstein-rudesheim-pinot-noir-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1b9c77fffbc10d8bb58216d4e069d581.png?v=1758537890",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4254,7 +4254,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-rheingau-riesling-remastered-r3-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69126c0df37fc2ec4a9ae0ae91fb5d75.png?v=1758537702",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4263,7 +4263,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-schlossberg-rudesheimer-berg-riesling-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/705f507ac309332f81abbe9b26bcb649.png?v=1765211861",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4272,7 +4272,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE COURBIS EARL",
     "u": "https://boir.be/fr/products/cos-destournel-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2a8102f72a8c3b54431f12595e5200e4.png?v=1733323138",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4281,7 +4281,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON GINESTET SA",
     "u": "https://boir.be/fr/products/cos-destournel-2012",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/40b8ea2c927b753e5ff1f2e3995cdfcf.png?v=1747379429",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4290,7 +4290,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/chateau-cos-destournel-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/40b8ea2c927b753e5ff1f2e3995cdfcf_fa283793-c445-45a0-83f1-1c2d0f3cac72.png?v=1748425370",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4299,7 +4299,7 @@ export const BOIR_CATALOG = [
     "v": "MADEIRA WINE COMPANY SA",
     "u": "https://boir.be/fr/products/cossart-gordon-bual-10-year-old-madeira",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/834984b430b3747324f9865c099b2de7_62cc85e3-efab-4832-a0e7-6511add0649b.png?v=1762424907",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4308,7 +4308,7 @@ export const BOIR_CATALOG = [
     "v": "MADEIRA WINE COMPANY SA",
     "u": "https://boir.be/fr/products/cossart-gordon-bual-5-year-old-madeira",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/834984b430b3747324f9865c099b2de7.png?v=1762426010",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4317,7 +4317,7 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/coutale-prestige-houten-kurkentrekker",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_40.png?v=1739980857",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4326,7 +4326,7 @@ export const BOIR_CATALOG = [
     "v": "Dada Chapel Distillery",
     "u": "https://boir.be/fr/products/dada-chapel-aged-beet-brh-m",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-29-tran.png?v=1755791007",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4335,7 +4335,7 @@ export const BOIR_CATALOG = [
     "v": "Dada Chapel Distillery",
     "u": "https://boir.be/fr/products/dada-chapel-coffee-liquor",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dada_Chapel_Coffee_Liquor.png?v=1757501726",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4344,7 +4344,7 @@ export const BOIR_CATALOG = [
     "v": "Dada Chapel Distillery",
     "u": "https://boir.be/fr/products/dada-chapel-negroni",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-35-tran.png?v=1755790984",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4353,7 +4353,7 @@ export const BOIR_CATALOG = [
     "v": "Dada Chapel Distillery",
     "u": "https://boir.be/fr/products/dada-chapel-organic-dry-gin",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dada_Chapel_Organic_Dry_Gin.png?v=1757497799",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4362,7 +4362,7 @@ export const BOIR_CATALOG = [
     "v": "BV Brouwerij De Dochter van de Korenaar",
     "u": "https://boir.be/fr/products/brouwerij-dochter-van-de-korenaar-lensemble-di-montalcino",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-13-tran.png?v=1755790141",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4371,7 +4371,7 @@ export const BOIR_CATALOG = [
     "v": "BV BROUWERIJ DE RANKE",
     "u": "https://boir.be/fr/products/de-ranke-grapevine-montepulciano-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/De_Ranke_Grapevine_Montepulciano_2023.png?v=1758198039",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4380,7 +4380,7 @@ export const BOIR_CATALOG = [
     "v": "BV BROUWERIJ DE RANKE",
     "u": "https://boir.be/fr/products/de-ranke-kriek",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/De_Ranke_Kriek.png?v=1757501035",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4389,7 +4389,7 @@ export const BOIR_CATALOG = [
     "v": "CHATEAU DU BON BARON NV",
     "u": "https://boir.be/fr/products/deep-down-pinot-noir-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b07af15e5d848a25bf94d1247ec184b4.png?v=1733323143",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -4398,7 +4398,7 @@ export const BOIR_CATALOG = [
     "v": "DIRLER CADE EARL",
     "u": "https://boir.be/fr/products/deep-down-sauvignon-blanc-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d682589ef0ac80e15e5d1172f2bc5787.png?v=1773046205",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -4407,7 +4407,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-knokke",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-62_5c13ee7d-6727-44b2-81b8-fea024ca3ada.jpg?v=1753281927",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4416,7 +4416,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-knokke-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-62.jpg?v=1751881938",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4425,7 +4425,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-nieuwpoort",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-62.jpg?v=1751881938",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4434,7 +4434,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-nieuwpoort-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-74.jpg?v=1751890948",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4443,7 +4443,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-sint-denijs-westrem",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-winter-36.jpg?v=1773151951",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4452,7 +4452,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatie-colruyt-sint-denijs-westrem-9-05",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-winter-36.jpg?v=1773151951",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4461,7 +4461,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/degustatiepakket",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/35bdb165b5d6a99d0d611b34c66dc2ce.png?v=1765283194",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4470,7 +4470,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDE CHEVALIER EURL",
     "u": "https://boir.be/fr/products/denis-jamain-reuilly-les-coignons-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Denis_Jamain_-_Reuilly_Les_Coignons_2023.png?v=1745957025",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4479,7 +4479,7 @@ export const BOIR_CATALOG = [
     "v": "SAS DESPAGNE",
     "u": "https://boir.be/fr/products/despagne-la-belle-odile-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ada86dd79c448a0064fc7243a56fe01d_784b855d-e7b9-48a6-8954-fbca245aa486.png?v=1750161867",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -4488,7 +4488,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/dirler-cade-gewurztraminer-grand-cru-kitterle-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dc6acca437c60b0ee8c9789a3e03c81c.png?v=1733413210",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4497,7 +4497,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/dirler-cade-pinot-gris-grand-cru-kessler-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/image-card.png?v=1761836996",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4506,7 +4506,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-grand-cru-kitterle-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dirler-Cad_Riesling_Grand_Cru_Kitterl_2019.png?v=1745957086",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4515,7 +4515,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDE CHEVALIER EURL",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-grand-cru-kitterle-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-9-tran.png?v=1755789836",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4524,7 +4524,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-lieu-dit-belzbrunnen-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9677500650cd1526acdda5b7cca04302.png?v=1733323349",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -4533,7 +4533,7 @@ export const BOIR_CATALOG = [
     "v": "Dok Brewing Company",
     "u": "https://boir.be/fr/products/dok-brewing-company-1-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-21-tran.png?v=1754573484",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4542,7 +4542,7 @@ export const BOIR_CATALOG = [
     "v": "Dok Brewing Company",
     "u": "https://boir.be/fr/products/dok-brewing-company-dokkie",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dok_Brewing_Company_Dokkie.png?v=1757500984",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4551,7 +4551,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/dok-brewing-company-if-ryan-got-hit-by-a-bus-there-would-be-another-ryan",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dab81ba1b7698ff6c26349931f9d98fb.png?v=1758632099",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4560,7 +4560,7 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32443a8706f47e76a63c1574cf48bbc0.png?v=1733413305",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4569,7 +4569,7 @@ export const BOIR_CATALOG = [
     "v": "S DELAFONT ARTISAN NEGOCIANT",
     "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322162_Augustin.png?v=1769521200",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4578,7 +4578,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92b9823fd09fe7dfe1f1e8615c0a0335.png?v=1733466721",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4587,7 +4587,7 @@ export const BOIR_CATALOG = [
     "v": "COLLEGIALE DES DOMAINES DE LOI",
     "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/73de09ba07e9ded96d2a83a20cb1d2d3.png?v=1733466581",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4596,7 +4596,7 @@ export const BOIR_CATALOG = [
     "v": "LES CAPUCINS SASU",
     "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5e58c9ca8802b5b2bd3c6df98e1c38cf.png?v=1733413180",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -4605,7 +4605,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE BOUCHIE CHATELLIER",
     "u": "https://boir.be/fr/products/domaine-bouchie-chatellier-pouilly-fume-esprit-de-clocher-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bf5125efa6617f87d3c1b8128466d2e3.png?v=1733421864",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4614,7 +4614,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/domaine-bouchie-chatellier-pouilly-fume-les-rochailles-silex-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00a79f85fa612a171428d9e7febfe6dc.png?v=1734342644",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4623,7 +4623,7 @@ export const BOIR_CATALOG = [
     "v": "STEPHANE BRIDAY EARL",
     "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-laurent-b-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/947d2467b6fb15e9119f9743a2fe9de2.png?v=1733403668",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4632,7 +4632,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-villages-cairanne-les-travers-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/000149fbb0b834f8cd7b4093fc17bf3c.png?v=1733406223",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4641,7 +4641,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/domaine-brusset-gigondas-les-hauts-de-montmirail-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cd927d2f253340926fc497985b12373e.png?v=1733413708",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4650,7 +4650,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/domaine-brusset-gigondas-les-hauts-de-montmirail-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c752dc86307051d5f15c0ab455d5e578.png?v=1733421290",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4659,7 +4659,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/domaine-brusset-gigondas-les-secrets-de-montmirail-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/452f26ac662e8ecd7325e5de748767ab.png?v=1733417829",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4668,7 +4668,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINES ET VINS DE PROPRIETE",
     "u": "https://boir.be/fr/products/domaine-brusset-gigondas-tradition-le-grand-montmirail-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Brusset_Gigondas_Tradition_Le_Grand_Montmirail_2021.png?v=1771241429",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4677,7 +4677,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-brusset-gigondas-tradition-le-grand-montmirail-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/36f2865f80d1e1144fd68d5d95c105e3.png?v=1733411103",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4686,7 +4686,7 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES DUBARD SARL",
     "u": "https://boir.be/fr/products/domaine-chevalier-corton-rognet-grand-cru-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6f243222090b1ecb7640aa2b48ee5edf.png?v=1733467222",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4695,7 +4695,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-1er-cru-les-corvees-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/17c8ce944e9a3157cb5334181b36acb0.png?v=1733322353",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4704,7 +4704,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1dd00020ebbe9c5660835054fbbdfd5d.png?v=1733323367",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4713,7 +4713,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-clos-des-rochers-cremant-de-luxembourg-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/082ae8fecbed79765a92a6ff5824d987.png?v=1733413131",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -4722,7 +4722,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-couly-dutheil-chinon-la-baronnie-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/36dd514e9d00a5f02317e6fc11bdc3ab.png?v=1733406911",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4731,7 +4731,7 @@ export const BOIR_CATALOG = [
     "v": "VINS & PASSIONS SAS",
     "u": "https://boir.be/fr/products/domaine-couly-dutheil-chinon-le-clos-de-lecho-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e9de1878da18a0fd9640a21edd7efc30.png?v=1733411826",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4740,7 +4740,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-couly-dutheil-saumur-blanc-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f36e668aeaae26541ec4de8442e3f5b.png?v=1733323012",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4749,7 +4749,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/domaine-courbis-cornas-champelrose-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d8265f026fd64421f915741362f376c4.png?v=1733322355",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4758,7 +4758,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-courbis-cornas-les-eygats-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322675_Cornas.png?v=1772179852",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4767,7 +4767,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-courbis-saint-joseph-les-royes-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ae4af5e6b72829187d682770acd1dba5.png?v=1733467092",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -4776,7 +4776,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/domaine-courbis-saint-peray-le-tram-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-7-tran.png?v=1755789790",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4785,7 +4785,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-2016",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7a53cd107370adcbe1f1bbfabe1e4ada.png?v=1733264113",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4794,7 +4794,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ccb68136e8abf9fb5dde4dcc2e306d28.png?v=1733467597",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4803,7 +4803,7 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3f4f0935d8024c7e0f7646ad01af2256.png?v=1749799735",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4812,7 +4812,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d183be6cf5bb5612fec757f489a4d9fc.png?v=1749799590",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -4821,7 +4821,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/domaine-de-la-colline-muscadet-sevre-et-maine-clisson-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4c45825f2d83671463316660f90ac590.png?v=1733409288",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -4830,7 +4830,7 @@ export const BOIR_CATALOG = [
     "v": "RENE VEDRENNE SARL",
     "u": "https://boir.be/fr/products/domaine-de-la-croix-cotes-de-provence-le-cap-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_de_la_Croix_-_Cotes_de_Provence_Le_Cap_2023.png?v=1753367202",
-    "r": "Provence",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4839,7 +4839,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DU VIEUX COLLEGE EARL",
     "u": "https://boir.be/fr/products/domaine-de-la-petite-croix-coteaux-du-layon-leclipse-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4766e0066b321e72914b391f567b44b.png?v=1733405507",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4848,7 +4848,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-de-la-petite-croix-coteaux-du-layon-leclipse-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bbab3aff6ab1055b00634deeda423e29.png?v=1733405436",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4857,7 +4857,7 @@ export const BOIR_CATALOG = [
     "v": "FAMILLE COMBE EURL",
     "u": "https://boir.be/fr/products/domaine-de-poulvarel-costieres-de-nimes-les-gres-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2c0299531ad784c981d741358e993c1a.png?v=1733356204",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4866,7 +4866,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-de-suremain-mercurey-1er-cru-en-sazenay-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bcb6c09ae5138a1a56540da566f720da.png?v=1733467016",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4875,7 +4875,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-de-tournet-buzet-le-chant-des-abeilles-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/61def4c546fc4248d3e4afaae7de1680.png?v=1733323007",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4884,7 +4884,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Denis_Carre_-_Beaune_1er_Cru_Les_Tuvilains_2019.png?v=1749136588",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4893,7 +4893,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0a24a96a532dca73d71f200ed3ea66fb.png?v=1733421296",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4902,7 +4902,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9e3367a51d129cfa1508feda707908dc.png?v=1733323379",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4911,7 +4911,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-bourgogne-pinot-noir-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c4561ead7eb474d20817676cd278164d.png?v=1733412680",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -4920,7 +4920,7 @@ export const BOIR_CATALOG = [
     "v": "VINOVALIE COOP",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-chardonnay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/99987963b29d87ab022c0acc117bc331.png?v=1733412121",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4929,7 +4929,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-la-perriere-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/57d25a44d6b98ba684c81f2a25a0b4f3.png?v=1733412194",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4938,7 +4938,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-la-perriere-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/51b7a88ef5d8cfcfc8dc679bbf115840.png?v=1733323386",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4947,7 +4947,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/domaine-denis-carre-meursault-vieilles-vignes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/102398464c99d8db63f15638aed953ac_8af4f1ac-3e41-45a0-9d38-3b056d257e5f.png?v=1763453712",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4956,7 +4956,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/domaine-denis-carre-pommard-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6083d88b63b0646da5aa8ca2880ec36f.png?v=1733467111",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4965,7 +4965,7 @@ export const BOIR_CATALOG = [
     "v": "DESCAS PERE ET FILS SA",
     "u": "https://boir.be/fr/products/domaine-denis-carre-pommard-en-brescul-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/65a3c656634684af81109036793bdcf9.png?v=1733321638",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4974,7 +4974,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/domaine-denis-carre-savigny-les-beaune-vieilles-vignes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7b4f34b3d202f52a1d843e026c2b522f.png?v=1733323391",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4983,7 +4983,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-des-billards-saint-amour-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fdf4fbe7573246bdac16e3227a8fc8e8.png?v=1733408213",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4992,7 +4992,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-des-brangers-menetou-salon-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ea0de6d32cceac1f2e726229ef694f8.png?v=1733407039",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -5001,7 +5001,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-cotes-du-rhone-villages-cairanne-le-ventabren-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/730276ff809861d5fde9e7569f5560ce.png?v=1746011551",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5010,7 +5010,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-cotes-du-rhone-glou-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7a437b6804343c810852fdcd313649c0.png?v=1745849662",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5019,7 +5019,7 @@ export const BOIR_CATALOG = [
     "v": "Domaine des Escaravailles",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-cotes-du-rhone-les-antimagnes-2025",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9036a301b50c0abce390e11452a99fb3_cd5a948b-a120-42f1-aba9-2b0afc27ce7c.png?v=1772007202",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5028,7 +5028,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-rasteau-les-coteaux-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ca03e3c8d822a83afb4e00a374fd249.png?v=1746011597",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5037,7 +5037,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-caprices-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/PS_caprices.png?v=1755774757",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5046,7 +5046,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-largile-bleue-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2e16d0df82467679e2eae21b698b7e3f.png?v=1733405077",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5055,7 +5055,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-clos-frantin-echezeaux-grand-cru-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/39fd725b95b093e22fba526c0cf0b4a5.png?v=1741621274",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5064,7 +5064,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-clos-frantin-vosne-romanee-1er-cru-les-malconsorts-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/LesMalconsorts.png?v=1773231974",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5073,7 +5073,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-clos-frantin-vosne-romanee-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600028_Bichot.png?v=1769517452",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5082,7 +5082,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-clos-frantin-vosne-romanee-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/VosneRomanee.png?v=1773158266",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5091,7 +5091,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-du-joncas-terrasses-du-larzac-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4a864296afbe30e23d1540c1affd376e.png?v=1733410344",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5100,7 +5100,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-aloxe-corton-1er-cru-clos-des-marechaudes-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/419e920f8406bdcb11be6121bae332cf.png?v=1741620854",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5109,7 +5109,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-aloxe-corton-1er-cru-clos-des-marechaudes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/419e920f8406bdcb11be6121bae332cf_e939e944-7fdc-4555-a8ae-ca96f01f61df.png?v=1773150481",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5118,7 +5118,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-beaune-1er-cru-clos-des-mouches-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ec57fa1910cbe6794078d9c111274d0b_29595720-23c1-47a0-b29a-883927b3275b.png?v=1741620980",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5127,7 +5127,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-corton-grand-cru-clos-des-marechaudes-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6c580879898edb46d042a11d470d4690.png?v=1766744130",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5136,7 +5136,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-corton-grand-cru-clos-des-marechaudes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6c580879898edb46d042a11d470d4690_e94b46ac-d53f-4bf1-8658-5e6c3f4eea56.png?v=1773233201",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5145,7 +5145,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-meursault-1er-cru-les-charmes-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_du_Pavillon_-_Meursault_1er_Cru_Les_Charmes_2022.png?v=1749136534",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5154,7 +5154,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-meursault-1er-cru-les-charmes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Lescharmes.png?v=1773154482",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5163,7 +5163,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-meursault-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/03beafa524394c015a647bbb006232d8.png?v=1741621146",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5172,7 +5172,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-meursault-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/03beafa524394c015a647bbb006232d8_401b253d-1c1d-4ca2-80ee-9505e766a58c.png?v=1773151094",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5181,7 +5181,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-pommard-1er-cru-rugiens-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dd337bd2641e9b3d88886fe92301c077.png?v=1741620570",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5190,7 +5190,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-pommard-1er-cru-rugiens-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dd337bd2641e9b3d88886fe92301c077_43568a57-3865-4a86-abad-f8a8304ec3df.png?v=1773155636",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5199,7 +5199,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-volnay-1er-cru-les-santenots-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Les_Santenots.png?v=1768315481",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5208,7 +5208,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-volnay-1er-cru-les-santenots-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Santenots.png?v=1773154986",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5217,7 +5217,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-etxegaraya-irouleguy-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Etxegaraya_Iroul_guy_2022.png?v=1770209071",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5226,7 +5226,7 @@ export const BOIR_CATALOG = [
     "v": "CAVE DES PROD DE JURANCON COOP",
     "u": "https://boir.be/fr/products/domaine-francois-legros-bourgone-pinot-noir-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dbbeaea06e4770fefae974738fbf112b.png?v=1733412878",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -5235,7 +5235,7 @@ export const BOIR_CATALOG = [
     "v": "CHATEAU CANTENAC SCEA",
     "u": "https://boir.be/fr/products/domaine-francois-legros-bourgogne-pinot-noir-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322644_Legros.png?v=1769517773",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -5244,7 +5244,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-francois-legros-nuits-saint-georges-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5da13fa8354b047421fef74bfc0d2dc3.png?v=1733421886",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5253,7 +5253,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/domaine-grenaudiere-no0ba",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1159b5d3fdb3c89693eb50b6733b3e6f.png?v=1733404358",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5262,7 +5262,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-guy-mousset-cotes-du-rhone-excellence-rose-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea735b920b08b772461d706489f6783e.png?v=1733414403",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5271,7 +5271,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-la-fourmone-gigondas-le-fauquet-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5aba30553b920e7146b58fc1b83e5ede.png?v=1733411190",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5280,7 +5280,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-la-fourmone-gigondas-le-secret-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/588b9bf25d6ef641f78bebe64b6096f8.png?v=1733424883",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5289,7 +5289,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-la-fourmone-vacqueyras-le-poete-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/280136134991dd7c64cd804fcec80e1a.png?v=1733410380",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5298,7 +5298,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-la-fourmone-vacqueyras-les-ceps-dor-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/84ac4e584fec31f6d11ae701a96d9485.png?v=1733411807",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -5307,7 +5307,7 @@ export const BOIR_CATALOG = [
     "v": "PASCAL PRUNIER BONHEUR SARL",
     "u": "https://boir.be/fr/products/domaine-la-tible-cotes-de-provence-reserve-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_La_Tible_-_Cotes_de_Provence_Reserve_2023.png?v=1753367302",
-    "r": "Provence",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5316,7 +5316,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-laguilhon-jurancon-sec-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d76cf2815044fae01db5ea62b13b7322.png?v=1733322360",
-    "r": "Jura",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5325,7 +5325,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON GINESTET SA",
     "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-corbieres-camin-nostre-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00ebfc563dcc985766bb6a4c0d3cb20a.png?v=1733404531",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5334,7 +5334,7 @@ export const BOIR_CATALOG = [
     "v": "DESCAS PERE ET FILS SA",
     "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-corbieres-camin-nostre-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5345fc7cdf1aa4cae1c482e7aa220caa.png?v=1733405229",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5343,7 +5343,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-corbieres-boutenac-via-nostra-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Le_Champ_des_Murailles_Corbi_res-Boutenac_Via_N_stra_2018.png?v=1758198292",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5352,7 +5352,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-corbieres-boutenac-via-nostra-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Le_Champ_des_Murailles_Corbi_res-Boutenac_Via_N_stra_2020_wit.png?v=1745957339",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5361,7 +5361,7 @@ export const BOIR_CATALOG = [
     "v": "PASCAL PRUNIER BONHEUR SARL",
     "u": "https://boir.be/fr/products/domaine-le-champ-des-murailles-corbieres-boutenac-via-nostra-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c2739543d58fcfb8eaed4b2a42f8bfef.png?v=1733409571",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5370,7 +5370,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-1er-cru-les-lys-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Les_Lys_2.png?v=1773065078",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5379,7 +5379,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-1er-cru-les-vaucopins-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/LesVaucopins.png?v=1773141275",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5388,7 +5388,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a8f5c599-9459-4674-b38d-59a38925f8a7.png?v=1773832857",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5397,7 +5397,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-grand-cru-blanchots-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d3b300092cd728429542a6790df2a780.png?v=1741622972",
-    "r": "",
+    "r": "Bourgogne",
     "type": "blanc"
   },
   {
@@ -5406,7 +5406,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-grand-cru-bougros-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3387e67d2371080eabbcb4a85b877eb1.png?v=1766742738",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5415,7 +5415,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-grand-cru-bougros-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Bourgros.png?v=1773147818",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5424,7 +5424,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-long-depaquit-chablis-grand-cru-la-moutonne-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bc1560a333dc6f11e70f2898ed1f5bb7_c050f726-087c-4bf5-8c75-b19aa9c2c7d8.png?v=1741623048",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5433,7 +5433,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-taillandier-savennieres-papillons-nuit-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6cfb1c3bfcbff0f88a5d1af556bd603d.png?v=1733323040",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5442,7 +5442,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/domaine-michel-briday-rully-les-4-vignes-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/392692_PRFF.png?v=1756286661",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5451,7 +5451,7 @@ export const BOIR_CATALOG = [
     "v": "BORDEAUX TRADITION SARL",
     "u": "https://boir.be/fr/products/domaine-michel-briday-rully-les-4-vignes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322751_PRFF.png?v=1757427077",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -5460,7 +5460,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/chene-marchard-sancerre-vieilles-vignes-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7c2ef887630165c9738e2030f5c95457.png?v=1733466123",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -5469,7 +5469,7 @@ export const BOIR_CATALOG = [
     "v": "Domaine Sébastien Giroux",
     "u": "https://boir.be/fr/products/domaine-sebastien-giroux-pouilly-fuisse-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Giroux.png?v=1753688593",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5478,7 +5478,7 @@ export const BOIR_CATALOG = [
     "v": "DESCAS PERE ET FILS SA",
     "u": "https://boir.be/fr/products/domaine-tour-trencavel-minervois-la-liviniere-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/80343df2f90af06f2dbae0f1f789be56.png?v=1733409642",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5487,7 +5487,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-vico-corse-a-mina-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1dd86575d9f1bbb1254d231742a4f6c0.png?v=1733467301",
-    "r": "Corse",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5496,7 +5496,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-vico-corse-u-fornu-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b30dc56a6e28de27aee92f5769105554.png?v=1733467303",
-    "r": "Corse",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5505,7 +5505,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/donnachiara-taurasi-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4a69d2696f5e84c6be40f4368e530b8.png?v=1733323161",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5514,7 +5514,7 @@ export const BOIR_CATALOG = [
     "v": "AZIENDA VINICOLA CANTELE SRL",
     "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4bd991180415a7b989b398a32899fb4e.png?v=1733410064",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5523,7 +5523,7 @@ export const BOIR_CATALOG = [
     "v": "CANTINE VINCENZO IPPOLITO",
     "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ffe6aa3d9829f3fc469aad5271939aa.png?v=1733410042",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5532,7 +5532,7 @@ export const BOIR_CATALOG = [
     "v": "BARON DE LEY SA",
     "u": "https://boir.be/fr/products/dry-creek-vineyard-cabernet-sauvignon-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04db3af35557ed0e5da452e1144f5a60.png?v=1733412937",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5541,7 +5541,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/dutch-barn-vodka",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ab5a3245a7600bc102fc2d6e67b1a5c4.webp?v=1733651793",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5550,7 +5550,7 @@ export const BOIR_CATALOG = [
     "v": "BARON DE LEY SA",
     "u": "https://boir.be/fr/products/el-coto-de-rioja-chardonnay-875-m-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/47a390c5b9c7daaf539db995ff28b012_98d15a8c-526b-4989-90cf-ad7c3381151c.png?v=1738934347",
-    "r": "Rioja",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -5559,7 +5559,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/el-coto-de-rioja-coto-real-reserva-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5bbc8f8e35652945c55d7f2bca6567c8.png?v=1733411263",
-    "r": "Rioja",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -5568,7 +5568,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/el-coto-de-rioja-coto-real-reserva-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a5d14bd24b8ec93dec449821358d2b0e.png?v=1733411313",
-    "r": "Rioja",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -5577,7 +5577,7 @@ export const BOIR_CATALOG = [
     "v": "BARON DE LEY SA",
     "u": "https://boir.be/fr/products/el-coto-de-rioja-875-m-tempranillo-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f7c020ce79e45d24ead9546770b1c4a.png?v=1742030538",
-    "r": "Rioja",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -5586,7 +5586,7 @@ export const BOIR_CATALOG = [
     "v": "Colimpo LTD",
     "u": "https://boir.be/fr/products/emiliana-organic-vineyards-coyam-los-robles-estate-n-20-limited-edition-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6d88647e58a973f67226b3944889439e.png?v=1750256672",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5595,7 +5595,7 @@ export const BOIR_CATALOG = [
     "v": "PERRIN ET FILS SASU",
     "u": "https://boir.be/fr/products/emiliana-organic-vineyards-salvaje-syrah-roussanne-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a2d3d62e96d8c3d841a06d29ddb7bd8f.png?v=1733322831",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5604,7 +5604,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/ensis-taurasi-vesevo-2013",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bae26ffde39bc69bd6d010dbac68e0d0.png?v=1733323400",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5613,7 +5613,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/escorihuela-gascon-meg-malbec-cabernet-sauvignon-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/990698f3b098110f857a21a4ef87bb70.png?v=1733466814",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5622,7 +5622,7 @@ export const BOIR_CATALOG = [
     "v": "COLLEGIALE DES DOMAINES DE LOI",
     "u": "https://boir.be/fr/products/familia-torres-salmos-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/becc5d45dbac4e2df5ecccee4bbadd29.png?v=1733323170",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5631,7 +5631,7 @@ export const BOIR_CATALOG = [
     "v": "SAS VERTICALE VINS",
     "u": "https://boir.be/fr/products/famille-despagne-le-clairet-dampelia-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Clairet.png?v=1753869946",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -5640,7 +5640,7 @@ export const BOIR_CATALOG = [
     "v": "DIRLER CADE EARL",
     "u": "https://boir.be/fr/products/famille-perrin-cotes-de-rhone-villages-vinsobres-les-hauts-de-julien-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/23cf298587896aab4cab107b68ea2e70.png?v=1733467053",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5649,7 +5649,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/far-son-botanicals",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Botanicals.png?v=1770036015",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5658,7 +5658,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/far-son-gentle-thai",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a5bab89eb41ee352b71e37342bf028bc.png?v=1769776302",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5667,7 +5667,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/far-son-hibiscus",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/523348a8b5c7ff9dcd51fe97c883b7dd.png?v=1769776331",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5676,7 +5676,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/fattoria-la-valentina-montepulciano-dabruzzo-bellovedere-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Fattoria_La_Valentina_-_Montepulciano_d_Abruzzo_Bellovedere_2020.png?v=1749136096",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5685,7 +5685,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/fattoria-la-valentina-montepulciano-dabruzzo-spelt-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Fattoria_La_Valentina_Montepulciano_d_Abruzzo_Spelt_2020.png?v=1754475435",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5694,7 +5694,7 @@ export const BOIR_CATALOG = [
     "v": "VERTICALE VINS SAS",
     "u": "https://boir.be/fr/products/fattoria-la-valentina-montepulciano-dabruzzo-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Fattoria_La_Valentina_Montepulciano_d_Abruzzo_2022.png?v=1754475520",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5703,7 +5703,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/feral-n-1-hop-szechuan",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/94e93d43b361497ede613c0ebec4e2f2.png?v=1769775973",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5712,7 +5712,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/feral-n-2-ginger-allspice",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3935143077a4e2560c1fb8e88dabe626.png?v=1769776027",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5721,7 +5721,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/feral-n-3-thyme-pepper",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2b1a8f79df0e8131a4591759a67dcc55.png?v=1769776057",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5730,7 +5730,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/feral-n-4-juniper-lavender",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/af4d899bbf95f6bfc9703623142b8b90.png?v=1769776094",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5739,7 +5739,7 @@ export const BOIR_CATALOG = [
     "v": "BARON DE LEY SA",
     "u": "https://boir.be/fr/products/finca-museum-la-renacida-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6cd0b8b27279e7fe24e22b20c513eb43.png?v=1733410955",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5748,7 +5748,7 @@ export const BOIR_CATALOG = [
     "v": "BARON DE LEY SA",
     "u": "https://boir.be/fr/products/finca-museum-museum-numerus-clausus-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/86b762018e5c4d371b7afe0277cdb2fb.png?v=1733467329",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5757,7 +5757,7 @@ export const BOIR_CATALOG = [
     "v": "BOISSET SAS",
     "u": "https://boir.be/fr/products/fog-mountain-pinot-noir-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4080efbcfdf0d99eebda30447f06781e_3d5af2ff-3f33-4c59-9566-e25cd4b9f0ea.png?v=1756739042",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5766,7 +5766,7 @@ export const BOIR_CATALOG = [
     "v": "INVINITY NV",
     "u": "https://boir.be/fr/products/follas-novas-albarino-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d1e94d41df014c77eb6c09e7f6b87b25.png?v=1733406930",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5775,7 +5775,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/fontanavecchia-aglianico-del-taburno-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a2d94ce68fd76a05edd6b808ef5fb89e.png?v=1733405801",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5784,7 +5784,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/fontanavecchia-falanghina-del-sannio-bjondore-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1c5db0948a56e79d1005b9b89f7d5287_a8f538d1-33d0-4ad6-b358-4195a89883f9.png?v=1738683106",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5802,7 +5802,7 @@ export const BOIR_CATALOG = [
     "v": "J.J.M & CIE SA",
     "u": "https://boir.be/fr/products/fugue-de-nenin-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/483f65067e678c0622c0b37193b726a5.png?v=1749799531",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5820,7 +5820,7 @@ export const BOIR_CATALOG = [
     "v": "MUSITA SRL",
     "u": "https://boir.be/fr/products/georgios-lafazanis-winery-geometria-agiorgitiko-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca314967c781f9f9e230d67d0cf32f75.png?v=1733323422",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5829,7 +5829,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/giannikos-winery-lion-agiorgitiko-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f21ac28865a20d0035156afd2843f047.png?v=1733406553",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5838,7 +5838,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/giannitessari-soave-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Giannitessari_Soave_2022.png?v=1771235599",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5847,7 +5847,7 @@ export const BOIR_CATALOG = [
     "v": "EIB SRL",
     "u": "https://boir.be/fr/products/giannitessari-soave-classico-villa-valeria-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600062_VillaValeria.png?v=1769767637",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5856,7 +5856,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/gift-card-topup",
     "img": null,
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5865,7 +5865,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/gift-product",
     "img": null,
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5901,7 +5901,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-barrique-la-colline-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b498fdb3c21354a916ce30442768046.png?v=1770646116",
-    "r": "Loire",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -5910,7 +5910,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29ba7b2aad02c057cb0eb229c789048a.png?v=1770646758",
-    "r": "Loire",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -5919,7 +5919,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-clos-de-duras-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9014c3a67af0fa9af295390fc7cd4845.png?v=1770647322",
-    "r": "Loire",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -5928,7 +5928,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-cuvee-classique-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3abc87174ad4e57150ea386fce946b93.png?v=1770372998",
-    "r": "Loire",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -5946,7 +5946,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/gnista-crisp",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7166ebfc010f0612bc6fcf357dd6e087.png?v=1769767892",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5955,7 +5955,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/gnista-french-style",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/637c6a0afb97fa46a4f10e66ffbfffed.png?v=1769768077",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5964,7 +5964,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/gnista-funky",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3b20e358b17084f6f101f330a779ae17.png?v=1769768145",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5973,7 +5973,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/gnista-italian-style",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b1a0165737746063c0a680c199d84b6b.png?v=1769768201",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5982,7 +5982,7 @@ export const BOIR_CATALOG = [
     "v": "VERTICALE VINS SAS",
     "u": "https://boir.be/fr/products/gurashvilis-family-vineyard-saperavi-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ca1fdb92ce9b19bbd6b933f98734164.png?v=1733409714",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5991,7 +5991,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/hardys-hrb-d680-shiraz-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6071af5fa6748a053f4822f5f248f78d.png?v=1735221732",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6000,7 +6000,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/hardys-hrb-d681-cabernet-sauvignon-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4418cf11681e604fab8df8e74b48e19c.png?v=1733410648",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6009,7 +6009,7 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/haut-bailly-ii-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2159d57390a5d8cfab682f8e68054978.png?v=1749799451",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6018,7 +6018,7 @@ export const BOIR_CATALOG = [
     "v": "BVBA Desolari",
     "u": "https://boir.be/fr/products/heilig-hart-brouwerij-epiclese",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Amphora_-_Epiclese.png?v=1740040144",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6027,7 +6027,7 @@ export const BOIR_CATALOG = [
     "v": "BVBA Desolari",
     "u": "https://boir.be/fr/products/heilig-hart-brouwerij-regina-coeli",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Amphora_-_Regina_Coeli.png?v=1740040144",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6036,7 +6036,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/house-of-arras-brut-elite",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dd20088d19f0083a3d541d696bd2bbe7.png?v=1733466841",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6045,7 +6045,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/icardi-barbaresco-montubert-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8e53286326c086103b7771c1d666592d.png?v=1733417890",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6054,7 +6054,7 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barbera-dasti-nuj-suj-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/178165eb9540ad64b9c326e177ecc6f5_9089aea9-abb4-48d1-90cf-8eb02c91eb6e.png?v=1772811739",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6063,7 +6063,7 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barolo-fossati-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/01c4b773d970a321b46b120e7bd0f9ac.png?v=1772814986",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6072,7 +6072,7 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barolo-parej-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92cff27321a226090498e8263119a919.png?v=1772814308",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6081,7 +6081,7 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-dolcetto-dalba-rousori-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/263e6c12194b758c54310a02c46fd668.png?v=1772439158",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6090,7 +6090,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/inspiratiebox-bijzondere-bieren",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca4e3523604e5793a81df1877309e376.png?v=1753345256",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6099,7 +6099,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/inspiratiebox-familiefeest",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d1574d20bde2763042dafa99ae7b30b8.png?v=1770209724",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6108,7 +6108,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/inspiratiebox-sprankelende-aperitieven",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1_9eda661d-a756-4214-9835-97dc7318a313.png?v=1758634785",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6117,7 +6117,7 @@ export const BOIR_CATALOG = [
     "v": "CORDIER BE BV",
     "u": "https://boir.be/fr/products/ippolito-1845-160-anni-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0753e53d666fd65c5b54d3ef20a6d54f.png?v=1733412918",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6126,7 +6126,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/jean-chartron-batard-montrachet-grand-cru-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ece94497e71338676e97ad851394a7fe.png?v=1733428007",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6135,7 +6135,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/jean-chartron-brougogne-chardonnay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Jean_Chartron_Bourgogne_Chardonnay_2022_9ea2f69c-98ef-4f9f-944c-43ac757d98e1.png?v=1760686342",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6144,7 +6144,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/876ad24fc0ce51ab23e8ce4c3763924d.png?v=1733410303",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6153,7 +6153,7 @@ export const BOIR_CATALOG = [
     "v": "GENESTIERE ST ANTHELME SCEA",
     "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChartronPN.png?v=1769519414",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6162,7 +6162,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-chassagne-montrachet-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ef5044932104166c77b62ad5adb78200.png?v=1756737078",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6171,7 +6171,7 @@ export const BOIR_CATALOG = [
     "v": "ANTOINE OLIVIER SARL",
     "u": "https://boir.be/fr/products/jean-chartron-chevalier-montrachet-grand-cru-clos-des-chevaliers-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9b82acb8a1dc04d964661889531bee21.png?v=1733417859",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6180,7 +6180,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/jean-chartron-pernand-vergelesses-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5a0b179af04bf8f733256996216fbfe9_29453f48-45bd-434f-83f5-f2bafdc72c67.png?v=1760551571",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6189,7 +6189,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-chevalier-montrachet-caisse-centenaire-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/KistChartron.png?v=1770827135",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6198,7 +6198,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-folatieres-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a4663e2a84c01ffdfe623633ff833efb.png?v=1733323030",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6207,7 +6207,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-1er-cru-clos-de-la-pucelle-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/da6611c449e9d8ec780835ed86415ab4_330adf05-2867-4de2-8945-cba5cc822b86.png?v=1769518063",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6216,7 +6216,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d.png?v=1733428616",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6225,7 +6225,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d_89240568-2c10-428a-871d-4c68e050fce9.png?v=1769517932",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6234,7 +6234,7 @@ export const BOIR_CATALOG = [
     "v": "GRANDS CRUS HERITAGE SARL",
     "u": "https://boir.be/fr/products/jean-chartron-rully-montmorin-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/030c0bf128db3a43408f38e2888d44b6.png?v=1733428578",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6243,7 +6243,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-saint-aubin-1er-cru-perrieres-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c7c8b6d880f15cc1b0f270100ea130cc.png?v=1733087234",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6252,7 +6252,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/jean-chartron-savigny-les-beaune-theologique-nourrissant-et-morbifuge-blanc-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/841e8a644d4e743d9d15da830e548a25_60f77e9b-0089-4be1-b166-a39ad769d795.png?v=1760551510",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -6261,7 +6261,7 @@ export const BOIR_CATALOG = [
     "v": "VINS JEAN LUC COLOMBO SARL",
     "u": "https://boir.be/fr/products/jean-luc-colombo-cotes-du-rhone-villages-cairanne-rouge-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a9b4f739f14641faf4f122a228bc1149.png?v=1733408104",
-    "r": "Rhône",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6270,7 +6270,7 @@ export const BOIR_CATALOG = [
     "v": "Mesamis",
     "u": "https://boir.be/fr/products/jigger-mesamis",
     "img": null,
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6279,7 +6279,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-cabernet-sauvignon-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/22fe4e1c5846977cf5540b6d6dd46c3b.png?v=1758115488",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6288,7 +6288,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-kadette-pinotage-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Kanonkop_KadettePinotage_NV.png?v=1757494867",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6297,7 +6297,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-late-release-pinotage-2015",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04039f515c7d65d276df9ce43ea0c521_ab622379-2f03-446d-819a-84c66ebc0669.png?v=1772008686",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6306,7 +6306,7 @@ export const BOIR_CATALOG = [
     "v": "CAPDEMOURLIN SCEA",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-paul-sauer-special-release-2009",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5509b480448ca25026f7c9f2dc6e8e6c.png?v=1733417864",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6315,7 +6315,7 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR LA FARRA SS SOC AGR",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-paul-sauer-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/593810e748e15cfcb4184cc43caf5a7c.png?v=1733417866",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6324,7 +6324,7 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-pinotage-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04039f515c7d65d276df9ce43ea0c521_cd4a8744-8019-4903-877f-f1cd6da497b3.png?v=1761320519",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6333,7 +6333,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/kwv-the-mentors-petit-verdot-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/56d23f54c93e5e56b132df7948802dc0.png?v=1733411447",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6342,7 +6342,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/lenclos-de-carbonnieux-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3f9f04560d008e0ed1b73d7a8b16d14b_d41a3e28-894f-4188-aaee-07cc27ec85bd.png?v=1747306049",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6351,7 +6351,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/lenclos-de-carbonnieux-blanc-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f7de536d109f346241d2eab62c1839b5_f42c0ccd-6160-4ac0-853f-559c4c752b99.png?v=1764581041",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -6360,7 +6360,7 @@ export const BOIR_CATALOG = [
     "v": "SPH-GERARD BERTRAND SASU",
     "u": "https://boir.be/fr/products/lesprit-de-chevalier-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/34583285c9d714c08957bea31ca21713.png?v=1733413250",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6369,7 +6369,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/lesprit-de-chevalier-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c5a69dd4e89c813eceb4e9a954bd4095.png?v=1749799392",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6378,7 +6378,7 @@ export const BOIR_CATALOG = [
     "v": "Bertrand Ravache",
     "u": "https://boir.be/fr/products/la-belle-connivence-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b0ff4cc4643e3d9f76217dd9c8b13a32.png?v=1767710146",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6387,7 +6387,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/la-chapelle-de-haut-bages-liberal-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/232246bca8efbedac365d134b7d23107.png?v=1733413354",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6396,7 +6396,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/la-chapelle-haut-bages-liberal-2020-75cl",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ed6e57f7e0db38c2b56dd2e94a7c4f2.png?v=1733323014",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6405,7 +6405,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/la-clemence-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5d92629e8c5fda15cb79bee1e997d1c8.png?v=1749799302",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6414,7 +6414,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/la-dame-de-montrose-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/91f827113c0f523cd5d8e3b8813f804a.png?v=1733322368",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6423,7 +6423,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/la-dame-de-montrose-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b047ac889b0760a294730f833d8ee602.png?v=1733321545",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6432,7 +6432,7 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/la-dame-de-montrose-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73.png?v=1741727413",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6441,7 +6441,7 @@ export const BOIR_CATALOG = [
     "v": "WINCO NV",
     "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6450,7 +6450,7 @@ export const BOIR_CATALOG = [
     "v": "EIB SRL",
     "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8.png?v=1733264119",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6459,7 +6459,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ROUX OULIE SARL",
     "u": "https://boir.be/fr/products/la-maison-chandon-garden-spritz",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afc56cf41f1999c68fada8d3be1716a2.png?v=1733322370",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6468,7 +6468,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/lacoste-borie-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b6412831951fd756d1311e4afe9c618f.png?v=1733322375",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6477,7 +6477,7 @@ export const BOIR_CATALOG = [
     "v": "LES CAPUCINS SASU",
     "u": "https://boir.be/fr/products/lacoste-borie-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6f423b49a18878f0c9ee5c60cf681237_b81d80c2-45b4-4f0e-9dab-75b69428c49d.png?v=1749799130",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6486,7 +6486,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/lafou-celler-el-sender-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00b2a51467dd52b9882a6cabf6c8676b.png?v=1734095508",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6495,7 +6495,7 @@ export const BOIR_CATALOG = [
     "v": "FINCA MUSEUM",
     "u": "https://boir.be/fr/products/lafou-celler-els-amelers-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b94fbbda0629eb1481bd1bb92f46cd34.png?v=1734345141",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6504,7 +6504,7 @@ export const BOIR_CATALOG = [
     "v": "BV Lambiek Fabriek",
     "u": "https://boir.be/fr/products/lambiek-fabriek-juicy-wild-malvas-elle",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/LAMBIEK.png?v=1774444243",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6513,7 +6513,7 @@ export const BOIR_CATALOG = [
     "v": "CASTEL FRERES SAS",
     "u": "https://boir.be/fr/products/laurent-perrachon-julienas-vignes-centenaires-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Laurent_Perrachon_Julienas_Vignes_Centenaires_2022.png?v=1761916137",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6522,7 +6522,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/laurent-perrachon-morgon-cote-de-py-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/322373_Perrachon.png?v=1769518929",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6531,7 +6531,7 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/le-carillon-dangelus-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca77e52a87f8075df27b87344015efed.png?v=1749799004",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6540,7 +6540,7 @@ export const BOIR_CATALOG = [
     "v": "DESCAS PERE ET FILS SA",
     "u": "https://boir.be/fr/products/le-clos-du-lucquier-montpeyroux-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ace13e5b8cd6beafa42ca05eef34d737.png?v=1733406422",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6549,7 +6549,7 @@ export const BOIR_CATALOG = [
     "v": "PAXTON WINES PTY LTD",
     "u": "https://boir.be/fr/products/le-comte-de-malartic-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e76c334995bf987d755e416609897395.png?v=1733411686",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6558,7 +6558,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/le-grand-vin-rauzan-despagne-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a1c73828a05ce5aca15fd89a8e1a449f.png?v=1733322848",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -6567,7 +6567,7 @@ export const BOIR_CATALOG = [
     "v": "SAS DESPAGNE",
     "u": "https://boir.be/fr/products/le-grand-vin-rauzan-despagne-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8bb3f06fa3cccf6268167fe487a1d48b.png?v=1749798931",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -6576,7 +6576,7 @@ export const BOIR_CATALOG = [
     "v": "S DELAFONT ARTISAN NEGOCIANT",
     "u": "https://boir.be/fr/products/marquis-de-calon-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29b83edefe9643e1be1dc9caa70f3cc6.png?v=1733466799",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6585,7 +6585,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/marquis-de-calon-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/798adc2820a16efa23d9920af869e8b6.png?v=1733466901",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6594,7 +6594,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON GINESTET SA",
     "u": "https://boir.be/fr/products/le-petit-ducru-de-ducru-beaucaillou-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0fd3b91e65e890b82c9e9ec5e8944030.png?v=1741726179",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6603,7 +6603,7 @@ export const BOIR_CATALOG = [
     "v": "PERRIN ET FILS SASU",
     "u": "https://boir.be/fr/products/leconfield-cabernet-sauvignon-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca96f006243e4925b485655a4dc34707.png?v=1733410600",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6612,7 +6612,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/leconfield-shiraz-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Leconfield_Shiraz_2019.png?v=1752133121",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6621,7 +6621,7 @@ export const BOIR_CATALOG = [
     "v": "CANALS & MUNNE SL",
     "u": "https://boir.be/fr/products/leeuwenkuil-reserve-red-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/819caea6420aae8b06ff831f84c2aa22.png?v=1733406981",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6630,7 +6630,7 @@ export const BOIR_CATALOG = [
     "v": "VINA CONO SUR SA",
     "u": "https://boir.be/fr/products/les-arums-de-lagrange-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dd2df5f73c1bd60e92865c64e71f1876.png?v=1733413392",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6639,7 +6639,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON GINESTET SA",
     "u": "https://boir.be/fr/products/les-griffons-de-pichon-baron-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b2b2ce6572873b9fff4014f83b37fe4.png?v=1741726570",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6648,7 +6648,7 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/les-hauts-du-tertre-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/55fac1ab50465be83fe1713f9cd18230.png?v=1749798850",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6657,7 +6657,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/les-vignerons-des-sept-provinces-gaillac-braucol-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/WhatsAppImage2025-10-30at16.26.53-Bewerkt.png?v=1761838108",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6666,7 +6666,7 @@ export const BOIR_CATALOG = [
     "v": "M CHAPOUTIER SA",
     "u": "https://boir.be/fr/products/m-chapoutier-condrieu-schiste-dagrumes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8b37113827faefee8efb4af49bfbaa03.png?v=1759313647",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -6675,7 +6675,7 @@ export const BOIR_CATALOG = [
     "v": "M CHAPOUTIER SA",
     "u": "https://boir.be/fr/products/m-chapoutier-hermitage-mure-de-larnage-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ee81d10fd21179f96fb4f4764eec8070.png?v=1759316386",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -6684,7 +6684,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/madrevite-trasimeno-cosa-riserva-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Madrevite_Trasimeno_C_osa_Riserva_2017.png?v=1771235901",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6693,7 +6693,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/madrevite-trasimeno-glanio-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a7e5a3985c563b9f7efc587d6ba89c16.png?v=1733408918",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6702,7 +6702,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/madrevite-trasimeno-opra-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6fbcc61ead473bbd629176b0d90b55db.png?v=1733356301",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6711,7 +6711,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/marcel-couturier-macon-villages-un-porc-ex-porc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bde04669160fe0d48251768e07fd8ca4.png?v=1733411243",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6720,7 +6720,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/marcel-couturier-macon-vinzelles-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9cfb1eaa63ea5644b5d91753d4d8a6a5.png?v=1736840298",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6729,7 +6729,7 @@ export const BOIR_CATALOG = [
     "v": "PIERSON-CUVELIER SARL",
     "u": "https://boir.be/fr/products/marcel-couturier-saint-veran-la-cour-des-bois-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b8e9d83ed2ce012ed10f292cf3dc170c.png?v=1733466620",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6738,7 +6738,7 @@ export const BOIR_CATALOG = [
     "v": "MARQUES DE VARGAS",
     "u": "https://boir.be/fr/products/marques-de-vargas-reserva-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9c1bca3c158d754fac52ab3bef385f02_7bb68e4c-d291-4e05-a4ce-0804c53ae5ca.png?v=1770295128",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6747,7 +6747,7 @@ export const BOIR_CATALOG = [
     "v": "Marques De Vargas",
     "u": "https://boir.be/fr/products/marques-de-vargas-reserva-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600365_MarquesdeVargas.png?v=1772006721",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6756,7 +6756,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bourgogne-masterclass-albert-bichot",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-event-109.jpg?v=1773063806",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6765,7 +6765,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/bourgogne-masterclass-albert-bichot-melle",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-event-109.jpg?v=1773063806",
-    "r": "Bourgogne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6774,7 +6774,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/mathilde-chapoutier-duche-duzes-selection-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0b0932c7647740ac93d35e01156632b3.png?v=1745501894",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6783,7 +6783,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/megadegustatie-beveren",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-224.jpg?v=1751888970",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6792,7 +6792,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/megadegustatie-nijvel",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/boir-zomer-selectie-do-not-use-224.jpg?v=1751888970",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6801,7 +6801,7 @@ export const BOIR_CATALOG = [
     "v": "Mes Amis",
     "u": "https://boir.be/fr/products/mesamis-carabbean-cane",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/MESAMIS_-_Caribbean_Cane_-_Alcoholvrije_rum.png?v=1750849940",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6810,7 +6810,7 @@ export const BOIR_CATALOG = [
     "v": "mesamis",
     "u": "https://boir.be/fr/products/mesamis-london-juniper",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Mesamis_-_London_Juniper_-_Alcoholfree_Gin.png?v=1739193943",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6819,7 +6819,7 @@ export const BOIR_CATALOG = [
     "v": "Mes Amis",
     "u": "https://boir.be/fr/products/mesamis-sicilian-orange",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0ce787b2825b41eb42b6d691c6fc9ed8.png?v=1769695322",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6828,7 +6828,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-barbaresco-palas-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/97d5e2bc099b7cc72aee03df7afe0025.png?v=1772011791",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6837,7 +6837,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-barolo-cannubi-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/044cf2a2cbcf09c5d3b2f7b99b1b3144.png?v=1772012065",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6846,7 +6846,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-barolo-palas-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b043158f644c568c47d4775bc697a61b.png?v=1772011865",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6855,7 +6855,7 @@ export const BOIR_CATALOG = [
     "v": "TENIMENTI GRIECO SRL",
     "u": "https://boir.be/fr/products/michele-chiarlo-barolo-riserva-cerequio-2013",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/06fad331dca06fbea145cc2d11a082c0.png?v=1733467771",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -6864,7 +6864,7 @@ export const BOIR_CATALOG = [
     "v": "TENIMENTI GRIECO SRL",
     "u": "https://boir.be/fr/products/michele-chiarlo-gavi-di-gavi-rovereto-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ba8d314ea618856fffebfd93f32ac4b8.png?v=1733410828",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6873,7 +6873,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-langhe-nebbiolo-il-principe-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/368b69d9dd83344126583533a742c891.png?v=1769606681",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6882,7 +6882,7 @@ export const BOIR_CATALOG = [
     "v": "CASTEL FRERES SAS",
     "u": "https://boir.be/fr/products/michele-chiarlo-monferrato-countacc-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bf409d34cf0061ca6338dc7f7d465fab.png?v=1733406382",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6891,7 +6891,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/michele-chiarlo-moscato-dasti-nivole",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f75161611142db7815a65f19501ff2b7.png?v=1733264134",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6900,7 +6900,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-nizza-cipressi-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9f43296ba15d2973399b4a7c8b44a0d4_44c6560a-0003-4eb9-a51e-741687c6fe88.png?v=1772011662",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6909,7 +6909,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/michele-chiarlo-nizza-court-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9283ae56e9d798444ebca6d68698e23b.png?v=1733467130",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6918,7 +6918,7 @@ export const BOIR_CATALOG = [
     "v": "DU CHATEAU VIEUX MAILLET SCEA",
     "u": "https://boir.be/fr/products/michele-chiarlo-nizza-montemareto-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8acef621ff9694cfe55496d650eedaaf.png?v=1733466676",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -6927,7 +6927,7 @@ export const BOIR_CATALOG = [
     "v": "BVBA Desolari",
     "u": "https://boir.be/fr/products/mii-no-kotobuki-sake-pruim-mii-no-umeshu",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Mii_no_Kotobuki_Mii_no_Umeshu.png?v=1757501680",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6936,7 +6936,7 @@ export const BOIR_CATALOG = [
     "v": "CODICE VINO SRL",
     "u": "https://boir.be/fr/products/notte-rossa-salento-susumaniello-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/64ab89ac0bbca15fc07f60653b878368.png?v=1733430910",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6945,7 +6945,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/offley-30-year-old-tawny-porto",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4d17c52c2b70fefd1db54631a5b5acf1.png?v=1733264139",
-    "r": "Porto",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6954,7 +6954,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/offley-vintage-porto-boa-vista-2011",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6501fbf19967917a000fb01f60d8c470.png?v=1733264142",
-    "r": "Porto",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6963,7 +6963,7 @@ export const BOIR_CATALOG = [
     "v": "Jet Import NV",
     "u": "https://boir.be/fr/products/opius-albedo",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d34f28b8d52cba806fa9e3d2f24d7abe.png?v=1733155052",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6972,7 +6972,7 @@ export const BOIR_CATALOG = [
     "v": "Jet Import NV",
     "u": "https://boir.be/fr/products/opius-amaro",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7da6f3c580ca3c038004f4cf4cd9df4e.png?v=1733155110",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6981,7 +6981,7 @@ export const BOIR_CATALOG = [
     "v": "Jet Import NV",
     "u": "https://boir.be/fr/products/opius-nigredo",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4f62e1146a04dd3d61dae39435a070f6.png?v=1733155156",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6990,7 +6990,7 @@ export const BOIR_CATALOG = [
     "v": "Jet Import NV",
     "u": "https://boir.be/fr/products/opius-rubedo",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/eaa4a1d57e950fa6395dcc51d15a62e0.png?v=1733155232",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6999,7 +6999,7 @@ export const BOIR_CATALOG = [
     "v": "Brandstof",
     "u": "https://boir.be/fr/products/oye-yaar-indian-rooted-tangy-blast",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/700023_Oye_Yaar_7e0d64f5-b2f5-4177-9cb3-92b06a65b1d1.png?v=1774440881",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7008,7 +7008,7 @@ export const BOIR_CATALOG = [
     "v": "MOUEIX J-P ETS SARL",
     "u": "https://boir.be/fr/products/paternoster-winery-aglianico-del-vultue-don-anselmo-2015",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/02a23f61454a3c54230a62ed71ef4703.png?v=1733466988",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7017,7 +7017,7 @@ export const BOIR_CATALOG = [
     "v": "AZ MADREVITE CHIUCCHIURLOTTO",
     "u": "https://boir.be/fr/products/pasternoster-winery-aglianico-del-vulture-rotondo-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c283a5bc98606f9faba54825c8d8522b.png?v=1733466650",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7026,7 +7026,7 @@ export const BOIR_CATALOG = [
     "v": "BORDEAUX TRADITION SARL",
     "u": "https://boir.be/fr/products/paul-thomas-sancerre-tradition-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c4d7ea391d9a448b92753d4877843e4d.png?v=1733356398",
-    "r": "",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -7035,7 +7035,7 @@ export const BOIR_CATALOG = [
     "v": "CETC EXPORT SAS",
     "u": "https://boir.be/fr/products/paxton-wines-cabernet-sauvignon-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Paxton_Wines_Cabernet_Sauvignon_2019.png?v=1745957151",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7044,7 +7044,7 @@ export const BOIR_CATALOG = [
     "v": "S DELAFONT ARTISAN NEGOCIANT",
     "u": "https://boir.be/fr/products/perle-darche-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/43efc59342c3e419606856664377b12c.png?v=1733414550",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7053,7 +7053,7 @@ export const BOIR_CATALOG = [
     "v": "J.J.M & CIE SA",
     "u": "https://boir.be/fr/products/pichon-comtesse-reserve-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa.png?v=1749753351",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7062,7 +7062,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/piekenierskloof-pinotage-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e7f74a7a4b90a3c99d3cf07b27fb6066.png?v=1733407980",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7071,7 +7071,7 @@ export const BOIR_CATALOG = [
     "v": "LES CELLIERS JEAN D ALIBERT SA",
     "u": "https://boir.be/fr/products/pierrick-harang-les-bulles-de-balthazar-brut-nature",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2335771c31efa367d8dc0f3f467b7274.png?v=1759216781",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7080,7 +7080,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/pierrick-harang-pays-doc-cuvee-balthazar-syrah-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/06cff4576fd91e1d3200750776347171.png?v=1733486614",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7089,7 +7089,7 @@ export const BOIR_CATALOG = [
     "v": "LES CELLIERS JEAN D ALIBERT SA",
     "u": "https://boir.be/fr/products/pierrick-harang-pays-doc-cuvee-balthazar-viognier-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/45a88aec4bb5389e358624a8694ad07a_00f218af-f093-41ed-89ac-025f0788d520.png?v=1759216843",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7098,7 +7098,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/pierrick-harang-pays-doc-le-grand-balthazar-gsm",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e258edbafbf2ed6633b0c3cdbe6a0c22.png?v=1733408325",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7107,7 +7107,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/pigeonnier-du-gouyat-montravel-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e9b87215b4de916598797ed82270707e.png?v=1733405370",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7116,7 +7116,7 @@ export const BOIR_CATALOG = [
     "v": "TOMMASI VITICOLTORI SS AGRICOLA",
     "u": "https://boir.be/fr/products/podere-casisano-brunello-di-montalcino-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/52e0f2e458681bbf70ea84a95735a2e9.png?v=1772009654",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7125,7 +7125,7 @@ export const BOIR_CATALOG = [
     "v": "TOMMASI VITICOLTORI SS AGRICOLA",
     "u": "https://boir.be/fr/products/podere-casisano-rosso-di-montalcino-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5120cdc8552ea3de614a211a04e4164a.png?v=1772009731",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7134,7 +7134,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/podere-il-castellaccio-valente-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d85108225e201bc0d261ecf39a22c13e.png?v=1733411655",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7143,7 +7143,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/podere-il-castellaccio-costa-toscana-ardiglione-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d08f11e59a7b4a3559cfe1eea6bef89b.png?v=1733409948",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7152,7 +7152,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DE SUREMAIN",
     "u": "https://boir.be/fr/products/pontecabaleiros-alvinte-albarino-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/939ddcfee57c52e3e96dedf4bd77acb6.png?v=1733356339",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7161,7 +7161,7 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/pulltex-36-cellar-labels",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_39_d8c052aa-f270-46a7-b308-0f8d2add25b2.png?v=1739980892",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7170,7 +7170,7 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/pulltex-pulltap-groene-kurkentrekker-boir",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Pulltex_BOIR.png?v=1740671433",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7179,7 +7179,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/quinta-da-fonte-souto-alfrocheiro-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3a9fa023c3c6870700936db1061acbdd.png?v=1733322378",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7188,7 +7188,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/quinta-de-sao-bento-da-batalha-zulmira-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1468b8ee206e5bfc07c7eb38582b0152.png?v=1733323022",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7197,7 +7197,7 @@ export const BOIR_CATALOG = [
     "v": "DESPERTAR DOS SENTIDOS LDA",
     "u": "https://boir.be/fr/products/quinta-de-sao-bento-zulmira-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1468b8ee206e5bfc07c7eb38582b0152_163d8134-665d-40a6-b291-b896acfe8474.png?v=1769594865",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7206,7 +7206,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/quinta-do-noval-10-year-old-tawny-port",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Quinta_do_Noval_10_Year_Old_Tawny_Port.png?v=1760948023",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7215,7 +7215,7 @@ export const BOIR_CATALOG = [
     "v": "TERRE DI SAVA SRL",
     "u": "https://boir.be/fr/products/quinta-do-noval-vintage-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/296a08e1f102028f4657e0637afa4250.png?v=1733467611",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7224,7 +7224,7 @@ export const BOIR_CATALOG = [
     "v": "INTERVINOS NV",
     "u": "https://boir.be/fr/products/rapaura-springs-rohe-awatere-valley-pinot-noir-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4be0a202a66bcf7d0e3e461bb6888e26.png?v=1751697770",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7233,7 +7233,7 @@ export const BOIR_CATALOG = [
     "v": "INTERVINOS NV",
     "u": "https://boir.be/fr/products/rapaura-springs-rohe-blind-river-sauvignon-blanc-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/59bcee01f9bacb60ac948f28b3483deb.png?v=1769595055",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -7242,7 +7242,7 @@ export const BOIR_CATALOG = [
     "v": "INTERVINOS NV",
     "u": "https://boir.be/fr/products/rapaura-springs-rohe-sauvignon-blanc-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/18f5b0765dfaa1e03e62c4c4d500a2d4.png?v=1751697810",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -7251,7 +7251,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/raymond-chardonnay-california-2022-75cl",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/12895920fcebd4f6361a1138c109a317.png?v=1733322400",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7260,7 +7260,7 @@ export const BOIR_CATALOG = [
     "v": "SPH-GERARD BERTRAND SASU",
     "u": "https://boir.be/fr/products/richard-hamilton-centurion-127-year-old-vine-shiraz-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/68b6431302ba1e2d2db7a3b30ea5f1d8.png?v=1733323437",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7269,7 +7269,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/richard-hamilton-coltons-g-s-m-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Richard_Hamilton_Colton_s_G.S.M._2019.png?v=1754474995",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7278,7 +7278,7 @@ export const BOIR_CATALOG = [
     "v": "VIGN GUY MOUSSET EARL",
     "u": "https://boir.be/fr/products/richard-hamilton-hut-block-cabernet-sauvignon-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0124e579bb2687901f527cc2000ea790.png?v=1733323440",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7287,7 +7287,7 @@ export const BOIR_CATALOG = [
     "v": "MADEIRA WINE COMPANY SA",
     "u": "https://boir.be/fr/products/roodeberg-1949-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/efef0ec9e75097f448ea04cce5c41bf1.png?v=1733411560",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7296,7 +7296,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/ruggeri-valdobbiadene-prosecco-giustino-b-extra-dry",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a3e65185987170d7ba11545a0f142d51.png?v=1733322383",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7305,7 +7305,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/s-delafont-limoux-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/36e12a403dd2d25242859af58f17b2de.png?v=1733322395",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7314,7 +7314,7 @@ export const BOIR_CATALOG = [
     "v": "SAN LUCIANO",
     "u": "https://boir.be/fr/products/san-luciano-dovidio-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8f87e1d42ccf9fb82e30af9f4e692f7c.png?v=1753686250",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7323,7 +7323,7 @@ export const BOIR_CATALOG = [
     "v": "DESCAS PERE ET FILS SA",
     "u": "https://boir.be/fr/products/san-luciano-luna-di-monte-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/470528_PRFF.png?v=1740407812",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7332,7 +7332,7 @@ export const BOIR_CATALOG = [
     "v": "SOUTIRAN & ASSOCIES SAS",
     "u": "https://boir.be/fr/products/saronsberg-viognier-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4bb085f189d270ea366f7b9edcb030cb.png?v=1733466484",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7341,7 +7341,7 @@ export const BOIR_CATALOG = [
     "v": "GLOBAL WINERIES NV",
     "u": "https://boir.be/fr/products/saronsberg-viognier-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4bb085f189d270ea366f7b9edcb030cb_abe34455-d661-4d86-bd61-7c15ba2d4866.png?v=1773234629",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7350,7 +7350,7 @@ export const BOIR_CATALOG = [
     "v": "Home & Table by Meyhui",
     "u": "https://boir.be/fr/products/schott-zwiesel-bar-special-whisky-nosing",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Zwiesel_whisky_nosing.png?v=1740669332",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7359,7 +7359,7 @@ export const BOIR_CATALOG = [
     "v": "Home & Table by Meyhui",
     "u": "https://boir.be/fr/products/schott-zwiesel-bar-special-whisky-tasting",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Zwiesel_whisky_tasting.png?v=1740669166",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7368,7 +7368,7 @@ export const BOIR_CATALOG = [
     "v": "Home & Table by Meyhui",
     "u": "https://boir.be/fr/products/schott-zwiesel-classico-decanteerkaraf",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Zwiesel_karaf.png?v=1740669083",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7377,7 +7377,7 @@ export const BOIR_CATALOG = [
     "v": "Home & Table by Meyhui",
     "u": "https://boir.be/fr/products/schott-zwiesel-whisky-bourbon",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_49.png?v=1740753914",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7386,7 +7386,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/sensi-bolgheri-sabbiato-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f52547af24a22fe1f9f9ed50818e0c02.png?v=1733466829",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7395,7 +7395,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/sensi-vin-santo-del-chianti-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c5cfe23902eb08557669f7506ffae6d7.png?v=1733466380",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7404,7 +7404,7 @@ export const BOIR_CATALOG = [
     "v": "BV ASTA MORRIS",
     "u": "https://boir.be/fr/products/shizuoka-distillery-pot-still-w",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ed486fd5849bf01668b1de9b81ea3217.png?v=1733392333",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7413,7 +7413,7 @@ export const BOIR_CATALOG = [
     "v": "BV ASTA MORRIS",
     "u": "https://boir.be/fr/products/shizuoka-distillery-united-s-2023-winter",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Shizuoka_Distillery_United_S._2023_Winter.png?v=1757501575",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7422,7 +7422,7 @@ export const BOIR_CATALOG = [
     "v": "Rheinland Distillers GmbH",
     "u": "https://boir.be/fr/products/siegfried-wonderazul",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_30.png?v=1739970325",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7431,7 +7431,7 @@ export const BOIR_CATALOG = [
     "v": "Rheinland Distillers GmbH",
     "u": "https://boir.be/fr/products/siegfried-wonderleaf",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Siegfried_Wonderleaf.png?v=1757500089",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7440,7 +7440,7 @@ export const BOIR_CATALOG = [
     "v": "Rheinland Distillers GmbH",
     "u": "https://boir.be/fr/products/siegfried-wonderspritz",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_29.png?v=1739970215",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7449,7 +7449,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/stark-conde-cabernet-sauvignon-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/65a46d6bd7a1a9cf2fbd38f7b61c5757.png?v=1733406128",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7458,7 +7458,7 @@ export const BOIR_CATALOG = [
     "v": "ALCOBRANDS NV",
     "u": "https://boir.be/fr/products/stark-conde-kara-tara-pinot-noir-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/98b8c8a88631736e3d882eebc61b6c50.png?v=1733408782",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7467,7 +7467,7 @@ export const BOIR_CATALOG = [
     "v": "ALCOBRANDS NV",
     "u": "https://boir.be/fr/products/stark-conde-lingen-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4f9edee78c0a261eabfcdbec7d05a43.png?v=1733411133",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7476,7 +7476,7 @@ export const BOIR_CATALOG = [
     "v": "ALCOBRANDS NV",
     "u": "https://boir.be/fr/products/stark-conde-lingen-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/34e186ba06badee3cdf82c46f195f0b4.png?v=1733411582",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7485,7 +7485,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/stark-conde-kara-tara-chardonnay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Stark_Conde_Kara_Tara_Chardonnay_2022.png?v=1757499248",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7494,7 +7494,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/stoffen-cadeautas",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/406062cdd9f23d0310dc0a4633b2b27b.png?v=1770977672",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7503,7 +7503,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/sutherland-chardonnay-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/944cd45c02e08d9e9755d1b3d6099878.png?v=1733408518",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7512,7 +7512,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/sutherland-pinot-noir-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a381f9040de165f26ef663e01eea3fad.png?v=1733409800",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7521,7 +7521,7 @@ export const BOIR_CATALOG = [
     "v": "ALCOBRANDS NV",
     "u": "https://boir.be/fr/products/sutherland-sauvignon-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Sutherland_Sauvignon_Blanc_2022.png?v=1753185744",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -7530,7 +7530,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/sutherland-viognier-roussanne-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ba50df5ec4a57ae91fae011f98f0c6af.png?v=1734345781",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7539,7 +7539,7 @@ export const BOIR_CATALOG = [
     "v": "ALERAMICO SRL",
     "u": "https://boir.be/fr/products/tenimenti-grieco-terre-degli-osci-aglianico-falanghina-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/85d1db51921a675010fc03ed66fdff47.png?v=1733405770",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7548,7 +7548,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/tenimenti-grieco-terre-degli-osci-aglianico-passo-alle-tremiti-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c60c0fd3b99b48cae7aaca3adf26a93b.png?v=1733405716",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7557,7 +7557,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/tenuta-arnulfo-barolo-bussia-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600045_Arnulfo.png?v=1769769545",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7566,7 +7566,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/tenuta-campo-al-mare-bolgheri-superiore-baia-el-vento-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f18977268d1d54476a6c01cd43305fc4.png?v=1733414684",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7575,7 +7575,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/tenuta-campo-al-mare-bolgheri-superiore-baia-al-vento-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/87a759d91a89b7dd0efbd117095e62d8.png?v=1756738727",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7584,7 +7584,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-santa-teresa-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c7a64e6f295d35c0dc8d5b3ad926d1db.png?v=1733412588",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7593,7 +7593,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-riserva-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f66086ff9046054085cf544a1af6cee1.png?v=1733412626",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7602,7 +7602,7 @@ export const BOIR_CATALOG = [
     "v": "Della Seta S.S. Societa Agricola",
     "u": "https://boir.be/fr/products/tenuta-di-graciano-della-seta-vino-nobile-di-montepulciano-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/NOBILE.png?v=1774443349",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7611,7 +7611,7 @@ export const BOIR_CATALOG = [
     "v": "Ambrogio e Giovanni Folonari",
     "u": "https://boir.be/fr/products/tenuta-di-nozzole-chianti-classico-riserva-la-forra-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/LaForra.png?v=1773246508",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7620,7 +7620,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/tenute-del-cabreo-toscana-il-borgo-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/TenutedelCabreo-Bewerkt.png?v=1764579773",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7629,7 +7629,7 @@ export const BOIR_CATALOG = [
     "v": "Ambrogio e Giovanni Folonari",
     "u": "https://boir.be/fr/products/tenute-del-cabreo-toscana-il-borgo-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a4956f7dbffa4f5955d50de39a72805c_20d7f118-a060-444c-8c59-b5c6bcd8454f.png?v=1772009557",
-    "r": "",
+    "r": "Italie",
     "type": "rouge"
   },
   {
@@ -7638,7 +7638,7 @@ export const BOIR_CATALOG = [
     "v": "DESPAGNE SAS",
     "u": "https://boir.be/fr/products/teso-la-monja-almirez-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/be4c214f8c7976fa31c9210f22ff6c68.png?v=1732879071",
-    "r": "",
+    "r": "Espagne",
     "type": "rouge"
   },
   {
@@ -7647,7 +7647,7 @@ export const BOIR_CATALOG = [
     "v": "CASA VINICOLA G GAROFOLI SPA",
     "u": "https://boir.be/fr/products/teso-la-monja-romanico-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41b9597f208bfd7897728aacdd9e0e35.png?v=1733409430",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7656,7 +7656,7 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/thelema-cabernet-sauvignon-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0e4697a89d2797f4f60cf52ccf3264d4.png?v=1733413336",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7665,7 +7665,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/thelema-rabelais-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/eed90b76a8212c0495c78ae4bd48702e.png?v=1733467428",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7674,7 +7674,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/thelema-rabelais-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fd5139103d5df6df97aecce1029030c0.png?v=1733467430",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7683,7 +7683,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-klein-wijn-bij-gezelligheidsschotels",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/54890b4e00fd281ccd80d6b9d7fa1922.png?v=1763126365",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7692,7 +7692,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-alcoholvrij-aperitieven",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/91dbb1b3b8e7ece4aace1a79e757736f.png?v=1770210065",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7701,7 +7701,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-high-altitude-wines",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Kopie_van_Wijnen_foodpairing_14.png?v=1741272372",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7710,7 +7710,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-klassiekers-met-verschillende-gezichten",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2_05ab85aa-9b7a-4139-880a-ccc86b5cab77.png?v=1758634779",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7719,7 +7719,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-voor-elk-wat-grills",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/202d4fc622e4a5698833f04906d14c38.png?v=1770210579",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7728,7 +7728,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/themabox-wijn-bij-gezelligheidsschotels",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bed8984e79218d750b17558e1633b24a.png?v=1763126302",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7737,7 +7737,7 @@ export const BOIR_CATALOG = [
     "v": "SOVEX GRANDSCHATEAUX SAS",
     "u": "https://boir.be/fr/products/tommasi-viticoltori-amarone-delle-valpolicella-il-sestante-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4f75c5372f32bd872dcf82c55fdeb838.png?v=1733466960",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -7746,7 +7746,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/tommasi-viticoltori-amarone-delle-valpolicella-2016",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/09e406d3799f70d1e8194a063ff47cee.png?v=1733322969",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7755,7 +7755,7 @@ export const BOIR_CATALOG = [
     "v": "SPH-GERARD BERTRAND SASU",
     "u": "https://boir.be/fr/products/tommasi-viticoltori-amarone-delle-valpolicella-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/54a8f56c8aeafda27f4de70d38acfa23.png?v=1733421346",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7764,7 +7764,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/tommasi-viticoltori-lugana-le-fornaci-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Tommasi_Viticoltori_Lugana_Le_Fornaci_2022.png?v=1771241196",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7773,7 +7773,7 @@ export const BOIR_CATALOG = [
     "v": "TOMMIE SJEF",
     "u": "https://boir.be/fr/products/tommie-sjef-sauvin",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Tommie_Sjef_Sauvin.png?v=1753185380",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7782,7 +7782,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/umani-ronchi-montepulciano-dabrruzo-jorio-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Umani_Ronchi_Montepulciano_d_Abruzzo_Jorio_2021.png?v=1771235435",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7791,7 +7791,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-cocktailstamper",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Muddler_1.png?v=1740660961",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7800,7 +7800,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-14-delige-cocktailset-bar-in-box",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_34.png?v=1740661550",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7809,7 +7809,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-inox-cocktailshaker",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Shaker_1.png?v=1740660706",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7818,7 +7818,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-strainer",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Strainer_1.png?v=1740660410",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7827,7 +7827,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-zwart-koelelement",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Koelelement_1.png?v=1740660065",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7836,7 +7836,7 @@ export const BOIR_CATALOG = [
     "v": "NV BILLIET-VANLAERE",
     "u": "https://boir.be/fr/products/vacu-vin-zwarte-elektrische-kurkentrekker",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Elektrische_kurkentrekker_1.png?v=1740659896",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7845,7 +7845,7 @@ export const BOIR_CATALOG = [
     "v": "Invinova",
     "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-cuvee-vox-rouge-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_75.png?v=1747297763",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -7854,7 +7854,7 @@ export const BOIR_CATALOG = [
     "v": "Invinova",
     "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
-    "r": "",
+    "r": "Rhône",
     "type": "rouge"
   },
   {
@@ -7863,7 +7863,7 @@ export const BOIR_CATALOG = [
     "v": "SA HOREAU BEYLOT",
     "u": "https://boir.be/fr/products/vieux-plateau-certan-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/81dbb83e13b78c44bde668672ba35e5c.png?v=1741684765",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7872,7 +7872,7 @@ export const BOIR_CATALOG = [
     "v": "AMBROGIO E GIOVANNI FOLONARI",
     "u": "https://boir.be/fr/products/vigne-a-porrona-montecucco-sangiovese-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9f9b3485af85caf21f6cb08fdb794651.png?v=1753258628",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7881,7 +7881,7 @@ export const BOIR_CATALOG = [
     "v": "CHATEAU LA VERNEDE SCEA",
     "u": "https://boir.be/fr/products/laurrent-perrachon-fitou-vignes-centenaires-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ade8dbcd4df823a74e573290d47c7c3b.png?v=1733322846",
-    "r": "",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -7890,7 +7890,7 @@ export const BOIR_CATALOG = [
     "v": "SOVEX GRANDSCHATEAUX SAS",
     "u": "https://boir.be/fr/products/vignerons-de-terres-secretes-macon-prisse-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fdfab6d7576322a652bbd0086a987860.png?v=1733406810",
-    "r": "",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -7899,7 +7899,7 @@ export const BOIR_CATALOG = [
     "v": "TENUTA ULISSE SOC AGRICOLA SNC",
     "u": "https://boir.be/fr/products/vignobles-arbeau-le-paradis-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a325d9070220bc9c9128745e03fd9f18.png?v=1733322985",
-    "r": "",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -7908,7 +7908,7 @@ export const BOIR_CATALOG = [
     "v": "SENSI VIGNE E VINI SRL",
     "u": "https://boir.be/fr/products/vinas-leizaola-el-sacramento-2015",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5d53ac0ceaa0a12cc9f75d081b93cd9a.png?v=1733417882",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7917,7 +7917,7 @@ export const BOIR_CATALOG = [
     "v": "AUDY JEAN BAPTISTE SAS",
     "u": "https://boir.be/fr/products/weingut-allram-renner-single-vineyard-gruner-veltliner-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b31054c621384d4cb07c94abe767dea0.png?v=1733322987",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7926,7 +7926,7 @@ export const BOIR_CATALOG = [
     "v": "BV OPTIMBULLES",
     "u": "https://boir.be/fr/products/optimbulles-apples-pearls",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Optimbulles_-_Apples_and_pearls.png?v=1740040145",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7935,7 +7935,7 @@ export const BOIR_CATALOG = [
     "v": "BV OPTIMBULLES",
     "u": "https://boir.be/fr/products/wijndomein-optimbulles-robijn-rose",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Optimbulles_-_Methode_traditionelle_Robijn.png?v=1740040144",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7944,7 +7944,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/winiveria-chinebuli-goruli-mtsvane-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Winiveria_Chinebuli_Goruli_Mtsvane_2020.png?v=1754297096",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7953,7 +7953,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/blauer-zweigelt-edition-chremisa-22-75cl",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/WinzerKremsZweigelt.png?v=1753776735",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7962,7 +7962,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/winzer-krems-edition-chremisa-gruner-veltliner-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ba7dd0ef5105415521f94dab41522fc.png?v=1733356463",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7971,7 +7971,7 @@ export const BOIR_CATALOG = [
     "v": "WINZER KREMS EG",
     "u": "https://boir.be/fr/products/winzer-krems-gruner-veltliner-orange-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/avel_16.png?v=1758113575",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7980,7 +7980,7 @@ export const BOIR_CATALOG = [
     "v": "WINZER KREMS EG",
     "u": "https://boir.be/fr/products/winzer-krems-ried-kremser-weinzierlberg-reserve-gruner-veltliner-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/avel_18.png?v=1758116559",
-    "r": "",
+    "r": "Alsace",
     "type": "rouge"
   },
   {
@@ -7989,7 +7989,7 @@ export const BOIR_CATALOG = [
     "v": "WINZER KREMS EG",
     "u": "https://boir.be/fr/products/winzer-krems-ried-kremser-weinzierlberg-reserve-gruner-veltliner-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/avel_15.png?v=1757494802",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7998,7 +7998,7 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/zwarte-ijsemmer-groot",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/IJsemmer_groot.png?v=1740662216",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -8007,27 +8007,23 @@ export const BOIR_CATALOG = [
     "v": "NV GIRBAL-LE SOIN DU VIN",
     "u": "https://boir.be/fr/products/zwarte-ijsemmer-klein",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/IJsemmer_klein.png?v=1740662267",
-    "r": "",
+    "r": "Autre",
     "type": "rouge"
   }
 ];
 
-export function searchBoirLocal(query, limit = 100) {
+export function searchBoirLocal(query, limit = 500) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/);
-  const bdxSubs = ["saint-emilion","pomerol","medoc","graves","pessac","margaux","pauillac","saint-julien","saint-estephe","sauternes","barsac","canon-fronsac"];
-  
   return BOIR_CATALOG.map(w => {
     let score = 0;
-    const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    
+    const r = (w.r || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const t = (w.t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const v = (w.v || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     terms.forEach(term => {
-      // Si on cherche "Bordeaux", on booste aussi les sous-appellations
-      const isBdxSub = bdxSubs.some(sub => r.includes(sub.replace('-', ' ')));
-      if (term === 'bordeaux' && (r === 'bordeaux' || isBdxSub)) score += 100;
-      else if (r.includes(term)) score += 80;
-      if (t.includes(term)) score += 20;
+      if (r === term || r.includes(term)) score += 100; // Match Région
+      if (t.includes(term)) score += 20; // Match Titre
+      if (v.includes(term)) score += 10; // Match Vendeur
     });
     return { ...w, score };
   })
