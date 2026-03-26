@@ -1,124 +1,38 @@
-const fs = require('fs');
-const path = require('path');
+name: Update Wine Catalog
 
-const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
-// --- CARTOGRAPHIE RÉGIONS ---
-const REGIONS_MAP = {
-  'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe', 'fronsac', 'moulis', 'listrac', 'entre-deux-mers', 'bourg', 'blaye', 'castillon', 'haut-medoc', 'chateau'],
-  'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon', 'pouilly-fuisse', 'mercurey', 'givry'],
-  'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'cote-rotie', 'vacqueyras', 'saint-joseph', 'cornas', 'crozes', 'luberon', 'ventoux'],
-  'Loire': ['sancerre', 'pouilly-fume', 'chinon', 'saumur', 'vouvray', 'muscadet', 'anjou', 'touraine']
-};
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-// --- CARTOGRAPHIE PAYS (Pour vos nouveaux filtres) ---
-const COUNTRY_MAP = {
-  'Italie': ['italie', 'toscana', 'piemonte', 'barolo', 'brunello', 'chianti', 'sicilia', 'puglia', 'veneto', 'nebbiolo', 'sangiovese', 'abruzzo'],
-  'Espagne': ['espagne', 'rioja', 'ribera', 'priorat', 'rías baixas', 'rueda', 'cava', 'tempranillo', 'jerez', 'sherry'],
-  'Portugal': ['portugal', 'douro', 'alentejo', 'porto', 'madeira', 'dao'],
-  'Afrique du Sud': ['afrique du sud', 'stellenbosch', 'paarl', 'swartland', 'franschhoek', 'coastal region'],
-  'Argentine': ['argentine', 'mendoza', 'malbec', 'salta', 'patagonie'],
-  'Chili': ['chili', 'casablanca', 'colchagua', 'maipo', 'central valley'],
-  'Allemagne': ['allemagne', 'mosel', 'rheingau', 'pfalz', 'nahe', 'baden'],
-  'Autriche': ['autriche', 'wachau', 'burgenland', 'kamptal', 'gruner'],
-  'États-Unis': ['etats-unis', 'usa', 'napa', 'sonoma', 'californie', 'oregon', 'washington'],
-  'Grèce': ['grece', 'santorini', 'naoussa', 'peloponnese', 'assyrtiko'],
-  'Georgie': ['georgie', 'kakheti', 'qvevri', 'saperavi']
-};
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
 
-function detectLocation(p) {
-  const tagsStr = Array.isArray(p.tags) ? p.tags.join(' ') : (p.tags || '');
-  const haystack = (p.title + ' ' + tagsStr + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  
-  let result = { region: 'Autre', country: 'France' };
+      - name: Install Dependencies
+        run: npm install
 
-  // 1. Détection du Pays
-  for (const [country, keywords] of Object.entries(COUNTRY_MAP)) {
-    if (keywords.some(key => haystack.includes(key))) {
-      result.country = country;
-      break;
-    }
-  }
+      - name: Run Sync Script
+        run: node scripts/sync-catalog.js
 
-  // 2. Détection de la Région
-  for (const [parent, subs] of Object.entries(REGIONS_MAP)) {
-    if (subs.some(sub => haystack.includes(sub)) || haystack.includes(parent.toLowerCase())) {
-      result.region = parent;
-      if (parent === 'Bordeaux' || parent === 'Bourgogne' || parent === 'Rhône' || parent === 'Loire') {
-        result.country = 'France';
-      }
-      break;
-    }
-  }
-
-  if (result.region === 'Autre' && haystack.includes('chateau') && !haystack.includes('bourgogne')) {
-    result.region = 'Bordeaux';
-    result.country = 'France';
-  }
-
-  return result;
-}
-
-async function fetchBoirCatalog() {
-  console.log('🌍 Scan international de Boir.be...');
-  let allProducts = [];
-  let page = 1;
-  let hasMore = true;
-  while (hasMore) {
-    const url = "https://boir.be/collections/all/products.json?limit=250&page=" + page;
-    const res = await fetch(url, { headers: { 'User-Agent': 'Unwine-D/12.0' } });
-    const data = await res.json();
-    if (data.products && data.products.length > 0) {
-      allProducts = [...allProducts, ...data.products];
-      page++;
-    } else { hasMore = false; }
-    await sleep(200);
-  }
-  return allProducts;
-}
-
-async function updateCatalog() {
-  const rawProducts = await fetchBoirCatalog();
-
-  const finalCatalog = rawProducts
-    .filter(p => {
-      const n = (p.title || '').toLowerCase();
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','sac','etui'].some(k => n.includes(k));
-      return p.variants?.some(v => v.available) && !isAcc;
-    })
-    .map(p => {
-      const loc = detectLocation(p);
-      return {
-        t: p.title, 
-        p: p.variants[0]?.price ? parseFloat(p.variants[0].price) : 0,
-        v: p.vendor || '', 
-        u: "https://boir.be/fr/products/" + p.handle,
-        img: p.images[0]?.src || null, 
-        r: loc.region,
-        c: loc.country, // <-- Le pays est maintenant stocké ici
-        type: (p.title || '').toLowerCase().includes('blanc') ? 'blanc' : 'rouge'
-      };
-    });
-
-  const searchFn = `
-export function searchBoirLocal(query, limit = 500) {
-  if (!query || query.length < 2) return [];
-  const term = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-  return BOIR_CATALOG.filter(w => {
-    const hay = (w.t + " " + w.r + " " + w.c + " " + w.v).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-    return hay.includes(term);
-  })
-  .sort((a, b) => (a.r.toLowerCase() === term ? -1 : b.r.toLowerCase() === term ? 1 : 0))
-  .slice(0, limit)
-  .map(w => ({ title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c, type: w.type }));
-}`;
-
-  const header = "// Catalogue Expert Unwine-D - " + finalCatalog.length + " vins\n";
-  const content = "export const BOIR_CATALOG = " + JSON.stringify(finalCatalog, null, 2) + ";\n";
-  
-  fs.writeFileSync(CATALOG_PATH, header + content + searchFn, 'utf8');
-  console.log('✅ ' + finalCatalog.length + ' vins synchronisés avec pays et régions.');
-}
-
-updateCatalog().catch(err => { console.error(err); process.exit(1); });
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/lib/boirCatalog.js
+          git commit -m "🌍 Mise à jour auto : Catalogue International" || exit 0
+          git pull --rebase origin main
+          git push origin main
