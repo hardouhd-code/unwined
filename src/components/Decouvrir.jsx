@@ -23,19 +23,12 @@ function Tag({ label, color = '#9a7d5a' }) {
 function WineCard({ wine }) {
   const colors   = TYPE_COLOR[wine.type] || TYPE_COLOR.rouge;
   const emoji    = TYPE_EMOJI[wine.type] || '🍷';
-  const aromas   = wine.aromas   ? wine.aromas.split(',').map(s=>s.trim()).filter(Boolean)   : [];
-  const grapes   = wine.grapes   ? wine.grapes.split(',').map(s=>s.trim()).filter(Boolean)   : [];
-  const pairings = wine.pairings ? wine.pairings.split(',').map(s=>s.trim()).filter(Boolean) : [];
-
   return (
     <div
       style={{ background:'#1a1510', border:`1px solid ${colors.border}`, borderRadius:14,
         padding:'16px', display:'flex', flexDirection:'column', gap:10,
         transition:'transform 0.15s, box-shadow 0.15s' }}
-      onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 6px 24px rgba(0,0,0,0.4)'; }}
-      onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
     >
-      {/* Header */}
       <div style={{ display:'flex', gap:10, alignItems:'flex-start' }}>
         {wine.image ? (
           <img src={wine.image} alt={wine.title}
@@ -51,40 +44,18 @@ function WineCard({ wine }) {
             {wine.title}
           </div>
           <div style={{ fontSize:12, color:'#9a7d5a' }}>
-            {wine.country}{wine.year ? ` · ${wine.year}` : ''}
-            {wine.profile ? <span style={{ color:colors.text }}> · {wine.profile}</span> : null}
+             {wine.region || 'Vin'} · {wine.vendor}
           </div>
         </div>
         <div style={{ textAlign:'right', flexShrink:0 }}>
           {wine.price > 0 && (
             <div style={{ fontSize:16, fontWeight:'bold', color:colors.text }}>{wine.price}€</div>
           )}
-          {wine.service && <div style={{ fontSize:11, color:'#7a6040' }}>{wine.service}</div>}
         </div>
       </div>
 
-      {grapes.length > 0 && (
-        <div style={{ display:'flex', gap:5, flexWrap:'wrap' }}>
-          {grapes.map((g,i) => <Tag key={i} label={`🍇 ${g}`} color="#a08050" />)}
-        </div>
-      )}
-
-      {aromas.length > 0 && (
-        <div style={{ display:'flex', gap:5, flexWrap:'wrap' }}>
-          {aromas.map((a,i) => <Tag key={i} label={`✨ ${a}`} color="#8090a0" />)}
-        </div>
-      )}
-
-      {pairings.length > 0 && (
-        <div style={{ display:'flex', gap:5, flexWrap:'wrap' }}>
-          {pairings.map((p,i) => <Tag key={i} label={`🍽 ${p}`} color="#708060" />)}
-        </div>
-      )}
-
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:4 }}>
-        {wine.aging
-          ? <span style={{ fontSize:11, color:'#7a6040' }}>📅 {wine.aging}</span>
-          : <span />}
+        <span style={{ fontSize:11, color:'#7a6040' }}>📍 {wine.region}</span>
         <a href={wine.url} target="_blank" rel="noopener noreferrer"
           style={{ padding:'7px 14px', borderRadius:8, background:colors.bg,
             border:`1px solid ${colors.border}`, color:colors.text,
@@ -97,14 +68,14 @@ function WineCard({ wine }) {
 }
 
 const QUICK = [
-  { label:'🍷 Bordeaux',  q:'bordeaux'  },
-  { label:'🥂 Chablis',   q:'chablis'   },
-  { label:'🌹 Barolo',    q:'barolo'    },
-  { label:'🌿 Rioja',     q:'rioja'     },
-  { label:'🍾 Champagne', q:'champagne' },
-  { label:'🌸 Rosé',      q:'rosé'      },
-  { label:'🍇 Malbec',    q:'malbec'    },
-  { label:'🥂 Sancerre',  q:'sancerre'  },
+  { label:'🍷 Bordeaux',   q:'bordeaux'  },
+  { label:'🥂 Bourgogne',  q:'bourgogne' },
+  { label:'🌹 Rhône',      q:'rhône'     },
+  { label:'🌿 Italie',     q:'italie'    },
+  { label:'🍾 Champagne',  q:'champagne' },
+  { label:'🌸 Rosé',       q:'rosé'      },
+  { label:'🥂 Loire',      q:'loire'     },
+  { label:'🇪🇸 Espagne',    q:'espagne'   },
 ];
 
 export function Decouvrir() {
@@ -118,7 +89,9 @@ export function Decouvrir() {
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       if (value.trim().length >= 2) {
-        setResults(searchBoirLocal(value.trim(), 12));
+        // LE FIX EST ICI : On passe de 12 à 500 pour voir TOUT le catalogue
+        const data = searchBoirLocal(value.trim(), 500);
+        setResults(data);
         setSearched(true);
       } else {
         setResults([]);
@@ -131,11 +104,10 @@ export function Decouvrir() {
 
   return (
     <div style={{ padding:'20px 16px', maxWidth:700, margin:'0 auto', fontFamily:'Georgia, serif' }}>
-
       <div style={{ textAlign:'center', marginBottom:24 }}>
         <h2 style={{ fontSize:22, color:'#c8956c', margin:'0 0 6px', letterSpacing:'0.04em' }}>Découvrir</h2>
         <p style={{ color:'#7a6040', fontSize:13, margin:0 }}>
-          Recherchez par appellation, cépage, arôme ou pays
+          Explorez les {results.length > 0 ? results.length : '891'} pépites de Boir.be
         </p>
       </div>
 
@@ -146,19 +118,12 @@ export function Decouvrir() {
           type="text"
           value={query}
           onChange={e => handleSearch(e.target.value)}
-          placeholder="Bordeaux, Pinot Noir, cerise, Italie…"
+          placeholder="Région, cépage, appellation..."
           style={{ width:'100%', padding:'13px 40px 13px 44px', boxSizing:'border-box',
             background:'#1a1510', border:'1px solid #3d2f1f', borderRadius:12,
             color:'#e8d5b7', fontSize:15, fontFamily:'Georgia, serif', outline:'none' }}
-          autoFocus
         />
-        {query && (
-          <button onClick={reset}
-            style={{ position:'absolute', right:12, top:'50%', transform:'translateY(-50%)',
-              background:'none', border:'none', color:'#7a6040', cursor:'pointer', fontSize:18, padding:'4px 6px' }}>
-            ×
-          </button>
-        )}
+        {query && <button onClick={reset} style={{ position:'absolute', right:12, top:'50%', transform:'translateY(-50%)', background:'none', border:'none', color:'#7a6040', fontSize:18 }}>×</button>}
       </div>
 
       {!searched && (
@@ -166,8 +131,7 @@ export function Decouvrir() {
           {QUICK.map(({ label, q }) => (
             <button key={q} onClick={() => handleSearch(q)}
               style={{ padding:'7px 14px', borderRadius:20, background:'#1a1510',
-                border:'1px solid #3d2f1f', color:'#c8b48a', fontSize:13,
-                cursor:'pointer', fontFamily:'Georgia, serif' }}>
+                border:'1px solid #3d2f1f', color:'#c8b48a', fontSize:13, cursor:'pointer' }}>
               {label}
             </button>
           ))}
@@ -178,26 +142,12 @@ export function Decouvrir() {
         <div>
           <p style={{ color:'#7a6040', fontSize:13, marginBottom:16 }}>
             {results.length > 0
-              ? `${results.length} vin${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''} pour « ${query} »`
-              : `Aucun vin trouvé pour « ${query} »`}
+              ? `${results.length} vin${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''}`
+              : `Aucun résultat pour « ${query} »`}
           </p>
-          {results.length === 0 && (
-            <div style={{ textAlign:'center', padding:'40px 20px', color:'#7a6040' }}>
-              <div style={{ fontSize:40, marginBottom:12 }}>🍷</div>
-              <p style={{ marginBottom:8 }}>Essayez un autre terme : cépage, région, arôme…</p>
-              <p style={{ fontSize:13 }}>Ex : « Syrah », « minéral », « Toscane », « épicé »</p>
-            </div>
-          )}
           <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
             {results.map((wine, i) => <WineCard key={i} wine={wine} />)}
           </div>
-        </div>
-      )}
-
-      {!searched && (
-        <div style={{ textAlign:'center', padding:'32px 20px', color:'#5a4030' }}>
-          <div style={{ fontSize:48, marginBottom:12 }}>🍾</div>
-          <p style={{ fontSize:14 }}>Catalogue Boir.be · mis à jour chaque nuit</p>
         </div>
       )}
     </div>
