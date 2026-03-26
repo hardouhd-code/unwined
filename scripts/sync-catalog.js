@@ -73,8 +73,7 @@ async function updateCatalog() {
   const allInStock = rawProducts
     .filter(p => {
       const n = (p.title || '').toLowerCase();
-      // Filtre accessoires renforcé
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','accessoire'].some(k => n.includes(k));
+      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','sac','etui','capsule'].some(k => n.includes(k));
       return p.variants?.some(v => v.available) && !isAcc;
     })
     .map(p => ({
@@ -98,7 +97,7 @@ export function searchBoirLocal(query, limit = 100) {
       const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       const other = [w.v, w.c, w.grapes, w.aromas, w.type, w.profile, w.pairings].join(' ').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       terms.forEach(term => {
-        if (r === term || r.includes(term)) score += 100; // BOOST RÉGION
+        if (r === term || r.includes(term)) score += 100;
         if (t.includes(term)) score += 10;
         if (other.includes(term)) score += 1;
       });
@@ -111,7 +110,7 @@ export function searchBoirLocal(query, limit = 100) {
     }));
 }`;
 
-  const fileContent = \`// Boir.be catalog — \${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = \${JSON.stringify(finalCatalog, null, 2)};\n\${searchFn}\`;
+  const fileContent = `// Boir.be catalog — ${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = ${JSON.stringify(finalCatalog, null, 2)};\n${searchFn}`;
   fs.writeFileSync(CATALOG_PATH, fileContent, 'utf8');
   console.log('✅ Catalogue mis à jour.');
 }
