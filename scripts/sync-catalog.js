@@ -93,7 +93,7 @@ export function searchBoirLocal(query, limit = 100) {
   return BOIR_CATALOG
     .map(w => {
       let score = 0;
-      const r = (w.region || w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+      const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       const other = [w.v, w.c, w.grapes, w.aromas, w.type, w.profile, w.pairings].join(' ').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
       terms.forEach(term => {
@@ -110,7 +110,7 @@ export function searchBoirLocal(query, limit = 100) {
     }));
 }`;
 
-  const fileContent = `// Boir.be catalog — ${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = ${JSON.stringify(finalCatalog, null, 2)};\n${searchFn}`;
+  const fileContent = \`// Boir.be catalog — \${finalCatalog.length} vins actifs\nexport const BOIR_CATALOG = \${JSON.stringify(finalCatalog, null, 2)};\n\${searchFn}\`;
   fs.writeFileSync(CATALOG_PATH, fileContent, 'utf8');
   console.log('✅ Catalogue mis à jour.');
 }
