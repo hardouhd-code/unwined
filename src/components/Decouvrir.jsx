@@ -43,29 +43,27 @@ function WineCard({ wine }) {
   );
 }
 
-const PRICE_FILTERS = [
-  { id: 'all', label: 'Tous les prix' },
-  { id: 'under25', label: '< 25€' },
-  { id: '25to50', label: '25€ - 50€' },
-  { id: 'above50', label: '50€ +' },
-];
-
 export function Decouvrir() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [searched, setSearched] = useState(false);
   const [priceRange, setPriceRange] = useState('all');
+  const [sortOrder, setSortOrder] = useState('asc'); // 'asc' ou 'desc'
   const debounceRef = useRef(null);
 
-  // Filtrage intelligent par prix
-  const filteredResults = useMemo(() => {
-    return results.filter(wine => {
+  // LOGIQUE : Filtre + Tri combinés
+  const processedResults = useMemo(() => {
+    let list = results.filter(wine => {
       if (priceRange === 'under25') return wine.price < 25;
       if (priceRange === '25to50') return wine.price >= 25 && wine.price <= 50;
       if (priceRange === 'above50') return wine.price > 50;
       return true;
     });
-  }, [results, priceRange]);
+
+    return list.sort((a, b) => {
+      return sortOrder === 'asc' ? a.price - b.price : b.price - a.price;
+    });
+  }, [results, priceRange, sortOrder]);
 
   const handleSearch = useCallback((value) => {
     setQuery(value);
@@ -83,15 +81,15 @@ export function Decouvrir() {
 
   return (
     <div style={{ padding:'20px 16px', maxWidth:700, margin:'0 auto', fontFamily:'Georgia, serif' }}>
-      <div style={{ textAlign:'center', marginBottom:24 }}>
+      <div style={{ textAlign:'center', marginBottom:20 }}>
         <h2 style={{ fontSize:22, color:'#c8956c', margin:'0 0 6px' }}>Découvrir</h2>
-        <p style={{ color:'#7a6040', fontSize:13 }}>Recherche dans 891 pépites de Boir.be</p>
+        <p style={{ color:'#7a6040', fontSize:13 }}>Le catalogue complet de Boir.be (891 vins)</p>
       </div>
 
-      <div style={{ position:'relative', marginBottom:12 }}>
+      <div style={{ position:'relative', marginBottom:16 }}>
         <input
           type="text" value={query} onChange={e => handleSearch(e.target.value)}
-          placeholder="Bordeaux, Syrah, Italie..."
+          placeholder="Recherchez une région, un château..."
           style={{ 
             width:'100%', padding:'13px 44px', background:'#1a1510', border:'1px solid #3d2f1f', 
             borderRadius:12, color:'#e8d5b7', fontSize:15, outline:'none' 
@@ -100,33 +98,38 @@ export function Decouvrir() {
         <span style={{ position:'absolute', left:14, top:'50%', transform:'translateY(-50%)' }}>🔍</span>
       </div>
 
-      {/* BARRE DE FILTRES PRIX */}
-      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:16, marginBottom:8 }}>
-        {PRICE_FILTERS.map(f => (
-          <button 
-            key={f.id} 
-            onClick={() => setPriceRange(f.id)}
-            style={{ 
-              padding:'6px 14px', borderRadius:20, whiteSpace:'nowrap', fontSize:12, cursor:'pointer',
-              background: priceRange === f.id ? '#c8956c' : '#1a1510',
-              color: priceRange === f.id ? '#1a1510' : '#c8b48a',
-              border: `1px solid ${priceRange === f.id ? '#c8956c' : '#3d2f1f'}`,
-              fontWeight: priceRange === f.id ? 'bold' : 'normal'
-            }}
-          >
-            {f.label}
+      {/* FILTRES PRIX */}
+      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:8, marginBottom:8 }}>
+        {['all', 'under25', '25to50', 'above50'].map(id => (
+          <button key={id} onClick={() => setPriceRange(id)} style={{
+            padding:'6px 14px', borderRadius:20, whiteSpace:'nowrap', fontSize:12, cursor:'pointer',
+            background: priceRange === id ? '#c8956c' : '#1a1510',
+            color: priceRange === id ? '#1a1510' : '#c8b48a',
+            border: `1px solid ${priceRange === id ? '#c8956c' : '#3d2f1f'}`,
+          }}>
+            {id === 'all' ? 'Tous' : id === 'under25' ? '< 25€' : id === '25to50' ? '25-50€' : '50€+'}
           </button>
         ))}
       </div>
 
+      {/* OPTIONS DE TRI */}
+      <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:16, borderTop:'1px solid #3d2f1f', paddingTop:12 }}>
+        <span style={{ color:'#7a6040', fontSize:12 }}>{processedResults.length} vins trouvés</span>
+        <div style={{ display:'flex', gap:4 }}>
+           <button onClick={() => setSortOrder('asc')} style={{ 
+             background: sortOrder === 'asc' ? '#3d2f1f' : 'transparent', border:'none', color:'#c8b48a', 
+             padding:'4px 8px', borderRadius:6, fontSize:11, cursor:'pointer' 
+           }}>Prix ↗</button>
+           <button onClick={() => setSortOrder('desc')} style={{ 
+             background: sortOrder === 'desc' ? '#3d2f1f' : 'transparent', border:'none', color:'#c8b48a', 
+             padding:'4px 8px', borderRadius:6, fontSize:11, cursor:'pointer' 
+           }}>Prix ↘</button>
+        </div>
+      </div>
+
       {searched && (
-        <div>
-          <p style={{ color:'#7a6040', fontSize:12, marginBottom:16 }}>
-            {filteredResults.length} résultat{filteredResults.length > 1 ? 's' : ''} correspondant{filteredResults.length > 1 ? 's' : ''}
-          </p>
-          <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
-            {filteredResults.map((wine, i) => <WineCard key={i} wine={wine} />)}
-          </div>
+        <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
+          {processedResults.map((wine, i) => <WineCard key={i} wine={wine} />)}
         </div>
       )}
     </div>
