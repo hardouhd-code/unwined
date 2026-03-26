@@ -1,5 +1,19 @@
-// Boir.be catalog — 882 vins actifs
+// Boir.be catalog — 881 vins actifs
 export const BOIR_CATALOG = [
+  {
+    "t": "San Luciano \"Luna di Monte\" 2021",
+    "p": 8.95,
+    "v": "DESCAS PERE ET FILS SA",
+    "u": "https://boir.be/fr/products/san-luciano-luna-di-monte-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/470528_PRFF.png?v=1740407812",
+    "c": "France",
+    "r": "",
+    "type": "rouge",
+    "grapes": "",
+    "aromas": "",
+    "pairings": "",
+    "profile": ""
+  },
   {
     "t": "Champagne Soutiran \"Perle Noir\" Grand Cru Brut",
     "p": 42.95,
@@ -40,23 +54,6 @@ export const BOIR_CATALOG = [
     "grapes": "",
     "aromas": "",
     "pairings": "",
-    "profile": ""
-  },
-  {
-    "t": "Azienda Vinicola Cantele - Salento \"Amativo\" 2021",
-    "y": "",
-    "p": 19.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/azienda-vinicola-cantele-salento-amativo-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b79d913de35458c7b45731af86a3c34.png?v=1733321174",
-    "c": "Italie",
-    "r": "Pouilles",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
     "profile": ""
   },
   {
@@ -10657,23 +10654,6 @@ export const BOIR_CATALOG = [
     "v": "PAXTON WINES PTY LTD",
     "u": "https://boir.be/fr/products/le-comte-de-malartic-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e76c334995bf987d755e416609897395.png?v=1733411686",
-    "c": "France",
-    "r": "",
-    "type": "rouge",
-    "grapes": "",
-    "aromas": "",
-    "pairings": "",
-    "service": "",
-    "aging": "",
-    "profile": ""
-  },
-  {
-    "t": "Le Grand Vin Rauzan Despagne 2019",
-    "y": "",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/le-grand-vin-rauzan-despagne-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c92d54a0e4a8b707975a0757bdd563dc.png?v=1733409117",
     "c": "France",
     "r": "",
     "type": "rouge",
