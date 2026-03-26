@@ -3,7 +3,6 @@ const path = require('path');
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// Configuration des régions pour éviter les "0 résultats"
 const REGIONS_MAP = {
   'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe', 'fronsac', 'moulis', 'listrac'],
   'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon'],
@@ -15,10 +14,8 @@ const REGIONS_MAP = {
 function detectLocation(p) {
   const haystack = (p.title + ' ' + (p.tags || '') + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   let res = { region: 'Autre', country: 'France' };
-  
   if (haystack.includes('italie') || haystack.includes('toscana') || haystack.includes('piemonte')) res.country = 'Italie';
   else if (haystack.includes('espagne')) res.country = 'Espagne';
-  
   for (const [r, subs] of Object.entries(REGIONS_MAP)) {
     if (subs.some(s => haystack.includes(s)) || haystack.includes(r.toLowerCase())) {
       res.region = r;
@@ -44,7 +41,7 @@ async function update() {
     return p.variants?.some(v => v.available) && !isAcc;
   }).map(p => {
     const loc = detectLocation(p);
-    // ON GARDE LES DEUX VERSIONS DE CLÉS POUR LA COMPATIBILITÉ
+    // DOUBLE MAPPING : On garde les clés courtes ET les clés longues
     return {
       t: p.title, title: p.title,
       p: parseFloat(p.variants[0].price), price: parseFloat(p.variants[0].price),
@@ -65,7 +62,7 @@ export function searchBoirLocal(query) {
     return hay.includes(term);
   });
 }
-// Nouvelle fonction pour Harold
+// Fonction indispensable pour l'écran d'accueil
 export function getRandomWines(n = 3) {
   return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n);
 }`;
