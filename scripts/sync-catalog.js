@@ -12,7 +12,7 @@ const REGIONS_MAP = {
 };
 
 function detectLocation(p) {
-  const haystack = (p.title + ' ' + (p.tags || '') + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\\u036f]/g, "");
+  const haystack = (p.title + ' ' + (p.tags || '') + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   let res = { region: 'Autre', country: 'France' };
   if (haystack.includes('italie') || haystack.includes('toscana') || haystack.includes('piemonte')) res.country = 'Italie';
   else if (haystack.includes('espagne')) res.country = 'Espagne';
@@ -38,7 +38,6 @@ async function update() {
     return p.variants?.some(v => v.available) && !isAcc;
   }).map(p => {
     const loc = detectLocation(p);
-    // DOUBLE MAPPING : Indispensable pour Harold
     return {
       t: p.title, title: p.title,
       p: parseFloat(p.variants[0].price), price: parseFloat(p.variants[0].price),
@@ -53,9 +52,9 @@ async function update() {
   const content = `export const BOIR_CATALOG = ${JSON.stringify(catalog, null, 2)};
 export function searchBoirLocal(query) {
   if (!query || query.length < 2) return [];
-  const term = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "");
+  const term = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   return BOIR_CATALOG.filter(w => {
-    const hay = (w.t + " " + w.r + " " + w.c + " " + w.v).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "");
+    const hay = (w.t + " " + w.r + " " + w.c + " " + w.v).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     return hay.includes(term);
   });
 }
