@@ -1,4 +1,4 @@
-// Catalogue Universel Unwine-D - 890 vins
+// Catalogue Unwine-D - 890 vins
 export const BOIR_CATALOG = [
   {
     "t": "ADE vocht- en thermometer",
@@ -177,7 +177,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/arthur-metz-sylvaner-vieilles-vignes-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bb2942b245de6b81acbc7eec02bf5dcc_580a24db-0566-4931-980d-04154b3349da.png?v=1770039391",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -348,7 +348,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE BOUCHIE CHATELLIER",
     "u": "https://boir.be/fr/products/bestheim-gewurztraminer-vendages-tardives-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/aad36da14f35bffb77083946880b774e.png?v=1733413103",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -366,7 +366,7 @@ export const BOIR_CATALOG = [
     "v": "ROQUETA ORIGEN SL",
     "u": "https://boir.be/fr/products/bestheim-cremant-dalsace-grand-prestige-rose-brut-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d62c671e311c9bf9afa5ffea49854000_52abeac0-d2e6-4ace-9b36-28bffc561145.png?v=1734019941",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -375,7 +375,7 @@ export const BOIR_CATALOG = [
     "v": "VINICOLE BESTHEIM COOP",
     "u": "https://boir.be/fr/products/bestheim-cremant-dalsace-grand-prestige-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4391496ff2ef84656dc4e42756a6a9c6.png?v=1733263927",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -627,7 +627,7 @@ export const BOIR_CATALOG = [
     "v": "CANALS & MUNNE SL",
     "u": "https://boir.be/fr/products/canals-munne-cava-dionysus-reserva-brut-nature",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Canals_Munne_Cava_Dionysus_Reserva_Brut_Nature.png?v=1754914304",
-    "r": "Espagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -753,7 +753,7 @@ export const BOIR_CATALOG = [
     "v": "COLLEGIALE DES DOMAINES DE LOI",
     "u": "https://boir.be/fr/products/champagne-abele-1757-le-sourire-de-reims-brut-2009",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ed2c876123fc3c2c5f2136ea9bfe84ae.png?v=1733423096",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -762,7 +762,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-adn-noir-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c8e55898863e6d872de8554ce29c8c7f.png?v=1758616803",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -771,7 +771,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-adn-rose-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/658ccbb8d9edb4b7bbc5b2d99d2ef869.png?v=1758616874",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -780,7 +780,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/champagne-collard-picard-blanc-de-blancs-grand-cru-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1f22cb32931882fa9599d6fb3a0227bf.png?v=1733263933",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -789,7 +789,7 @@ export const BOIR_CATALOG = [
     "v": "CHATEAU DU BON BARON NV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-cuvee-prestige-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2f44717319b667fa7f3733e1be371d73.png?v=1733263935",
-    "r": "Champagne",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -798,7 +798,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-dom-picard-grand-cru-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2cecf13d88007ad02d54c91187e342be.png?v=1758617335",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -807,7 +807,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-dom-picard-grand-cru-extra-brut-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2cecf13d88007ad02d54c91187e342be_e1b750c8-1f38-4a07-a39d-efaf64564637.png?v=1758617400",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -816,7 +816,7 @@ export const BOIR_CATALOG = [
     "v": "PERRIN ET FILS SASU",
     "u": "https://boir.be/fr/products/champagne-collard-picard-essentiel-brut-nature-2012",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/abd7ababf6f663636de3d7adb15b432a.png?v=1733423098",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -825,7 +825,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-perpetuelle-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92225724fff7b095f03f1f31646fc090.png?v=1758617002",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -834,7 +834,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-racines-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c40e6ead8591c8674ea3802a44580af4.png?v=1758617122",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -843,7 +843,7 @@ export const BOIR_CATALOG = [
     "v": "COLLARD PICARD SCEV",
     "u": "https://boir.be/fr/products/champagne-collard-picard-racines-extra-brut-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c40e6ead8591c8674ea3802a44580af4_608eca47-2c4b-47ce-90a1-127686c9158c.png?v=1758617214",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -852,7 +852,7 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-blanc-de-blancs-brut-nature",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/91c54ce943b94cf02ea969f6cd0f0655.png?v=1755848896",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -861,7 +861,7 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-cuvee-rose-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b62ff7f92455d1e1618bd344beb2bf3f.png?v=1755848735",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -870,7 +870,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-grand-siecle-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/550cec6768030a75ee1f3ebb56b5d11d.png?v=1733263938",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -879,7 +879,7 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-millesime-2012-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7496011a4894b38e38f40a3f245fcecb.png?v=1758621009",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -888,7 +888,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/champagne-nicolas-feuillatte-palmes-dor-2008",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2a5d7eca81af6e5de722db16c2a819c9.png?v=1733421828",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -897,7 +897,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/champagne-perrier-jouet-grand-brut-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/22d87d2ac217f16d9b9d459d1cfc4b46.png?v=1733423102",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -906,7 +906,7 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES JP HEMBISE SARL",
     "u": "https://boir.be/fr/products/champagne-soutiran-perle-noir-grand-cru-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Soutiran_Perle_Noir_Grand_Cru_Brut.png?v=1750078259",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -915,7 +915,7 @@ export const BOIR_CATALOG = [
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/champagne-soutiran-rose-grand-cru-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5867b06739b7722d0a60452e2aeb2fa8.png?v=1733325187",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -924,7 +924,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-blanc-de-blancs-grand-cru-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Voirin-Jumel_Blanc_de_Blancs_Grand_Cru_Brut.png?v=1753869357",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "blanc"
   },
   {
@@ -933,7 +933,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-cramant-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4_d8ce9c05-7e70-4b2b-bdfb-803878b9a81d.png?v=1758541673",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -942,7 +942,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-cuvee-555-grand-cru-blanc-de-blancs",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1_fa2ccb79-9911-47ac-8777-b3286e569e7b.png?v=1758540866",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -951,7 +951,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-lassemblage-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5_66c62f79-0b6b-4311-916e-fe9034c09b8a.png?v=1758541732",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -960,7 +960,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485.png?v=1758539666",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -969,7 +969,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut-1",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485_15a0626a-2022-4525-8048-de7ed2c5f863.png?v=1758539778",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -978,7 +978,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut-2",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485_181279ad-ce5e-4e09-95ff-225ce8b4b4bb.png?v=1758539841",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -987,7 +987,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-2-grand-cru-brut-zero",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/986de6384057901cb20c37802465c8a4.png?v=1769527196",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -996,7 +996,7 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-ratafia",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2280ac4c53b4b426ba6775410030d678.png?v=1758540632",
-    "r": "Champagne",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4254,7 +4254,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-rheingau-riesling-remastered-r3-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69126c0df37fc2ec4a9ae0ae91fb5d75.png?v=1758537702",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4263,7 +4263,7 @@ export const BOIR_CATALOG = [
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-schlossberg-rudesheimer-berg-riesling-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/705f507ac309332f81abbe9b26bcb649.png?v=1765211861",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4488,7 +4488,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/dirler-cade-gewurztraminer-grand-cru-kitterle-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dc6acca437c60b0ee8c9789a3e03c81c.png?v=1733413210",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4497,7 +4497,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/dirler-cade-pinot-gris-grand-cru-kessler-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/image-card.png?v=1761836996",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4506,7 +4506,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-grand-cru-kitterle-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dirler-Cad_Riesling_Grand_Cru_Kitterl_2019.png?v=1745957086",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4515,7 +4515,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDE CHEVALIER EURL",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-grand-cru-kitterle-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/packshot-9-tran.png?v=1755789836",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4524,7 +4524,7 @@ export const BOIR_CATALOG = [
     "v": "HOREAU BEYLOT ET CIE SA",
     "u": "https://boir.be/fr/products/dirler-cade-riesling-lieu-dit-belzbrunnen-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9677500650cd1526acdda5b7cca04302.png?v=1733323349",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -4884,7 +4884,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Denis_Carre_-_Beaune_1er_Cru_Les_Tuvilains_2019.png?v=1749136588",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4893,7 +4893,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0a24a96a532dca73d71f200ed3ea66fb.png?v=1733421296",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4902,7 +4902,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-beaune-1er-cru-les-tuvilains-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9e3367a51d129cfa1508feda707908dc.png?v=1733323379",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4920,7 +4920,7 @@ export const BOIR_CATALOG = [
     "v": "VINOVALIE COOP",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-chardonnay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/99987963b29d87ab022c0acc117bc331.png?v=1733412121",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4929,7 +4929,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-la-perriere-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/57d25a44d6b98ba684c81f2a25a0b4f3.png?v=1733412194",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4938,7 +4938,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-denis-carre-hautes-cotes-de-beaune-la-perriere-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/51b7a88ef5d8cfcfc8dc679bbf115840.png?v=1733323386",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4974,7 +4974,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON SICHEL SA",
     "u": "https://boir.be/fr/products/domaine-denis-carre-savigny-les-beaune-vieilles-vignes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7b4f34b3d202f52a1d843e026c2b522f.png?v=1733323391",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -4992,7 +4992,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-des-brangers-menetou-salon-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ea0de6d32cceac1f2e726229ef694f8.png?v=1733407039",
-    "r": "Loire",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -5118,7 +5118,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/domaine-du-pavillon-beaune-1er-cru-clos-des-mouches-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ec57fa1910cbe6794078d9c111274d0b_29595720-23c1-47a0-b29a-883927b3275b.png?v=1741620980",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -5901,7 +5901,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-barrique-la-colline-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b498fdb3c21354a916ce30442768046.png?v=1770646116",
-    "r": "Alsace",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -5910,7 +5910,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29ba7b2aad02c057cb0eb229c789048a.png?v=1770646758",
-    "r": "Alsace",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -5919,7 +5919,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-clos-de-duras-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9014c3a67af0fa9af295390fc7cd4845.png?v=1770647322",
-    "r": "Alsace",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -5928,7 +5928,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-cuvee-classique-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3abc87174ad4e57150ea386fce946b93.png?v=1770372998",
-    "r": "Alsace",
+    "r": "Loire",
     "type": "rouge"
   },
   {
@@ -6045,7 +6045,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/icardi-barbaresco-montubert-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8e53286326c086103b7771c1d666592d.png?v=1733417890",
-    "r": "Italie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6126,7 +6126,7 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/jean-chartron-batard-montrachet-grand-cru-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ece94497e71338676e97ad851394a7fe.png?v=1733428007",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6171,7 +6171,7 @@ export const BOIR_CATALOG = [
     "v": "ANTOINE OLIVIER SARL",
     "u": "https://boir.be/fr/products/jean-chartron-chevalier-montrachet-grand-cru-clos-des-chevaliers-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9b82acb8a1dc04d964661889531bee21.png?v=1733417859",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "rouge"
   },
   {
@@ -6252,7 +6252,7 @@ export const BOIR_CATALOG = [
     "v": "JEAN CHARTRON EURL",
     "u": "https://boir.be/fr/products/jean-chartron-savigny-les-beaune-theologique-nourrissant-et-morbifuge-blanc-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/841e8a644d4e743d9d15da830e548a25_60f77e9b-0089-4be1-b166-a39ad769d795.png?v=1760551510",
-    "r": "Autre",
+    "r": "Bourgogne",
     "type": "blanc"
   },
   {
@@ -6441,7 +6441,7 @@ export const BOIR_CATALOG = [
     "v": "WINCO NV",
     "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
-    "r": "Italie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6450,7 +6450,7 @@ export const BOIR_CATALOG = [
     "v": "EIB SRL",
     "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8.png?v=1733264119",
-    "r": "Italie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -6828,7 +6828,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-barbaresco-palas-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/97d5e2bc099b7cc72aee03df7afe0025.png?v=1772011791",
-    "r": "Italie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7026,7 +7026,7 @@ export const BOIR_CATALOG = [
     "v": "BORDEAUX TRADITION SARL",
     "u": "https://boir.be/fr/products/paul-thomas-sancerre-tradition-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c4d7ea391d9a448b92753d4877843e4d.png?v=1733356398",
-    "r": "Loire",
+    "r": "Bordeaux",
     "type": "rouge"
   },
   {
@@ -7296,7 +7296,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/ruggeri-valdobbiadene-prosecco-giustino-b-extra-dry",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a3e65185987170d7ba11545a0f142d51.png?v=1733322383",
-    "r": "Italie",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -7980,7 +7980,7 @@ export const BOIR_CATALOG = [
     "v": "WINZER KREMS EG",
     "u": "https://boir.be/fr/products/winzer-krems-ried-kremser-weinzierlberg-reserve-gruner-veltliner-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/avel_18.png?v=1758116559",
-    "r": "Alsace",
+    "r": "Autre",
     "type": "rouge"
   },
   {
@@ -8015,18 +8015,21 @@ export const BOIR_CATALOG = [
 export function searchBoirLocal(query, limit = 500) {
   if (!query || query.length < 2) return [];
   const terms = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/);
+  
   return BOIR_CATALOG.map(w => {
     let score = 0;
     const r = (w.r || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const t = (w.t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    const v = (w.v || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    
     terms.forEach(term => {
-      if (r === term || r.includes(term)) score += 100; // Match Région
-      if (t.includes(term)) score += 20; // Match Titre
-      if (v.includes(term)) score += 10; // Match Vendeur
+      // Si on cherche "Bordeaux", on matche TOUS les vins dont la région est Bordeaux
+      if (r === term || (term === 'bordeaux' && r === 'bordeaux')) score += 100;
+      else if (r.includes(term)) score += 80;
+      
+      if (t.includes(term)) score += 20;
     });
     return { ...w, score };
   })
   .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
-  .map(({ score, ...w }) => ({ title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, type: w.type }));
+  .map(({ score, ...w }) => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r }));
 }
