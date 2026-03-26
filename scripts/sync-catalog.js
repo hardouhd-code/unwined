@@ -2,46 +2,48 @@ const fs = require('fs');
 const path = require('path');
 
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
-const MAX_NEW_PER_RUN = 20; 
-
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// On définit les appellations qui font partie de la famille Bordeaux
+const BORDEAUX_SUBS = ['saint-emilion', 'pomerol', 'medoc', 'graves', 'pessac', 'margaux', 'pauillac', 'saint-julien', 'saint-estephe', 'sauternes', 'barsac', 'canon-fronsac'];
 
 const KNOWN_REGIONS = [
   'Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Jura', 'Savoie', 
-  'Languedoc-Roussillon', 'Provence', 'Sud-Ouest', 'Beaujolais', 'Corse', 'Crémant',
-  'Piémont', 'Toscane', 'Vénétie', 'Campanie', 'Sicile', 'Pouilles', 'Abruzzes', 'Sardaigne',
-  'Rioja', 'Ribera del Duero', 'Priorat', 'Rías Baixas', 'Rueda', 'Jerez', 'Cava',
-  'Porto', 'Douro', 'Alentejo', 'Vinho Verde', 'Madère', 'Wachau', 'Kamptal', 'Burgenland', 
-  'Moselle', 'Rheingau', 'Stellenbosch', 'Marlborough', 'Chili', 'Mendoza', 'Napa', 'Sonoma', 
-  'Hongrie', 'Grèce', 'Liban', 'Géorgie'
+  'Languedoc-Roussillon', 'Provence', 'Sud-Ouest', 'Beaujolais', 'Corse', 
+  'Piémont', 'Toscane', 'Vénétie', 'Rioja', 'Ribera del Duero', 'Porto', 'Douro'
 ];
 
 function detectRegion(p) {
   const tagsStr = Array.isArray(p.tags) ? p.tags.join(' ') : (p.tags || '');
   const haystack = (p.title + ' ' + tagsStr).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  
+  // On cherche d'abord dans les sous-appellations de Bordeaux
+  for (const sub of BORDEAUX_SUBS) {
+    if (haystack.includes(sub.replace('-', ' '))) return sub.charAt(0).toUpperCase() + sub.slice(1);
+  }
+
   for (const r of KNOWN_REGIONS) {
     const search = r.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     if (haystack.includes(search)) return r;
   }
+  
   if (haystack.includes('chateau') && !haystack.includes('bourgogne')) return 'Bordeaux';
   return '';
 }
 
 async function fetchBoirCatalog() {
-  console.log('🍇 Récupération des données sur Boir.be...');
   let allProducts = [];
   let page = 1;
   let hasMore = true;
   while (hasMore) {
     const url = "https://boir.be/collections/all/products.json?limit=250&page=" + page;
-    const res = await fetch(url, { headers: { 'User-Agent': 'Unwine-D/6.0' } });
+    const res = await fetch(url, { headers: { 'User-Agent': 'Unwine-D/7.0' } });
     const data = await res.json();
     if (data.products && data.products.length > 0) {
       allProducts = [...allProducts, ...data.products];
-      console.log('  Page ' + page + ' : ' + data.products.length + ' produits.');
       page++;
     } else { hasMore = false; }
-    await sleep(300);
+    await sleep(200);
   }
   return allProducts;
 }
@@ -51,7 +53,7 @@ async function updateCatalog() {
   const finalCatalog = rawProducts
     .filter(p => {
       const n = (p.title || '').toLowerCase();
-      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem'].some(k => n.includes(k));
+      const isAcc = ['bouchon','verre','glas','spuwemmer','carafe','stopper','dop','klem','accessoire'].some(k => n.includes(k));
       return p.variants?.some(v => v.available) && !isAcc;
     })
     .map(p => ({
@@ -64,27 +66,34 @@ async function updateCatalog() {
       type: (p.title || '').toLowerCase().includes('blanc') ? 'blanc' : 'rouge'
     }));
 
-  const searchFn = 'export function searchBoirLocal(query, limit = 100) {\n' +
-    '  if (!query || query.length < 2) return [];\n' +
-    '  const terms = query.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").split(/\\s+/);\n' +
-    '  return BOIR_CATALOG.map(w => {\n' +
-    '    let score = 0;\n' +
-    '    const r = (w.r || "").toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "");\n' +
-    '    const t = (w.t || "").toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "");\n' +
-    '    terms.forEach(term => {\n' +
-    '      if (r === term || r.includes(term)) score += 100;\n' +
-    '      if (t.includes(term)) score += 10;\n' +
-    '    });\n' +
-    '    return { ...w, score };\n' +
-    '  }).filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)\n' +
-    '  .map(({ score, ...w }) => ({ title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, type: w.type }));\n' +
-    '}';
-
-  const header = "// Catalogue Boir.be - " + finalCatalog.length + " vins\n";
-  const content = "export const BOIR_CATALOG = " + JSON.stringify(finalCatalog, null, 2) + ";\n";
+  const searchFn = `
+export function searchBoirLocal(query, limit = 100) {
+  if (!query || query.length < 2) return [];
+  const terms = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').split(/\\s+/);
+  const bdxSubs = ${JSON.stringify(BORDEAUX_SUBS)};
   
+  return BOIR_CATALOG.map(w => {
+    let score = 0;
+    const r = (w.r || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+    const t = (w.t || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+    
+    terms.forEach(term => {
+      // Si on cherche "Bordeaux", on booste aussi les sous-appellations
+      const isBdxSub = bdxSubs.some(sub => r.includes(sub.replace('-', ' ')));
+      if (term === 'bordeaux' && (r === 'bordeaux' || isBdxSub)) score += 100;
+      else if (r.includes(term)) score += 80;
+      if (t.includes(term)) score += 20;
+    });
+    return { ...w, score };
+  })
+  .filter(w => w.score > 0).sort((a, b) => b.score - a.score).slice(0, limit)
+  .map(({ score, ...w }) => ({ title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, type: w.type }));
+}`;
+
+  const header = "// Boir.be - " + finalCatalog.length + " vins actifs\n";
+  const content = "export const BOIR_CATALOG = " + JSON.stringify(finalCatalog, null, 2) + ";\n";
   fs.writeFileSync(CATALOG_PATH, header + content + searchFn, 'utf8');
-  console.log('✅ ' + finalCatalog.length + ' vins enregistrés avec succès !');
+  console.log('✅ ' + finalCatalog.length + ' vins synchronisés.');
 }
 
 updateCatalog().catch(err => { console.error(err); process.exit(1); });
