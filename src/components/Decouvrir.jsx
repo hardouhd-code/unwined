@@ -11,7 +11,7 @@ const REGIONS_BY_COUNTRY = {
 };
 
 function WineCard({ wine }) {
-  // On prend title ou t, price ou p, etc.
+  // Supporte les clés courtes et longues pour la sécurité
   const title = wine.title || wine.t;
   const price = wine.price || wine.p;
   const vendor = wine.vendor || wine.v;
@@ -48,25 +48,36 @@ export function Decouvrir() {
   const catalog = WineData?.BOIR_CATALOG || [];
   const searchFn = WineData?.searchBoirLocal || (() => []);
 
+  // On remet la région à "Toutes" si on change de pays
   useEffect(() => { setRegion('Toutes'); }, [country]);
 
+  // --- LE MOTEUR DE FILTRAGE UNIQUE ---
   const filteredResults = useMemo(() => {
-    // 1. Base : Recherche ou Sélection de Pays (Supporte c et country)
-    let list = (query.length >= 2) ? searchFn(query) : 
-               (country !== 'Tous') ? catalog.filter(w => (w.country || w.c) === country) : [];
+    let baseList = [];
 
-    // 2. Filtres Secondaires
-    return list.filter(w => {
+    // 1. On définit la base : soit le résultat de la recherche, soit TOUT le catalogue
+    if (query.trim().length >= 2) {
+      baseList = searchFn(query.trim());
+    } else {
+      baseList = catalog;
+    }
+
+    // 2. On applique les filtres sur cette base
+    return baseList.filter(w => {
       const wPrice = w.price || w.p;
+      const wCountry = w.country || w.c;
       const wRegion = w.region || w.r;
+      
       const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
-      const mPrice = price === 'under25' ? wPrice < 25 : 
-                    price === '25to50' ? (wPrice >= 25 && wPrice <= 50) : 
-                    price === 'above50' ? wPrice > 50 : true;
+      const mCountry = country === 'Tous' || wCountry === country;
       const mRegion = region === 'Toutes' || norm(wRegion) === norm(region);
-      
-      return mPrice && mRegion;
+      const mPrice = price === 'all' ? true : 
+                    price === 'under25' ? wPrice < 25 : 
+                    price === '25to50' ? (wPrice >= 25 && wPrice <= 50) : 
+                    wPrice > 50;
+
+      return mCountry && mRegion && mPrice;
     }).sort((a, b) => {
       const pA = a.price || a.p;
       const pB = b.price || b.p;
@@ -75,22 +86,27 @@ export function Decouvrir() {
   }, [query, country, region, price, sort, catalog, searchFn]);
 
   return (
-    <div style={{ background: COLORS.bg, minHeight: '100vh', color: COLORS.text, padding: '20px 20px 100px', fontFamily: 'Georgia, serif', boxSizing:'border-box' }}>
+    <div style={{ background: COLORS.bg, minHeight: '100vh', color: COLORS.text, padding: '20px 16px 100px', fontFamily: 'Georgia, serif', boxSizing:'border-box' }}>
       <header style={{ textAlign: 'center', marginBottom: '25px' }}>
         <h1 style={{ color: COLORS.accent, fontSize: '32px', margin: 0 }}>Unwine-D</h1>
         <p style={{ color: COLORS.muted, fontSize: '12px', marginTop: '5px' }}>LA CAVE DIGITALE</p>
       </header>
 
-      <input type="text" value={query} onChange={(e) => {setQuery(e.target.value); if(e.target.value) setCountry('Tous');}} placeholder="Rechercher..." 
-        style={{ width: '100%', padding: '15px', background: COLORS.card, border: `1px solid ${COLORS.muted}`, borderRadius: '12px', color: COLORS.text, fontSize: '16px', outline: 'none', marginBottom: '20px' }} 
-      />
+      {/* 1. Barre de Recherche */}
+      <div style={{ marginBottom: 20 }}>
+        <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher (ex: Syrah, Margaux...)" 
+          style={{ width: '100%', padding: '15px', background: COLORS.card, border: `1px solid ${COLORS.muted}`, borderRadius: '12px', color: COLORS.text, fontSize: '16px', outline: 'none' }} 
+        />
+      </div>
 
+      {/* 2. Filtres Pays */}
       <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '15px', marginBottom:'10px', scrollbarWidth: 'none' }}>
         {['Tous', ...Object.keys(FLAGS)].map(c => (
-          <button key={c} onClick={() => {setCountry(c); setQuery('');}} style={{ flexShrink: 0, padding: '8px 16px', borderRadius: '20px', fontSize: '12px', background: country === c ? COLORS.accent : COLORS.card, color: country === c ? '#000' : COLORS.text, border: `1px solid ${COLORS.muted}` }}>{c}</button>
+          <button key={c} onClick={() => setCountry(c)} style={{ flexShrink: 0, padding: '8px 16px', borderRadius: '20px', fontSize: '12px', background: country === c ? COLORS.accent : COLORS.card, color: country === c ? '#1a1510' : COLORS.text, border: `1px solid ${COLORS.muted}` }}>{c}</button>
         ))}
       </div>
 
+      {/* 3. Filtres Régions */}
       {country !== 'Tous' && REGIONS_BY_COUNTRY[country] && (
         <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', paddingBottom: '15px', borderTop: `1px solid ${COLORS.border}`, paddingTop: '15px', marginBottom:'10px', scrollbarWidth: 'none' }}>
           {['Toutes', ...REGIONS_BY_COUNTRY[country]].map(r => (
@@ -99,6 +115,7 @@ export function Decouvrir() {
         </div>
       )}
 
+      {/* 4. Filtres Prix & Tri */}
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '25px', gap: 10 }}>
         <select value={price} onChange={e => setPrice(e.target.value)} style={{ background: COLORS.card, color: COLORS.text, border: `1px solid ${COLORS.muted}`, padding: '8px', borderRadius: '8px', flex: 1 }}>
           <option value="all">Tous les prix</option>
@@ -106,18 +123,24 @@ export function Decouvrir() {
           <option value="25to50">25€ - 50€</option>
           <option value="above50">50€ +</option>
         </select>
-        <button onClick={() => setSort(sort==='asc'?'desc':'asc')} style={{ background: 'transparent', border: `1px solid ${COLORS.accent}`, color: COLORS.accent, padding: '8px 15px', borderRadius: '8px' }}>Prix {sort === 'asc' ? '↑' : '↓'}</button>
+        <button onClick={() => setSort(sort==='asc'?'desc':'asc')} style={{ background: 'transparent', border: `1px solid ${COLORS.accent}`, color: COLORS.accent, padding: '8px 15px', borderRadius: '8px', fontSize: 12 }}>
+          Prix {sort === 'asc' ? '↑' : '↓'}
+        </button>
       </div>
 
+      {/* 5. Liste des Résultats */}
       <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <p style={{ fontSize: 12, color: COLORS.muted, marginBottom: 15 }}>{filteredResults.length} vins trouvés</p>
         {filteredResults.map((wine, i) => <WineCard key={i} wine={wine} />)}
-        {filteredResults.length === 0 && (query.length >= 2 || country !== 'Tous') && (
-          <p style={{ textAlign: 'center', color: COLORS.muted, marginTop: '40px' }}>Aucune pépite trouvée.</p>
+        
+        {filteredResults.length === 0 && (
+          <p style={{ textAlign: 'center', color: COLORS.muted, marginTop: '40px' }}>Aucune pépite ne correspond à vos critères.</p>
         )}
       </div>
 
+      {/* Navigation Basse */}
       <nav style={{ position: 'fixed', bottom: 0, left: 0, right: 0, height: '75px', background: 'rgba(10, 10, 10, 0.9)', backdropFilter: 'blur(10px)', display: 'flex', justifyContent: 'space-around', alignItems: 'center', borderTop: `1px solid ${COLORS.border}`, paddingBottom: '10px' }}>
-        <div style={{ color: COLORS.accent, textAlign: 'center' }}><span className="material-symbols-outlined">search</span><div style={{ fontSize: '9px', marginTop: '4px', fontWeight:'bold' }}>RECHERCHE</div></div>
+        <div style={{ color: COLORS.muted, textAlign: 'center' }}><span className="material-symbols-outlined">search</span><div style={{ fontSize: '9px', marginTop: '4px' }}>RECHERCHE</div></div>
         <div style={{ color: COLORS.muted, textAlign: 'center' }}><span className="material-symbols-outlined">inventory_2</span><div style={{ fontSize: '9px', marginTop: '4px' }}>MA CAVE</div></div>
       </nav>
     </div>
