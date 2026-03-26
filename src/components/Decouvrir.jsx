@@ -8,20 +8,20 @@ const TYPE_COLOR = { rouge: { border: 'rgba(139,26,26,0.4)', text: '#c87070' }, 
 function WineCard({ wine }) {
   const colors = TYPE_COLOR[wine.type] || TYPE_COLOR.rouge;
   return (
-    <div style={{ background:'#1a1510', border:`1px solid ${colors.border}`, borderRadius:14, padding:'16px', display:'flex', flexDirection:'column', gap:10 }}>
+    <div style={{ background:'#1a1510', border:`1px solid ${colors.border}`, borderRadius:14, padding:'16px', display:'flex', flexDirection:'column', gap:10, boxSizing:'border-box' }}>
       <div style={{ display:'flex', gap:12, alignItems:'flex-start' }}>
-        <img src={wine.image || ''} alt="" style={{ width:48, height:48, objectFit:'contain', borderRadius:6, background:'#0f0c09' }} />
+        <img src={wine.image || ''} alt="" style={{ width:48, height:48, objectFit:'contain', borderRadius:6, background:'#0f0c09', flexShrink:0 }} />
         <div style={{ flex:1, minWidth:0 }}>
-          <div style={{ fontSize:14, fontWeight:'bold', color:'#e8d5b7' }}>{wine.title}</div>
+          <div style={{ fontSize:14, fontWeight:'bold', color:'#e8d5b7', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{wine.title}</div>
           <div style={{ fontSize:12, color:'#9a7d5a' }}>{wine.region} · {wine.vendor}</div>
         </div>
-        <div style={{ fontSize:16, fontWeight:'bold', color:colors.text }}>{wine.price}€</div>
+        <div style={{ fontSize:16, fontWeight:'bold', color:colors.text, flexShrink:0 }}>{wine.price}€</div>
       </div>
-      <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
-        <span style={{ fontSize:10, color:'#7a6040', background:'rgba(255,255,255,0.05)', padding:'3px 10px', borderRadius:10 }}>
-          {FLAGS[wine.country] || '🌐'} {wine.country} · {wine.region}
+      <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:10 }}>
+        <span style={{ fontSize:10, color:'#7a6040', background:'rgba(255,255,255,0.05)', padding:'3px 10px', borderRadius:10, whiteSpace:'nowrap' }}>
+          {FLAGS[wine.country] || '🌐'} {wine.country}
         </span>
-        <a href={wine.url} target="_blank" rel="noopener noreferrer" style={{ padding:'6px 12px', borderRadius:8, background:'rgba(255,255,255,0.05)', border:`1px solid ${colors.border}`, color:colors.text, fontSize:12, textDecoration:'none', fontWeight:'bold' }}>Commander →</a>
+        <a href={wine.url} target="_blank" rel="noopener noreferrer" style={{ padding:'6px 12px', borderRadius:8, background:'rgba(255,255,255,0.05)', border:`1px solid ${colors.border}`, color:colors.text, fontSize:12, textDecoration:'none', fontWeight:'bold', whiteSpace:'nowrap' }}>Commander</a>
       </div>
     </div>
   );
@@ -51,22 +51,50 @@ export function Decouvrir() {
   };
 
   return (
-    <div style={{ padding:'20px 16px', maxWidth:700, margin:'0 auto', fontFamily:'Georgia, serif' }}>
-      <div style={{ position:'relative', marginBottom:12 }}>
-        <input type="text" value={query} onChange={e => handleSearch(e.target.value)} placeholder="Région, cépage..." style={{ width:'100%', padding:'13px 44px', background:'#1a1510', border:'1px solid #3d2f1f', borderRadius:12, color:'#e8d5b7', outline:'none' }} />
+    <div style={{ padding:'20px 16px 100px', maxWidth:'100%', margin:'0 auto', fontFamily:'Georgia, serif', boxSizing:'border-box', overflowX:'hidden' }}>
+      
+      {/* Recherche */}
+      <div style={{ position:'relative', marginBottom:16 }}>
+        <input type="text" value={query} onChange={e => handleSearch(e.target.value)} placeholder="Région, cépage..." 
+          style={{ width:'100%', padding:'13px 44px', background:'#1a1510', border:'1px solid #3d2f1f', borderRadius:12, color:'#e8d5b7', outline:'none', boxSizing:'border-box', fontSize:16 }} 
+        />
         <span style={{ position:'absolute', left:14, top:'50%', transform:'translateY(-50%)' }}>🔍</span>
       </div>
-      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:12, scrollbarWidth:'none', marginBottom:8 }}>
-        {COUNTRIES.map(c => <button key={c} onClick={() => setCountry(c)} style={{ padding:'6px 14px', borderRadius:20, whiteSpace:'nowrap', fontSize:12, cursor:'pointer', background: country === c ? '#c8956c' : '#1a1510', color: country === c ? '#1a1510' : '#c8b48a', border: `1px solid ${country === c ? '#c8956c' : '#3d2f1f'}` }}>{c}</button>)}
+
+      {/* FILTRES PAYS (Défilement horizontal fluide) */}
+      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:12, marginBottom:4, WebkitOverflowScrolling:'touch', msOverflowStyle:'none', scrollbarWidth:'none' }}>
+        {COUNTRIES.map(c => (
+          <button key={c} onClick={() => setCountry(c)} 
+            style={{ flexShrink:0, padding:'8px 16px', borderRadius:20, whiteSpace:'nowrap', fontSize:13, cursor:'pointer', background: country === c ? '#c8956c' : '#1a1510', color: country === c ? '#1a1510' : '#c8b48a', border: `1px solid ${country === c ? '#c8956c' : '#3d2f1f'}` }}>
+            {c}
+          </button>
+        ))}
       </div>
-      <div style={{ display:'flex', gap:8, marginBottom:16 }}>
-        {['all', 'under25', '25to50', 'above50'].map(id => <button key={id} onClick={() => setPrice(id)} style={{ flex:1, padding:'6px 8px', borderRadius:10, fontSize:11, cursor:'pointer', background: price === id ? '#3d2f1f' : 'transparent', color: price === id ? '#e8d5b7' : '#7a6040', border: `1px solid ${price === id ? '#c8956c' : '#3d2f1f'}` }}>{id==='all'?'Tous':id==='under25'?'<25€':id==='25to50'?'25-50€':'50€+'}</button>)}
+
+      {/* FILTRES PRIX (Défilement horizontal fluide) */}
+      <div style={{ display:'flex', gap:8, overflowX:'auto', paddingBottom:12, marginBottom:16, scrollbarWidth:'none' }}>
+        {['all', 'under25', '25to50', 'above50'].map(id => (
+          <button key={id} onClick={() => setPrice(id)} 
+            style={{ flexShrink:0, padding:'8px 16px', borderRadius:12, fontSize:13, cursor:'pointer', background: price === id ? '#3d2f1f' : '#1a1510', color: price === id ? '#e8d5b7' : '#7a6040', border: `1px solid ${price === id ? '#c8956c' : '#3d2f1f'}` }}>
+            {id==='all'?'Tous les prix':id==='under25'?'< 25€':id==='25to50'?'25 - 50€':'50€ +'}
+          </button>
+        ))}
       </div>
+
+      {/* Compteur et Tri */}
       <div style={{ display:'flex', justifyContent:'space-between', marginBottom:16, alignItems:'center' }}>
         <span style={{ color:'#7a6040', fontSize:12 }}>{processed.length} vins trouvés</span>
-        <button onClick={() => setSort(sort==='asc'?'desc':'asc')} style={{ background:'#1a1510', border:'1px solid #3d2f1f', color:'#c8b48a', padding:'4px 10px', borderRadius:8, fontSize:11, cursor:'pointer' }}>Prix {sort==='asc'?'↗':'↘'}</button>
+        <button onClick={() => setSort(sort==='asc'?'desc':'asc')} style={{ background:'#1a1510', border:'1px solid #3d2f1f', color:'#c8b48a', padding:'6px 12px', borderRadius:8, fontSize:12, cursor:'pointer' }}>
+          Prix {sort==='asc'?'↗':'↘'}
+        </button>
       </div>
-      {searched && <div style={{ display:'flex', flexDirection:'column', gap:12 }}>{processed.map((w,i) => <WineCard key={i} wine={w} />)}</div>}
+
+      {/* Résultats */}
+      {searched && (
+        <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
+          {processed.map((w,i) => <WineCard key={i} wine={w} />)}
+        </div>
+      )}
     </div>
   );
 }
