@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # On pull AVANT d'ajouter nos modifications locales
+          git pull origin main --rebase
           git add src/lib/boirCatalog.js
-          git pull --rebase origin main
           git diff --quiet && git diff --staged --quiet || (git commit -m "🍇 Mise à jour auto : Catalogue vins" && git push)
