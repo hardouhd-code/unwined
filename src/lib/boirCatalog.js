@@ -1568,22 +1568,6 @@ export const BOIR_CATALOG = [
     "country": "France"
   },
   {
-    "t": "Champagne Soutiran \"Perle Noir\" Grand Cru Brut",
-    "title": "Champagne Soutiran \"Perle Noir\" Grand Cru Brut",
-    "p": 42.95,
-    "price": 42.95,
-    "v": "VIGNOBLES JP HEMBISE SARL",
-    "vendor": "VIGNOBLES JP HEMBISE SARL",
-    "u": "https://boir.be/fr/products/champagne-soutiran-perle-noir-grand-cru-brut",
-    "url": "https://boir.be/fr/products/champagne-soutiran-perle-noir-grand-cru-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Soutiran_Perle_Noir_Grand_Cru_Brut.png?v=1750078259",
-    "image": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Soutiran_Perle_Noir_Grand_Cru_Brut.png?v=1750078259",
-    "r": "Autre",
-    "region": "Autre",
-    "c": "France",
-    "country": "France"
-  },
-  {
     "t": "Champagne Soutiran \"Rosé\" Grand Cru Brut",
     "title": "Champagne Soutiran \"Rosé\" Grand Cru Brut",
     "p": 42.99,
