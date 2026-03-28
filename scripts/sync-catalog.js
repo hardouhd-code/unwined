@@ -3,22 +3,14 @@ const path = require('path');
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-const REGIONS_MAP = {
-  'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe', 'fronsac', 'moulis', 'listrac'],
-  'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon'],
-  'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'cote-rotie', 'vacqueyras', 'saint-joseph', 'cornas'],
-  'Loire': ['sancerre', 'pouilly-fume', 'chinon', 'saumur', 'vouvray', 'muscadet'],
-  'Italie': ['toscana', 'piemonte', 'sicilia', 'veneto', 'barolo', 'chianti', 'brunello']
-};
-
 function detectLocation(p) {
+  // Correction de la Regex : on utilise un simple \ pour les plages unicode
   const haystack = (p.title + ' ' + (p.tags || '') + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   let res = { region: 'Autre', country: 'France' };
-  if (haystack.includes('italie') || haystack.includes('toscana') || haystack.includes('piemonte')) res.country = 'Italie';
-  else if (haystack.includes('espagne')) res.country = 'Espagne';
-  for (const [r, subs] of Object.entries(REGIONS_MAP)) {
-    if (subs.some(s => haystack.includes(s)) || haystack.includes(r.toLowerCase())) { res.region = r; break; }
-  }
+  if (haystack.includes('italie') || haystack.includes('toscana')) res.country = 'Italie';
+  else if (haystack.includes('espagne') || haystack.includes('rioja')) res.country = 'Espagne';
+  const regions = ['Bordeaux', 'Bourgogne', 'Rhone', 'Loire', 'Alsace', 'Champagne', 'Provence'];
+  for (const r of regions) { if (haystack.includes(r.toLowerCase())) { res.region = r; break; } }
   return res;
 }
 
@@ -32,11 +24,7 @@ async function update() {
       await sleep(200);
     } catch(e) { more = false; }
   }
-  
-  const catalog = all.filter(p => {
-    const isAcc = ['bouchon','verre','glas','carafe','sac'].some(k => p.title.toLowerCase().includes(k));
-    return p.variants?.some(v => v.available) && !isAcc;
-  }).map(p => {
+  const catalog = all.filter(p => p.variants?.some(v => v.available)).map(p => {
     const loc = detectLocation(p);
     return {
       t: p.title, title: p.title,
@@ -48,20 +36,15 @@ async function update() {
       c: loc.country, country: loc.country
     };
   });
-
   const content = `export const BOIR_CATALOG = ${JSON.stringify(catalog, null, 2)};
 export function searchBoirLocal(query) {
   if (!query || query.length < 2) return [];
-  const term = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-  return BOIR_CATALOG.filter(w => {
-    const hay = (w.t + " " + w.r + " " + w.c + " " + w.v).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    return hay.includes(term);
-  });
+  const term = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "");
+  return BOIR_CATALOG.filter(w => (w.t + " " + w.v).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "").includes(term));
 }
 export function getRandomWines(n = 3) {
   return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n);
 }`;
-
   fs.writeFileSync(CATALOG_PATH, content);
 }
 update();
