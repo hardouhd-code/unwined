@@ -6588,15 +6588,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Marcel Couturier - Saint-Véran \"La Cour des Bois\" 2022",
-    "p": 28,
-    "v": "PIERSON-CUVELIER SARL",
-    "u": "https://boir.be/fr/products/marcel-couturier-saint-veran-la-cour-des-bois-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b8e9d83ed2ce012ed10f292cf3dc170c.png?v=1733466620",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Marqués de Vargas \"Reserva\" 2018",
     "p": 52.95,
     "v": "MARQUES DE VARGAS",
