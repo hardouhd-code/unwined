@@ -3,7 +3,7 @@ const path = require('path');
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// On ajoute 'spuwemmer' et on affine les exclusions
+// On ajoute 'spuwemmer' et 'ade' pour supprimer les accessoires
 const EXCLUDE_KEYWORDS = [
   'thermometer', 'kurkentrekker', 'glas', 'shaker', 'cadeaubon', 
   'ijsemmer', 'karaf', 'label', 'dop', 'gift card', 'jigger', 
@@ -11,24 +11,24 @@ const EXCLUDE_KEYWORDS = [
 ];
 
 function detectLocation(p) {
-  const title = p.title.toLowerCase();
-  const haystack = (p.title + ' ' + (p.tags || '') + ' ' + (p.vendor || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+  // IMPORTANT : On ne cherche QUE dans le titre et les tags, PAS dans le vendeur (vendor)
+  const haystack = (p.title + ' ' + (p.tags || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   
   let res = { region: 'Autre', country: 'France' };
   
-  if (haystack.includes('italie') || haystack.includes('toscana') || haystack.includes('piemonte')) res.country = 'Italie';
+  if (haystack.includes('italie') || haystack.includes('toscana')) res.country = 'Italie';
   else if (haystack.includes('espagne') || haystack.includes('rioja')) res.country = 'Espagne';
   
-  // On définit des règles plus strictes pour les régions
+  // Règles strictes pour les régions de Bordeaux
   const REGIONS_RULES = {
-    'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe'],
-    'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon', 'rully'],
-    'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'cote-rotie', 'vacqueyras'],
-    'Loire': ['sancerre', 'pouilly-fume', 'chinon', 'saumur', 'vouvray']
+    'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe', 'bordeaux'],
+    'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon', 'rully', 'chassagne'],
+    'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'cote-rotie', 'vacqueyras', 'rasteau', 'lirac'],
+    'Loire': ['sancerre', 'pouilly-fume', 'chinon', 'saumur', 'vouvray', 'muscadet', 'reuilly']
   };
 
   for (const [region, keywords] of Object.entries(REGIONS_RULES)) {
-    if (keywords.some(k => haystack.includes(k)) || (haystack.includes(region.toLowerCase()) && !haystack.includes('spuwemmer'))) {
+    if (keywords.some(k => haystack.includes(k))) {
       res.region = region;
       break;
     }
@@ -65,7 +65,7 @@ async function update() {
 export function searchBoirLocal(query) {
   if (!query || query.length < 2) return [];
   const term = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "");
-  return BOIR_CATALOG.filter(w => (w.t + " " + w.v + " " + w.r).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "").includes(term))
+  return BOIR_CATALOG.filter(w => (w.t + " " + w.r).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, "").includes(term))
     .map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
 export function getRandomWines(n = 3) {
