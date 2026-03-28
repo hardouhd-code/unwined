@@ -1,48 +1,31 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { BOIR_CATALOG, searchBoirLocal } from '../lib/boirCatalog';
 
-const THEME = {
-  card: '#ffffff',
-  text: '#452b00',
-  muted: '#806c50',
-  accent: '#c8956c',
-  border: '#e8e1d5',
-};
-
+const THEME = { card: '#ffffff', text: '#452b00', muted: '#806c50', accent: '#c8956c', border: '#e8e1d5' };
 const FLAGS = { 'France': '🇫🇷', 'Italie': '🇮🇹', 'Espagne': '🇪🇸', 'Portugal': '🇵🇹', 'Argentine': '🇦🇷' };
-
-// Mapping des régions par pays présent dans ton catalogue Boir
 const REGIONS_BY_COUNTRY = {
-  'France': ['Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Provence', 'Autre'],
-  'Italie': ['Piémont', 'Toscane', 'Vénétie', 'Sicile', 'Autre'],
-  'Espagne': ['Rioja', 'Priorat', 'Autre'],
-  'Portugal': ['Douro', 'Alentejo'],
-  'Argentine': ['Mendoza', 'Salta']
+  'France': ['Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Autre'],
+  'Italie': ['Piémont', 'Toscane', 'Vénétie', 'Sicile'],
 };
 
 function WineCard({ wine }) {
-  // Gestion des clés courtes (t, p...) et longues (title, price...)
-  const title = wine.t || wine.title;
-  const price = wine.p || wine.price;
-  const region = wine.r || wine.region;
-  const vendor = wine.v || wine.vendor;
+  const t = wine.t || wine.title;
+  const p = wine.p || wine.price;
+  const r = wine.r || wine.region;
+  const v = wine.v || wine.vendor;
   const img = wine.img || wine.image;
-  const url = wine.u || wine.url;
 
   return (
-    <div style={{ background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', padding: '16px', display: 'flex', flexDirection: 'column', gap: 10, marginBottom: '12px', boxShadow: '0 4px 12px rgba(139,90,60,0.08)' }}>
-      <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-        <div style={{ width: 50, height: 60, background: '#f9f7f2', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-           <img src={img} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+    <div style={{ background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', padding: '16px', display: 'flex', gap: 12, marginBottom: '12px', boxShadow: '0 4px 12px rgba(139,90,60,0.08)' }}>
+      <img src={img} alt="" style={{ width: 50, height: 65, objectFit: 'contain', borderRadius: '8px', background: '#f9f7f2' }} />
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ fontSize: '10px', color: THEME.accent, fontWeight: 'bold' }}>{r?.toUpperCase()}</div>
+        <div style={{ fontSize: '15px', fontWeight: 'bold', color: THEME.text, fontFamily: 'serif', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{t}</div>
+        <div style={{ fontSize: '12px', color: THEME.muted }}>{v}</div>
+        <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span style={{ fontWeight: 'bold', color: THEME.accent }}>{p}€</span>
+          <a href={wine.u || wine.url} target="_blank" rel="noreferrer" style={{ background: THEME.accent, color: '#fff', padding: '5px 12px', borderRadius: '15px', fontSize: '10px', textDecoration: 'none', fontWeight: 'bold' }}>ACHETER</a>
         </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: 15, fontWeight: '700', color: THEME.text, fontFamily: 'serif', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{title}</div>
-          <div style={{ fontSize: 12, color: THEME.muted }}>{region?.toUpperCase()} · {vendor}</div>
-        </div>
-        <div style={{ fontSize: 17, fontWeight: '700', color: THEME.accent, fontFamily: 'serif' }}>{price}€</div>
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <a href={url} target="_blank" rel="noopener noreferrer" style={{ padding: '8px 20px', borderRadius: '24px', background: THEME.accent, color: '#ffffff', fontSize: 11, textDecoration: 'none', fontWeight: '700', textTransform: 'uppercase' }}>Acheter</a>
       </div>
     </div>
   );
@@ -53,72 +36,50 @@ export function Decouvrir() {
   const [country, setCountry] = useState('Tous');
   const [region, setRegion] = useState('Toutes');
 
-  // Quand on change de pays, on remet la région à "Toutes" par défaut
   useEffect(() => { setRegion('Toutes'); }, [country]);
 
   const results = useMemo(() => {
     const catalog = BOIR_CATALOG || [];
-    
-    // 1. Si recherche texte active
-    if (query.trim().length >= 2) return searchBoirLocal(query);
+    if (query.length >= 2) return searchBoirLocal(query);
+    if (country === 'Tous') return [];
 
-    // 2. Si pays sélectionné
-    if (country !== 'Tous') {
-      return catalog.filter(w => {
-        const matchCountry = (w.c === country || w.country === country);
-        const matchRegion = (region === 'Toutes' || w.r === region || w.region === region);
-        return matchCountry && matchRegion;
-      });
-    }
+    return catalog.filter(w => {
+      const matchCountry = (w.c === country || w.country === country);
+      if (!matchCountry) return false;
 
-    return [];
+      if (region === 'Toutes') return true;
+
+      // RECHERCHE HYBRIDE : On cherche dans le champ région OU dans le titre
+      const rName = (w.r || w.region || '').toLowerCase();
+      const tName = (w.t || w.title || '').toLowerCase();
+      const searchTarget = region.toLowerCase();
+      
+      return rName === searchTarget || tName.includes(searchTarget);
+    });
   }, [query, country, region]);
 
   return (
-    <div style={{ padding: '0 20px 140px', boxSizing: 'border-box' }}>
-      
-      {/* Barre de Recherche */}
-      <div style={{ marginBottom: 20 }}>
-        <input type="text" value={query} onChange={e => {setQuery(e.target.value); if(e.target.value) setCountry('Tous');}} 
-          placeholder="Rechercher (Bordeaux, Syrah...)" 
-          style={{ width: '100%', padding: '16px', background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', color: THEME.text, fontSize: 16, outline: 'none', boxShadow: '0 4px 12px rgba(139,90,60,0.05)' }} 
-        />
-      </div>
+    <div style={{ padding: '0 20px 140px' }}>
+      <input type="text" value={query} onChange={e => setQuery(e.target.value)} placeholder="Rechercher un vin..." 
+        style={{ width: '100%', padding: '15px', background: '#fff', border: `1px solid ${THEME.border}`, borderRadius: '12px', margin: '20px 0' }} 
+      />
 
-      {/* 1ère Ligne : Pays */}
-      <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 10, scrollbarWidth: 'none' }}>
+      <div style={{ display: 'flex', gap: 8, overflowX: 'auto', marginBottom: 15, scrollbarWidth: 'none' }}>
         {['Tous', ...Object.keys(FLAGS)].map(c => (
-          <button key={c} onClick={() => setCountry(c)} style={{ flexShrink: 0, padding: '10px 18px', borderRadius: 24, fontSize: 13, background: country === c ? THEME.accent : THEME.card, color: country === c ? '#fff' : THEME.text, border: `1px solid ${country === c ? THEME.accent : THEME.border}`, fontWeight: '600' }}>
-            {FLAGS[c] && <span style={{ marginRight: 6 }}>{FLAGS[c]}</span>}{c}
-          </button>
+          <button key={c} onClick={() => setCountry(c)} style={{ flexShrink: 0, padding: '8px 16px', borderRadius: '20px', background: country === c ? THEME.accent : '#fff', color: country === c ? '#fff' : THEME.text, border: `1px solid ${THEME.border}` }}>{c}</button>
         ))}
       </div>
 
-      {/* 2ème Ligne : Régions (Nouveau !) */}
-      {country !== 'Tous' && REGIONS_BY_COUNTRY[country] && (
-        <div style={{ display: 'flex', gap: 6, overflowX: 'auto', padding: '10px 0', marginTop: 5, scrollbarWidth: 'none', borderTop: `1px solid ${THEME.border}` }}>
-          {['Toutes', ...REGIONS_BY_COUNTRY[country]].map(r => (
-            <button key={r} onClick={() => setRegion(r)} style={{ flexShrink: 0, padding: '6px 14px', borderRadius: 8, fontSize: 11, background: region === r ? '#452b00' : 'transparent', color: region === r ? '#fff' : THEME.muted, border: `1px solid ${region === r ? '#452b00' : THEME.border}`, fontWeight: '600' }}>
-              {r.toUpperCase()}
-            </button>
+      {country !== 'Tous' && (
+        <div style={{ display: 'flex', gap: 8, overflowX: 'auto', marginBottom: 20, padding: '10px 0', borderTop: `1px solid ${THEME.border}`, scrollbarWidth: 'none' }}>
+          {['Toutes', ...(REGIONS_BY_COUNTRY[country] || [])].map(r => (
+            <button key={r} onClick={() => setRegion(r)} style={{ flexShrink: 0, padding: '6px 12px', borderRadius: '8px', background: region === r ? '#452b00' : 'transparent', color: region === r ? '#fff' : THEME.muted, border: 'none', fontSize: '11px', fontWeight: 'bold' }}>{r.toUpperCase()}</button>
           ))}
         </div>
       )}
 
-      {/* Résultats */}
-      <div style={{ marginTop: 20 }}>
-        {results.length > 0 && (
-           <p style={{ fontSize: 12, color: THEME.muted, marginBottom: 15, fontStyle: 'italic' }}>{results.length} vins trouvés</p>
-        )}
-        
-        {results.map((w, i) => <WineCard key={i} wine={w} />)}
-        
-        {results.length === 0 && (
-          <div style={{ textAlign: 'center', padding: '60px 20px', color: THEME.muted }}>
-            {query.length < 2 && country === 'Tous' ? "Sélectionnez un pays pour voir les régions." : "Aucune bouteille trouvée."}
-          </div>
-        )}
-      </div>
+      <p style={{ fontSize: '12px', color: THEME.muted, marginBottom: 15 }}>{results.length} vins trouvés</p>
+      {results.map((w, i) => <WineCard key={i} wine={w} />)}
     </div>
   );
 }
