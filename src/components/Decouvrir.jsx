@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import * as WineData from '../lib/boirCatalog';
+import { BOIR_CATALOG, searchBoirLocal } from '../lib/boirCatalog';
 
-// --- DESIGN HARMONISÉ (ACCUEIL/CAVE) ---
 const THEME = {
   card: '#ffffff',
   text: '#452b00',
@@ -10,91 +9,114 @@ const THEME = {
   border: '#e8e1d5',
 };
 
-const FLAGS = { 'France': '🇫🇷', 'Italie': '🇮🇹', 'Espagne': '🇪🇸', 'Portugal': '🇵🇹', 'Afrique du Sud': '🇿🇦', 'Argentine': '🇦🇷', 'Chili': '🇨🇱', 'Allemagne': '🇩🇪', 'Autriche': '🇦🇹', 'États-Unis': '🇺🇸', 'Grèce': '🇬🇷', 'Georgie': '🇬🇪', 'Belgique': '🇧🇪', 'Australie': '🇦🇺', 'Nouvelle-Zélande': '🇳🇿' };
+const FLAGS = { 'France': '🇫🇷', 'Italie': '🇮🇹', 'Espagne': '🇪🇸', 'Portugal': '🇵🇹', 'Argentine': '🇦🇷' };
+
+// Mapping des régions par pays présent dans ton catalogue Boir
+const REGIONS_BY_COUNTRY = {
+  'France': ['Bordeaux', 'Bourgogne', 'Rhône', 'Loire', 'Alsace', 'Champagne', 'Provence', 'Autre'],
+  'Italie': ['Piémont', 'Toscane', 'Vénétie', 'Sicile', 'Autre'],
+  'Espagne': ['Rioja', 'Priorat', 'Autre'],
+  'Portugal': ['Douro', 'Alentejo'],
+  'Argentine': ['Mendoza', 'Salta']
+};
+
+function WineCard({ wine }) {
+  // Gestion des clés courtes (t, p...) et longues (title, price...)
+  const title = wine.t || wine.title;
+  const price = wine.p || wine.price;
+  const region = wine.r || wine.region;
+  const vendor = wine.v || wine.vendor;
+  const img = wine.img || wine.image;
+  const url = wine.u || wine.url;
+
+  return (
+    <div style={{ background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', padding: '16px', display: 'flex', flexDirection: 'column', gap: 10, marginBottom: '12px', boxShadow: '0 4px 12px rgba(139,90,60,0.08)' }}>
+      <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+        <div style={{ width: 50, height: 60, background: '#f9f7f2', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+           <img src={img} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+        </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 15, fontWeight: '700', color: THEME.text, fontFamily: 'serif', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{title}</div>
+          <div style={{ fontSize: 12, color: THEME.muted }}>{region?.toUpperCase()} · {vendor}</div>
+        </div>
+        <div style={{ fontSize: 17, fontWeight: '700', color: THEME.accent, fontFamily: 'serif' }}>{price}€</div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <a href={url} target="_blank" rel="noopener noreferrer" style={{ padding: '8px 20px', borderRadius: '24px', background: THEME.accent, color: '#ffffff', fontSize: 11, textDecoration: 'none', fontWeight: '700', textTransform: 'uppercase' }}>Acheter</a>
+      </div>
+    </div>
+  );
+}
 
 export function Decouvrir() {
   const [query, setQuery] = useState('');
   const [country, setCountry] = useState('Tous');
+  const [region, setRegion] = useState('Toutes');
 
-  // Sécurité sur l'importation
-  const catalog = WineData?.BOIR_CATALOG || [];
-  const searchFn = WineData?.searchBoirLocal || (() => []);
+  // Quand on change de pays, on remet la région à "Toutes" par défaut
+  useEffect(() => { setRegion('Toutes'); }, [country]);
 
   const results = useMemo(() => {
-    // 1. Normalisation : On transforme t, p, r, c en noms complets pour éviter les bugs
-    const cleanCatalog = catalog.map(w => ({
-      title: w.title || w.t || "Vin",
-      price: w.price || w.p || 0,
-      vendor: w.vendor || w.v || "Boir",
-      url: w.url || w.u || "#",
-      region: w.region || w.r || "Autre",
-      country: w.country || w.c || "France",
-      image: w.image || w.img || ""
-    }));
-
-    const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-
-    // 2. Logique de filtrage
-    if (query.length >= 2) {
-      return searchFn(query);
-    }
+    const catalog = BOIR_CATALOG || [];
     
+    // 1. Si recherche texte active
+    if (query.trim().length >= 2) return searchBoirLocal(query);
+
+    // 2. Si pays sélectionné
     if (country !== 'Tous') {
-      return cleanCatalog.filter(w => w.country === country);
+      return catalog.filter(w => {
+        const matchCountry = (w.c === country || w.country === country);
+        const matchRegion = (region === 'Toutes' || w.r === region || w.region === region);
+        return matchCountry && matchRegion;
+      });
     }
 
     return [];
-  }, [query, country, catalog, searchFn]);
+  }, [query, country, region]);
 
   return (
     <div style={{ padding: '0 20px 140px', boxSizing: 'border-box' }}>
-      <div style={{ padding: '20px 0', textAlign: 'center' }}>
-        <h2 style={{ color: THEME.text, fontFamily: 'serif', margin: 0 }}>Découverte</h2>
-        <p style={{ fontSize: '11px', color: THEME.muted }}>{catalog.length} bouteilles disponibles</p>
-      </div>
-
+      
       {/* Barre de Recherche */}
-      <input 
-        type="text" value={query} onChange={e => setQuery(e.target.value)}
-        placeholder="Un domaine, un cépage..." 
-        style={{ width: '100%', padding: '16px', background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', color: THEME.text, outline: 'none', marginBottom: '20px', boxSizing: 'border-box' }}
-      />
+      <div style={{ marginBottom: 20 }}>
+        <input type="text" value={query} onChange={e => {setQuery(e.target.value); if(e.target.value) setCountry('Tous');}} 
+          placeholder="Rechercher (Bordeaux, Syrah...)" 
+          style={{ width: '100%', padding: '16px', background: THEME.card, border: `1px solid ${THEME.border}`, borderRadius: '16px', color: THEME.text, fontSize: 16, outline: 'none', boxShadow: '0 4px 12px rgba(139,90,60,0.05)' }} 
+        />
+      </div>
 
-      {/* Filtres Pays */}
+      {/* 1ère Ligne : Pays */}
       <div style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 10, scrollbarWidth: 'none' }}>
-        {['Tous', 'France', 'Italie', 'Espagne', 'Portugal', 'Argentine'].map(c => (
-          <button key={c} onClick={() => {setCountry(c); setQuery('');}} style={{
-            flexShrink: 0, padding: '8px 16px', borderRadius: 24, fontSize: 12, fontWeight: '600',
-            background: country === c ? THEME.accent : THEME.card,
-            color: country === c ? '#fff' : THEME.muted,
-            border: `1px solid ${country === c ? THEME.accent : THEME.border}`
-          }}>{c}</button>
+        {['Tous', ...Object.keys(FLAGS)].map(c => (
+          <button key={c} onClick={() => setCountry(c)} style={{ flexShrink: 0, padding: '10px 18px', borderRadius: 24, fontSize: 13, background: country === c ? THEME.accent : THEME.card, color: country === c ? '#fff' : THEME.text, border: `1px solid ${country === c ? THEME.accent : THEME.border}`, fontWeight: '600' }}>
+            {FLAGS[c] && <span style={{ marginRight: 6 }}>{FLAGS[c]}</span>}{c}
+          </button>
         ))}
       </div>
 
-      {/* Liste des Résultats */}
+      {/* 2ème Ligne : Régions (Nouveau !) */}
+      {country !== 'Tous' && REGIONS_BY_COUNTRY[country] && (
+        <div style={{ display: 'flex', gap: 6, overflowX: 'auto', padding: '10px 0', marginTop: 5, scrollbarWidth: 'none', borderTop: `1px solid ${THEME.border}` }}>
+          {['Toutes', ...REGIONS_BY_COUNTRY[country]].map(r => (
+            <button key={r} onClick={() => setRegion(r)} style={{ flexShrink: 0, padding: '6px 14px', borderRadius: 8, fontSize: 11, background: region === r ? '#452b00' : 'transparent', color: region === r ? '#fff' : THEME.muted, border: `1px solid ${region === r ? '#452b00' : THEME.border}`, fontWeight: '600' }}>
+              {r.toUpperCase()}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Résultats */}
       <div style={{ marginTop: 20 }}>
-        {results.map((w, i) => (
-          <div key={i} style={{ background: THEME.card, padding: '16px', borderRadius: '16px', marginBottom: '12px', border: `1px solid ${THEME.border}`, display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 12px rgba(139,90,60,0.05)' }}>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontSize: '10px', color: THEME.accent, fontWeight: 'bold' }}>
-                {FLAGS[w.country || w.c] || '🍷'} {(w.region || w.r || 'VIN').toUpperCase()}
-              </div>
-              <div style={{ fontWeight: 'bold', color: THEME.text, fontSize: '15px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                {w.title || w.t}
-              </div>
-            </div>
-            <div style={{ textAlign: 'right', marginLeft: 15 }}>
-              <div style={{ color: THEME.accent, fontWeight: 'bold' }}>{(w.price || w.p)}€</div>
-              <a href={w.url || w.u} target="_blank" rel="noreferrer" style={{ fontSize: '10px', color: THEME.muted, textDecoration: 'underline' }}>VOIR</a>
-            </div>
-          </div>
-        ))}
+        {results.length > 0 && (
+           <p style={{ fontSize: 12, color: THEME.muted, marginBottom: 15, fontStyle: 'italic' }}>{results.length} vins trouvés</p>
+        )}
+        
+        {results.map((w, i) => <WineCard key={i} wine={w} />)}
         
         {results.length === 0 && (
-          <p style={{ textAlign: 'center', color: THEME.muted, marginTop: 40, fontStyle: 'italic' }}>
-            {query.length < 2 && country === 'Tous' ? "Explorez la cave par pays ou par nom." : "Aucun vin trouvé."}
-          </p>
+          <div style={{ textAlign: 'center', padding: '60px 20px', color: THEME.muted }}>
+            {query.length < 2 && country === 'Tous' ? "Sélectionnez un pays pour voir les régions." : "Aucune bouteille trouvée."}
+          </div>
         )}
       </div>
     </div>
