@@ -2624,7 +2624,7 @@ export const BOIR_CATALOG = [
     "v": "GENESTIERE ST ANTHELME SCEA",
     "u": "https://boir.be/fr/products/chateau-la-genestiere-lirac-cuvee-raphael-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/752f95122a892c66deccb0609b759de7_5abb9b20-1855-44e2-afed-72f756b9f121.png?v=1771603398",
-    "r": "Rhône",
+    "r": "Autre",
     "c": "France"
   },
   {
@@ -4397,7 +4397,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDE CHEVALIER EURL",
     "u": "https://boir.be/fr/products/denis-jamain-reuilly-les-coignons-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Denis_Jamain_-_Reuilly_Les_Coignons_2023.png?v=1745957025",
-    "r": "Loire",
+    "r": "Autre",
     "c": "France"
   },
   {
@@ -4739,7 +4739,7 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/domaine-de-la-colline-muscadet-sevre-et-maine-clisson-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4c45825f2d83671463316660f90ac590.png?v=1733409288",
-    "r": "Loire",
+    "r": "Autre",
     "c": "France"
   },
   {
@@ -4946,7 +4946,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-rasteau-les-coteaux-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ca03e3c8d822a83afb4e00a374fd249.png?v=1746011597",
-    "r": "Rhône",
+    "r": "Autre",
     "c": "France"
   },
   {
@@ -5764,7 +5764,7 @@ export const BOIR_CATALOG = [
     "p": 0,
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/gift-product",
-    "img": null,
+    "img": "",
     "r": "Autre",
     "c": "France"
   },
@@ -7729,6 +7729,5 @@ export function searchBoirLocal(query) {
     .map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
 export function getRandomWines(n = 3) {
-  return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n)
-    .map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
+  return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n).map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
