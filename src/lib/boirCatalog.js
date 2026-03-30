@@ -5634,15 +5634,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Feral \"N°4 Juniper-Lavender\"",
-    "p": 16.5,
-    "v": "Brandstof",
-    "u": "https://boir.be/fr/products/feral-n-4-juniper-lavender",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/af4d899bbf95f6bfc9703623142b8b90.png?v=1769776094",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Finca Museum \"La Renacida\" 2021",
     "p": 17.95,
     "v": "BARON DE LEY SA",
@@ -5729,15 +5720,6 @@ export const BOIR_CATALOG = [
     "v": "MUSITA SRL",
     "u": "https://boir.be/fr/products/georgios-lafazanis-winery-geometria-agiorgitiko-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca314967c781f9f9e230d67d0cf32f75.png?v=1733323422",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Giannikos Winery \"Lion Agiorgitiko\" 2018",
-    "p": 13.99,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/giannikos-winery-lion-agiorgitiko-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f21ac28865a20d0035156afd2843f047.png?v=1733406553",
     "r": "Autre",
     "c": "France"
   },
