@@ -396,15 +396,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Black Cottage \"Sauvignon Blanc\" 2022",
-    "p": 11.99,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/black-cottage-sauvignon-blanc-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/476a710696fd363bbbcc1b6fca19fd24.png?v=1733323339",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Blason d'Issan 2021",
     "p": 26.95,
     "v": "VINS & PASSIONS SAS",
@@ -4923,15 +4914,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Domaine des Escaravailles - Côtes du Rhône \"Glou\" 2023",
-    "p": 13.55,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/domaine-des-escaravailles-cotes-du-rhone-glou-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7a437b6804343c810852fdcd313649c0.png?v=1745849662",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Domaine des Escaravailles - Côtes du Rhône \"Les Antimagnes\" 2025",
     "p": 12.5,
     "v": "Domaine des Escaravailles",
@@ -5486,6 +5468,15 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/el-coto-de-rioja-coto-real-reserva-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a5d14bd24b8ec93dec449821358d2b0e.png?v=1733411313",
+    "r": "Autre",
+    "c": "Espagne"
+  },
+  {
+    "t": "El Coto de Rioja \"Tempranillo 875 m\" 2021",
+    "p": 14.5,
+    "v": "BARON DE LEY SA",
+    "u": "https://boir.be/fr/products/el-coto-de-rioja-875-m-tempranillo-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f7c020ce79e45d24ead9546770b1c4a.png?v=1742030538",
     "r": "Autre",
     "c": "Espagne"
   },
@@ -6669,7 +6660,7 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Michele Chiarlo - Barolo \"Cannubi\" 2022",
+    "t": "Michele Chiarlo - Barolo \"Cannubi\" 2020",
     "p": 119,
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/michele-chiarlo-barolo-cannubi-2022",
@@ -6944,15 +6935,6 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/pigeonnier-du-gouyat-montravel-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e9b87215b4de916598797ed82270707e.png?v=1733405370",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Podere Casisano - Brunello di Montalcino 2020",
-    "p": 39.95,
-    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
-    "u": "https://boir.be/fr/products/podere-casisano-brunello-di-montalcino-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/52e0f2e458681bbf70ea84a95735a2e9.png?v=1772009654",
     "r": "Autre",
     "c": "France"
   },
