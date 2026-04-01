@@ -72,6 +72,15 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
+    "t": "ALT \"Orange Spritz\"",
+    "p": 12.5,
+    "v": "Brandstof",
+    "u": "https://boir.be/fr/products/alt-orange-spritz",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c86ceee014e671591d44c53a69f82553.png?v=1769768635",
+    "r": "Autre",
+    "c": "France"
+  },
+  {
     "t": "ALT \"Rosé\"",
     "p": 12.5,
     "v": "Brandstof",
@@ -5625,6 +5634,15 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
+    "t": "Feral \"N°4 Juniper-Lavender\"",
+    "p": 16.5,
+    "v": "Brandstof",
+    "u": "https://boir.be/fr/products/feral-n-4-juniper-lavender",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/af4d899bbf95f6bfc9703623142b8b90.png?v=1769776094",
+    "r": "Autre",
+    "c": "France"
+  },
+  {
     "t": "Finca Museum \"La Renacida\" 2021",
     "p": 17.95,
     "v": "BARON DE LEY SA",
@@ -7376,15 +7394,6 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-riserva-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f66086ff9046054085cf544a1af6cee1.png?v=1733412626",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Tenuta di Graciano della Seta - Vino Nobile di Montepulciano 2021",
-    "p": 14.95,
-    "v": "Della Seta S.S. Societa Agricola",
-    "u": "https://boir.be/fr/products/tenuta-di-graciano-della-seta-vino-nobile-di-montepulciano-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/NOBILE.png?v=1774443349",
     "r": "Autre",
     "c": "France"
   },
