@@ -612,15 +612,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Castellu d'Alba - Corse 2019",
-    "p": 17,
-    "v": "VIGNOBLES ARBEAU SAS",
-    "u": "https://boir.be/fr/products/castellu-dalba-corse-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29559664d9fac144c2da57d73a430f54.png?v=1733414589",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Castellu d'Alba - Corse 2020",
     "p": 19.99,
     "v": "Boir shop",
@@ -1895,15 +1886,6 @@ export const BOIR_CATALOG = [
     "v": "LESTAPIS ET CIE SARL",
     "u": "https://boir.be/fr/products/chateau-de-francs-les-cerisiers-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0a9085b15e7d61fd628b5527aedf1c51.png?v=1749802493",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Château de Jau - Côtes du Roussillon 2022",
-    "p": 10.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/chateau-de-jau-cotes-du-roussillon-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Chateau_de_Jau_Cotes_du_Roussillon_2022.png?v=1754474898",
     "r": "Autre",
     "c": "France"
   },
@@ -4167,15 +4149,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Cono Sur \"Single Vineyard No. 28 La Rinconada Carmenère\" 2019",
-    "p": 12.49,
-    "v": "JEAN CHARTRON EURL",
-    "u": "https://boir.be/fr/products/cono-sur-single-vineyard-no-28-la-rinconada-carmenere-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f6a0316cc242f2f0c2be7f6025321a9.png?v=1733405945",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Corvers Kauter - Drachenstein \"Rüdesheim Pinot Noir\" 2020",
     "p": 49.95,
     "v": "Weinhaus Dr. Corvers-Kauter",
@@ -4869,15 +4842,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Domaine Denis Carré - Pommard \"En Brescul\" 2020",
-    "p": 38.49,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/domaine-denis-carre-pommard-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6083d88b63b0646da5aa8ca2880ec36f.png?v=1733467111",
-    "r": "Bourgogne",
-    "c": "France"
-  },
-  {
     "t": "Domaine Denis Carré - Pommard \"En Brescul\" 2022",
     "p": 44.15,
     "v": "DESCAS PERE ET FILS SA",
@@ -5481,15 +5445,6 @@ export const BOIR_CATALOG = [
     "c": "Espagne"
   },
   {
-    "t": "El Coto de Rioja \"Tempranillo 875 m\" 2021",
-    "p": 14.5,
-    "v": "BARON DE LEY SA",
-    "u": "https://boir.be/fr/products/el-coto-de-rioja-875-m-tempranillo-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0f7c020ce79e45d24ead9546770b1c4a.png?v=1742030538",
-    "r": "Autre",
-    "c": "Espagne"
-  },
-  {
     "t": "Emiliana Organic Vineyards \"Coyam Los Robles Estate N° 20 Limited Edition\" 2021",
     "p": 22.95,
     "v": "Colimpo LTD",
@@ -5666,15 +5621,6 @@ export const BOIR_CATALOG = [
     "v": "BOISSET SAS",
     "u": "https://boir.be/fr/products/fog-mountain-pinot-noir-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4080efbcfdf0d99eebda30447f06781e_3d5af2ff-3f33-4c59-9566-e25cd4b9f0ea.png?v=1756739042",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Follas Novas \"Albariño\" 2022",
-    "p": 14.75,
-    "v": "INVINITY NV",
-    "u": "https://boir.be/fr/products/follas-novas-albarino-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d1e94d41df014c77eb6c09e7f6b87b25.png?v=1733406930",
     "r": "Autre",
     "c": "France"
   },
