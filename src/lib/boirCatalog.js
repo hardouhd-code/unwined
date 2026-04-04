@@ -4572,15 +4572,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Domaine Chevalier - Corton Rognet Grand Cru 2020",
-    "p": 89,
-    "v": "VIGNOBLES DUBARD SARL",
-    "u": "https://boir.be/fr/products/domaine-chevalier-corton-rognet-grand-cru-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6f243222090b1ecb7640aa2b48ee5edf.png?v=1733467222",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Domaine Chevalier - Ladoix 1er Cru \"Les Corvées\" 2020",
     "p": 39.95,
     "v": "Boir shop",
@@ -4703,15 +4694,6 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d183be6cf5bb5612fec757f489a4d9fc.png?v=1749799590",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
-    "t": "Domaine de la Colline - Muscadet Sèvre-et-Maine \"Clisson\" 2018",
-    "p": 15.95,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/domaine-de-la-colline-muscadet-sevre-et-maine-clisson-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4c45825f2d83671463316660f90ac590.png?v=1733409288",
     "r": "Autre",
     "c": "France"
   },
