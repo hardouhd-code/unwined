@@ -864,15 +864,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Champagne Voirin-Jumel \"Blanc de Blancs\" Grand Cru Brut",
-    "p": 36.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/champagne-voirin-jumel-blanc-de-blancs-grand-cru-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne_Voirin-Jumel_Blanc_de_Blancs_Grand_Cru_Brut.png?v=1753869357",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Champagne Voirin-Jumel \"Cramant\" Brut",
     "p": 59.95,
     "v": "SCEV CHAMP VOIRIN JUMEL",
