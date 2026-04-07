@@ -6876,15 +6876,6 @@ export const BOIR_CATALOG = [
     "c": "France"
   },
   {
-    "t": "Podere Casisano - Rosso di Montalcino 2023",
-    "p": 16.95,
-    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
-    "u": "https://boir.be/fr/products/podere-casisano-rosso-di-montalcino-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5120cdc8552ea3de614a211a04e4164a.png?v=1772009731",
-    "r": "Autre",
-    "c": "France"
-  },
-  {
     "t": "Podere Il Castellaccio \"Valénte\" 2020",
     "p": 21.95,
     "v": "Boir shop",
