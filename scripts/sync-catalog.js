@@ -7,14 +7,18 @@ const EXCLUDE = ['thermometer', 'kurkentrekker', 'glas', 'shaker', 'cadeaubon', 
 function detect(p) {
   const h = (p.title + ' ' + (p.tags || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   let res = { region: 'Autre', country: 'France' };
-  if (h.includes('italie') || h.includes('toscana')) res.country = 'Italie';
-  else if (h.includes('espagne') || h.includes('rioja')) res.country = 'Espagne';
   
+  if (h.includes('italie') || h.includes('toscana') || h.includes('piemonte') || h.includes('sicilia')) res.country = 'Italie';
+  else if (h.includes('espagne') || h.includes('rioja')) res.country = 'Espagne';
+  else if (h.includes('portugal') || h.includes('douro')) res.country = 'Portugal';
+  else if (h.includes('argentine') || h.includes('mendoza')) res.country = 'Argentine';
+
+  // DÉTECTION INTELLIGENTE DES RÉGIONS
   const RULES = {
-    'Bordeaux': ['pomerol', 'saint-emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'saint-julien', 'saint-estephe', 'bordeaux'],
-    'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits-saint-georges', 'beaune', 'macon', 'rully'],
-    'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'cote-rotie', 'vacqueyras'],
-    'Loire': ['sancerre', 'pouilly-fume', 'chinon', 'saumur', 'vouvray']
+    'Bordeaux': ['pomerol', 'emilion', 'medoc', 'margaux', 'pauillac', 'graves', 'pessac', 'sauternes', 'julien', 'estephe', 'bordeaux', 'listrac', 'moulis'],
+    'Bourgogne': ['chablis', 'meursault', 'montrachet', 'gevrey', 'pommard', 'volnay', 'nuits', 'beaune', 'macon', 'rully', 'veran', 'chalonnaise'],
+    'Rhône': ['chateauneuf', 'gigondas', 'hermitage', 'condrieu', 'rotie', 'vacqueyras', 'rasteau', 'lirac', 'ventoux', 'rhone'],
+    'Loire': ['sancerre', 'pouilly', 'chinon', 'saumur', 'vouvray', 'muscadet', 'reuilly', 'loire']
   };
 
   for (const [reg, keys] of Object.entries(RULES)) {
@@ -24,11 +28,13 @@ function detect(p) {
 }
 
 async function update() {
-  let all = []; let page = 1;
-  while (page < 10) {
-    const res = await fetch(`https://boir.be/collections/all/products.json?limit=250&page=${page}`);
-    const data = await res.json();
-    if (data.products?.length > 0) { all = [...all, ...data.products]; page++; } else break;
+  let all = [];
+  for (let page = 1; page <= 5; page++) {
+    try {
+      const res = await fetch(`https://boir.be/collections/all/products.json?limit=250&page=${page}`);
+      const data = await res.json();
+      if (data.products?.length > 0) all = [...all, ...data.products]; else break;
+    } catch(e) { break; }
   }
   
   const clean = all.filter(p => {
@@ -47,6 +53,7 @@ export function searchBoirLocal(query) {
     .map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
 export function getRandomWines(n = 3) {
+  if (!BOIR_CATALOG || BOIR_CATALOG.length === 0) return [];
   return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n).map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }`;
   fs.writeFileSync(CATALOG_PATH, content);
