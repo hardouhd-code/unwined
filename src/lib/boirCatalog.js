@@ -23,7 +23,7 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-hautes-cotes-de-nuits-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/77c6dc5264a4d6eb56da29c022a6d949.png?v=1743755410",
-    "r": "Autre",
+    "r": "Bourgogne",
     "c": "France"
   },
   {
@@ -2408,7 +2408,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/chateau-juvenal-cotes-de-ventoux-nature-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Nature_packshot.png?v=1737407737",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -2597,7 +2597,7 @@ export const BOIR_CATALOG = [
     "v": "GENESTIERE ST ANTHELME SCEA",
     "u": "https://boir.be/fr/products/chateau-la-genestiere-lirac-cuvee-raphael-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/752f95122a892c66deccb0609b759de7_5abb9b20-1855-44e2-afed-72f756b9f121.png?v=1771603398",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4361,7 +4361,7 @@ export const BOIR_CATALOG = [
     "v": "CLAUDE CHEVALIER EURL",
     "u": "https://boir.be/fr/products/denis-jamain-reuilly-les-coignons-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Denis_Jamain_-_Reuilly_Les_Coignons_2023.png?v=1745957025",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -4505,7 +4505,7 @@ export const BOIR_CATALOG = [
     "v": "STEPHANE BRIDAY EARL",
     "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-laurent-b-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/947d2467b6fb15e9119f9743a2fe9de2.png?v=1733403668",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4514,7 +4514,7 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-villages-cairanne-les-travers-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/000149fbb0b834f8cd7b4093fc17bf3c.png?v=1733406223",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4865,7 +4865,7 @@ export const BOIR_CATALOG = [
     "v": "Domaine des Escaravailles",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-cotes-du-rhone-les-antimagnes-2025",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9036a301b50c0abce390e11452a99fb3_cd5a948b-a120-42f1-aba9-2b0afc27ce7c.png?v=1772007202",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4874,7 +4874,7 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/domaine-des-escaravailles-rasteau-les-coteaux-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ca03e3c8d822a83afb4e00a374fd249.png?v=1746011597",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4883,7 +4883,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-caprices-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/PS_caprices.png?v=1755774757",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -4892,7 +4892,7 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-largile-bleue-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2e16d0df82467679e2eae21b698b7e3f.png?v=1733405077",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -5108,7 +5108,7 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/domaine-guy-mousset-cotes-du-rhone-excellence-rose-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea735b920b08b772461d706489f6783e.png?v=1733414403",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -5315,7 +5315,7 @@ export const BOIR_CATALOG = [
     "v": "Domaine Sébastien Giroux",
     "u": "https://boir.be/fr/products/domaine-sebastien-giroux-pouilly-fuisse-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Giroux.png?v=1753688593",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5477,7 +5477,7 @@ export const BOIR_CATALOG = [
     "v": "DIRLER CADE EARL",
     "u": "https://boir.be/fr/products/famille-perrin-cotes-de-rhone-villages-vinsobres-les-hauts-de-julien-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/23cf298587896aab4cab107b68ea2e70.png?v=1733467053",
-    "r": "Autre",
+    "r": "Bordeaux",
     "c": "France"
   },
   {
@@ -5684,7 +5684,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-chardonnay-barrique-la-colline-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8bb95a8c68ac7a5432884da72b39293e.png?v=1770644546",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5693,7 +5693,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-chardonnay-barrique-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1f7352ac63a7aea0aeccb05448a347ac.png?v=1770645589",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5702,7 +5702,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-chardonnay-auxerrois-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69ef714934ce80a726b130ce342732b4.png?v=1770372524",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5711,7 +5711,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-barrique-la-colline-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4b498fdb3c21354a916ce30442768046.png?v=1770646116",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5720,7 +5720,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-pinot-gris-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/29ba7b2aad02c057cb0eb229c789048a.png?v=1770646758",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5729,7 +5729,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-clos-de-duras-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9014c3a67af0fa9af295390fc7cd4845.png?v=1770647322",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5738,7 +5738,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-riesling-cuvee-classique-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3abc87174ad4e57150ea386fce946b93.png?v=1770372998",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -5747,7 +5747,7 @@ export const BOIR_CATALOG = [
     "v": "Gloire de Duras - Nijskens Peter",
     "u": "https://boir.be/fr/products/gloire-de-duras-zweigelt-sankt-laurent-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9da49b6f6b996cecf5dfde52bc2aee98.png?v=1770647772",
-    "r": "Autre",
+    "r": "Loire",
     "c": "France"
   },
   {
@@ -6044,7 +6044,7 @@ export const BOIR_CATALOG = [
     "v": "VINS JEAN LUC COLOMBO SARL",
     "u": "https://boir.be/fr/products/jean-luc-colombo-cotes-du-rhone-villages-cairanne-rouge-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a9b4f739f14641faf4f122a228bc1149.png?v=1733408104",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -6287,7 +6287,7 @@ export const BOIR_CATALOG = [
     "v": "CASTEL FRERES SAS",
     "u": "https://boir.be/fr/products/laurent-perrachon-julienas-vignes-centenaires-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Laurent_Perrachon_Julienas_Vignes_Centenaires_2022.png?v=1761916137",
-    "r": "Autre",
+    "r": "Bordeaux",
     "c": "France"
   },
   {
@@ -6585,7 +6585,7 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/mesamis-sicilian-orange",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0ce787b2825b41eb42b6d691c6fc9ed8.png?v=1769695322",
     "r": "Autre",
-    "c": "France"
+    "c": "Italie"
   },
   {
     "t": "Michele Chiarlo - Barbaresco \"Palás\" 2022",
@@ -7457,7 +7457,7 @@ export const BOIR_CATALOG = [
     "v": "Invinova",
     "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-cuvee-vox-rouge-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Ontwerp_zonder_titel_75.png?v=1747297763",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -7466,7 +7466,7 @@ export const BOIR_CATALOG = [
     "v": "Invinova",
     "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
-    "r": "Autre",
+    "r": "Rhône",
     "c": "France"
   },
   {
@@ -7603,5 +7603,6 @@ export function searchBoirLocal(query) {
     .map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
 export function getRandomWines(n = 3) {
+  if (!BOIR_CATALOG || BOIR_CATALOG.length === 0) return [];
   return [...BOIR_CATALOG].sort(() => 0.5 - Math.random()).slice(0, n).map(w => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c }));
 }
