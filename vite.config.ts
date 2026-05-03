@@ -36,6 +36,10 @@ export default defineConfig({
       },
 
       workbox: {
+        // Force le nouveau SW à prendre le contrôle immédiatement sans attendre
+        skipWaiting: true,
+        clientsClaim: true,
+
         // Cache tous les assets statiques générés par Vite
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2}'],
 
