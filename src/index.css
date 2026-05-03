@@ -38,8 +38,12 @@
   :root {
     color-scheme: dark;
   }
-  html, body {
+  html, body, #root {
+    min-height: 100vh;
+    min-height: 100dvh;
     background: var(--color-bg);
+  }
+  html, body {
     color: var(--color-cream);
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
