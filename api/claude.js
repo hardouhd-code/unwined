@@ -3,7 +3,7 @@
  * Proxy vers l'API Anthropic — fetch natif, zéro dépendance npm.
  * Variable requise : ANTHROPIC_API_KEY dans Vercel env vars.
  */
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
         "anthropic-version":    "2023-06-01",
       },
       body: JSON.stringify({
-        model:      model      || "claude-sonnet-4-20250514",
+        model:      model      || "claude-sonnet-4-5",
         max_tokens: max_tokens || 800,
         messages:   messages   || [],
       }),
@@ -43,4 +43,4 @@ module.exports = async (req, res) => {
     console.error("Claude proxy error:", err);
     return res.status(500).json({ error: err.message || "Internal server error" });
   }
-};
+}
