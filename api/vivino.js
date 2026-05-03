@@ -7,7 +7,7 @@
  * → { wines: [...] }
  */
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -63,7 +63,6 @@ module.exports = async (req, res) => {
       });
     }
 
-    // Vérifier que c'est bien du JSON (pas du HTML)
     const contentType = response.headers.get("content-type") || "";
     if (!contentType.includes("json")) {
       return res.status(502).json({
@@ -113,9 +112,8 @@ module.exports = async (req, res) => {
       return res.status(504).json({ error: "Timeout Vivino (>8s)", wines: [] });
     return res.status(500).json({ error: err.message || "Erreur inconnue", wines: [] });
   }
-};
+}
 
-// Vivino type_id : 1=rouge, 2=blanc, 3=mousseux, 4=rosé, 7=dessert, 24=fortifié
 function normalizeType(typeId) {
   const map = {1:"rouge",2:"blanc",3:"mousseux",4:"rose",7:"dessert",24:"fortifie"};
   return map[typeId] || "autre";
