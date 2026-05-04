@@ -99,11 +99,13 @@ export default function UnwinedApp() {
 
   if (!user) return <AuthScreen onAuth={handleAuth} />;
 
-  const isDetailOrAdd = location.pathname.startsWith("/vin/") || location.pathname === "/add" || location.pathname === "/scan";
+  // /scan garde la navbar — seuls /vin/:id et /add la masquent
+  const isDetailOrAdd = location.pathname.startsWith("/vin/") || location.pathname === "/add";
+  const isScan = location.pathname === "/scan";
 
   return (
     <div className="app-shell flex flex-col font-['Manrope',sans-serif]">
-      {!isDetailOrAdd && (
+      {!isDetailOrAdd && !isScan && (
         <div className="android-glass px-5 pt-7 shrink-0">
           <div className="flex justify-between items-start mb-4">
             <div>
@@ -135,8 +137,9 @@ export default function UnwinedApp() {
         </AnimatePresence>
       </div>
 
+      {/* Navbar fixée en bas */}
       {!isDetailOrAdd && (
-        <div className="fixed left-1/2 -translate-x-1/2 w-[min(94vw,430px)] z-50 pwa-safe-bottom">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[min(94vw,430px)] z-50">
           <div className="android-glass flex rounded-[18px] p-1.5 shadow-[0_16px_40px_rgba(0,0,0,.35)]">
             {TABS.map(tab_item => {
               const isActive = location.pathname === tab_item.id;
