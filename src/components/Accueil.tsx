@@ -139,17 +139,26 @@ const Accueil = () => {
     }));
   };
 
-  const getQueryList = (likedText = "", dislikedText = "") => {
+  const getQueryList = (likedText = "", dislikedText = "", topType = "rouge") => {
     const likedTokens = likedText.toLowerCase().split(",").map(s => s.trim()).filter(Boolean);
     const dislikedTokens = dislikedText.toLowerCase().split(",").map(s => s.trim()).filter(Boolean);
-    const base = [
-      "bordeaux", "cotes du rhone", "chablis", "rioja", "barolo", "sancerre",
-      "champagne", "bourgogne", "chianti", "priorat", "brunello", "pouilly"
-    ];
-    const merged = [...likedTokens, ...base]
+
+    // Requêtes adaptées au type dominant de l'utilisateur
+    const byType: Record<string, string[]> = {
+      rouge:    ["bordeaux", "cotes du rhone", "rioja", "barolo", "chianti", "priorat", "brunello", "bourgogne rouge", "cahors", "madiran"],
+      blanc:    ["chablis", "sancerre", "pouilly fume", "riesling", "meursault", "alsace", "viognier", "muscadet", "macon blanc"],
+      rose:     ["provence rose", "tavel", "bandol rose", "cotes de provence", "rose anjou"],
+      mousseux: ["champagne", "cremant", "prosecco", "cava", "vouvray petillant"],
+    };
+
+    const preferredQueries = byType[topType] || byType["rouge"];
+    const fallback = ["bourgogne", "bordeaux", "rhone"].filter(q => !preferredQueries.includes(q));
+
+    const merged = [...likedTokens, ...preferredQueries, ...fallback]
       .filter(q => !dislikedTokens.some(d => q.includes(d)))
       .filter((q, i, arr) => q && arr.indexOf(q) === i)
       .slice(0, 10);
+
     return merged.map((query, i) => ({
       query,
       budget: i < 3 ? "budget" : i < 7 ? "milieu" : "prestige"
@@ -166,7 +175,7 @@ const Accueil = () => {
         `${w.name} (${w.type}, note: ${w.rating ?? "?"}/5)`
       ).join("; ");
 
-      const qList = getQueryList(liked, disliked);
+      const qList = getQueryList(liked, disliked, analytics.topType || "rouge");
 
       const foundWines = [];
       for (const { query, budget } of qList) {
