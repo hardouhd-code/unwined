@@ -74,9 +74,8 @@ const SmartScanner = () => {
     reader.onload = async (ev) => {
       const img = new Image();
       img.onload = async () => {
-        // 1. Amélioration : Compression plus rapide pour éviter de figer l'interface
         const canvas = document.createElement("canvas");
-        const MAX_SIZE = 1000; // Légèrement plus grand pour une meilleure lecture du texte (OCR)
+        const MAX_SIZE = 1000;
         const scale = Math.min(1, MAX_SIZE / Math.max(img.width, img.height));
         
         canvas.width = img.width * scale;
@@ -84,13 +83,11 @@ const SmartScanner = () => {
         const ctx = canvas.getContext("2d");
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         
-        // Un ou deux passages maximum suffisent pour l'IA (évite la boucle while bloquante)
         let b64 = canvas.toDataURL("image/jpeg", 0.7).split(",")[1];
         if (b64.length > 600000) {
           b64 = canvas.toDataURL("image/jpeg", 0.4).split(",")[1];
         }
 
-        // 2. Préparation du prompt
         const liked = db.filter(w => w.tasted && w.rating >= 3).map(w => `${w.type} ${w.region} (${w.rating}/5)`).join(", ");
         const disliked = db.filter(w => w.tasted && w.rating <= 1).map(w => `${w.type} ${w.region}`).join(", ");
         
@@ -123,10 +120,8 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
           return safeJson(txt, {});
         };
 
-        // 3. Appel API
         try {
           let parsedResult = await callClaudeVision(prompt);
-          // Fallback OCR/structuration: seconde tentative plus stricte si la premiere est faible.
           if (!parsedResult?.topPick?.name || !parsedResult?.topPick?.taste_profile) {
             const fallbackPrompt = `${prompt}\n\nIMPORTANT: Si incertain, propose des valeurs plausibles et complete taste_profile + serving.`;
             parsedResult = await callClaudeVision(fallbackPrompt);
@@ -140,7 +135,6 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             throw new Error("Impossible d'extraire les données du vin avec précision. Veuillez réessayer.", { cause: zodError });
           }
 
-          // Vérification que l'IA a bien renvoyé les données minimales
           if (!validatedData || !validatedData.topPick) {
             throw new Error("L'étiquette n'a pas pu être lue correctement. Veuillez réessayer.");
           }
@@ -201,7 +195,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
 
   // --- RENDU : RÉSULTAT ---
   if (phase === "result" && result) {
-    const p = result.topPick || {}; // Sécurité anti-crash
+    const p = result.topPick || {};
     const tc = typeColor(p.type || "rouge");
     const taste = p.taste_profile || {};
     const serving = p.serving || {};
@@ -221,7 +215,6 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
         <div style={{ background: `linear-gradient(160deg,${typeLight(p.type)} 0%,transparent 40%)` }}>
           <div className="px-5 pt-9 pb-20">
             
-            {/* Header / Retour */}
             <div className="flex items-center gap-3 mb-5.5">
               <button onClick={onBack} className="w-[38px] h-[38px] rounded-full bg-[#8b5a3c1f] border border-[#8b5a3c33] text-[var(--color-gold)] text-base flex items-center justify-center cursor-pointer">
                 ←
@@ -231,7 +224,6 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               </span>
             </div>
 
-            {/* Carte Principale */}
             <div className="bg-[var(--color-bg-card)] rounded-[22px] p-5.5 mb-3.5 shadow-[0_4px_24px_rgba(139,90,60,.1)]" style={{ border: `1px solid ${tc}33` }}>
               <div className="text-sm text-[var(--color-gold)] tracking-[.3em] uppercase mb-3 font-['Cormorant_Garamond',serif] text-center">Recommandation du Sommelier</div>
               <div className="text-[46px] text-center mb-3">{p.emoji || typeEmoji(p.type)}</div>
@@ -264,14 +256,12 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               <p className="text-[14px] text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] italic leading-[1.8] text-center">{p.why}</p>
             </div>
 
-            {/* Lien Wine-Searcher */}
             <a href={`https://www.wine-searcher.com/find/${encodeURIComponent(((p.name || "") + " " + (p.year || "")).trim().replace(/\s+/g, "+"))}`}
               target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-transparent border border-[#c8503a4d] rounded-2xl py-2.5 mb-3.5 no-underline text-[var(--color-terra)] text-[10px] tracking-[.22em] uppercase font-['Cormorant_Garamond',serif] font-bold">
               🔍 Fiche sur Wine-Searcher
             </a>
 
-            {/* Suggestions Boir.be */}
             {(result.boirSuggestions?.length > 0) && (
               <div className="bg-[#b8862a0d] border border-[#b8862a38] rounded-2xl p-4 mb-3.5 animate-[fadeUp_0.4s_ease_0.2s_both]">
                 <div className="text-[10px] text-[var(--color-gold)] tracking-[.22em] uppercase font-bold font-['Cormorant_Garamond',serif] mb-3">
@@ -293,13 +283,13 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               </div>
             )}
 
-            {/* Section Récit */}
             {p.story && (
               <div className="bg-[#c8503a0f] border-l-2 border-l-[var(--color-terra)] rounded-r-2xl py-3.5 px-4 mb-3.5">
                 <div className="text-[14px] text-[var(--color-terra)] tracking-[.2em] uppercase mb-2 font-['Cormorant_Garamond',serif]">Le Récit</div>
                 <p className="text-[14px] text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] italic leading-[1.85]">{p.story}</p>
               </div>
             )}
+
             {(taste.nose || taste.palate || taste.finish || taste.body || taste.acidity || taste.tannins) && (
               <div className="bg-[#e9c17614] border border-[#e9c17640] rounded-[14px] px-4 py-3.5 mb-3.5">
                 <div className="text-[13px] text-[var(--color-gold)] tracking-[.18em] uppercase mb-2 font-['Cormorant_Garamond',serif]">
@@ -322,7 +312,6 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               </div>
             )}
 
-            {/* Actions */}
             <button onClick={() => { haptic(60); onResult({ id: String(Date.now()), ...wineObj, tasted: false, storage: true, rating: null, notes: "", addedAt: new Date().toLocaleDateString("fr-FR"), quantity: 1, lowStockThreshold: 1, type: wineObj.type as any }); }} 
                     className="w-full bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none p-4 rounded-full text-[14px] tracking-[.2em] uppercase font-['Cormorant_Garamond',serif] font-bold mb-2.5 shadow-[0_8px_28px_rgba(200,80,58,.25)] cursor-pointer hover:shadow-lg transition-shadow">
               + Ajouter à ma cave
@@ -352,7 +341,8 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
       </div>
       <div className="absolute inset-0 bg-[rgba(37,22,14,.42)] pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col items-center justify-between h-full pt-[60px] px-6 pb-[60px]">
+      {/* pb-[100px] pour laisser de la place au-dessus de la navbar */}
+      <div className="relative z-10 flex flex-col items-center justify-between h-full pt-[60px] px-6 pb-[100px]">
         <div className="text-center">
           <span className="text-[11px] text-[rgba(255,248,241,.8)] tracking-[.2em] uppercase font-bold font-['Manrope',sans-serif]">
             Vision API Active
