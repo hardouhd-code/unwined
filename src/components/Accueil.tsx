@@ -6,7 +6,14 @@ import { callClaude, safeJson } from "../lib/claude";
 import { Tag } from "./UI";
 import { searchBoirLocal } from "../lib/boirCatalog";
 
-
+/* ── DÉTECTION DU TYPE DEPUIS LE TITRE ── */
+function guessTypeFromTitle(title: string): string {
+  const s = (title || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  if (s.includes("champagne") || s.includes("cremant") || s.includes("mousseux") || s.includes("cava") || s.includes("prosecco") || s.includes("effervescent")) return "mousseux";
+  if (s.includes("rose") || s.includes("rosado") || s.includes("rosato")) return "rose";
+  if (s.includes("blanc") || s.includes("white") || s.includes("chablis") || s.includes("riesling") || s.includes("chardonnay") || s.includes("sauvignon") || s.includes("viognier") || s.includes("muscat") || s.includes("pinot gris") || s.includes("gewurz") || s.includes("albarino") || s.includes("vermentino") || s.includes("rully") || s.includes("macon") || s.includes("pouilly") || s.includes("sancerre") || s.includes("meursault") || s.includes("puligny") || s.includes("chassagne")) return "blanc";
+  return "rouge";
+}
 
 /* ── SKELETON CARD (pendant le chargement) ── */
 const SkeletonCard = ({ delay = 0 }: { delay?: number }) => (
@@ -64,6 +71,7 @@ const Accueil = () => {
   useEffect(() => {
     if (userName) { setEditingName(false); setNameInput(userName); }
   }, [userName]);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem("unwined_favorites_boir");
@@ -101,7 +109,7 @@ const Accueil = () => {
       if (!Array.isArray(items) || items.length === 0) return;
       localStorage.setItem(cacheKey(), JSON.stringify(items));
     } catch {
-      // no-op: localStorage peut être indisponible
+      // no-op
     }
   };
 
@@ -110,20 +118,16 @@ const Accueil = () => {
 
   useEffect(() => {
     if (!userName || wines || phase !== "idle") return;
-
     const cached = readCachedSelection();
     if (cached) {
       setWines(cached);
       setPhase("done");
-      // refresh silencieux en arrière-plan pour garder la sélection fraîche
       setTimeout(() => loadWines(), 30);
       return;
     }
-
     loadWines();
   }, [userName]);
 
-  // Recherche directement dans le catalogue local — zéro appel réseau, zéro blocage
   const searchBoir = (query: string) => {
     const results = searchBoirLocal(query).slice(0, 5);
     return results.map(w => ({
@@ -162,10 +166,8 @@ const Accueil = () => {
         `${w.name} (${w.type}, note: ${w.rating ?? "?"}/5)`
       ).join("; ");
 
-      // ÉTAPE 1: sélection de requêtes locale (instantanée, sans appel réseau)
       const qList = getQueryList(liked, disliked);
 
-      // ── ÉTAPE 2 : Chercher séquentiellement dans le catalogue local jusqu'à avoir 3 vins ──
       const foundWines = [];
       for (const { query, budget } of qList) {
         if (foundWines.length >= 3) break;
@@ -175,12 +177,13 @@ const Accueil = () => {
       }
       if (foundWines.length === 0) throw new Error("Aucun vin trouvé sur Boir.be");
 
-      // ── ÉTAPE 3 : affichage immédiat + enrichissement Claude en arrière-plan ──
       const BUDGET_MAP = { budget: "10–30€", milieu: "30–75€", prestige: "75€+" };
+
+      // ── Affichage immédiat avec type déduit depuis le titre ──
       const instantWines = foundWines.map((w) => ({
         name:        w.title,
         producer:    w.vendor || "",
-        type:        "rouge",
+        type:        guessTypeFromTitle(w.title),
         region:      "",
         country:     "",
         grapes:      "",
@@ -198,6 +201,7 @@ const Accueil = () => {
       setPhase("done");
       writeCachedSelection(instantWines);
 
+      // ── Enrichissement Claude en arrière-plan ──
       const wineList = foundWines.map(w => `${w.title} (${w.price || "?"})`).join(", ");
       const enrichPrompt = `Tu es sommelier expert. Réponds UNIQUEMENT avec un tableau JSON valide, rien d'autre.
 Enrichis ces vins réels du catalogue Boir.be avec une description et une recommandation personnalisée :
@@ -211,13 +215,13 @@ FORMAT (même ordre que les vins fournis) :
       const enrichTxt  = await callClaude([{ role: "user", content: enrichPrompt }], 800);
       const enrichData = safeJson(enrichTxt, []);
 
-      // ── ÉTAPE 4 : Fusionner données boir.be + enrichissement Claude ──
+      // ── Fusion : priorité à Claude, fallback sur guessTypeFromTitle ──
       const finalWines = foundWines.map((w, i) => {
         const extra = Array.isArray(enrichData) ? (enrichData[i] || {}) : {};
         return {
           name:        w.title,
           producer:    w.vendor || "",
-          type:        extra.type    || "rouge",
+          type:        extra.type    || guessTypeFromTitle(w.title),
           region:      extra.region  || "",
           country:     extra.country || "",
           grapes:      extra.grapes  || "",
@@ -234,6 +238,7 @@ FORMAT (même ordre que les vins fournis) :
 
       setWines(finalWines);
       writeCachedSelection(finalWines);
+
     } catch (e) {
       if ((e.message?.includes("529") || e.message?.includes("overloaded")) && attempt < 2) {
         setTimeout(() => loadWines(attempt + 1), 4000 * (attempt + 1));
@@ -259,9 +264,7 @@ FORMAT (même ordre que les vins fournis) :
   /* ── ÉCRAN SAISIE NOM ── */
   if (editingName) return (
     <div className="flex-1 flex flex-col items-center justify-center px-7 pb-[100px] pt-5 text-center">
-      {/* Orbe décoratif */}
       <div className="w-[90px] h-[90px] rounded-full mb-7 bg-[radial-gradient(circle_at_35%_35%,var(--color-terra-light),var(--color-terra-dark))] shadow-[0_0_50px_rgba(200,80,58,.3),0_0_80px_rgba(200,80,58,.1)] flex items-center justify-center text-[40px]">🍷</div>
-
       <div className="text-[10px] text-[var(--color-gold)] tracking-[.35em] uppercase font-bold mb-2.5">
         Bienvenue
       </div>
@@ -271,7 +274,6 @@ FORMAT (même ordre que les vins fournis) :
       <p className="text-[15px] text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] italic mb-9 leading-[1.8]">
         {t("name_q")}
       </p>
-
       <input
         value={nameInput}
         onChange={e => setNameInput(e.target.value)}
@@ -293,7 +295,7 @@ FORMAT (même ordre que les vins fournis) :
   return (
     <div className="flex-1 overflow-y-auto px-4 pt-5 pb-[104px]">
 
-      {/* ── EN-TÊTE ÉDITORIAL ── */}
+      {/* ── EN-TÊTE ── */}
       <div className="mb-6">
         <div className="text-[10px] text-[var(--color-gold)] tracking-[.32em] uppercase font-bold mb-1.5">
           {greeting}
@@ -318,21 +320,17 @@ FORMAT (même ordre que les vins fournis) :
           </button>
         </div>
       </div>
+
       {favoriteCount > 0 && (
         <div className="mb-4.5 bg-[#e9c1761a] border border-[#e9c17640] rounded-[14px] px-3.5 py-3">
-          <div className="text-[10px] text-[var(--color-gold)] tracking-[.16em] uppercase font-bold">
-            Vos envies
-          </div>
-          <div className="text-[13px] text-[var(--color-subtext)] mt-1">
-            {favoriteCount} vins en favoris dans Decouvrir.
-          </div>
+          <div className="text-[10px] text-[var(--color-gold)] tracking-[.16em] uppercase font-bold">Vos envies</div>
+          <div className="text-[13px] text-[var(--color-subtext)] mt-1">{favoriteCount} vins en favoris dans Decouvrir.</div>
         </div>
       )}
+
       {(analytics.tastedCount > 0 || analytics.repurchase > 0) && (
         <div className="mb-4.5 bg-[rgba(48,40,34,.75)] border border-[rgba(197,160,89,.24)] rounded-[14px] px-3.5 py-3">
-          <div className="text-[10px] text-[var(--color-gold)] tracking-[.16em] uppercase font-bold">
-            Analytics rapides
-          </div>
+          <div className="text-[10px] text-[var(--color-gold)] tracking-[.16em] uppercase font-bold">Analytics rapides</div>
           <div className="text-[13px] text-[var(--color-subtext)] mt-1">
             {analytics.topType ? `Type le plus bu: ${analytics.topType} (${analytics.topTypeCount})` : "Ajoute des notes pour voir ton profil."}
           </div>
@@ -351,7 +349,6 @@ FORMAT (même ordre que les vins fournis) :
         </div>
       )}
 
-      {/* Séparateur dégradé */}
       <div className="h-[1px] bg-gradient-to-r from-transparent via-[var(--color-terra-light)] to-transparent opacity-55 mb-7" />
 
       {/* ── TITRE SECTION ── */}
@@ -373,34 +370,23 @@ FORMAT (même ordre que les vins fournis) :
         )}
       </div>
 
-      {/* ── ÉTATS : LOADING ── */}
       {phase === "loading" && (
-        <div>
-          {[0, 0.1, 0.2].map((d, i) => <SkeletonCard key={i} delay={d} />)}
-        </div>
+        <div>{[0, 0.1, 0.2].map((d, i) => <SkeletonCard key={i} delay={d} />)}</div>
       )}
 
-      {/* ── ÉTATS : ERROR ── */}
       {phase === "error" && (
         <div className="bg-[#c8503a0d] border border-[#c8503a33] rounded-[20px] p-7 text-center mb-4">
-          <div className="text-[13px] text-[var(--color-terra)] font-['Cormorant_Garamond',serif] italic mb-4 leading-[1.7]">
-            {error}
-          </div>
-          <button
-            onClick={() => loadWines(0)}
-            className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-2.5 px-7 rounded-full text-[11px] tracking-[.2em] uppercase font-['Cormorant_Garamond',serif] font-bold">
+          <div className="text-[13px] text-[var(--color-terra)] font-['Cormorant_Garamond',serif] italic mb-4 leading-[1.7]">{error}</div>
+          <button onClick={() => loadWines(0)} className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-2.5 px-7 rounded-full text-[11px] tracking-[.2em] uppercase font-['Cormorant_Garamond',serif] font-bold">
             Réessayer
           </button>
         </div>
       )}
 
-      {/* ── ÉTATS : IDLE ── */}
       {phase === "idle" && (
         <div className="text-center py-[44px] px-4">
           <div className="w-[72px] h-[72px] rounded-full mx-auto mb-6 bg-[radial-gradient(circle_at_35%_35%,var(--color-terra-light),var(--color-terra-dark))] shadow-[0_8px_30px_rgba(200,80,58,.25)] flex items-center justify-center text-[32px]">🍷</div>
-          <button
-            onClick={() => loadWines(0)}
-            className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-[15px] px-[38px] rounded-full text-[11px] tracking-[.25em] uppercase font-['Cormorant_Garamond',serif] font-bold shadow-[0_10px_30px_rgba(200,80,58,.28)]">
+          <button onClick={() => loadWines(0)} className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-[15px] px-[38px] rounded-full text-[11px] tracking-[.25em] uppercase font-['Cormorant_Garamond',serif] font-bold shadow-[0_10px_30px_rgba(200,80,58,.28)]">
             Voir ma sélection →
           </button>
         </div>
@@ -410,18 +396,13 @@ FORMAT (même ordre que les vins fournis) :
       {phase === "done" && wines && wines.slice(0, 3).map((wine, i) => {
         const tc = typeColor(wine.type || "rouge");
         const tl = typeLight(wine.type || "rouge");
-
         return (
           <div
             key={i}
             className="bg-[#211a15] rounded-[24px] p-3.5 mb-2.5 shadow-[0_18px_36px_rgba(0,0,0,.35),0_2px_10px_rgba(0,0,0,.25)] border border-[#b8862a33] relative overflow-hidden transition-all duration-[250ms] ease-[cubic-bezier(.34,1.56,.64,1)] hover:-translate-y-[3px] hover:shadow-[0_20px_50px_rgba(139,90,60,.14)] opacity-0 animate-[fadeUp_0.45s_cubic-bezier(.22,1,.36,1)_both]"
             style={{ animationDelay: `${i * .13}s` }}>
-
-            {/* Accent latéral coloré */}
             <div className="absolute left-0 top-[15%] bottom-[15%] w-[3px] rounded-r-sm"
                  style={{ background: `linear-gradient(180deg, ${tc}aa, ${tc}33)` }} />
-
-            {/* En-tête vin */}
             <div className="flex gap-2.5 mb-2.5">
               <div className="w-[42px] h-[42px] rounded-xl shrink-0 flex items-center justify-center text-xl"
                    style={{ background: tl, border: `1px solid ${tc}33` }}>
@@ -436,14 +417,10 @@ FORMAT (même ordre que les vins fournis) :
                 </div>
               </div>
             </div>
-
-            {/* Tags */}
             <div className="flex gap-1.5 flex-wrap mb-2.5">
               {[WINE_TYPES.find(t => t.id === wine.type)?.label, wine.region, wine.country, wine.year]
                 .filter(Boolean).slice(0, 3).map(tag => <Tag key={String(tag)} color="var(--color-gold)">{tag}</Tag>)}
             </div>
-
-            {/* CTA boir.be — toujours un lien direct (vins issus du catalogue réel) */}
             <a
               href={wine.boir_url}
               target="_blank" rel="noopener noreferrer"
@@ -458,18 +435,13 @@ FORMAT (même ordre que les vins fournis) :
         );
       })}
 
-      {/* ── PROMPT AJOUT SI CAVE VIDE ── */}
       {phase === "done" && db.length === 0 && (
         <div className="bg-[#b8862a0d] border border-[#b8862a2e] rounded-[20px] px-5 py-[22px] mt-1 text-center opacity-0 animate-[fadeUp_0.5s_ease_0.4s_both]">
-          <div className="text-[10px] text-[var(--color-gold)] tracking-[.3em] uppercase font-bold mb-2.5">
-            Affinez votre profil
-          </div>
+          <div className="text-[10px] text-[var(--color-gold)] tracking-[.3em] uppercase font-bold mb-2.5">Affinez votre profil</div>
           <p className="text-sm text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] italic leading-[1.8] mb-4.5">
             Notez vos vins pour que la sélection épouse vos goûts réels.
           </p>
-          <button
-            onClick={onAdd}
-            className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-3 px-7 rounded-[30px] text-[10px] tracking-[.22em] uppercase font-['Cormorant_Garamond',serif] font-bold shadow-[0_8px_22px_rgba(200,80,58,.22)]">
+          <button onClick={onAdd} className="bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none py-3 px-7 rounded-[30px] text-[10px] tracking-[.22em] uppercase font-['Cormorant_Garamond',serif] font-bold shadow-[0_8px_22px_rgba(200,80,58,.22)]">
             + Ajouter un vin
           </button>
         </div>
