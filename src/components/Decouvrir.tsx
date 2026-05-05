@@ -2,7 +2,6 @@ import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { useStore } from '../store/useStore';
 import { BOIR_CATALOG, searchBoirLocal } from '../lib/boirCatalog';
 
-
 const FLAG_BY_COUNTRY: Record<string, string> = {
   France: '🇫🇷',
   Italie: '🇮🇹',
@@ -51,7 +50,7 @@ const WineCard = React.memo(function WineCard({ wine, isFavorite, onToggleFavori
   return (
     <div className="bg-[#261e18] rounded-2xl p-4 flex gap-3 mb-3 shadow-[0_8px_16px_rgba(0,0,0,0.2)]">
       <div className="w-[60px] h-[75px] bg-[#302822] rounded-lg flex items-center justify-center shrink-0">
-         {img ? <img src={img} alt="" className="w-full h-full object-contain" /> : <span className="text-2xl">🍷</span>}
+        {img ? <img src={img} alt="" className="w-full h-full object-contain" /> : <span className="text-2xl">🍷</span>}
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex justify-between items-center gap-2">
@@ -93,6 +92,7 @@ export function Decouvrir() {
   const FAVORITES_KEY = 'unwined_favorites_boir';
 
   useEffect(() => { setRegion('Toutes'); }, [country]);
+
   const availableCountries = useMemo(() => {
     const set = new Set<string>();
     for (const w of (BOIR_CATALOG as any) || []) {
@@ -101,6 +101,7 @@ export function Decouvrir() {
     }
     return ['Tous', ...Array.from(set).sort((a: any, b: any) => a.localeCompare(b, 'fr'))];
   }, []);
+
   const regionsByCountry = useMemo(() => {
     const map: any = {};
     for (const w of (BOIR_CATALOG as any) || []) {
@@ -116,6 +117,7 @@ export function Decouvrir() {
     });
     return out;
   }, []);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem(FAVORITES_KEY);
@@ -125,9 +127,11 @@ export function Decouvrir() {
       setFavorites([]);
     }
   }, []);
+
   useEffect(() => {
     localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
   }, [favorites]);
+
   useEffect(() => {
     const timer = setTimeout(() => setQuery(queryInput), 180);
     return () => clearTimeout(timer);
@@ -206,9 +210,9 @@ export function Decouvrir() {
   return (
     <div className="px-4 pb-[148px] min-h-screen bg-[var(--color-bg)]">
       <div className="py-5 text-center">
-        <span className="text-[10px] text-[var(--color-gold)] font-bold tracking-[.2em] uppercase">Curation exclusive</span>
-        <h2 className="text-[var(--color-gold)] font-['Noto_Serif',serif] m-0 mt-1.5 tracking-[1px] text-[24px]">Suggestions de Claude</h2>
-        <p className="text-[12px] text-[var(--color-muted-text)] leading-[1.45]">Decouvrez notre selection hebdomadaire de crus d'exception.</p>
+        <span className="text-[10px] text-[var(--color-gold)] font-bold tracking-[.2em] uppercase">Catalogue Boir.be</span>
+        <h2 className="text-[var(--color-gold)] font-['Noto_Serif',serif] m-0 mt-1.5 tracking-[1px] text-[24px]">Sélection Boir.be</h2>
+        <p className="text-[12px] text-[var(--color-muted-text)] leading-[1.45]">Explorez notre catalogue de vins disponibles en Belgique.</p>
         {results.length === MAX_RESULTS && (
           <p className="text-[11px] text-[var(--color-muted-text)] mt-1">Affichage limité à 120 résultats pour plus de fluidité</p>
         )}
@@ -216,32 +220,34 @@ export function Decouvrir() {
 
       <div className="relative mb-5">
         <span className="absolute left-[18px] top-[14px] text-[var(--color-muted-text)] text-lg">⌕</span>
-        <input type="text" value={queryInput} onChange={e => setQueryInput(e.target.value)} 
-          placeholder="Un chateau, une appellation, un cepage..." 
-          className="w-full h-[54px] pl-[44px] pr-4 bg-[#302822] text-[var(--color-cream)] border border-[rgba(197,160,89,.15)] rounded-full outline-none box-border shadow-[0_20px_40px_rgba(37,22,14,0.22)] font-['Manrope',sans-serif] focus:border-[var(--color-gold)] transition-colors" 
+        <input type="text" value={queryInput} onChange={e => setQueryInput(e.target.value)}
+          placeholder="Un chateau, une appellation, un cepage..."
+          className="w-full h-[54px] pl-[44px] pr-4 bg-[#302822] text-[var(--color-cream)] border border-[rgba(197,160,89,.15)] rounded-full outline-none box-border shadow-[0_20px_40px_rgba(37,22,14,0.22)] font-['Manrope',sans-serif] focus:border-[var(--color-gold)] transition-colors"
         />
       </div>
 
       <div className="flex gap-2 overflow-x-auto mb-[15px] no-scrollbar">
         {['Tous', 'Rouge', 'Blanc', 'Rosé', 'Bulles'].map(c => (
-          <button key={c} onClick={() => setTypeFilter(c)} 
-                  className={`shrink-0 px-[18px] py-[11px] rounded-[25px] border-none font-bold text-[11px] tracking-[.12em] uppercase ${typeFilter === c ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
+          <button key={c} onClick={() => setTypeFilter(c)}
+            className={`shrink-0 px-[18px] py-[11px] rounded-[25px] border-none font-bold text-[11px] tracking-[.12em] uppercase ${typeFilter === c ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
             {c}
           </button>
         ))}
       </div>
+
       <div className="flex gap-2 overflow-x-auto mb-2.5 no-scrollbar">
         {PRICE_FILTERS.map((p) => (
-          <button key={p} onClick={() => setPriceFilter(p)} 
-                  className={`shrink-0 px-3.5 py-[9px] rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${priceFilter === p ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
+          <button key={p} onClick={() => setPriceFilter(p)}
+            className={`shrink-0 px-3.5 py-[9px] rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${priceFilter === p ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
             {p}
           </button>
         ))}
-        <button onClick={() => setOnlyFavorites((v) => !v)} 
-                className={`shrink-0 px-3.5 py-[9px] rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${onlyFavorites ? "bg-[#ffb68c] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
+        <button onClick={() => setOnlyFavorites((v) => !v)}
+          className={`shrink-0 px-3.5 py-[9px] rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${onlyFavorites ? "bg-[#ffb68c] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
           {onlyFavorites ? '♥ Favoris' : '♡ Favoris'}
         </button>
       </div>
+
       <div className="flex gap-2 overflow-x-auto mb-2.5 no-scrollbar">
         {[
           ['match', 'Match'],
@@ -249,8 +255,8 @@ export function Decouvrir() {
           ['priceAsc', 'Prix ↑'],
           ['priceDesc', 'Prix ↓'],
         ].map(([id, label]) => (
-          <button key={id} onClick={() => setSortMode(id as string)} 
-                  className={`shrink-0 px-3 py-[7px] rounded-[18px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${sortMode === id ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
+          <button key={id} onClick={() => setSortMode(id as string)}
+            className={`shrink-0 px-3 py-[7px] rounded-[18px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${sortMode === id ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
             {label}
           </button>
         ))}
@@ -267,8 +273,8 @@ export function Decouvrir() {
         <>
           <div className="flex gap-2 overflow-x-auto mb-2 no-scrollbar">
             {(availableCountries as string[]).map((c: string) => (
-              <button key={c} onClick={() => setCountry(c)} 
-                      className={`shrink-0 px-3.5 py-2 rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${country === c ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
+              <button key={c} onClick={() => setCountry(c)}
+                className={`shrink-0 px-3.5 py-2 rounded-[20px] border-none font-bold text-[10px] tracking-[.08em] uppercase ${country === c ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-cream)]"}`}>
                 {(FLAG_BY_COUNTRY[c] || '')} {c}
               </button>
             ))}
@@ -276,8 +282,8 @@ export function Decouvrir() {
           {country !== 'Tous' && (
             <div className="flex gap-2 overflow-x-auto mb-4 no-scrollbar">
               {['Toutes', ...(regionsByCountry[country] || [])].map((r: string) => (
-                <button key={r} onClick={() => setRegion(r)} 
-                        className={`shrink-0 px-3 py-[7px] rounded-[20px] border-none font-bold text-[10px] uppercase ${region === r ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-muted-text)]"}`}>
+                <button key={r} onClick={() => setRegion(r)}
+                  className={`shrink-0 px-3 py-[7px] rounded-[20px] border-none font-bold text-[10px] uppercase ${region === r ? "bg-[var(--color-gold)] text-[#412d00]" : "bg-[#302822] text-[var(--color-muted-text)]"}`}>
                   {r}
                 </button>
               ))}
@@ -299,6 +305,7 @@ export function Decouvrir() {
           />
         );
       })}
+
       <div className="h-12 flex items-center justify-center gap-1.5">
         <span className="w-1 h-1 rounded-full bg-[var(--color-gold)] opacity-35" />
         <span className="w-1 h-1 rounded-full bg-[var(--color-gold)] opacity-35" />
