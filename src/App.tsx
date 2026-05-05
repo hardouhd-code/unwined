@@ -217,7 +217,7 @@ export default function UnwinedApp() {
       {!isDetailOrAdd && !isChatOpen && (
         <button
           onClick={() => { haptic(30); setIsChatOpen(true); }}
-          className="fixed bottom-[90px] right-[max(16px,calc(50vw-200px))] w-[56px] h-[56px] rounded-full bg-gradient-to-br from-[var(--color-gold)] to-[#8b5a3c] text-white flex items-center justify-center text-2xl shadow-[0_8px_24px_rgba(139,90,60,.4)] border-none cursor-pointer z-[100] active:scale-95 transition-transform"
+          className="fixed bottom-[96px] right-[max(16px,calc(50vw-200px))] w-[56px] h-[56px] rounded-full bg-gradient-to-br from-[var(--color-gold)] to-[#8b5a3c] text-white flex items-center justify-center text-2xl shadow-[0_8px_24px_rgba(139,90,60,.4)] border-none cursor-pointer z-[100] active:scale-95 transition-transform"
         >
           🤖
         </button>
