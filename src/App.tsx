@@ -22,12 +22,9 @@ export default function UnwinedApp() {
   const [authLoading, setAuthLoading] = useState(true);
   const { user, setUser, loadProfile } = useStore();
   const [syncing, setSyncing] = useState(false);
-  const [showOnboarding, setShowOnboarding] = useState(false);
-  const [onboardingStep, setOnboardingStep] = useState(0);
+
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [notifStatus, setNotifStatus] = useState(
-    typeof Notification !== "undefined" ? Notification.permission : "unsupported"
-  );
+
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -45,18 +42,7 @@ export default function UnwinedApp() {
     localStorage.setItem("unwined_seed", String(seed + 1));
   }, []);
 
-  useEffect(() => {
-    if (!user) return;
-    try {
-      const k = `unwined_onboarding_done_${user.id}`;
-      if (localStorage.getItem(k) !== "1") {
-        setShowOnboarding(true);
-        setOnboardingStep(0);
-      }
-    } catch {
-      setShowOnboarding(true);
-    }
-  }, [user]);
+
 
   const handleAuth = async (u: any) => {
     setUser(u);
@@ -69,16 +55,6 @@ export default function UnwinedApp() {
     setUser(null);
     useStore.setState({ db: [], userName: "" });
     navigate("/");
-  };
-
-  const enableNotifications = async () => {
-    if (typeof Notification === "undefined") return;
-    try {
-      const permission = await Notification.requestPermission();
-      setNotifStatus(permission);
-    } catch {
-      setNotifStatus("denied");
-    }
   };
 
   const TABS = [
@@ -105,7 +81,7 @@ export default function UnwinedApp() {
 
   return (
     <div className="app-shell flex flex-col font-['Manrope',sans-serif]">
-      {!isDetailOrAdd && !isScan && (
+      {location.pathname === "/" && (
         <div className="android-glass px-5 pt-7 shrink-0">
           <div className="flex justify-between items-start mb-4">
             <div>
@@ -155,60 +131,7 @@ export default function UnwinedApp() {
         </div>
       )}
 
-      {showOnboarding && (
-        <div className="fixed inset-0 bg-black/55 z-[300] flex items-center justify-center p-4">
-          <div className="w-full max-w-[360px] bg-[#211a15] border border-[rgba(197,160,89,.25)] rounded-2xl p-4">
-            <div className="text-[11px] text-[var(--color-gold)] uppercase tracking-[.16em] mb-2.5">
-              Onboarding premium
-            </div>
-            {onboardingStep === 0 && (
-              <div>
-                <div className="text-xl text-[var(--color-cream)] font-['Noto_Serif',serif] mb-2">Bienvenue dans Unwine-D</div>
-                <div className="text-[13px] text-[var(--color-subtext)] mb-3.5">Scanner une etiquette, ajoute le vin, puis note-le pour personnaliser ta selection.</div>
-              </div>
-            )}
-            {onboardingStep === 1 && (
-              <div>
-                <div className="text-xl text-[var(--color-cream)] font-['Noto_Serif',serif] mb-2">Ton flux ideal</div>
-                <div className="text-[13px] text-[var(--color-subtext)] mb-3.5">1) `Scan IA` pour identifier. 2) `Ma Cave` pour suivre le stock. 3) `Decouvrir` pour acheter selon tes gouts.</div>
-              </div>
-            )}
-            {onboardingStep === 2 && (
-              <div>
-                <div className="text-xl text-[var(--color-cream)] font-['Noto_Serif',serif] mb-2">Pret pour la release</div>
-                <div className="text-[13px] text-[var(--color-subtext)] mb-3.5">Active les favoris et les alertes stock bas pour un rachat en 1 clic.</div>
-                <button
-                  onClick={enableNotifications}
-                  className="bg-transparent border border-[var(--color-gold)]/30 rounded-xl px-2.5 py-1.5 text-[var(--color-gold)] mb-2.5"
-                >
-                  {notifStatus === "granted" ? "Notifications actives" : "Activer notifications"}
-                </button>
-              </div>
-            )}
-            <div className="flex justify-between items-center mt-2">
-              <button
-                onClick={() => {
-                  if (onboardingStep === 0) return setShowOnboarding(false);
-                  setOnboardingStep((s) => Math.max(0, s - 1));
-                }}
-                className="bg-transparent border border-[var(--color-gold)]/25 text-[var(--color-muted-text)] rounded-2xl px-2.5 py-1.5 min-h-0"
-              >
-                {onboardingStep === 0 ? "Passer" : "Retour"}
-              </button>
-              <button
-                onClick={() => {
-                  if (onboardingStep < 2) return setOnboardingStep((s) => s + 1);
-                  try { localStorage.setItem(`unwined_onboarding_done_${user?.id}`, "1"); } catch { /* ignore */ }
-                  setShowOnboarding(false);
-                }}
-                className="bg-[#e9c17633] border border-[#e9c17673] text-[var(--color-gold)] rounded-2xl px-3 py-1.5 min-h-0"
-              >
-                {onboardingStep < 2 ? "Suivant" : "Commencer"}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+
 
       {/* Sommelier IA Modal */}
       <ChatSommelier isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
