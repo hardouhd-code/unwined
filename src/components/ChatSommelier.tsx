@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useStore } from "../store/useStore";
 import { askSommelier } from "../lib/claude";
@@ -16,18 +16,37 @@ interface Message {
 
 export const ChatSommelier: React.FC<ChatSommelierProps> = ({ isOpen, onClose }) => {
   const { db, userName } = useStore();
-  const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: `Bonjour ${userName || ""} ! Je suis votre sommelier personnel. Que puis-je faire pour vous aujourd'hui ? (Ex: "Quel vin ouvrir avec un poulet rôti ?")` }
-  ]);
+
+  const welcomeMessage = useCallback((): Message => ({
+    role: "assistant",
+    content: `Bonjour ${userName || ""} ! Je suis votre sommelier personnel. Que puis-je faire pour vous aujourd'hui ? (Ex: "Quel vin ouvrir avec un poulet rôti ?")`
+  }), [userName]);
+
+  const [messages, setMessages] = useState<Message[]>([welcomeMessage()]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
+
+  // Mettre à jour le message d'accueil si userName change
+  useEffect(() => {
+    setMessages(prev => {
+      if (prev.length === 1 && prev[0].role === "assistant") {
+        return [welcomeMessage()];
+      }
+      return prev;
+    });
+  }, [userName]);
 
   useEffect(() => {
     if (endRef.current) {
       endRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages, loading]);
+
+  const clearConversation = () => {
+    haptic(20);
+    setMessages([welcomeMessage()]);
+  };
 
   const handleSend = async () => {
     if (!input.trim() || loading) return;
@@ -38,9 +57,7 @@ export const ChatSommelier: React.FC<ChatSommelierProps> = ({ isOpen, onClose })
     haptic(20);
 
     try {
-      const apiHistory = messages.map(m => ({ role: m.role, content: m.content }));
-      apiHistory.push({ role: "user", content: userMsg });
-
+      const apiHistory = [...messages, { role: "user" as const, content: userMsg }];
       const reply = await askSommelier(apiHistory, db, userName);
       setMessages(prev => [...prev, { role: "assistant", content: reply }]);
       haptic(50);
@@ -78,7 +95,17 @@ export const ChatSommelier: React.FC<ChatSommelierProps> = ({ isOpen, onClose })
                   <div className="text-[10px] text-[var(--color-gold)] uppercase tracking-[.1em] font-bold">En ligne</div>
                 </div>
               </div>
-              <button onClick={onClose} className="w-8 h-8 rounded-full bg-[#302822] text-[var(--color-muted-text)] flex items-center justify-center border-none cursor-pointer">✕</button>
+              <div className="flex items-center gap-2">
+                {messages.length > 1 && (
+                  <button
+                    onClick={clearConversation}
+                    className="text-[10px] text-[var(--color-muted-text)] bg-transparent border border-[rgba(197,160,89,.2)] rounded-full px-3 py-1.5 uppercase tracking-[.1em] font-['Manrope',sans-serif] cursor-pointer"
+                  >
+                    Vider
+                  </button>
+                )}
+                <button onClick={onClose} className="w-8 h-8 rounded-full bg-[#302822] text-[var(--color-muted-text)] flex items-center justify-center border-none cursor-pointer">✕</button>
+              </div>
             </div>
 
             {/* Messages */}
@@ -92,9 +119,9 @@ export const ChatSommelier: React.FC<ChatSommelierProps> = ({ isOpen, onClose })
               ))}
               {loading && (
                 <div className="self-start bg-[#302822] text-[var(--color-cream)] border border-[rgba(197,160,89,.15)] rounded-[18px] rounded-bl-sm p-3 text-[14px] flex gap-1">
-                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{animationDelay: "0ms"}}></span>
-                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{animationDelay: "150ms"}}></span>
-                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{animationDelay: "300ms"}}></span>
+                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                  <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
                 </div>
               )}
               <div ref={endRef} />
@@ -116,7 +143,10 @@ export const ChatSommelier: React.FC<ChatSommelierProps> = ({ isOpen, onClose })
                   disabled={!input.trim() || loading}
                   className={`w-[44px] h-[44px] rounded-full flex items-center justify-center shrink-0 border-none transition-colors cursor-pointer ${input.trim() && !loading ? "bg-gradient-to-br from-[var(--color-gold)] to-[#8b5a3c] text-[#fff]" : "bg-[#3a302a] text-[var(--color-muted-text)]"}`}
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" />
+                  </svg>
                 </button>
               </div>
             </div>
