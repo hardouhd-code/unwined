@@ -90,7 +90,7 @@ const Accueil = () => {
     return `${yyyy}-${mm}-${dd}`;
   };
 
-  const cacheKey = () => `unwined_selection_${(userName || "guest").toLowerCase()}_${dayKey()}`;
+  const cacheKey = () => `unwined_selection_${dayKey()}`;
 
   const readCachedSelection = () => {
     try {
