@@ -1,11 +1,14 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const BASE_URL = 'https://boir.be/collections/all/products.json?limit=250&page=';
 const COLLECTION_VIN_URL = 'https://boir.be/fr/collections/vin?page=';
 const MAX_PAGES = 40;
-const DELAY_MS = 400; // délai entre pages pour éviter le rate limiting
+const DELAY_MS = 400;
 
 const EXCLUDE = [
   'thermometer', 'kurkentrekker', 'glas', 'shaker', 'cadeaubon', 'ijsemmer',
@@ -22,15 +25,8 @@ const NON_WINE_HINTS = [
 ];
 
 const WINE_PRODUCT_TYPES = new Set([
-  'rode wijn',
-  'witte wijn',
-  'rose wijn',
-  'schuimwijn',
-  'zoete wijn',
-  'versterkte wijn',
-  'oranje wijn',
-  'all',
-  'bio'
+  'rode wijn', 'witte wijn', 'rose wijn', 'schuimwijn',
+  'zoete wijn', 'versterkte wijn', 'oranje wijn', 'all', 'bio'
 ]);
 
 const COUNTRY_RULES = [
@@ -82,14 +78,8 @@ const AOP_RULES = [
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function normalize(text = '') {
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return text.toString().toLowerCase().normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '').replace(/[^\w\s-]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 function matchFirst(ruleSet, haystack, fallback = 'Autre') {
@@ -111,33 +101,25 @@ function detectType(haystack) {
 
 function detectAop(haystack) {
   for (const term of AOP_RULES) {
-    const n = normalize(term);
-    if (haystack.includes(n)) {
-      return term.toUpperCase();
-    }
+    if (haystack.includes(normalize(term))) return term.toUpperCase();
   }
   const m = haystack.match(/\b([a-z]{3,}(?:\s+[a-z]{3,}){0,3})\s+(aop|aoc|docg|doc|igp)\b/i);
-  if (m) {
-    return `${m[1]} ${m[2]}`.replace(/\s+/g, ' ').toUpperCase();
-  }
+  if (m) return `${m[1]} ${m[2]}`.replace(/\s+/g, ' ').toUpperCase();
   return 'N/A';
 }
 
 function detectWineMeta(product) {
   const haystack = normalize([
-    product.title,
-    product.vendor,
+    product.title, product.vendor,
     ...(Array.isArray(product.tags) ? product.tags : [(product.tags || '')]),
-    product.product_type,
-    product.body_html
+    product.product_type, product.body_html
   ].join(' '));
-
-  const country = matchFirst(COUNTRY_RULES, haystack, 'France');
-  const region = matchFirst(REGION_RULES, haystack, 'Autre');
-  const aop = detectAop(haystack);
-  const type = detectType(haystack);
-
-  return { country, region, aop, type, haystack };
+  return {
+    country: matchFirst(COUNTRY_RULES, haystack, 'France'),
+    region: matchFirst(REGION_RULES, haystack, 'Autre'),
+    aop: detectAop(haystack),
+    type: detectType(haystack)
+  };
 }
 
 function isWine(product) {
@@ -147,31 +129,25 @@ function isWine(product) {
   const vendor = normalize(product.vendor || '');
   const bag = `${title} ${productType} ${tags}`;
 
-  const isAccessory = EXCLUDE.some((word) => bag.includes(normalize(word)));
-  const hasNonWineHints = NON_WINE_HINTS.some((word) => bag.includes(normalize(word)));
-  const explicitNonWineType = /(non food|bier|beer|aperitif|spirits|spiritueux|tools|accessoires|accessory)/.test(productType);
-  const explicitWineType = /(wijn|wine|vin|rode wijn|witte wijn|rose wijn|schuimwijn|versterkte wijn|zoete wijn|oranje wijn)/.test(productType);
-  const trustedWineType = WINE_PRODUCT_TYPES.has(productType);
-  const looksLikeWine = /(vin|wine|rouge|blanc|rose|champagne|cremant|barolo|chianti|bordeaux|bourgogne|rhone|rioja|douro|prosecco|pinot|cabernet|syrah|riesling|sauvignon|nebbiolo|sangiovese)/.test(bag);
-  const hasWineHintsInVendor = /(domaine|chateau|winery|wines|vineyards|vigneron)/.test(vendor);
-  const isBoxSet = /(box|boir-box|themabox|inspiratiebox|degustatiebox|coffret)/.test(title);
-  const explicitNonWineTitle = /(masterclass|distillery|lambiek|kombucha|mesamis|arensbak|opius|siegfried|dok brewing|far & son|caribbean cane)/.test(bag);
+  if (EXCLUDE.some((w) => bag.includes(normalize(w)))) return false;
+  if (/(non food|bier|beer|aperitif|spirits|spiritueux|tools|accessoires|accessory)/.test(productType)) return false;
+  if (/(masterclass|distillery|lambiek|kombucha|mesamis|arensbak|opius|siegfried|dok brewing|far & son|caribbean cane)/.test(bag)) return false;
+  if (/(box|boir-box|themabox|inspiratiebox|degustatiebox|coffret)/.test(title)) return false;
 
-  if (isAccessory || explicitNonWineType || explicitNonWineTitle) return false;
-  if (isBoxSet) return false;
-  if (trustedWineType) return true;
-  if (explicitWineType) return true;
-  return (looksLikeWine && !hasNonWineHints) || (hasWineHintsInVendor && !hasNonWineHints);
+  const hasNonWineHints = NON_WINE_HINTS.some((w) => bag.includes(normalize(w)));
+  if (WINE_PRODUCT_TYPES.has(productType)) return true;
+  if (/(wijn|wine|vin|rode wijn|witte wijn|rose wijn|schuimwijn|versterkte wijn|zoete wijn|oranje wijn)/.test(productType)) return true;
+
+  const looksLikeWine = /(vin|wine|rouge|blanc|rose|champagne|cremant|barolo|chianti|bordeaux|bourgogne|rhone|rioja|douro|prosecco|pinot|cabernet|syrah|riesling|sauvignon|nebbiolo|sangiovese)/.test(bag);
+  const hasWineVendor = /(domaine|chateau|winery|wines|vineyards|vigneron)/.test(vendor);
+  return (looksLikeWine && !hasNonWineHints) || (hasWineVendor && !hasNonWineHints);
 }
 
 async function fetchAllProducts() {
   const all = [];
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
-    const url = `${BASE_URL}${page}`;
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(`Erreur Boir.be page ${page}: ${res.status}`);
-    }
+  for (let page = 1; page <= MAX_PAGES; page++) {
+    const res = await fetch(`${BASE_URL}${page}`);
+    if (!res.ok) throw new Error(`Erreur Boir.be page ${page}: ${res.status}`);
     const data = await res.json();
     const products = data?.products || [];
     if (!products.length) break;
@@ -184,65 +160,39 @@ async function fetchAllProducts() {
 
 function extractHandlesFromHtml(html) {
   const handles = new Set();
-  const patterns = [
-    /\/fr\/products\/([a-z0-9-]+)/gi,
-    /\/products\/([a-z0-9-]+)/gi
-  ];
-  for (const pattern of patterns) {
+  for (const pattern of [/\/fr\/products\/([a-z0-9-]+)/gi, /\/products\/([a-z0-9-]+)/gi]) {
     let match;
-    while ((match = pattern.exec(html)) !== null) {
-      handles.add(match[1].toLowerCase());
-    }
+    while ((match = pattern.exec(html)) !== null) handles.add(match[1].toLowerCase());
   }
   return handles;
 }
 
 async function fetchCollectionVinHandles() {
   const handles = new Set();
-
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
+  for (let page = 1; page <= MAX_PAGES; page++) {
     const res = await fetch(`${COLLECTION_VIN_URL}${page}`);
-    if (!res.ok) {
-      throw new Error(`Erreur collection vin page ${page}: ${res.status}`);
-    }
-
+    if (!res.ok) throw new Error(`Erreur collection vin page ${page}: ${res.status}`);
     const html = await res.text();
     const pageHandles = extractHandlesFromHtml(html);
     const before = handles.size;
     for (const h of pageHandles) handles.add(h);
-
     if (page > 1 && handles.size === before) break;
     await sleep(DELAY_MS);
   }
-
   return handles;
 }
 
 function buildReport(catalog) {
-  const byCountry = {};
-  const byRegion = {};
-  const byType = {};
+  const byCountry = {}, byRegion = {}, byType = {};
   let withAop = 0;
-
   for (const wine of catalog) {
     byCountry[wine.c] = (byCountry[wine.c] || 0) + 1;
     byRegion[wine.r] = (byRegion[wine.r] || 0) + 1;
     byType[wine.y] = (byType[wine.y] || 0) + 1;
-    if (wine.a && wine.a !== 'N/A') withAop += 1;
+    if (wine.a && wine.a !== 'N/A') withAop++;
   }
-
-  const top = (obj, n = 10) =>
-    Object.entries(obj)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, n);
-
-  return {
-    total: catalog.length,
-    withAop,
-    byCountry: top(byCountry, 12),
-    byRegion: top(byRegion, 12),
-    byType: top(byType, 8)
-  };
+  const top = (obj, n = 10) => Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, n);
+  return { total: catalog.length, withAop, byCountry: top(byCountry, 12), byRegion: top(byRegion, 12), byType: top(byType, 8) };
 }
 
 async function update() {
@@ -251,7 +201,7 @@ async function update() {
   console.log(`Produits bruts récupérés: ${all.length}`);
   const collectionHandles = await fetchCollectionVinHandles();
   const useCollectionFilter = collectionHandles.size >= 200;
-  console.log(`Handles trouvés dans /collections/vin: ${collectionHandles.size} (${useCollectionFilter ? 'filtre appliqué' : 'filtre ignoré - rendu dynamique'})`);
+  console.log(`Handles /collections/vin: ${collectionHandles.size} (filtre ${useCollectionFilter ? 'appliqué' : 'ignoré'})`);
 
   const clean = all
     .filter((p) => !useCollectionFilter || collectionHandles.has((p.handle || '').toLowerCase()))
@@ -272,7 +222,6 @@ async function update() {
       };
     });
 
-  // Vérifier si le catalogue a changé avant d'écrire
   const newContent = `export const BOIR_CATALOG = ${JSON.stringify(clean, null, 2)};
 
 export function searchBoirLocal(query) {
@@ -282,19 +231,12 @@ export function searchBoirLocal(query) {
   const score = (wine, q) => {
     const n = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
     let pts = 0;
-    const title = n(wine.t);
-    const aop = n(wine.a);
-    const region = n(wine.r);
-    const country = n(wine.c);
-    const vendor = n(wine.v);
-    const type = n(wine.y);
-
-    if (title.includes(q)) pts += 80;
-    if (aop.includes(q)) pts += 65;
-    if (region.includes(q)) pts += 50;
-    if (country.includes(q)) pts += 40;
-    if (type.includes(q)) pts += 30;
-    if (vendor.includes(q)) pts += 20;
+    if (n(wine.t).includes(q)) pts += 80;
+    if (n(wine.a).includes(q)) pts += 65;
+    if (n(wine.r).includes(q)) pts += 50;
+    if (n(wine.c).includes(q)) pts += 40;
+    if (n(wine.y).includes(q)) pts += 30;
+    if (n(wine.v).includes(q)) pts += 20;
     return pts;
   };
 
@@ -302,43 +244,19 @@ export function searchBoirLocal(query) {
     .map((w) => ({ w, s: score(w, term) }))
     .filter((x) => x.s > 0)
     .sort((a, b) => b.s - a.s)
-    .map(({ w }) => ({
-      ...w,
-      title: w.t,
-      price: w.p,
-      vendor: w.v,
-      url: w.u,
-      image: w.img,
-      region: w.r,
-      country: w.c,
-      aop: w.a,
-      type: w.y
-    }));
+    .map(({ w }) => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c, aop: w.a, type: w.y }));
 }
 
 export function getRandomWines(n = 3) {
   return [...BOIR_CATALOG]
     .sort(() => 0.5 - Math.random())
     .slice(0, n)
-    .map((w) => ({
-      ...w,
-      title: w.t,
-      price: w.p,
-      vendor: w.v,
-      url: w.u,
-      image: w.img,
-      region: w.r,
-      country: w.c,
-      aop: w.a,
-      type: w.y
-    }));
+    .map((w) => ({ ...w, title: w.t, price: w.p, vendor: w.v, url: w.u, image: w.img, region: w.r, country: w.c, aop: w.a, type: w.y }));
 }`;
 
-  // Ne pas écrire si le catalogue n'a pas changé (évite les commits inutiles)
+  // Ne pas écrire si le nombre de vins n'a pas changé
   let existingContent = '';
   try { existingContent = fs.readFileSync(CATALOG_PATH, 'utf8'); } catch { /* premier run */ }
-
-  // Comparer juste le nombre de vins pour éviter les diffs de formatage
   const existingCount = (existingContent.match(/"t":/g) || []).length;
   if (existingCount === clean.length) {
     console.log(`Catalogue inchangé (${clean.length} vins). Aucun commit nécessaire.`);
@@ -347,14 +265,11 @@ export function getRandomWines(n = 3) {
 
   fs.writeFileSync(CATALOG_PATH, newContent);
   const report = buildReport(clean);
-  console.log(`Scraping terminé. ${report.total} vins enregistrés dans le catalogue.`);
-  console.log(`AOP détectée: ${report.withAop}/${report.total}`);
-  console.log('Répartition pays (top):', report.byCountry);
-  console.log('Répartition régions (top):', report.byRegion);
-  console.log('Répartition types:', report.byType);
+  console.log(`Scraping terminé. ${report.total} vins enregistrés.`);
+  console.log(`AOP: ${report.withAop}/${report.total}`);
+  console.log('Pays:', report.byCountry);
+  console.log('Régions:', report.byRegion);
+  console.log('Types:', report.byType);
 }
 
-update().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+update().catch((err) => { console.error(err); process.exit(1); });
