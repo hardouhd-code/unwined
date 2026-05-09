@@ -13,6 +13,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -22,7 +24,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/lib/boirCatalog.js
-          git commit -m "🍷 Synchro catalogue Boir.be" || exit 0
           git pull --rebase origin main
+          git add src/lib/boirCatalog.js
+          git diff --staged --quiet && echo "Aucun changement." && exit 0
+          git commit -m "🍷 Synchro catalogue Boir.be"
           git push origin main
