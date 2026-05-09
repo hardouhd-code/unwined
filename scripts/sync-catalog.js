@@ -5,6 +5,7 @@ const CATALOG_PATH = path.join(__dirname, '../src/lib/boirCatalog.js');
 const BASE_URL = 'https://boir.be/collections/all/products.json?limit=250&page=';
 const COLLECTION_VIN_URL = 'https://boir.be/fr/collections/vin?page=';
 const MAX_PAGES = 40;
+const DELAY_MS = 400; // délai entre pages pour éviter le rate limiting
 
 const EXCLUDE = [
   'thermometer', 'kurkentrekker', 'glas', 'shaker', 'cadeaubon', 'ijsemmer',
@@ -77,6 +78,8 @@ const AOP_RULES = [
   'amarone della valpolicella', 'valpolicella', 'prosecco', 'rioja', 'ribera del duero',
   'priorat', 'douro', 'dao', 'vinho verde', 'mendoza'
 ];
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function normalize(text = '') {
   return text
@@ -174,6 +177,7 @@ async function fetchAllProducts() {
     if (!products.length) break;
     all.push(...products);
     console.log(`Page ${page} récupérée (${products.length} produits)`);
+    await sleep(DELAY_MS);
   }
   return all;
 }
@@ -207,8 +211,8 @@ async function fetchCollectionVinHandles() {
     const before = handles.size;
     for (const h of pageHandles) handles.add(h);
 
-    // Stop quand la pagination ne ramène plus de nouveaux produits.
     if (page > 1 && handles.size === before) break;
+    await sleep(DELAY_MS);
   }
 
   return handles;
@@ -268,7 +272,8 @@ async function update() {
       };
     });
 
-  const content = `export const BOIR_CATALOG = ${JSON.stringify(clean, null, 2)};
+  // Vérifier si le catalogue a changé avant d'écrire
+  const newContent = `export const BOIR_CATALOG = ${JSON.stringify(clean, null, 2)};
 
 export function searchBoirLocal(query) {
   if (!query || query.length < 2) return [];
@@ -329,7 +334,18 @@ export function getRandomWines(n = 3) {
     }));
 }`;
 
-  fs.writeFileSync(CATALOG_PATH, content);
+  // Ne pas écrire si le catalogue n'a pas changé (évite les commits inutiles)
+  let existingContent = '';
+  try { existingContent = fs.readFileSync(CATALOG_PATH, 'utf8'); } catch { /* premier run */ }
+
+  // Comparer juste le nombre de vins pour éviter les diffs de formatage
+  const existingCount = (existingContent.match(/"t":/g) || []).length;
+  if (existingCount === clean.length) {
+    console.log(`Catalogue inchangé (${clean.length} vins). Aucun commit nécessaire.`);
+    process.exit(0);
+  }
+
+  fs.writeFileSync(CATALOG_PATH, newContent);
   const report = buildReport(clean);
   console.log(`Scraping terminé. ${report.total} vins enregistrés dans le catalogue.`);
   console.log(`AOP détectée: ${report.withAop}/${report.total}`);
