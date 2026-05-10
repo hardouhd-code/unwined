@@ -17,8 +17,6 @@ const claudeSchema = z.object({
     country: z.string().optional(),
     region: z.string().optional(),
     year: z.number().optional(),
-    match: z.number().optional(),
-    confidence: z.number().optional(),
     why: z.string().optional(),
     story: z.string().optional(),
     taste_profile: z.object({
@@ -43,13 +41,46 @@ const claudeSchema = z.object({
   })).optional()
 });
 
+// Calcule un score de match réel basé sur le profil gustatif de l'utilisateur
+function computeMatch(wine: any, db: Wine[]): number {
+  const norm = (s: string) => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const liked = db.filter(w => w.tasted && Number(w.rating ?? 0) >= 4);
+  const disliked = db.filter(w => w.tasted && Number(w.rating ?? 0) <= 1);
+
+  if (liked.length === 0 && disliked.length === 0) return 72; // pas de profil → score neutre
+
+  const likedTypes    = new Set(liked.map(w => norm(w.type || "")));
+  const likedRegions  = new Set(liked.map(w => norm(w.region || "")));
+  const likedCountries = new Set(liked.map(w => norm(w.country || "")));
+  const dislikedTypes = new Set(disliked.map(w => norm(w.type || "")));
+
+  const wineType    = norm(wine.type || "");
+  const wineRegion  = norm(wine.region || "");
+  const wineCountry = norm(wine.country || "");
+
+  let score = 50; // base
+
+  // Bonus
+  if (likedTypes.has(wineType))     score += 20;
+  if (likedRegions.has(wineRegion) && wineRegion) score += 20;
+  if (likedCountries.has(wineCountry) && wineCountry) score += 10;
+
+  // Malus
+  if (dislikedTypes.has(wineType))  score -= 30;
+
+  // Bonus si l'utilisateur a peu de vins (moins de pénalités)
+  if (liked.length === 0) score = Math.max(score, 55);
+
+  return Math.min(98, Math.max(35, score));
+}
+
 const SmartScanner = () => {
   const navigate = useNavigate();
   const { db, addWine } = useStore();
   const onResult = (wine: Wine) => { addWine(wine); navigate("/cave"); };
   const onBack = () => navigate(-1);
   const [phase, setPhase] = useState("idle");
-  const [result, setResult] = useState<z.infer<typeof claudeSchema> | null>(null);
+  const [result, setResult] = useState<z.infer<typeof claudeSchema> & { computedMatch?: number } | null>(null);
   const [errMsg, setErrMsg] = useState("");
   const webcamRef = useRef<Webcam>(null);
   const [flashOn, setFlashOn] = useState(false);
@@ -66,7 +97,7 @@ const SmartScanner = () => {
       setFlashOn(newFlash);
       haptic(20);
     } catch {
-      // torch non supporté sur cet appareil
+      // torch non supporté
     }
   }, [flashOn]);
 
@@ -111,13 +142,14 @@ const SmartScanner = () => {
 
         const liked = db.filter(w => w.tasted && w.rating >= 3).map(w => `${w.type} ${w.region} (${w.rating}/5)`).join(", ");
         const disliked = db.filter(w => w.tasted && w.rating <= 1).map(w => `${w.type} ${w.region}`).join(", ");
-        
+
+        // On retire match du prompt — on le calcule nous-mêmes
         const prompt = `Tu es le Sommelier Expert d'Unwine-D. Analyse cette image (étiquette ou carte des vins).
 ${liked ? `Goûts appréciés : ${liked}.` : ""}${disliked ? ` À éviter : ${disliked}.` : ""}
 1. Identifie le vin principal (topPick).
 2. Suggère 2 vins alternatifs à acheter sur boir.be (marché belge, accessibles et connus).
 Réponds UNIQUEMENT en JSON valide, sans markdown :
-{"topPick":{"name":"","producer":"","type":"rouge|blanc|rose|mousseux|autre","country":"","region":"","year":2020,"match":85,"why":"2 phrases poétiques","story":"3 phrases terroir","taste_profile":{"nose":"arômes au nez","palate":"saveurs en bouche","finish":"finale","body":"leger|moyen|ample","acidity":"faible|moyenne|vive","tannins":"souples|moyens|puissants"},"serving":{"temperature":"ex: 16-18°C","pairing":"accord mets-vin conseillé"},"emoji":"🍷","grapes":"","price_range":""},"boirSuggestions":[{"name":"Nom Vin 1","reason":"Pourquoi ce vin ressemble au scanné"},{"name":"Nom Vin 2","reason":"Une alternative accessible en Belgique"}]}`;
+{"topPick":{"name":"","producer":"","type":"rouge|blanc|rose|mousseux|autre","country":"","region":"","year":2020,"why":"2 phrases poétiques","story":"3 phrases terroir","taste_profile":{"nose":"arômes au nez","palate":"saveurs en bouche","finish":"finale","body":"leger|moyen|ample","acidity":"faible|moyenne|vive","tannins":"souples|moyens|puissants"},"serving":{"temperature":"ex: 16-18°C","pairing":"accord mets-vin conseillé"},"emoji":"🍷","grapes":"","price_range":""},"boirSuggestions":[{"name":"Nom Vin 1","reason":"Pourquoi ce vin ressemble au scanné"},{"name":"Nom Vin 2","reason":"Une alternative accessible en Belgique"}]}`;
 
         const callClaudeVision = async (promptText) => {
           const r = await fetch("/api/claude", {
@@ -147,6 +179,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             const fallbackPrompt = `${prompt}\n\nIMPORTANT: Si incertain, propose des valeurs plausibles et complete taste_profile + serving.`;
             parsedResult = await callClaudeVision(fallbackPrompt);
           }
+
           let validatedData;
           try {
             validatedData = claudeSchema.parse(parsedResult);
@@ -154,18 +187,17 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             console.error("Zod Validation Error:", zodError);
             throw new Error("Impossible d'extraire les données du vin avec précision. Veuillez réessayer.", { cause: zodError });
           }
+
           if (!validatedData || !validatedData.topPick) {
             throw new Error("L'étiquette n'a pas pu être lue correctement. Veuillez réessayer.");
           }
-          const withConfidence = {
-            ...validatedData,
-            topPick: {
-              ...(validatedData.topPick || {}),
-              confidence: validatedData?.topPick?.confidence ?? Math.max(55, Math.min(98, Number(validatedData?.topPick?.match || 70))),
-            }
-          };
-          setResult(withConfidence as z.infer<typeof claudeSchema>);
+
+          // Calcul du match réel basé sur le profil utilisateur
+          const computedMatch = computeMatch(validatedData.topPick, db);
+
+          setResult({ ...validatedData, computedMatch });
           setPhase("result");
+
         } catch (e: any) {
           console.error("Erreur Scanner:", e);
           setErrMsg(e.message?.slice(0, 120) || "Une erreur inattendue est survenue.");
@@ -216,6 +248,10 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
     const tc = typeColor(p.type || "rouge");
     const taste = p.taste_profile || {};
     const serving = p.serving || {};
+    const match = result.computedMatch ?? 72;
+    const matchLabel = match >= 85 ? "Excellent accord" : match >= 70 ? "Bon accord" : match >= 55 ? "Accord correct" : "Accord faible";
+    const matchColor = match >= 85 ? "var(--color-sauge)" : match >= 70 ? "var(--color-gold)" : match >= 55 ? "var(--color-terra)" : "#c8503a";
+
     const wineObj = {
       type: p.type || "rouge",
       country: p.country || "",
@@ -241,19 +277,25 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               <div className="text-[46px] text-center mb-3">{p.emoji || typeEmoji(p.type)}</div>
               <h2 className="text-[22px] font-['Playfair_Display',serif] text-[var(--color-cream)] font-normal text-center mb-1">{p.name}</h2>
               <div className="text-sm text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] text-center mb-3.5">{p.producer}</div>
+
+              {/* Score match réel */}
               <div className="bg-[#8b5a3c0f] rounded-2xl p-3 text-center mb-3.5">
-                <div className="text-[32px] font-['Playfair_Display',serif] text-[var(--color-gold)] font-semibold leading-none">{p.match || 50}%</div>
-                <div className="text-sm text-[var(--color-muted-text)] tracking-[.15em] uppercase font-['Cormorant_Garamond',serif] mt-0.5">match avec vos goûts</div>
+                <div className="text-[32px] font-['Playfair_Display',serif] font-semibold leading-none" style={{ color: matchColor }}>{match}%</div>
+                <div className="text-sm tracking-[.15em] uppercase font-['Cormorant_Garamond',serif] mt-0.5" style={{ color: matchColor }}>{matchLabel}</div>
                 <div className="h-[3px] bg-[#8b5a3c1a] rounded-[2px] mt-2.5">
-                  <div className="h-full rounded-[2px] bg-gradient-to-r from-[var(--color-terra)] to-[var(--color-gold)]" style={{ width: `${p.match || 50}%` }} />
+                  <div className="h-full rounded-[2px] transition-all duration-500" style={{ width: `${match}%`, background: `linear-gradient(90deg, ${matchColor}, ${matchColor}99)` }} />
                 </div>
-                {p.confidence && <div className="text-xs text-[var(--color-muted-text)] mt-2">Confiance de lecture: {p.confidence}%</div>}
+                {db.filter(w => w.tasted).length === 0 && (
+                  <div className="text-[10px] text-[var(--color-muted-text)] mt-2 italic font-['Cormorant_Garamond',serif]">Notez vos vins pour affiner ce score</div>
+                )}
               </div>
+
               <div className="flex gap-1.5 justify-center flex-wrap mb-3">
                 {[WINE_TYPES.find(t => t.id === p.type)?.label, p.region, p.country, p.year && String(p.year)].filter(Boolean).map(tag => (
                   <span key={tag} className="text-[14px] text-[var(--color-subtext)] bg-[#8b5a3c12] border border-[#8b5a3c26] rounded-full px-3 py-1 font-['Cormorant_Garamond',serif]">{tag}</span>
                 ))}
               </div>
+
               {p.grapes && <div className="text-[14px] text-[var(--color-muted-text)] font-['Cormorant_Garamond',serif] text-center mb-2">🍇 {p.grapes}</div>}
               {p.price_range && <div className="text-[14px] text-[var(--color-gold)] font-['Playfair_Display',serif] text-center mb-2.5 font-semibold">{p.price_range}</div>}
               <p className="text-[14px] text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] italic leading-[1.8] text-center">{p.why}</p>
