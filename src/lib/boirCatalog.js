@@ -66,6 +66,17 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "ALT \"Blanc de Blancs\"",
+    "p": 12.5,
+    "v": "Brandstof",
+    "u": "https://boir.be/fr/products/alt-blanc-de-blancs",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fce4000c417af5f7805f572731dc391b.png?v=1769768575",
+    "r": "Champagne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Effervescent"
+  },
+  {
     "t": "ALT \"Rosé\"",
     "p": 12.5,
     "v": "Brandstof",
@@ -1364,11 +1375,33 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine de Suremain - Mercurey 1er Cru \"Clos L’Evêque\" 2023",
+    "p": 35.95,
+    "v": "DOMAINE DE SUREMAIN",
+    "u": "https://boir.be/fr/products/domaine-de-suremain-mercurey-1er-cru-clos-l-eveque-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19d86f1e669918852f936017029721a.webp?v=1778498951",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine de Suremain - Mercurey 1er Cru \"En Sazenay\" 2020",
     "p": 35.49,
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/domaine-de-suremain-mercurey-1er-cru-en-sazenay-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bcb6c09ae5138a1a56540da566f720da.png?v=1733467016",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Domaine de Suremain - Mercurey 2023",
+    "p": 28.95,
+    "v": "DOMAINE DE SUREMAIN",
+    "u": "https://boir.be/fr/products/domaine-de-suremain-mercurey-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/930f92973e3187ea59bdd18baa43600e.png?v=1778497664",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
@@ -2409,6 +2442,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Jean Chartron - Bâtard-Montrachet Grand Cru 2022",
+    "p": 435,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/jean-chartron-batard-montrachet-grand-cru-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ece94497e71338676e97ad851394a7fe_326134cd-86c6-441b-b77e-35c1fcbca59c.png?v=1778493621",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Jean Chartron - Bourgogne \"Chardonnay\" 2022",
     "p": 22.95,
     "v": "SALIN SAS",
@@ -2431,17 +2475,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Jean Chartron - Bourgogne \"Pinot Noir Vieilles Vignes\" 2022",
-    "p": 23.95,
-    "v": "GENESTIERE ST ANTHELME SCEA",
-    "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChartronPN.png?v=1769519414",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Jean Chartron - Chassagne-Montrachet 2022",
     "p": 73.1,
     "v": "BOIR.",
@@ -2458,6 +2491,17 @@ export const BOIR_CATALOG = [
     "v": "ANTOINE OLIVIER SARL",
     "u": "https://boir.be/fr/products/jean-chartron-chevalier-montrachet-grand-cru-clos-des-chevaliers-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9b82acb8a1dc04d964661889531bee21.png?v=1733417859",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Jean Chartron - Chevalier-Montrachet Grand Cru \"Clos des Chevaliers\" 2022",
+    "p": 639,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/jean-chartron-chevalier-montrachet-grand-cru-clos-des-chevaliers-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9b82acb8a1dc04d964661889531bee21_82129e31-5133-4ad9-8473-d354cf9848e9.png?v=1778493992",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
