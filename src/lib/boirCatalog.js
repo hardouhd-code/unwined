@@ -165,6 +165,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "BAUDRY & DUTOUR - Val de Loire \"Petit Lieu-dit Sauvignon\" 2024",
+    "p": 11.95,
+    "v": "BAUDRY DUTOUR SAS",
+    "u": "https://boir.be/fr/products/baudry-dutour-val-de-loire-petit-lieu-dit-sauvignon-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/19d4254741b0a66ea7a025f066ac2246.png?v=1778593824",
+    "r": "Loire",
+    "c": "France",
+    "a": "CHINON",
+    "y": "Blanc"
+  },
+  {
     "t": "Bergerie des Cistes - Pic Saint-Loup \"Sous Le Pic\" 2022",
     "p": 16.99,
     "v": "Boir shop",
@@ -891,6 +902,17 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
+    "t": "Clos des Jacobins 2025",
+    "p": 27.6,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/clos-des-jacobins-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dbec42c742c1394b98caf66d676ac784_3b5f6aaf-d819-409f-bcc9-418f98d0d090.png?v=1778601363",
+    "r": "Autre",
+    "c": "France",
+    "a": "N/A",
+    "y": "Autre"
+  },
+  {
     "t": "Clos du Marquis 2021",
     "p": 68.95,
     "v": "MICHELE CHIARLO SRL A V P S",
@@ -1331,11 +1353,33 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine de Chevalier 2025",
+    "p": 50.15,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/domaine-de-chevalier-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/299aa513c422c139ffbcca4d0b1f6d02.png?v=1778576351",
+    "r": "Autre",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine de Chevalier Blanc 2022",
     "p": 129.95,
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d183be6cf5bb5612fec757f489a4d9fc.png?v=1749799590",
+    "r": "Autre",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine de Chevalier Blanc 2025",
+    "p": 99.3,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cf9b739ab64fd09b3d7821770080e924.png?v=1778576425",
     "r": "Autre",
     "c": "France",
     "a": "N/A",
@@ -1450,6 +1494,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Domaine Denis Carré - Pommard \"Les Noizons\" 2023",
+    "p": 46.95,
+    "v": "DOMAINE DENIS CARRE EARL",
+    "u": "https://boir.be/fr/products/domaine-denis-carre-pommard-les-noizons-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/65a3c656634684af81109036793bdcf9_a4f5a9ac-f655-4d06-964a-c6b5814488bd.png?v=1778594532",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Autre"
   },
   {
     "t": "Domaine des Billards - Saint-Amour 2022",
@@ -2693,6 +2748,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "L'Esprit de Chevalier Blanc 2025",
+    "p": 25,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/lesprit-de-chevalier-blanc-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/57e9414acead3d7b55eb15e96cf15bd1.png?v=1778576699",
+    "r": "Autre",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "La Belle Connivence 2022",
