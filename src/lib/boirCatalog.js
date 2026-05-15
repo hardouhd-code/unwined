@@ -66,17 +66,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "ALT \"Blanc de Blancs\"",
-    "p": 12.5,
-    "v": "Brandstof",
-    "u": "https://boir.be/fr/products/alt-blanc-de-blancs",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fce4000c417af5f7805f572731dc391b.png?v=1769768575",
-    "r": "Champagne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "ALT \"Rosé\"",
     "p": 12.5,
     "v": "Brandstof",
