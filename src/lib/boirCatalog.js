@@ -748,6 +748,28 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "Champagne Pierre Brocard \"Dits-Lieux de Thibaud Brocard\" Brut Nature",
+    "p": 42.95,
+    "v": "Champagne PIERRE BROCARD",
+    "u": "https://boir.be/fr/products/champagne-pierre-brocard-dits-lieux-de-thibaud-brocard-brut-nature",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/33532ebc79c861e2bb1034aff11604be.png?v=1778853175",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
+    "t": "Champagne Pierre Brocard \"Dits-Lieux de Thibaud Brocard\" Brut Nature",
+    "p": 85,
+    "v": "Champagne PIERRE BROCARD",
+    "u": "https://boir.be/fr/products/champagne-pierre-brocard-dits-lieux-de-thibaud-brocard-brut-nature-1",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/33532ebc79c861e2bb1034aff11604be_56815227-dc84-4326-bc79-e6c0ab890356.png?v=1778853780",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
     "t": "Champagne Voirin-Jumel \"Cramant\" Brut",
     "p": 59.95,
     "v": "SCEV CHAMP VOIRIN JUMEL",
@@ -1452,6 +1474,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine Denis Carré - Auxey-Duresses \"Les Vireux\" 2023",
+    "p": 36.95,
+    "v": "DOMAINE DENIS CARRE EARL",
+    "u": "https://boir.be/fr/products/domaine-denis-carre-auxey-duresses-les-vireux-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f3f96aa31cc6b73edd7db9f7d1941901.png?v=1778854855",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Denis Carré - Bourgogne \"Pinot Noir Les Lormes\" 2022",
     "p": 22.95,
     "v": "Boir shop",
@@ -1494,6 +1527,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Autre"
+  },
+  {
+    "t": "Domaine Denis Carré - Saint-Romain \"Le Jarron\" 2023",
+    "p": 36.95,
+    "v": "DOMAINE DENIS CARRE EARL",
+    "u": "https://boir.be/fr/products/domaine-denis-carre-saint-romain-le-jarron-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fa2fd8f0f0337dd99f8e0b43226e6681.png?v=1778855814",
+    "r": "Autre",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Domaine des Billards - Saint-Amour 2022",
