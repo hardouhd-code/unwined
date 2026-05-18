@@ -188,7 +188,7 @@ function detectWineMeta(product) {
     product.product_type, product.body_html
   ].join(' '));
   return {
-    country: matchFirst(COUNTRY_RULES, haystack, 'France'),
+    country: matchFirst(COUNTRY_RULES, haystack, 'Autre'),
     region: matchFirst(REGION_RULES, haystack, 'Autre'),
     aop: detectAop(haystack),
     type: detectType(haystack)
