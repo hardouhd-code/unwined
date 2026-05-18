@@ -16,20 +16,25 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "ANTHROPIC_API_KEY manquant dans les variables Vercel" });
 
   try {
-    const { model, max_tokens, messages } = req.body || {};
+    const { model, max_tokens, messages, system } = req.body || {};
+
+    const body = {
+      model:      model      || "claude-sonnet-4-20250514",
+      max_tokens: max_tokens || 800,
+      messages:   messages   || [],
+    };
+
+    // Inclure system seulement s'il est fourni
+    if (system) body.system = system;
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
-        "Content-Type":         "application/json",
-        "x-api-key":            apiKey,
-        "anthropic-version":    "2023-06-01",
+        "Content-Type":      "application/json",
+        "x-api-key":         apiKey,
+        "anthropic-version": "2023-06-01",
       },
-      body: JSON.stringify({
-        model:      model      || "claude-sonnet-4-5",
-        max_tokens: max_tokens || 800,
-        messages:   messages   || [],
-      }),
+      body: JSON.stringify(body),
     });
 
     const data = await response.json();
