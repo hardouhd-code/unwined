@@ -41,37 +41,33 @@ const claudeSchema = z.object({
   })).optional()
 });
 
-// Calcule un score de match réel basé sur le profil gustatif de l'utilisateur
 function computeMatch(wine: any, db: Wine[]): number {
   const norm = (s: string) => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   const liked = db.filter(w => w.tasted && Number(w.rating ?? 0) >= 4);
   const disliked = db.filter(w => w.tasted && Number(w.rating ?? 0) <= 1);
 
-  if (liked.length === 0 && disliked.length === 0) return 72; // pas de profil → score neutre
+  if (liked.length === 0 && disliked.length === 0) return 72;
 
-  const likedTypes    = new Set(liked.map(w => norm(w.type || "")));
-  const likedRegions  = new Set(liked.map(w => norm(w.region || "")));
+  const likedTypes     = new Set(liked.map(w => norm(w.type || "")));
+  const likedRegions   = new Set(liked.map(w => norm(w.region || "")));
   const likedCountries = new Set(liked.map(w => norm(w.country || "")));
-  const dislikedTypes = new Set(disliked.map(w => norm(w.type || "")));
+  const dislikedTypes  = new Set(disliked.map(w => norm(w.type || "")));
 
-  const wineType    = norm(wine.type || "");
-  const wineRegion  = norm(wine.region || "");
-  const wineCountry = norm(wine.country || "");
-
-  let score = 50; // base
-
-  // Bonus
-  if (likedTypes.has(wineType))     score += 20;
-  if (likedRegions.has(wineRegion) && wineRegion) score += 20;
-  if (likedCountries.has(wineCountry) && wineCountry) score += 10;
-
-  // Malus
-  if (dislikedTypes.has(wineType))  score -= 30;
-
-  // Bonus si l'utilisateur a peu de vins (moins de pénalités)
+  let score = 50;
+  if (likedTypes.has(norm(wine.type || "")))                              score += 20;
+  if (likedRegions.has(norm(wine.region || "")) && wine.region)           score += 20;
+  if (likedCountries.has(norm(wine.country || "")) && wine.country)       score += 10;
+  if (dislikedTypes.has(norm(wine.type || "")))                           score -= 30;
   if (liked.length === 0) score = Math.max(score, 55);
 
   return Math.min(98, Math.max(35, score));
+}
+
+// Triple pulsation d'alerte pour les erreurs
+function hapticError() {
+  haptic(50);
+  setTimeout(() => haptic(50), 120);
+  setTimeout(() => haptic(50), 240);
 }
 
 const SmartScanner = () => {
@@ -123,7 +119,7 @@ const SmartScanner = () => {
   const processImage = async (file: File | undefined) => {
     if (!file) return;
     setPhase("scanning");
-    
+
     const reader = new FileReader();
     reader.onload = async (ev) => {
       const img = new Image();
@@ -136,22 +132,21 @@ const SmartScanner = () => {
         const ctx = canvas.getContext("2d");
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         let b64 = canvas.toDataURL("image/jpeg", 0.7).split(",")[1];
-        if (b64.length > 600000) {
-          b64 = canvas.toDataURL("image/jpeg", 0.4).split(",")[1];
-        }
+        if (b64.length > 600000) b64 = canvas.toDataURL("image/jpeg", 0.4).split(",")[1];
 
-        const liked = db.filter(w => w.tasted && w.rating >= 3).map(w => `${w.type} ${w.region} (${w.rating}/5)`).join(", ");
+        const liked    = db.filter(w => w.tasted && w.rating >= 3).map(w => `${w.type} ${w.region} (${w.rating}/5)`).join(", ");
         const disliked = db.filter(w => w.tasted && w.rating <= 1).map(w => `${w.type} ${w.region}`).join(", ");
 
-        // On retire match du prompt — on le calcule nous-mêmes
         const prompt = `Tu es le Sommelier Expert d'Unwine-D. Analyse cette image (étiquette ou carte des vins).
 ${liked ? `Goûts appréciés : ${liked}.` : ""}${disliked ? ` À éviter : ${disliked}.` : ""}
-1. Identifie le vin principal (topPick).
-2. Suggère 2 vins alternatifs à acheter sur boir.be (marché belge, accessibles et connus).
-Réponds UNIQUEMENT en JSON valide, sans markdown :
+RÈGLES STRICTES DE FORMATAGE :
+1. Type obligatoire, choisi exclusivement parmi : "rouge", "blanc", "rose", "mousseux", "autre".
+2. Ne retourne AUCUN texte ou bloc markdown en dehors du JSON principal.
+
+Identifie le vin principal (topPick) et suggère 2 alternatives sur boir.be au format suivant :
 {"topPick":{"name":"","producer":"","type":"rouge|blanc|rose|mousseux|autre","country":"","region":"","year":2020,"why":"2 phrases poétiques","story":"3 phrases terroir","taste_profile":{"nose":"arômes au nez","palate":"saveurs en bouche","finish":"finale","body":"leger|moyen|ample","acidity":"faible|moyenne|vive","tannins":"souples|moyens|puissants"},"serving":{"temperature":"ex: 16-18°C","pairing":"accord mets-vin conseillé"},"emoji":"🍷","grapes":"","price_range":""},"boirSuggestions":[{"name":"Nom Vin 1","reason":"Pourquoi ce vin ressemble au scanné"},{"name":"Nom Vin 2","reason":"Une alternative accessible en Belgique"}]}`;
 
-        const callClaudeVision = async (promptText) => {
+        const callClaudeVision = async (promptText: string) => {
           const r = await fetch("/api/claude", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -169,14 +164,14 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
           });
           const d = await r.json();
           if (!r.ok) throw new Error((typeof d.error === "string" && d.error) || d.error?.message || `Erreur serveur HTTP ${r.status}`);
-          const txt = d.content.map(b => b.text || "").join("").replace(/```json|```/g, "").trim();
+          const txt = d.content.map((b: any) => b.text || "").join("").replace(/```json|```/g, "").trim();
           return safeJson(txt, {});
         };
 
         try {
           let parsedResult = await callClaudeVision(prompt);
           if (!parsedResult?.topPick?.name || !parsedResult?.topPick?.taste_profile) {
-            const fallbackPrompt = `${prompt}\n\nIMPORTANT: Si incertain, propose des valeurs plausibles et complete taste_profile + serving.`;
+            const fallbackPrompt = `${prompt}\n\nIMPORTANT: Si incertain, propose des valeurs plausibles et complète obligatoirement taste_profile et serving.`;
             parsedResult = await callClaudeVision(fallbackPrompt);
           }
 
@@ -192,14 +187,14 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             throw new Error("L'étiquette n'a pas pu être lue correctement. Veuillez réessayer.");
           }
 
-          // Calcul du match réel basé sur le profil utilisateur
           const computedMatch = computeMatch(validatedData.topPick, db);
-
+          haptic(100); // vibration franche de succès
           setResult({ ...validatedData, computedMatch });
           setPhase("result");
 
         } catch (e: any) {
           console.error("Erreur Scanner:", e);
+          hapticError(); // triple pulsation d'alerte
           setErrMsg(e.message?.slice(0, 120) || "Une erreur inattendue est survenue.");
           setPhase("error");
         }
@@ -209,7 +204,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
     reader.readAsDataURL(file);
   };
 
-  // --- RENDU : CHARGEMENT ---
+  // --- CHARGEMENT ---
   if (phase === "scanning") {
     return (
       <div className="min-h-screen bg-[var(--color-bg)] flex flex-col items-center justify-center gap-5.5 p-8">
@@ -226,7 +221,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
     );
   }
 
-  // --- RENDU : ERREUR ---
+  // --- ERREUR ---
   if (phase === "error") {
     return (
       <div className="min-h-screen bg-[var(--color-bg)] flex flex-col items-center justify-center gap-4.5 p-8 text-center">
@@ -242,7 +237,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
     );
   }
 
-  // --- RENDU : RÉSULTAT ---
+  // --- RÉSULTAT ---
   if (phase === "result" && result) {
     const p = result.topPick || {};
     const tc = typeColor(p.type || "rouge");
@@ -278,7 +273,6 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
               <h2 className="text-[22px] font-['Playfair_Display',serif] text-[var(--color-cream)] font-normal text-center mb-1">{p.name}</h2>
               <div className="text-sm text-[var(--color-subtext)] font-['Cormorant_Garamond',serif] text-center mb-3.5">{p.producer}</div>
 
-              {/* Score match réel */}
               <div className="bg-[#8b5a3c0f] rounded-2xl p-3 text-center mb-3.5">
                 <div className="text-[32px] font-['Playfair_Display',serif] font-semibold leading-none" style={{ color: matchColor }}>{match}%</div>
                 <div className="text-sm tracking-[.15em] uppercase font-['Cormorant_Garamond',serif] mt-0.5" style={{ color: matchColor }}>{matchLabel}</div>
@@ -308,7 +302,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             </a>
 
             {result.boirSuggestions?.length > 0 && (
-              <div className="bg-[#b8862a0d] border border-[#b8862a38] rounded-2xl p-4 mb-3.5 animate-[fadeUp_0.4s_ease_0.2s_both]">
+              <div className="bg-[#b8862a0d] border border-[#b8862a38] rounded-2xl p-4 mb-3.5">
                 <div className="text-[10px] text-[var(--color-gold)] tracking-[.22em] uppercase font-bold font-['Cormorant_Garamond',serif] mb-3">✦ Alternatives sur Boir.be</div>
                 {result.boirSuggestions.map((sug, i) => (
                   <a key={i} href={`https://boir.be/fr/recherche?search_query=${encodeURIComponent((sug.name || "").replace(/\s+/g, "+"))}`}
@@ -353,11 +347,11 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
             )}
 
             <button onClick={() => { haptic(60); onResult({ id: String(Date.now()), ...wineObj, tasted: false, storage: true, rating: null, notes: "", addedAt: new Date().toLocaleDateString("fr-FR"), quantity: 1, lowStockThreshold: 1, type: wineObj.type as any }); }}
-              className="w-full bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none p-4 rounded-full text-[14px] tracking-[.2em] uppercase font-['Cormorant_Garamond',serif] font-bold mb-2.5 shadow-[0_8px_28px_rgba(200,80,58,.25)] cursor-pointer hover:shadow-lg transition-shadow">
+              className="w-full bg-gradient-to-br from-[var(--color-terra)] to-[var(--color-terra-dark)] text-white border-none p-4 rounded-full text-[14px] tracking-[.2em] uppercase font-['Cormorant_Garamond',serif] font-bold mb-2.5 shadow-[0_8px_28px_rgba(200,80,58,.25)] cursor-pointer">
               + Ajouter à ma cave
             </button>
             <button onClick={() => setPhase("idle")}
-              className="w-full bg-[#8b5a3c14] border border-[#8b5a3c33] text-[var(--color-muted-text)] p-3 rounded-full text-sm tracking-[.15em] uppercase font-['Cormorant_Garamond',serif] cursor-pointer hover:bg-[#8b5a3c1a] transition-colors">
+              className="w-full bg-[#8b5a3c14] border border-[#8b5a3c33] text-[var(--color-muted-text)] p-3 rounded-full text-sm tracking-[.15em] uppercase font-['Cormorant_Garamond',serif] cursor-pointer">
               ↺ Scanner une autre
             </button>
           </div>
@@ -366,7 +360,7 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
     );
   }
 
-  // --- RENDU : ACCUEIL (IDLE) ---
+  // --- IDLE ---
   return (
     <div className="flex-1 relative bg-[#25160e] overflow-hidden h-[100dvh]">
       <div className="absolute inset-0 bg-black">
@@ -382,12 +376,8 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
 
       <div className="relative z-10 flex flex-col items-center justify-between h-full pt-[60px] px-6 pb-[100px]">
         <div className="text-center">
-          <span className="text-[11px] text-[rgba(255,248,241,.8)] tracking-[.2em] uppercase font-bold font-['Manrope',sans-serif]">
-            Vision API Active
-          </span>
-          <h2 className="text-[30px] mt-2 font-['Noto_Serif',serif] text-[#fff8f1] font-bold tracking-[.03em]">
-            SCANNER
-          </h2>
+          <span className="text-[11px] text-[rgba(255,248,241,.8)] tracking-[.2em] uppercase font-bold font-['Manrope',sans-serif]">Vision API Active</span>
+          <h2 className="text-[30px] mt-2 font-['Noto_Serif',serif] text-[#fff8f1] font-bold tracking-[.03em]">SCANNER</h2>
         </div>
 
         <div className="relative w-[75vw] max-w-[320px] aspect-[3/4] rounded-[26px] overflow-hidden shadow-[0_0_100px_rgba(37,22,14,.5)]">
@@ -401,27 +391,24 @@ Réponds UNIQUEMENT en JSON valide, sans markdown :
 
         <div className="w-full max-w-[320px]">
           <p className="text-sm text-[rgba(255,248,241,.92)] text-center mb-4.5 font-['Manrope',sans-serif]">
-            Cadrez l'etiquette pour identifier le vin
+            Cadrez l'étiquette pour identifier le vin
           </p>
           <div className="flex items-center justify-between mb-3">
             <button type="button" onClick={toggleFlash}
               className={`w-12 h-12 rounded-full border-none flex items-center justify-center backdrop-blur-sm cursor-pointer transition-colors ${flashOn ? "bg-[rgba(255,220,100,.35)]" : "bg-[rgba(60,42,33,.3)]"} text-[#fff8f1]`}>
               <span className="text-xl">⚡</span>
             </button>
-
             <button onClick={capture} className="relative w-20 h-20 rounded-full flex items-center justify-center cursor-pointer bg-transparent border-none">
               <span className="absolute inset-0 rounded-full border-[4px] border-[rgba(119,90,25,.6)]" />
               <span className="w-16 h-16 rounded-full bg-[#775a19] shadow-[0_0_20px_rgba(119,90,25,.6)] flex items-center justify-center active:scale-90 transition-transform">
                 <span className="w-14 h-14 rounded-full border border-[rgba(255,255,255,.3)]" />
               </span>
             </button>
-
             <button type="button" onClick={toggleCamera}
               className="w-12 h-12 rounded-full border-none bg-[rgba(60,42,33,.3)] text-[#fff8f1] flex items-center justify-center backdrop-blur-sm cursor-pointer active:scale-90 transition-transform">
               <span className="text-lg">🔄</span>
             </button>
           </div>
-
           <label className="flex justify-center cursor-pointer">
             <input type="file" accept="image/*" onChange={e => processImage(e.target.files?.[0])} className="hidden" />
             <span className="text-xs text-[rgba(255,248,241,.85)] tracking-[.12em] uppercase font-['Manrope',sans-serif]">
