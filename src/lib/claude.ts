@@ -1,8 +1,13 @@
-export async function callClaude(messages: any[], maxTokens = 600): Promise<string> {
+export async function callClaude(messages: any[], maxTokens = 600, system?: string): Promise<string> {
   const r = await fetch("/api/claude", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: maxTokens, messages })
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: maxTokens,
+      messages,
+      ...(system ? { system } : {})
+    })
   });
   const contentType = r.headers.get("content-type");
   if (!contentType || !contentType.includes("application/json")) {
@@ -44,7 +49,6 @@ RÈGLES IMPORTANTES :
 4. N'invente pas de vins dans sa cave.
 5. Ne montre pas le JSON à l'utilisateur.`;
 
-  // Limiter à 10 derniers messages pour éviter de dépasser le contexte
   const recentHistory = history.slice(-10);
 
   const messages = [
