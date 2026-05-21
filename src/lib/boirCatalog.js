@@ -268,7 +268,7 @@ export const BOIR_CATALOG = [
     "p": 19.5,
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/bodega-atamisque-atamisque-malbec-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce_67708e54-1a44-481c-8017-3f575435abf3.png?v=1773243308",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8fc932afd145591af68f7f093ac472a3.png?v=1779213941",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -1254,6 +1254,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Brial \"Echinops Rosé\" 2025",
+    "p": 11.95,
+    "v": "VIGNOBLES DOM BRIAL",
+    "u": "https://boir.be/fr/products/domaine-brial-echinops-rose-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/da1051ea8dc8b5c8f8757aceaaa8583a.png?v=1779175802",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rosé"
+  },
+  {
     "t": "Domaine Brial \"Echinops Rouge\" 2025",
     "p": 11.95,
     "v": "VIGNOBLES DOM BRIAL",
@@ -1588,7 +1599,7 @@ export const BOIR_CATALOG = [
     "p": 46.95,
     "v": "DOMAINE DENIS CARRE EARL",
     "u": "https://boir.be/fr/products/domaine-denis-carre-pommard-les-noizons-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/65a3c656634684af81109036793bdcf9_a4f5a9ac-f655-4d06-964a-c6b5814488bd.png?v=1778594532",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/65a3c656634684af81109036793bdcf9_a4f5a9ac-f655-4d06-964a-c6b5814488bd.png?v=1779213807",
     "r": "Bourgogne",
     "c": "Autre",
     "a": "N/A",
@@ -1670,17 +1681,6 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Rosé"
-  },
-  {
-    "t": "Domaine du Bon Remède - Côtes du Ventoux \"Caprices\" 2023",
-    "p": 14.49,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-caprices-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/PS_caprices.png?v=1755774757",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Domaine du Bon Remède - Côtes du Ventoux \"L'Argile Bleue\" 2021",
@@ -2076,6 +2076,17 @@ export const BOIR_CATALOG = [
     "r": "Loire",
     "c": "France",
     "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2022",
+    "p": 24.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/chene-marchard-sancerre-vieilles-vignes-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7c2ef887630165c9738e2030f5c95457.png?v=1733466123",
+    "r": "Loire",
+    "c": "France",
+    "a": "SANCERRE",
     "y": "Blanc"
   },
   {
