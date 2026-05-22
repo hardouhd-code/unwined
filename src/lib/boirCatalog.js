@@ -1496,17 +1496,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine de Poulvarel - Costières de Nîmes \"Les Grès\" 2020",
-    "p": 9.95,
-    "v": "FAMILLE COMBE EURL",
-    "u": "https://boir.be/fr/products/domaine-de-poulvarel-costieres-de-nimes-les-gres-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2c0299531ad784c981d741358e993c1a.png?v=1733356204",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine de Suremain - Mercurey 1er Cru \"Clos L’Evêque\" 2023",
     "p": 35.95,
     "v": "DOMAINE DE SUREMAIN",
@@ -2583,17 +2572,6 @@ export const BOIR_CATALOG = [
     "c": "Italie",
     "a": "BAROLO",
     "y": "Blanc"
-  },
-  {
-    "t": "Ippolito 1845 \"160 Anni\" 2019",
-    "p": 23.95,
-    "v": "CORDIER BE BV",
-    "u": "https://boir.be/fr/products/ippolito-1845-160-anni-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0753e53d666fd65c5b54d3ef20a6d54f.png?v=1733412918",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Jean Chartron - Bâtard-Montrachet Grand Cru 2021",
