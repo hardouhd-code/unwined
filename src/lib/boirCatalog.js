@@ -242,6 +242,17 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
+    "t": "Blanc de Chasse-Spleen 2025",
+    "p": 23.55,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/blanc-de-chasse-spleen-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/55e0243c534c753bbd43825ed3b0ffdb.png?v=1779434109",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Blason d'Issan 2021",
     "p": 26.95,
     "v": "VINS & PASSIONS SAS",
@@ -471,6 +482,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Autre"
+  },
+  {
+    "t": "Carruades de Lafite 2025",
+    "p": 194.8,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/carruades-de-lafite-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/31e7b61dd7f9795622c540cc23ba8487.png?v=1779434448",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
   },
   {
     "t": "Casa Darei \"Rodeio\" 2021",
@@ -913,6 +935,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Clos de l'Oratoire 2025",
+    "p": 28.05,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/clos-de-loratoire-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a51b74112d3387a019d0b87f8b39c15d_d5f12763-1ef1-4679-9b22-73c06f18675e.png?v=1779433971",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Autre"
+  },
+  {
     "t": "Clos de Sarpe 2022",
     "p": 81.95,
     "v": "SAS SALIN",
@@ -940,6 +973,17 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/clos-du-marquis-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5c091ba0e00372cd095b0997584387cc.png?v=1733467570",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Clos la Gaffelière 2025",
+    "p": 20.4,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/clos-la-gaffeliere-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9fed1becce88cddea3ccadad6f1945b5_a0d6cfe5-b4c1-4ae3-8e5b-c4d2b22fea6b.png?v=1779464051",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -3760,17 +3804,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Stark-Condé 'Kara Tara Chardonnay\" 2022",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/stark-conde-kara-tara-chardonnay-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Stark_Conde_Kara_Tara_Chardonnay_2022.png?v=1757499248",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Sutherland \"Chardonnay\" 2020",
