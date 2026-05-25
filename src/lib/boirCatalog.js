@@ -2112,17 +2112,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2022",
-    "p": 24.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/chene-marchard-sancerre-vieilles-vignes-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7c2ef887630165c9738e2030f5c95457.png?v=1733466123",
-    "r": "Loire",
-    "c": "France",
-    "a": "SANCERRE",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2023",
     "p": 27.95,
     "v": "L REVERDY SAS",
@@ -2579,17 +2568,6 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barbera-dasti-nuj-suj-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/178165eb9540ad64b9c326e177ecc6f5_9089aea9-abb4-48d1-90cf-8eb02c91eb6e.png?v=1772811739",
-    "r": "Piémont",
-    "c": "Italie",
-    "a": "BAROLO",
-    "y": "Blanc"
-  },
-  {
-    "t": "Icardi - Barolo \"Fossati\" 2018",
-    "p": 39.95,
-    "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
-    "u": "https://boir.be/fr/products/icardi-barolo-fossati-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/01c4b773d970a321b46b120e7bd0f9ac.png?v=1772814986",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
