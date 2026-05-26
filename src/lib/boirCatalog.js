@@ -495,17 +495,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Casa Darei \"Rodeio\" 2021",
-    "p": 9.95,
-    "v": "PASCAL PRUNIER BONHEUR SARL",
-    "u": "https://boir.be/fr/products/casa-darei-rodeio-reserva-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Rodeio_Dao_2021_-_Vinho_Branco.png?v=1740040145",
-    "r": "Douro",
-    "c": "Portugal",
-    "a": "DAO",
-    "y": "Blanc"
-  },
-  {
     "t": "Casal Amado \"Alvarinho\" 2023",
     "p": 14.95,
     "v": "DESPERTAR DOS SENTIDOS LDA",
