@@ -110,17 +110,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Artisans Partisans - Vin de France \"Tèrra Nature\" 2021",
-    "p": 10.99,
-    "v": "VINS JEAN LUC COLOMBO SARL",
-    "u": "https://boir.be/fr/products/terra-nature-vin-de-france-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/26251eb2003d7ae4e7ec53436b7137bc.png?v=1733322982",
-    "r": "Autre",
-    "c": "France",
-    "a": "VIN DE FRANCE",
-    "y": "Rouge"
-  },
-  {
     "t": "Aubert & Mathieu \"Grouve Rosé\"",
     "p": 12.95,
     "v": "BOIR.",
@@ -1978,17 +1967,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Domaine La Tible - Côtes de Provence \"Réserve\" 2023",
-    "p": 12.99,
-    "v": "PASCAL PRUNIER BONHEUR SARL",
-    "u": "https://boir.be/fr/products/domaine-la-tible-cotes-de-provence-reserve-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_La_Tible_-_Cotes_de_Provence_Reserve_2023.png?v=1753367302",
-    "r": "Provence",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rosé"
   },
   {
     "t": "Domaine Laguilhon - Jurançon Sec 2022",
