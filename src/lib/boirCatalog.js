@@ -2266,17 +2266,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Famille Despagne \"Le Clairet d'Ampélia\" 2023",
-    "p": 15.95,
-    "v": "SAS VERTICALE VINS",
-    "u": "https://boir.be/fr/products/famille-despagne-le-clairet-dampelia-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Clairet.png?v=1753869946",
-    "r": "Bordeaux",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Famille Perrin - Côtes de Rhône Villages - Vinsobres \"Les Hauts de Julien\" 2021",
     "p": 36.5,
     "v": "DIRLER CADE EARL",
@@ -2341,17 +2330,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Fragment de Loire - Sancerre \"Rosé\" 2023",
-    "p": 14.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/fragment-de-loire-sancerre-rose-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Fragment_de_Loire_-_Sancerre_Rose_2023.png?v=1753367133",
-    "r": "Loire",
-    "c": "France",
-    "a": "SANCERRE",
-    "y": "Rosé"
   },
   {
     "t": "Fugue de Nénin 2022",
