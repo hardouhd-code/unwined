@@ -77,6 +77,17 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "ALTER \"Cuvée Blanc Cedro\"",
+    "p": 17.95,
+    "v": "A.I.R. Distillations - (HtweeO BV)",
+    "u": "https://boir.be/fr/products/alter-cuvee-blanc-cedro",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2af0d629438c339ca4a5d81a0a6b4916.png?v=1780059271",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Artisans Partisans -  \"Sous le Bouchon\" 2022 BIO",
     "p": 12.5,
     "v": "VIGN GUY MOUSSET EARL",
@@ -1342,6 +1353,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine Chevalier - Ladoix 1er Cru \"Les Corvées\" 2020",
+    "p": 39.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-1er-cru-les-corvees-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/17c8ce944e9a3157cb5334181b36acb0.png?v=1733322353",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine Clos des Rochers \"Crémant de Luxembourg\" brut",
     "p": 24.99,
     "v": "Boir shop",
@@ -1635,17 +1657,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fdf4fbe7573246bdac16e3227a8fc8e8.png?v=1733408213",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Domaine des Brangers - Menetou-Salon 2023",
-    "p": 14.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/domaine-des-brangers-menetou-salon-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ea0de6d32cceac1f2e726229ef694f8.png?v=1733407039",
-    "r": "Loire",
-    "c": "France",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -2662,6 +2673,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Jean Chartron - Puligny-Montrachet 2021",
+    "p": 77.89,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d.png?v=1733428616",
+    "r": "Bourgogne",
+    "c": "États-Unis",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Jean Chartron - Puligny-Montrachet 2022",
     "p": 77.89,
     "v": "BOIR.",
@@ -2964,17 +2986,6 @@ export const BOIR_CATALOG = [
     "v": "JOANNE SAS",
     "u": "https://boir.be/fr/products/le-carillon-dangelus-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca77e52a87f8075df27b87344015efed.png?v=1749799004",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Le Clos du Lucquier - Montpeyroux 2019",
-    "p": 13.95,
-    "v": "DESCAS PERE ET FILS SA",
-    "u": "https://boir.be/fr/products/le-clos-du-lucquier-montpeyroux-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ace13e5b8cd6beafa42ca05eef34d737.png?v=1733406422",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
