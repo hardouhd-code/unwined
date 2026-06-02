@@ -88,6 +88,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "ALTER \"Cuvée Rouge Casca\"",
+    "p": 17.95,
+    "v": "A.I.R. Distillations - (HtweeO BV)",
+    "u": "https://boir.be/fr/products/alter-cuvee-rouge-casca",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1050133f01198deb6ff74ecb4f1cf1ed.png?v=1780303652",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Artisans Partisans -  \"Sous le Bouchon\" 2022 BIO",
     "p": 12.5,
     "v": "VIGN GUY MOUSSET EARL",
@@ -627,17 +638,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Champagne Collard-Picard \"Blanc de Blancs\" Grand Cru Extra Brut",
-    "p": 57.95,
-    "v": "DOMAINE DENIS CARRE EARL",
-    "u": "https://boir.be/fr/products/champagne-collard-picard-blanc-de-blancs-grand-cru-extra-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1f22cb32931882fa9599d6fb3a0227bf.png?v=1733263933",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
     "t": "Champagne Collard-Picard \"Dom. Picard\" Grand Cru Extra Brut",
     "p": 69.95,
     "v": "COLLARD PICARD SCEV",
@@ -742,17 +742,6 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-millesime-2012-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7496011a4894b38e38f40a3f245fcecb.png?v=1758621009",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
-    "t": "Champagne Nicolas Feuillatte \"Palmes d'Or\" 2008",
-    "p": 165,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/champagne-nicolas-feuillatte-palmes-dor-2008",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2a5d7eca81af6e5de722db16c2a819c9.png?v=1733421828",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -996,6 +985,17 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/clos-marsalette-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1d3b01544f4c8a6a2410851670b79c39.png?v=1733412897",
     "r": "Douro",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Clos René 2025",
+    "p": 28.99,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/clos-rene-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ec998f39b4b15021e2584c80ae484be6_fb4cfa3e-279f-4306-bde0-6bdff0df7ce3.png?v=1780384925",
+    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
@@ -1350,17 +1350,6 @@ export const BOIR_CATALOG = [
     "r": "Rhône",
     "c": "Autre",
     "a": "GIGONDAS",
-    "y": "Rouge"
-  },
-  {
-    "t": "Domaine Chevalier - Ladoix 1er Cru \"Les Corvées\" 2020",
-    "p": 39.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-1er-cru-les-corvees-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/17c8ce944e9a3157cb5334181b36acb0.png?v=1733322353",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
     "y": "Rouge"
   },
   {
