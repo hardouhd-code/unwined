@@ -99,6 +99,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Arômes de Pavie 2025",
+    "p": 62.9,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/aromes-de-pavie-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4ffc2138ab4e6e7a222b16b3b60e1149_93092b41-9fcb-4ed8-97f6-a7167aa7fed8.png?v=1780474353",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Artisans Partisans -  \"Sous le Bouchon\" 2022 BIO",
     "p": 12.5,
     "v": "VIGN GUY MOUSSET EARL",
@@ -852,17 +863,6 @@ export const BOIR_CATALOG = [
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-2-grand-cru-brut-zero",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/986de6384057901cb20c37802465c8a4.png?v=1769527196",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
-    "t": "Champagne Voirin-Jumel \"Ratafia\"",
-    "p": 29.95,
-    "v": "SCEV CHAMP VOIRIN JUMEL",
-    "u": "https://boir.be/fr/products/champagne-voirin-jumel-ratafia",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2280ac4c53b4b426ba6775410030d678.png?v=1758540632",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -3069,6 +3069,28 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Les Arums de Lagrange 2025",
+    "p": 23.7,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/les-arums-de-lagrange-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/14872dc3de6ad90641a9d425555ab512.png?v=1780473791",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Les Fiefs de Lagrange 2025",
+    "p": 21.17,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/les-fiefs-de-lagrange-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6efdf676da296e55717104dea344ce92.png?v=1780473575",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Les Hauts du Tertre 2022",
     "p": 27.95,
     "v": "JOANNE SAS",
@@ -3592,17 +3614,6 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/richard-hamilton-centurion-127-year-old-vine-shiraz-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/68b6431302ba1e2d2db7a3b30ea5f1d8.png?v=1733323437",
     "r": "Provence",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Richard Hamilton \"Colton's G.S.M.\" 2019",
-    "p": 11.89,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/richard-hamilton-coltons-g-s-m-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Richard_Hamilton_Colton_s_G.S.M._2019.png?v=1754474995",
-    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
