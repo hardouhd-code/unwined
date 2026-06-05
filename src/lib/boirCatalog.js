@@ -308,6 +308,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
+    "p": 12.95,
+    "v": "DELTA FIJNE WIJNEN NV",
+    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-chardonnay-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0c135f4511e62b2694bee9cbdc68eecf.png?v=1780576510",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Bodega Atamisque \"Catalpa Malbec\" 2023",
     "p": 12.95,
     "v": "DELTA FIJNE WIJNEN NV",
@@ -2497,6 +2508,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Haut-Bailly II 2025",
+    "p": 30.85,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/haut-bailly-ii-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2159d57390a5d8cfab682f8e68054978_8df06b39-b47f-41b3-80e7-6b8de9e0a61e.png?v=1780574673",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "House of Arras \"Brut Élite\"",
     "p": 29.99,
     "v": "Boir shop",
@@ -2513,6 +2535,17 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barbera-dasti-nuj-suj-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/178165eb9540ad64b9c326e177ecc6f5_9089aea9-abb4-48d1-90cf-8eb02c91eb6e.png?v=1772811739",
+    "r": "Piémont",
+    "c": "Italie",
+    "a": "BAROLO",
+    "y": "Blanc"
+  },
+  {
+    "t": "Icardi - Barolo \"Fossati\" 2018",
+    "p": 39.95,
+    "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
+    "u": "https://boir.be/fr/products/icardi-barolo-fossati-2018",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/01c4b773d970a321b46b120e7bd0f9ac.png?v=1772814986",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
@@ -3179,6 +3212,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Marcel Couturier - Mâcon Villages \"Un Porc ex Porc\" 2022",
+    "p": 18.99,
+    "v": "LESTAPIS ET CIE SARL",
+    "u": "https://boir.be/fr/products/marcel-couturier-macon-villages-un-porc-ex-porc-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bde04669160fe0d48251768e07fd8ca4.png?v=1733411243",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Marcel Couturier - Pouilly-Loché \"Le Bourg\" 2023",
     "p": 32.95,
     "v": "MARCEL COUTURIER",
@@ -3404,6 +3448,17 @@ export const BOIR_CATALOG = [
     "v": "J.J.M & CIE SA",
     "u": "https://boir.be/fr/products/pichon-comtesse-reserve-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa.png?v=1749753351",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Pichon Comtesse Réserve 2025",
+    "p": 42.35,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/pichon-comtesse-reserve-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa_1131c225-48b9-4b72-8451-bcad97908396.png?v=1780475337",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
