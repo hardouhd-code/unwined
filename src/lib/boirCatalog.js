@@ -2937,17 +2937,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Lacoste-Borie 2020",
-    "p": 31.95,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/lacoste-borie-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b6412831951fd756d1311e4afe9c618f.png?v=1733322375",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Lacoste-Borie 2022",
     "p": 33.95,
     "v": "LES CAPUCINS SASU",
