@@ -2695,17 +2695,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Jean Chartron - Puligny-Montrachet 2021",
-    "p": 77.89,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d.png?v=1733428616",
-    "r": "Bourgogne",
-    "c": "États-Unis",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Jean Chartron - Puligny-Montrachet 2022",
     "p": 77.89,
     "v": "BOIR.",
@@ -4044,6 +4033,28 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b31054c621384d4cb07c94abe767dea0.png?v=1733322987",
     "r": "Autre",
     "c": "Autriche",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Weingut Müller-Grossmann \"Grüner Veltliner Satz Viertel\" 2025",
+    "p": 13.95,
+    "v": "Weingut Müller-Grossmann",
+    "u": "https://boir.be/fr/products/weingut-muller-grossmann-gruner-veltliner-satz-viertel-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/316bde4bfb51114785d30344ae9bdf07.png?v=1780906239",
+    "r": "Autre",
+    "c": "Autriche",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Weingut Müller-Grossmann \"Riesling Furth\" 2025",
+    "p": 17.8,
+    "v": "Weingut Müller-Grossmann",
+    "u": "https://boir.be/fr/products/weingut-muller-grossmann-riesling-furth-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fd6240ff31af810fd69d8aa6b67a19bb.png?v=1780905002",
+    "r": "Autre",
+    "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
   },
