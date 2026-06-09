@@ -2629,6 +2629,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Jean Chartron - Chassagne-Montrachet 2024",
+    "p": 69.95,
+    "v": "JEAN CHARTRON EURL",
+    "u": "https://boir.be/fr/products/jean-chartron-chassagne-montrachet-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ef5044932104166c77b62ad5adb78200_330be269-e0c5-4f6f-afc3-9e0882efb260.png?v=1780907580",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Jean Chartron - Chevalier-Montrachet Grand Cru \"Clos des Chevaliers\" 2021",
     "p": 639,
     "v": "ANTOINE OLIVIER SARL",
@@ -2658,6 +2669,17 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5a0b179af04bf8f733256996216fbfe9_29453f48-45bd-434f-83f5-f2bafdc72c67.png?v=1760551571",
     "r": "Autre",
     "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Jean Chartron - Pernand-Vergelesses 2024",
+    "p": 43.45,
+    "v": "JEAN CHARTRON EURL",
+    "u": "https://boir.be/fr/products/jean-chartron-pernand-vergelesses-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5a0b179af04bf8f733256996216fbfe9_fbfd0994-50fc-4180-886d-5b995965f27a.png?v=1780908116",
+    "r": "Bourgogne",
+    "c": "France",
     "a": "N/A",
     "y": "Blanc"
   },
