@@ -3289,6 +3289,39 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Masseria Surani - Primitivo di Manduria \"Eméra\" 2022",
+    "p": 12.95,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/masseria-surani-primitivo-di-manduria-emera-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fa38c44dbcbf9750e3e182b4f0b985a9.png?v=1781079807",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Masseria Surani - Primitivo di Manduria \"Heracles\" 2022",
+    "p": 14.5,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/masseria-surani-primitivo-di-manduria-heracles-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5e50eae4a3b618b37d914b1236f7c9be.png?v=1781079869",
+    "r": "Autre",
+    "c": "Italie",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Masseria Surani - Puglia \"Fiano Eméra\" 2025",
+    "p": 12.95,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/masseria-surani-puglia-fiano-emera-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e99596d5807443d63cf02f2625966ff5.png?v=1781079766",
+    "r": "Autre",
+    "c": "Italie",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Michele Chiarlo - Barbaresco \"Palás\" 2022",
     "p": 29.5,
     "v": "MICHELE CHIARLO SRL A V P S",
