@@ -1342,6 +1342,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine Brusset - Côtes du Rhône \"Laurent B.\" 2021",
+    "p": 9.45,
+    "v": "STEPHANE BRIDAY EARL",
+    "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-laurent-b-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/947d2467b6fb15e9119f9743a2fe9de2.png?v=1733403668",
+    "r": "Rhône",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine Brusset - Côtes du Rhône Villages Cairanne \"Les Travers\" 2021",
     "p": 13.5,
     "v": "MICHELE CHIARLO SRL A V P S",
@@ -3091,6 +3102,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Le Marquis de Calon Ségur 2025",
+    "p": 23.7,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/le-marquis-de-calon-segur-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d79ba22ba01ca63612b58a7fe904bfd3_7a76ef9a-3c42-4ba8-8de8-7be630158d34.png?v=1781248680",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Leconfield \"Cabernet Sauvignon\" 2018",
     "p": 17.8,
     "v": "PERRIN ET FILS SASU",
@@ -3228,17 +3250,6 @@ export const BOIR_CATALOG = [
     "v": "MARCEL COUTURIER",
     "u": "https://boir.be/fr/products/marcel-couturier-macon-aux-scelles-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d490373a6eda0f9d18fa1b547318f858.png?v=1778236102",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Marcel Couturier - Mâcon Villages \"Un Porc ex Porc\" 2022",
-    "p": 18.99,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/marcel-couturier-macon-villages-un-porc-ex-porc-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bde04669160fe0d48251768e07fd8ca4.png?v=1733411243",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
