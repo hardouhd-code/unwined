@@ -979,6 +979,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Clos du Marquis 2025",
+    "p": 47.75,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/clos-du-marquis-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b7e45fbb0fb7e64da472d71605d156cb_078baea4-d251-4de8-846e-d8d2e5fd1072.png?v=1781249928",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Clos Fourtet 2025",
     "p": 77.9,
     "v": "BOIR.",
@@ -2497,6 +2508,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Grand Vin de Léoville du Marquis de Las Cases 2025",
+    "p": 153.6,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/grand-vin-de-leoville-du-marquis-de-las-cases",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea80ddfedab31bf9f2deba0b9adbac4f_c8f51873-41ce-4a3d-95a9-e9bd6995c730.png?v=1781249857",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Gurashvili's Family Vineyard \"Saperavi\" 2020",
     "p": 16.49,
     "v": "VERTICALE VINS SAS",
@@ -2838,17 +2860,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Kanonkop Estate Wine \"Pinotage\" 2022",
-    "p": 34.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/kanonkop-estate-wine-pinotage-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04039f515c7d65d276df9ce43ea0c521_cd4a8744-8019-4903-877f-f1cd6da497b3.png?v=1761320519",
-    "r": "Piémont",
-    "c": "Afrique du Sud",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "KWV \"The Mentors Petit Verdot\" 2018",
     "p": 19.99,
     "v": "COLLARD PICARD SCEV",
@@ -2953,6 +2964,17 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/la-dame-de-montrose-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73.png?v=1741727413",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rosé"
+  },
+  {
+    "t": "La Dame de Montrose 2025",
+    "p": 37.25,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/la-dame-de-montrose-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73_8de4c0cf-4506-4782-81e2-6d0d84ce6c79.png?v=1781260265",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
