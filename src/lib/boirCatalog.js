@@ -2123,6 +2123,50 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine MANN \"Fly me to the Moon\" 2024",
+    "p": 19.95,
+    "v": "MANN VIGNOBLE DES 3 TERRES",
+    "u": "https://boir.be/fr/products/domaine-mann-fly-me-to-the-moon-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/290039d63b1a093bb3467280a68b511d.png?v=1781506418",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine MANN \"Happy Lemon\" 2024",
+    "p": 23.95,
+    "v": "MANN VIGNOBLE DES 3 TERRES",
+    "u": "https://boir.be/fr/products/domaine-mann-happy-lemon-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9a6c659e04fa68a4196eba8c8ebc951e.png?v=1781506350",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine MANN \"Mouton Bleu\" 2024",
+    "p": 19.95,
+    "v": "MANN VIGNOBLE DES 3 TERRES",
+    "u": "https://boir.be/fr/products/domaine-mann-mouton-bleu-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bbdb89d1d56a12a84b4a57a940ac6da0.png?v=1781506314",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine MANN - Crémant d'Alsace Brut Nature 2022",
+    "p": 25.95,
+    "v": "MANN VIGNOBLE DES 3 TERRES",
+    "u": "https://boir.be/fr/products/domaine-mann-cremant-dalsace-brut-nature-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cdf13ddfb795da24a3bee882912bffec.png?v=1781506269",
+    "r": "Alsace",
+    "c": "France",
+    "a": "N/A",
+    "y": "Effervescent"
+  },
+  {
     "t": "Domaine Marc Taillandier - Savennières \"Papillons de Nuit\" 2023",
     "p": 29.95,
     "v": "BOIR.",
