@@ -1408,6 +1408,28 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine Chevalier - Ladoix 1er Cru \"Les Corvées\" 2020",
+    "p": 39.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-1er-cru-les-corvees-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/17c8ce944e9a3157cb5334181b36acb0.png?v=1733322353",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Domaine Chevalier - Ladoix 2020",
+    "p": 29.5,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1dd00020ebbe9c5660835054fbbdfd5d.png?v=1733323367",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Clos des Rochers \"Crémant de Luxembourg\" brut",
     "p": 24.99,
     "v": "Boir shop",
@@ -2812,6 +2834,17 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/da6611c449e9d8ec780835ed86415ab4_330adf05-2867-4de2-8945-cba5cc822b86.png?v=1769518063",
     "r": "Bourgogne",
     "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Jean Chartron - Puligny-Montrachet 2021",
+    "p": 77.89,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d.png?v=1733428616",
+    "r": "Bourgogne",
+    "c": "États-Unis",
     "a": "N/A",
     "y": "Blanc"
   },
