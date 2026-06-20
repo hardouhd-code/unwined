@@ -1375,17 +1375,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Brusset - Gigondas \"Les Hauts de Montmirail\" 2022",
-    "p": 28.99,
-    "v": "CETC EXPORT SAS",
-    "u": "https://boir.be/fr/products/domaine-brusset-gigondas-les-hauts-de-montmirail-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c752dc86307051d5f15c0ab455d5e578.png?v=1733421290",
-    "r": "Rhône",
-    "c": "France",
-    "a": "GIGONDAS",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Brusset - Gigondas \"Les Secrets de Montmirail\" 2022",
     "p": 49.45,
     "v": "MAISON SICHEL SA",
