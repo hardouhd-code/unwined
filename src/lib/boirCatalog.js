@@ -2563,17 +2563,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Grand Vin de Léoville du Marquis de Las Cases 2025",
-    "p": 153.6,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/grand-vin-de-leoville-du-marquis-de-las-cases",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea80ddfedab31bf9f2deba0b9adbac4f_c8f51873-41ce-4a3d-95a9-e9bd6995c730.png?v=1781249857",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Gurashvili's Family Vineyard \"Saperavi\" 2020",
     "p": 16.49,
     "v": "VERTICALE VINS SAS",
