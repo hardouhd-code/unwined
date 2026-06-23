@@ -1408,17 +1408,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Chevalier - Ladoix 2020",
-    "p": 29.5,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1dd00020ebbe9c5660835054fbbdfd5d.png?v=1733323367",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Clos des Rochers \"Crémant de Luxembourg\" brut",
     "p": 24.99,
     "v": "Boir shop",
