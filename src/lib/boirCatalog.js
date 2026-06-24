@@ -1353,17 +1353,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Brusset - Côtes du Rhône \"Laurent B.\" 2021",
-    "p": 9.45,
-    "v": "STEPHANE BRIDAY EARL",
-    "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-laurent-b-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/947d2467b6fb15e9119f9743a2fe9de2.png?v=1733403668",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Brusset - Côtes du Rhône Villages Cairanne \"Les Travers\" 2021",
     "p": 13.5,
     "v": "MICHELE CHIARLO SRL A V P S",
@@ -3025,28 +3014,6 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
-    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut",
-    "p": 13.75,
-    "v": "WINCO NV",
-    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
-    "r": "Champagne",
-    "c": "Italie",
-    "a": "PROSECCO",
-    "y": "Effervescent"
-  },
-  {
-    "t": "La Farra - Valdobbiadene Prosecco Superiore Brut",
-    "p": 11.95,
-    "v": "EIB SRL",
-    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8.png?v=1733264119",
-    "r": "Vénétie",
-    "c": "Italie",
-    "a": "PROSECCO",
-    "y": "Effervescent"
-  },
-  {
     "t": "Lacoste-Borie 2022",
     "p": 33.95,
     "v": "LES CAPUCINS SASU",
@@ -3837,17 +3804,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Saronsberg \"Viognier\" 2021",
-    "p": 17.95,
-    "v": "SOUTIRAN & ASSOCIES SAS",
-    "u": "https://boir.be/fr/products/saronsberg-viognier-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4bb085f189d270ea366f7b9edcb030cb.png?v=1733466484",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Saronsberg \"Viognier\" 2023",
