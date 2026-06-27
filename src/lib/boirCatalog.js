@@ -550,17 +550,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Castellucci Miano - Valledolmo Contea di Sclafani \"Catarratto\" 2024",
-    "p": 13.45,
-    "v": "CASTELLUCCI MIANO SPA",
-    "u": "https://boir.be/fr/products/castellucci-miano-valledolmo-contea-di-sclafani-catarratto-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/98383b1c0674f5cf50f795ce2fd62db9_813c5b55-b2e3-4d7b-b9a2-2108e81c3ef8.png?v=1761147221",
-    "r": "Sicile",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Cave de Crouseilles - Cahors \"Crouzeilles-Côte Abeilles\" 2018",
     "p": 29.95,
     "v": "VIGNOBLES JP HEMBISE SARL",
@@ -1346,7 +1335,7 @@ export const BOIR_CATALOG = [
     "p": 11.95,
     "v": "VIGNOBLES DOM BRIAL",
     "u": "https://boir.be/fr/products/domaine-brial-echinops-rouge-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6d0dea614f303064d9e398a72ed75856.png?v=1779105315",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Brial_Rouge_nieuw_PS.png?v=1782472838",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -2289,7 +2278,7 @@ export const BOIR_CATALOG = [
   },
   {
     "t": "Ensis - Taurasi \"Vesevo\" 2013",
-    "p": 22.95,
+    "p": 14.95,
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/ensis-taurasi-vesevo-2013",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bae26ffde39bc69bd6d010dbac68e0d0.png?v=1733323400",
@@ -3729,17 +3718,6 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Rapaura Springs \"Rohe Blind River Sauvignon Blanc\" 2024",
-    "p": 15.95,
-    "v": "INTERVINOS NV",
-    "u": "https://boir.be/fr/products/rapaura-springs-rohe-blind-river-sauvignon-blanc-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/59bcee01f9bacb60ac948f28b3483deb.png?v=1769595055",
-    "r": "Marlborough",
-    "c": "Nouvelle-Zélande",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Rapaura Springs \"Rohe Sauvignon Blanc\" 2024",
     "p": 12.95,
     "v": "INTERVINOS NV",
@@ -4038,7 +4016,7 @@ export const BOIR_CATALOG = [
   },
   {
     "t": "Thelema \"Cabernet Sauvignon\" 2019",
-    "p": 26.49,
+    "p": 19.95,
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/thelema-cabernet-sauvignon-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0e4697a89d2797f4f60cf52ccf3264d4.png?v=1733413336",
