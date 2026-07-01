@@ -2816,6 +2816,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Jean Chartron - Rully \"Montmorin\" 2024",
+    "p": 29.95,
+    "v": "JEAN CHARTRON EURL",
+    "u": "https://boir.be/fr/products/jean-chartron-rully-montmorin-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00c631b3d286d3b4f771893020e53d7d.png?v=1782807175",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Jean Chartron - Saint-Aubin 1er Cru \"Perrières\" 2022",
     "p": 76.9,
     "v": "BOIR.",
