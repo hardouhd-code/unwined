@@ -1947,17 +1947,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Guy Mousset - Côtes du Rhône \"Excellence Rosé\" 2023",
-    "p": 12.99,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/domaine-guy-mousset-cotes-du-rhone-excellence-rose-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea735b920b08b772461d706489f6783e.png?v=1733414403",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Domaine La Fourmone - Gigondas \"Le Fauquet\" 2022",
     "p": 18.95,
     "v": "SALIN SAS",
@@ -2340,17 +2329,6 @@ export const BOIR_CATALOG = [
     "r": "Priorat",
     "c": "Espagne",
     "a": "PRIORAT",
-    "y": "Rouge"
-  },
-  {
-    "t": "Famille Perrin - Côtes de Rhône Villages - Vinsobres \"Les Hauts de Julien\" 2021",
-    "p": 36.5,
-    "v": "DIRLER CADE EARL",
-    "u": "https://boir.be/fr/products/famille-perrin-cotes-de-rhone-villages-vinsobres-les-hauts-de-julien-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/23cf298587896aab4cab107b68ea2e70.png?v=1733467053",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
     "y": "Rouge"
   },
   {
