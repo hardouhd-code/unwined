@@ -4026,6 +4026,39 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Thymiopoulos Vineyards \"Earth & Sky\" 2024",
+    "p": 24.95,
+    "v": "KOUTOUPAS S.A. GASTROLOGIQ S.A.",
+    "u": "https://boir.be/fr/products/thymiopoulos-vineyards-earth-sky-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/aade1dc77b5ceec2edfb18d4bb13cf69.png?v=1782978418",
+    "r": "Autre",
+    "c": "Grèce",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Thymiopoulos Vineyards \"Naoussa Alta\" 2024",
+    "p": 15.95,
+    "v": "KOUTOUPAS S.A. GASTROLOGIQ S.A.",
+    "u": "https://boir.be/fr/products/thymiopoulos-vineyards-naoussa-alta-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/09c7af35f985b9b931efa19064b1c558.png?v=1782979463",
+    "r": "Autre",
+    "c": "Grèce",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Thymiopoulos Vineyards \"Rosé de Xinomavro\" 2024",
+    "p": 14.95,
+    "v": "KOUTOUPAS S.A. GASTROLOGIQ S.A.",
+    "u": "https://boir.be/fr/products/thymiopoulos-vineyards-rose-de-xinomavro-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bfe83fa71b6e795fe0958915efcf71de.png?v=1782980240",
+    "r": "Autre",
+    "c": "Grèce",
+    "a": "N/A",
+    "y": "Rosé"
+  },
+  {
     "t": "Tommasi Viticoltori - Amarone delle Valpolicella 2016",
     "p": 44.99,
     "v": "SALIN SAS",
@@ -4112,6 +4145,39 @@ export const BOIR_CATALOG = [
     "c": "Autriche",
     "a": "N/A",
     "y": "Blanc"
+  },
+  {
+    "t": "Weingut Fischer \"Pinot Noir Classic\" 2021",
+    "p": 16.95,
+    "v": "Weingut Christian Fischer GmbH",
+    "u": "https://boir.be/fr/products/weingut-fischer-pinot-noir-classic-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/15fb3ee13807f452ce0f8a0e27bf250c.png?v=1782983581",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Weingut Fischer \"Pinot Noir Premium\" 2021",
+    "p": 29.95,
+    "v": "Weingut Christian Fischer GmbH",
+    "u": "https://boir.be/fr/products/weingut-fischer-pinot-noir-premium-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8972ddfaf92d1023e936e4bf122f10c0.png?v=1782983888",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Weingut Fischer \"Zweigelt Classic\" 2021",
+    "p": 14.95,
+    "v": "Weingut Christian Fischer GmbH",
+    "u": "https://boir.be/fr/products/weingut-fischer-zweigelt-classic-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e21cd72efafa7cdfafe63e6870bfa9f3.png?v=1782984295",
+    "r": "Autre",
+    "c": "Autriche",
+    "a": "N/A",
+    "y": "Rouge"
   },
   {
     "t": "Weingut Müller-Grossmann \"Grüner Veltliner Satz Viertel\" 2025",
