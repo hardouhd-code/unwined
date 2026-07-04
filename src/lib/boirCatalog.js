@@ -2288,6 +2288,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Entre-Deux-Monts \"Pinot La Douve\" 2025",
+    "p": 16.95,
+    "v": "Entre-Deux-Monts",
+    "u": "https://boir.be/fr/products/entre-deux-monts-pinot-la-douve-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2c2c53e3bae444a25515494f6a2224f8.png?v=1783069951",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Entre-Deux-Monts \"Wiscoutre Blanc de Blancs\"",
     "p": 21.95,
     "v": "NV PUUR (INTERCOMPANY BEX3)",
