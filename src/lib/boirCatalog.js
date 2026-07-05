@@ -2772,17 +2772,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Jean Chartron - Puligny-Montrachet 2021",
-    "p": 77.89,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d.png?v=1733428616",
-    "r": "Bourgogne",
-    "c": "États-Unis",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Jean Chartron - Puligny-Montrachet 2022",
     "p": 77.89,
     "v": "BOIR.",
