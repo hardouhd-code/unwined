@@ -473,17 +473,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bruno Lafon \"Lucy in the Sky Rosé\" 2025",
-    "p": 9.95,
-    "v": "BF SAS Nos vins du Sud",
-    "u": "https://boir.be/fr/products/bruno-lafon-lucy-in-the-sky-rose-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b5f31f2d3af76ee01a9680445b20de32.png?v=1777392964",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Canals & Munné \"Cava Dionysus Reserva\" Brut Nature",
     "p": 11.45,
     "v": "CANALS & MUNNE SL",
@@ -940,17 +929,6 @@ export const BOIR_CATALOG = [
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/clos-du-marquis-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5c091ba0e00372cd095b0997584387cc.png?v=1733467570",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Clos du Marquis 2025",
-    "p": 47.75,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-du-marquis-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b7e45fbb0fb7e64da472d71605d156cb_078baea4-d251-4de8-846e-d8d2e5fd1072.png?v=1781249928",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -2607,6 +2585,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "J. Hofstätter - Vigneti delle Dolomiti \"Pinot Grigio\" 2022",
+    "p": 15.2,
+    "v": "TERRE DI SAVA SRL",
+    "u": "https://boir.be/fr/products/j-hofstatter-vigneti-delle-dolomiti-pinot-grigio-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6224e6821d9a10000644d36aea7e2e70.png?v=1733408020",
+    "r": "Autre",
+    "c": "Italie",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Jean Chartron - Bâtard-Montrachet Grand Cru 2021",
     "p": 435,
     "v": "LECONFIELD WINES PTY LTD",
@@ -3279,6 +3268,17 @@ export const BOIR_CATALOG = [
   },
   {
     "t": "Marqués de Vargas \"Reserva\" 2018",
+    "p": 21.95,
+    "v": "FINCA MUSEUM",
+    "u": "https://boir.be/fr/products/marques-de-vargas-reserva-2018",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9c1bca3c158d754fac52ab3bef385f02.png?v=1733411601",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Marqués de Vargas \"Reserva\" 2018",
     "p": 52.95,
     "v": "MARQUES DE VARGAS",
     "u": "https://boir.be/fr/products/marques-de-vargas-reserva-2019",
@@ -3370,7 +3370,7 @@ export const BOIR_CATALOG = [
     "p": 149,
     "v": "TENIMENTI GRIECO SRL",
     "u": "https://boir.be/fr/products/michele-chiarlo-barolo-riserva-cerequio-2013",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/06fad331dca06fbea145cc2d11a082c0.png?v=1733467771",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/85cd683fee729ca8298becfdadfe41d8.png?v=1784277163",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
@@ -3932,6 +3932,17 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-riserva-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f66086ff9046054085cf544a1af6cee1.png?v=1733412626",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "CHIANTI CLASSICO",
+    "y": "Rouge"
+  },
+  {
+    "t": "Tenuta di Nozzole - Chianti Classico Riserva \"La Forra\" 2020",
+    "p": 22.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/tenuta-di-nozzole-chianti-classico-riserva-la-forra-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Tenutadinozzole-LaForra2020.png?v=1740040701",
     "r": "Toscane",
     "c": "Italie",
     "a": "CHIANTI CLASSICO",
