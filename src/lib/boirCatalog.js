@@ -2838,17 +2838,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Kanonkop Estate Wine \"Pinotage\" 2022",
-    "p": 34.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/kanonkop-estate-wine-pinotage-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04039f515c7d65d276df9ce43ea0c521_cd4a8744-8019-4903-877f-f1cd6da497b3.png?v=1761320519",
-    "r": "Piémont",
-    "c": "Afrique du Sud",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "KWV \"The Mentors Petit Verdot\" 2018",
     "p": 19.99,
     "v": "COLLARD PICARD SCEV",
@@ -3265,17 +3254,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Marqués de Vargas \"Reserva\" 2018",
-    "p": 21.95,
-    "v": "FINCA MUSEUM",
-    "u": "https://boir.be/fr/products/marques-de-vargas-reserva-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9c1bca3c158d754fac52ab3bef385f02.png?v=1733411601",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Marqués de Vargas \"Reserva\" 2018",
