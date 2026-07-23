@@ -506,6 +506,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Casa Darei \"Rodeio Tinto Reserva\" 2022",
+    "p": 12.5,
+    "v": "DESPERTAR DOS SENTIDOS LDA",
+    "u": "https://boir.be/fr/products/casa-darei-rodeio-tinto-reserva-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3a938587e164f9e773f482b2fa8f3a0c_00b25601-1830-4755-9b1d-88662e058f0c.png?v=1784542772",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Casal Amado \"Alvarinho\" 2023",
     "p": 14.95,
     "v": "DESPERTAR DOS SENTIDOS LDA",
