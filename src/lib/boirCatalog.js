@@ -1496,17 +1496,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine de la Croix - Côtes de Provence \"Le Cap\" 2023",
-    "p": 14.99,
-    "v": "RENE VEDRENNE SARL",
-    "u": "https://boir.be/fr/products/domaine-de-la-croix-cotes-de-provence-le-cap-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_de_la_Croix_-_Cotes_de_Provence_Le_Cap_2023.png?v=1753367202",
-    "r": "Provence",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Domaine de la Mongestine \"Bob Rouge\" 2025",
     "p": 13.95,
     "v": "BF SAS Nos vins du Sud",
