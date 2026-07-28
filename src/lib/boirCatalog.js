@@ -1012,6 +1012,17 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
+    "t": "Compagnie de Burgondie - Viré-Clessé \"Vieilles Vignes\" 2024",
+    "p": 12.95,
+    "v": "LA COMPAGNIE DE BURGONDIE",
+    "u": "https://boir.be/fr/products/compagnie-de-burgondie-vire-clesse-vieilles-vignes-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1c3c6c4ee451a6700e01f84a56cf2562.png?v=1785147866",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Conde de San Cristóbal \"880 m\" 2020",
     "p": 21.95,
     "v": "MAISON SICHEL SA",
@@ -2101,6 +2112,28 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Michel Briday - Rully 1er Cru \"Grésigny\" 2023",
+    "p": 36.95,
+    "v": "Domaine Michel Briday",
+    "u": "https://boir.be/fr/products/domaine-michel-briday-rully-1er-cru-gresigny-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/676fab10a0f72968ed9eda84877b872c.png?v=1785151367",
+    "r": "Bourgogne",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Michel Briday - Rully 2023",
+    "p": 29.95,
+    "v": "Domaine Michel Briday",
+    "u": "https://boir.be/fr/products/domaine-michel-briday-rully-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/11ceca3d704b82eea9ea681afade6a69.png?v=1785152242",
+    "r": "Bourgogne",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2023",
     "p": 27.95,
     "v": "L REVERDY SAS",
@@ -2957,6 +2990,28 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rosé"
+  },
+  {
+    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2025",
+    "p": 16.95,
+    "v": "AZ AGR LA FARRA SS SOC AGR",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995_6a9725d6-cb3a-43b9-8043-7b0f59656c53.png?v=1785152807",
+    "r": "Champagne",
+    "c": "Italie",
+    "a": "PROSECCO",
+    "y": "Effervescent"
+  },
+  {
+    "t": "La Farra - Valdobbiadene Prosecco Superiore Brut Millesimato 2025",
+    "p": 14.95,
+    "v": "AZ AGR LA FARRA SS SOC AGR",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut-millesimato-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8_11f5ac34-7c52-4a25-aa18-98d1eb4aad1c.png?v=1785153334",
+    "r": "Vénétie",
+    "c": "Italie",
+    "a": "PROSECCO",
+    "y": "Effervescent"
   },
   {
     "t": "Lacoste-Borie 2022",
@@ -4057,17 +4112,6 @@ export const BOIR_CATALOG = [
     "c": "Italie",
     "a": "VALPOLICELLA",
     "y": "Rouge"
-  },
-  {
-    "t": "Tommasi Viticoltori - Lugana \"Le Fornaci\" 2022",
-    "p": 12.5,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/tommasi-viticoltori-lugana-le-fornaci-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Tommasi_Viticoltori_Lugana_Le_Fornaci_2022.png?v=1771241196",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Umani Ronchi - Montepulciano d'Abruzzo \"Jorio\" 2021",
