@@ -1320,17 +1320,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Brusset - Côtes du Rhône Villages Cairanne \"Les Travers\" 2021",
-    "p": 13.5,
-    "v": "MICHELE CHIARLO SRL A V P S",
-    "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-villages-cairanne-les-travers-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/000149fbb0b834f8cd7b4093fc17bf3c.png?v=1733406223",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Brusset - Gigondas \"Les Secrets de Montmirail\" 2022",
     "p": 49.45,
     "v": "MAISON SICHEL SA",
@@ -1879,17 +1868,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Domaine Etxegaraya - Irouléguy 2022",
-    "p": 17.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-etxegaraya-irouleguy-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Domaine_Etxegaraya_Iroul_guy_2022.png?v=1770209071",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Domaine François Legros - Nuits-Saint-Georges \"Vieilles Vignes\" 2021",
