@@ -1936,17 +1936,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Laguilhon - Jurançon Sec 2022",
-    "p": 9.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-laguilhon-jurancon-sec-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d76cf2815044fae01db5ea62b13b7322.png?v=1733322360",
-    "r": "Autre",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Lez-Envies \"Pas de Soucis\" 2025",
     "p": 17.95,
     "v": "Colruyt Food Retail (INTERCOMPANY BE3Y)",
@@ -3229,17 +3218,6 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/madrevite-trasimeno-cosa-riserva-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Madrevite_Trasimeno_C_osa_Riserva_2017.png?v=1771235901",
     "r": "Beaujolais",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Madrevite - Trasimeno \"Glanio\" 2020",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/madrevite-trasimeno-glanio-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a7e5a3985c563b9f7efc587d6ba89c16.png?v=1733408918",
-    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
