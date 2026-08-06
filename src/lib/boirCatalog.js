@@ -1276,6 +1276,72 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Bernard Defaix - Bourgogne Aligoté 2024",
+    "p": 15.95,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-bourgogne-aligote-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a03bedcd36b4e66bff24eb88c554aefe.png?v=1785923469",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "CHABLIS",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Bernard Defaix - Bourgogne Blanc 2025",
+    "p": 16.95,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-bourgogne-blanc-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/84d42fb3c51424c323f54e1b396fceaf.png?v=1785924032",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Bernard Defaix - Bourgogne Rouge 2025",
+    "p": 18.95,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-bourgogne-rouge-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c20f69d4499c5e41b1ee6cf7ae354541.png?v=1785924721",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Domaine Bernard Defaix - Chablis 1er Cru \"Côte de Léchet Réserve\" 2023",
+    "p": 36,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-chablis-1er-cru-cote-de-lechet-reserve-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/64d4acb1b10911fbdfb1850800976b9c.png?v=1785922961",
+    "r": "Bourgogne",
+    "c": "Autre",
+    "a": "CHABLIS",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Bernard Defaix - Chablis 2025",
+    "p": 22.95,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-chablis-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/095b825e4e55141459b4f4be1740cbda.png?v=1785921881",
+    "r": "Bourgogne",
+    "c": "Autre",
+    "a": "CHABLIS",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Bernard Defaix - Saint-Bris 2024",
+    "p": 15.95,
+    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
+    "u": "https://boir.be/fr/products/domaine-bernard-defaix-saint-bris-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/78cb916ee55579b368552055cbd0c551.png?v=1785921142",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "CHABLIS",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Bouchié-Chatellier - Pouilly-Fumé \"Esprit de Clocher\" 2022",
     "p": 25.95,
     "v": "DOMAINE BOUCHIE CHATELLIER",
@@ -1395,17 +1461,6 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Domaine Courbis - Cornas \"Champelrose\" 2021",
-    "p": 37.95,
-    "v": "LECONFIELD WINES PTY LTD",
-    "u": "https://boir.be/fr/products/domaine-courbis-cornas-champelrose-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d8265f026fd64421f915741362f376c4.png?v=1733322355",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rosé"
   },
   {
     "t": "Domaine Courbis - Cornas \"Les Eygats\" 2021",
@@ -2822,6 +2877,17 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-paul-sauer-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/593810e748e15cfcb4184cc43caf5a7c.png?v=1733417866",
     "r": "Provence",
+    "c": "Afrique du Sud",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Kanonkop Estate Wine \"Pinotage\" 2023",
+    "p": 35.95,
+    "v": "BOIR.",
+    "u": "https://boir.be/fr/products/kanonkop-estate-wine-pinotage-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Kanonkop_NV.png?v=1785501643",
+    "r": "Piémont",
     "c": "Afrique du Sud",
     "a": "N/A",
     "y": "Rouge"
