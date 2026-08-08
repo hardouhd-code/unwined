@@ -3773,17 +3773,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Richard Hamilton \"Centurion 127 Year Old Vine Shiraz\" 2019",
-    "p": 34.95,
-    "v": "SPH-GERARD BERTRAND SASU",
-    "u": "https://boir.be/fr/products/richard-hamilton-centurion-127-year-old-vine-shiraz-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/68b6431302ba1e2d2db7a3b30ea5f1d8.png?v=1733323437",
-    "r": "Provence",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Richard Hamilton \"Hut Block Cabernet Sauvignon\" 2018",
     "p": 12.99,
     "v": "VIGN GUY MOUSSET EARL",
