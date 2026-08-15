@@ -517,17 +517,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Casal Amado \"Alvarinho\" 2023",
-    "p": 14.95,
-    "v": "DESPERTAR DOS SENTIDOS LDA",
-    "u": "https://boir.be/fr/products/casal-amado-alvarinho-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600356_CasalAmado.png?v=1769769222",
-    "r": "Douro",
-    "c": "Portugal",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Cave de Crouseilles - Cahors \"Crouzeilles-Côte Abeilles\" 2018",
     "p": 29.95,
     "v": "VIGNOBLES JP HEMBISE SARL",
