@@ -726,17 +726,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Champagne Laurent-Perrier \"Millésime 2012\" Brut",
-    "p": 66.95,
-    "v": "LAURENT PERRIER DIFUSION BUIV",
-    "u": "https://boir.be/fr/products/champagne-laurent-perrier-millesime-2012-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7496011a4894b38e38f40a3f245fcecb.png?v=1758621009",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
     "t": "Champagne Perrier-Jouët \"Grand Brut\" Brut",
     "p": 54.95,
     "v": "Boir shop",
