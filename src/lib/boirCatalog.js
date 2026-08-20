@@ -110,6 +110,39 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Antoine Sunier - Morgon \"Croix de Chèvre\" 2024",
+    "p": 22.95,
+    "v": "Domaine Antoine Sunier",
+    "u": "https://boir.be/fr/products/antoine-sunier-morgon-croix-de-chevre-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41219abdc88b24af4389f79e007be94e.png?v=1787045860",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Antoine Sunier - Morgon \"Croix de Chèvre\" 2024",
+    "p": 44.95,
+    "v": "Domaine Antoine Sunier",
+    "u": "https://boir.be/fr/products/antoine-sunier-morgon-croix-de-chevre-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9de68cc9452662ce06ba5db1a8621d84.png?v=1787046081",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Antoine Sunier - Régnié \"Les Forchets\" 2024",
+    "p": 19.95,
+    "v": "Domaine Antoine Sunier",
+    "u": "https://boir.be/fr/products/antoine-sunier-regnie-les-forchets-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/AntoineSunier-Regnie2024.png?v=1787046367",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Arômes de Pavie 2025",
     "p": 62.9,
     "v": "BOIR.",
@@ -1144,17 +1177,6 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Deep Down \"Sauvignon Blanc\" 2021",
-    "p": 17.95,
-    "v": "DIRLER CADE EARL",
-    "u": "https://boir.be/fr/products/deep-down-sauvignon-blanc-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d682589ef0ac80e15e5d1172f2bc5787.png?v=1773046205",
-    "r": "Marlborough",
-    "c": "Nouvelle-Zélande",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Despagne \"La Belle Odile\" 2024",
     "p": 9.95,
     "v": "SAS DESPAGNE",
@@ -1716,17 +1738,6 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
-    "t": "Domaine du Bon Remède - Côtes du Ventoux \"L'Argile Bleue\" 2021",
-    "p": 11.49,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-du-bon-remede-cotes-du-ventoux-largile-bleue-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2e16d0df82467679e2eae21b698b7e3f.png?v=1733405077",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine du Clos Frantin - Vosne-Romanée 1er Cru \"Les Malconsorts\" 2023",
     "p": 295,
     "v": "MAISON ALBERT BICHOT SARL",
@@ -1923,17 +1934,6 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "MUSCADET",
     "y": "Blanc"
-  },
-  {
-    "t": "Domaine Guy Mousset - Côtes du Rhône \"Excellence Rosé\" 2023",
-    "p": 12.99,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/domaine-guy-mousset-cotes-du-rhone-excellence-rose-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ea735b920b08b772461d706489f6783e.png?v=1733414403",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rosé"
   },
   {
     "t": "Domaine La Fourmone - Gigondas \"Le Fauquet\" 2022",
@@ -3881,17 +3881,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Sutherland \"Sauvignon Blanc\" 2022",
-    "p": 11.5,
-    "v": "ALCOBRANDS NV",
-    "u": "https://boir.be/fr/products/sutherland-sauvignon-blanc-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Sutherland_Sauvignon_Blanc_2022.png?v=1753185744",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Tenimenti Grieco - Terre degli Osci Aglianico \"Passo alle Tremiti\" 2017",
