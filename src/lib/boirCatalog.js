@@ -2332,17 +2332,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Familia Torres \"Salmos\" 2019",
-    "p": 32.95,
-    "v": "COLLEGIALE DES DOMAINES DE LOI",
-    "u": "https://boir.be/fr/products/familia-torres-salmos-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/becc5d45dbac4e2df5ecccee4bbadd29.png?v=1733323170",
-    "r": "Priorat",
-    "c": "Espagne",
-    "a": "PRIORAT",
-    "y": "Rouge"
-  },
-  {
     "t": "Fattoria La Valentina - Montepulciano d'Abruzzo \"Spelt\" 2020",
     "p": 18.95,
     "v": "LESTAPIS ET CIE SARL",
