@@ -759,6 +759,17 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "Champagne Laurent-Perrier \"Millésime 2012\" Brut",
+    "p": 66.95,
+    "v": "LAURENT PERRIER DIFUSION BUIV",
+    "u": "https://boir.be/fr/products/champagne-laurent-perrier-millesime-2012-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/LPMillesime2012.png?v=1786967709",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
     "t": "Champagne Perrier-Jouët \"Grand Brut\" Brut",
     "p": 54.95,
     "v": "Boir shop",
@@ -1419,17 +1430,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Clos des Rochers \"Crémant de Luxembourg\" brut",
-    "p": 24.99,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-clos-des-rochers-cremant-de-luxembourg-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/082ae8fecbed79765a92a6ff5824d987.png?v=1733413131",
-    "r": "Autre",
-    "c": "Luxembourg",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "Domaine Couly-Dutheil - Chinon \"La Baronnie\" 2019",
     "p": 14.75,
     "v": "BOIR.",
@@ -1969,17 +1969,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine La Fourmone - Vacqueyras \"Les Ceps d'Or\" 2020",
-    "p": 21.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/domaine-la-fourmone-vacqueyras-les-ceps-dor-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/84ac4e584fec31f6d11ae701a96d9485.png?v=1733411807",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Lez-Envies \"Pas de Soucis\" 2025",
     "p": 17.95,
     "v": "Colruyt Food Retail (INTERCOMPANY BE3Y)",
@@ -2185,17 +2174,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4a69d2696f5e84c6be40f4368e530b8.png?v=1733323161",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Donnafugata - Cerasuolo di Vittoria \"Floramundi\" 2021",
-    "p": 16.95,
-    "v": "CANTINE VINCENZO IPPOLITO",
-    "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ffe6aa3d9829f3fc469aad5271939aa.png?v=1733410042",
-    "r": "Sicile",
-    "c": "Italie",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -2552,17 +2530,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "House of Arras \"Brut Élite\"",
-    "p": 29.99,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/house-of-arras-brut-elite",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dd20088d19f0083a3d541d696bd2bbe7.png?v=1733466841",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "Icardi - Barbera d'Asti \"Nuj Suj\" 2022",
     "p": 19.95,
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
@@ -2590,17 +2557,6 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barolo-parej-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92cff27321a226090498e8263119a919.png?v=1772814308",
-    "r": "Piémont",
-    "c": "Italie",
-    "a": "BAROLO",
-    "y": "Blanc"
-  },
-  {
-    "t": "Icardi - Dolcetto d'Alba \"Rousori\" 2024",
-    "p": 11.95,
-    "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
-    "u": "https://boir.be/fr/products/icardi-dolcetto-dalba-rousori-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/263e6c12194b758c54310a02c46fd668.png?v=1772439158",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
