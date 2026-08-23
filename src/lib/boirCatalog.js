@@ -1782,17 +1782,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine du Pavillon - Aloxe-Corton 1er Cru \"Clos des Maréchaudes\" 2022",
-    "p": 69.95,
-    "v": "MAISON ALBERT BICHOT SARL",
-    "u": "https://boir.be/fr/products/domaine-du-pavillon-aloxe-corton-1er-cru-clos-des-marechaudes-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/419e920f8406bdcb11be6121bae332cf.png?v=1741620854",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine du Pavillon - Aloxe-Corton 1er Cru \"Clos des Maréchaudes\" 2023",
     "p": 69.95,
     "v": "MAISON ALBERT BICHOT SARL",
@@ -2560,17 +2549,6 @@ export const BOIR_CATALOG = [
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
-    "y": "Blanc"
-  },
-  {
-    "t": "J. Hofstätter - Vigneti delle Dolomiti \"Pinot Grigio\" 2022",
-    "p": 15.2,
-    "v": "TERRE DI SAVA SRL",
-    "u": "https://boir.be/fr/products/j-hofstatter-vigneti-delle-dolomiti-pinot-grigio-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6224e6821d9a10000644d36aea7e2e70.png?v=1733408020",
-    "r": "Autre",
-    "c": "Italie",
-    "a": "N/A",
     "y": "Blanc"
   },
   {
