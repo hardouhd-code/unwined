@@ -1419,17 +1419,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Chevalier - Ladoix 1er Cru \"Les Corvées\" 2020",
-    "p": 39.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-chevalier-ladoix-1er-cru-les-corvees-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/17c8ce944e9a3157cb5334181b36acb0.png?v=1733322353",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Couly-Dutheil - Chinon \"La Baronnie\" 2019",
     "p": 14.75,
     "v": "BOIR.",
