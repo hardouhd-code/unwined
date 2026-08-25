@@ -1232,17 +1232,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Augustin - Collioure \"Adeodat\" 2019",
-    "p": 27.45,
-    "v": "JOANNE SAS",
-    "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32443a8706f47e76a63c1574cf48bbc0.png?v=1733413305",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Augustin - Collioure \"Adeodat\" 2020",
     "p": 27.95,
     "v": "S DELAFONT ARTISAN NEGOCIANT",
