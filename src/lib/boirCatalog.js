@@ -3069,17 +3069,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Leconfield \"Shiraz\" 2019",
-    "p": 13.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/leconfield-shiraz-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Leconfield_Shiraz_2019.png?v=1752133121",
-    "r": "McLaren Vale",
-    "c": "Australie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Leeuwenkuil \"Reserve Red\" 2019",
     "p": 14.95,
     "v": "CANALS & MUNNE SL",
