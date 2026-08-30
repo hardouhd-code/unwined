@@ -374,17 +374,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Catena Zapata \"Angélica Zapata Chardonnay Alta\" 2019",
-    "p": 29.95,
-    "v": "INVINITY NV",
-    "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-chardonnay-alta-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d45c46651a37b2a2fb7adff8c54f008a.png?v=1733423041",
-    "r": "Mendoza",
-    "c": "Argentine",
-    "a": "MENDOZA",
-    "y": "Blanc"
-  },
-  {
     "t": "Bodega Catena Zapata \"Angélica Zapata Malbec Alta\" 2019",
     "p": 29.95,
     "v": "Boir shop",
@@ -427,17 +416,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Borie La Vitarèle - Languedoc \"Le Grand Mayol\" 2021",
-    "p": 15.45,
-    "v": "BODEGAS FARINA SL",
-    "u": "https://boir.be/fr/products/borie-la-vitarele-languedoc-le-grand-mayol-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/11fa5e04e55b0fa62fffe60a9ebd6370.png?v=1733321197",
-    "r": "Languedoc-Roussillon",
-    "c": "France",
-    "a": "DOC",
-    "y": "Blanc"
   },
   {
     "t": "Borie La Vitarèle - Saint-Chinian \"Les Crès\" 2018",
@@ -522,10 +500,10 @@ export const BOIR_CATALOG = [
     "v": "VIGNOBLES DELAY SAS",
     "u": "https://boir.be/fr/products/carmes-de-rieussec-2018",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41f1125d9d6939a73a6636b483ab79c1.png?v=1735041489",
-    "r": "Autre",
+    "r": "Bordeaux",
     "c": "Autre",
     "a": "N/A",
-    "y": "Autre"
+    "y": "Blanc"
   },
   {
     "t": "Carruades de Lafite 2025",
@@ -609,7 +587,7 @@ export const BOIR_CATALOG = [
     "p": 64.95,
     "v": "EARL FABRICE ET VALERIE CLOSSET",
     "u": "https://boir.be/fr/products/champ-divin-cotes-du-jura-soleil-jaune-vin-jaune-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/551044d68cbc2ef5758688635b679784.png?v=1761146632",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChampDivin-VinJaune18Jura.png?v=1787927831",
     "r": "Autre",
     "c": "France",
     "a": "N/A",
@@ -620,7 +598,7 @@ export const BOIR_CATALOG = [
     "p": 21.95,
     "v": "EARL FABRICE ET VALERIE CLOSSET",
     "u": "https://boir.be/fr/products/champ-divin-cremant-de-jura-zero-dosage-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d0843522cd07c91b9a12a6203fbcc07c.png?v=1761146217",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChampDivin-ZeroDosage23Jura.png?v=1787927871",
     "r": "Autre",
     "c": "France",
     "a": "N/A",
@@ -785,7 +763,7 @@ export const BOIR_CATALOG = [
     "p": 42.95,
     "v": "Champagne PIERRE BROCARD",
     "u": "https://boir.be/fr/products/champagne-pierre-brocard-dits-lieux-de-thibaud-brocard-brut-nature",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/33532ebc79c861e2bb1034aff11604be.png?v=1778853175",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dits-LieuxChampagne_8b675966-092e-4c42-8ff1-c07900a2023f.png?v=1787927984",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -796,7 +774,7 @@ export const BOIR_CATALOG = [
     "p": 85,
     "v": "Champagne PIERRE BROCARD",
     "u": "https://boir.be/fr/products/champagne-pierre-brocard-dits-lieux-de-thibaud-brocard-brut-nature-1",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/33532ebc79c861e2bb1034aff11604be_56815227-dc84-4326-bc79-e6c0ab890356.png?v=1778853780",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Dits-LieuxChampagne.png?v=1787927961",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -1038,7 +1016,7 @@ export const BOIR_CATALOG = [
     "p": 12.95,
     "v": "LA COMPAGNIE DE BURGONDIE",
     "u": "https://boir.be/fr/products/compagnie-de-burgondie-vire-clesse-vieilles-vignes-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1c3c6c4ee451a6700e01f84a56cf2562.png?v=1785147866",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Vire-Clesse2024.png?v=1787928182",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
@@ -1193,8 +1171,8 @@ export const BOIR_CATALOG = [
     "v": "SAS DESPAGNE",
     "u": "https://boir.be/fr/products/despagne-la-belle-odile-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ada86dd79c448a0064fc7243a56fe01d_784b855d-e7b9-48a6-8954-fbca245aa486.png?v=1750161867",
-    "r": "Provence",
-    "c": "Espagne",
+    "r": "Bordeaux",
+    "c": "France",
     "a": "N/A",
     "y": "Blanc"
   },
@@ -1384,6 +1362,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Domaine Brial - Rivesaltes \"Ambré Hors d'Âge\"",
+    "p": 14.95,
+    "v": "VIGNOBLES DOM BRIAL",
+    "u": "https://boir.be/fr/products/domaine-brial-rivesaltes-ambre-hors-dage",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1e723724c188f1cdac00a9dc267d3fd5.png?v=1787140850",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Autre"
   },
   {
     "t": "Domaine Brusset - Gigondas \"Les Secrets de Montmirail\" 2022",
@@ -2024,7 +2013,7 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine MANN \"Fly me to the Moon\" 2024",
+    "t": "Domaine MANN \"Fly me to the Moon Pinot Blanc-Auxerrois\" 2024",
     "p": 19.95,
     "v": "MANN VIGNOBLE DES 3 TERRES",
     "u": "https://boir.be/fr/products/domaine-mann-fly-me-to-the-moon-2024",
@@ -2035,7 +2024,7 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine MANN \"Happy Lemon\" 2024",
+    "t": "Domaine MANN \"Happy Lemon Riesling\" 2024",
     "p": 23.95,
     "v": "MANN VIGNOBLE DES 3 TERRES",
     "u": "https://boir.be/fr/products/domaine-mann-happy-lemon-2024",
@@ -2046,7 +2035,7 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine MANN \"Mouton Bleu\" 2024",
+    "t": "Domaine MANN \"Mouton Bleu Sylvaner\" 2024",
     "p": 19.95,
     "v": "MANN VIGNOBLE DES 3 TERRES",
     "u": "https://boir.be/fr/products/domaine-mann-mouton-bleu-2024",
@@ -3008,8 +2997,8 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/le-grand-vin-rauzan-despagne-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a1c73828a05ce5aca15fd89a8e1a449f.png?v=1733322848",
-    "r": "Autre",
-    "c": "Espagne",
+    "r": "Bordeaux",
+    "c": "France",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -3117,7 +3106,7 @@ export const BOIR_CATALOG = [
     "p": 11.5,
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/les-vignerons-des-sept-provinces-gaillac-braucol-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/WhatsAppImage2025-10-30at16.26.53-Bewerkt.png?v=1761838108",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/BraucolGaillac2018.png?v=1787927723",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
