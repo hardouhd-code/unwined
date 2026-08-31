@@ -528,6 +528,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Casalino - Chianti Classico 2024",
+    "p": 10.95,
+    "v": "CANTINE BONACCHI SPA",
+    "u": "https://boir.be/fr/products/casalino-chianti-classico-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/325d4dbd7fa132dd75901e9feb415484.png?v=1788167571",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "CHIANTI CLASSICO",
+    "y": "Rouge"
+  },
+  {
     "t": "Cave de Crouseilles - Cahors \"Crouzeilles-Côte Abeilles\" 2018",
     "p": 29.95,
     "v": "VIGNOBLES JP HEMBISE SARL",
@@ -1336,6 +1347,17 @@ export const BOIR_CATALOG = [
     "v": "LECONFIELD WINES PTY LTD",
     "u": "https://boir.be/fr/products/domaine-bouchie-chatellier-pouilly-fume-les-rochailles-silex-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00a79f85fa612a171428d9e7febfe6dc.png?v=1734342644",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine Bouchié-Chatellier - Pouilly-Fumé \"Les Rochailles Silex\" 2025",
+    "p": 19.95,
+    "v": "Domaine Bouchié Chatellier",
+    "u": "https://boir.be/fr/products/domaine-bouchie-chatellier-pouilly-fume-les-rochailles-silex-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600494_Bouchie-Chatellier.png?v=1788160948",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -3968,17 +3990,6 @@ export const BOIR_CATALOG = [
     "r": "Vénétie",
     "c": "Italie",
     "a": "VALPOLICELLA",
-    "y": "Rouge"
-  },
-  {
-    "t": "Umani Ronchi - Montepulciano d'Abruzzo \"Jorio\" 2021",
-    "p": 11.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/umani-ronchi-montepulciano-dabrruzo-jorio-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Umani_Ronchi_Montepulciano_d_Abruzzo_Jorio_2021.png?v=1771235435",
-    "r": "Autre",
-    "c": "Italie",
-    "a": "DOC",
     "y": "Rouge"
   },
   {
