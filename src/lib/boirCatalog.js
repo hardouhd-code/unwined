@@ -118,7 +118,7 @@ export const BOIR_CATALOG = [
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
-    "y": "Rouge"
+    "y": "Blanc"
   },
   {
     "t": "Antoine Sunier - Morgon \"Croix de Chèvre\" 2024",
@@ -129,7 +129,7 @@ export const BOIR_CATALOG = [
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
-    "y": "Rouge"
+    "y": "Blanc"
   },
   {
     "t": "Antoine Sunier - Régnié \"Les Forchets\" 2024",
@@ -140,7 +140,7 @@ export const BOIR_CATALOG = [
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
-    "y": "Rouge"
+    "y": "Blanc"
   },
   {
     "t": "Arômes de Pavie 2025",
@@ -847,17 +847,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Champagne Voirin-Jumel \"La V.1\" Grand Cru Brut",
-    "p": 21.95,
-    "v": "SCEV CHAMP VOIRIN JUMEL",
-    "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut-2",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485_181279ad-ce5e-4e09-95ff-225ce8b4b4bb.png?v=1758539841",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
     "t": "Champagne Voirin-Jumel \"La V.2\" Grand Cru Brut Zéro",
     "p": 42.95,
     "v": "SCEV CHAMP VOIRIN JUMEL",
@@ -957,17 +946,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Clos Fourtet 2025",
-    "p": 77.9,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-fourtet-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d7947dea0ac23588808a0c58b58c625f_588efa45-bfc1-4ac5-92ab-6453fda3c64f.png?v=1780990626",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Clos la Gaffelière 2025",
     "p": 20.4,
     "v": "BOIR.",
@@ -1021,17 +999,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Autre"
-  },
-  {
-    "t": "Compagnie de Burgondie - Viré-Clessé \"Vieilles Vignes\" 2024",
-    "p": 12.95,
-    "v": "LA COMPAGNIE DE BURGONDIE",
-    "u": "https://boir.be/fr/products/compagnie-de-burgondie-vire-clesse-vieilles-vignes-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Vire-Clesse2024.png?v=1787928182",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Conde de San Cristóbal \"880 m\" 2020",
@@ -1507,17 +1474,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine de Chevalier 2025",
-    "p": 50.15,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/domaine-de-chevalier-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/299aa513c422c139ffbcca4d0b1f6d02.png?v=1778576351",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine de Chevalier Blanc 2022",
     "p": 129.95,
     "v": "SAS SALIN",
@@ -1912,6 +1868,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "MUSCADET",
     "y": "Blanc"
+  },
+  {
+    "t": "Domaine Guy Mousset - Côtes du Rhône Villages \"Les Garrigues\" 2022",
+    "p": 14.95,
+    "v": "VIGN GUY MOUSSET EARL",
+    "u": "https://boir.be/fr/products/domaine-guy-mousset-cotes-du-rhone-villages-les-garrigues-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c640e3063f3a40fcb80065f9bebce44c_2f7dd59a-311f-4f3b-b806-5655add2f331.png?v=1786120666",
+    "r": "Rhône",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
   },
   {
     "t": "Domaine La Fourmone - Gigondas \"Le Fauquet\" 2022",
@@ -2453,17 +2420,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Gurashvili's Family Vineyard \"Saperavi\" 2020",
-    "p": 16.49,
-    "v": "VERTICALE VINS SAS",
-    "u": "https://boir.be/fr/products/gurashvilis-family-vineyard-saperavi-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ca1fdb92ce9b19bbd6b933f98734164.png?v=1733409714",
-    "r": "Autre",
-    "c": "Georgie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Hardy's \"HRB D680 Shiraz\" 2017",
     "p": 19.99,
     "v": "SALIN SAS",
@@ -2790,17 +2746,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Kanonkop_NV.png?v=1785501643",
     "r": "Piémont",
     "c": "Afrique du Sud",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "KWV \"The Mentors Petit Verdot\" 2018",
-    "p": 19.99,
-    "v": "COLLARD PICARD SCEV",
-    "u": "https://boir.be/fr/products/kwv-the-mentors-petit-verdot-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/56d23f54c93e5e56b132df7948802dc0.png?v=1733411447",
-    "r": "Autre",
-    "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -3344,17 +3289,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Michele Chiarlo - Moscato d'Asti \"Nivole\"",
-    "p": 14.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/michele-chiarlo-moscato-dasti-nivole",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f75161611142db7815a65f19501ff2b7.png?v=1733264134",
-    "r": "Piémont",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "Michele Chiarlo - Nizza \"Cipressi\" 2023",
     "p": 21.5,
     "v": "MICHELE CHIARLO SRL A V P S",
@@ -3461,17 +3395,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa_1131c225-48b9-4b72-8451-bcad97908396.png?v=1780475337",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Piekenierskloof \"Pinotage\" 2020",
-    "p": 15,
-    "v": "SCEV CHAMP VOIRIN JUMEL",
-    "u": "https://boir.be/fr/products/piekenierskloof-pinotage-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e7f74a7a4b90a3c99d3cf07b27fb6066.png?v=1733407980",
-    "r": "Autre",
-    "c": "Afrique du Sud",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -3628,6 +3551,28 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Autre"
+  },
+  {
+    "t": "Rapaura Springs \"Rohe Blind River Sauvignon Blanc\" 2024",
+    "p": 15.95,
+    "v": "INTERVINOS NV",
+    "u": "https://boir.be/fr/products/rapaura-springs-rohe-blind-river-sauvignon-blanc-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/59bcee01f9bacb60ac948f28b3483deb.png?v=1769595055",
+    "r": "Marlborough",
+    "c": "Nouvelle-Zélande",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Rapaura Springs \"Rohe Blind River Sauvignon Blanc\" 2025",
+    "p": 15.95,
+    "v": "INTERVINOS NV",
+    "u": "https://boir.be/fr/products/rapaura-springs-rohe-blind-river-sauvignon-blanc-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/59bcee01f9bacb60ac948f28b3483deb_2d6630c5-c58f-43bf-8723-615928b1a8f0.png?v=1787140833",
+    "r": "Marlborough",
+    "c": "Nouvelle-Zélande",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Rapaura Springs \"Rohe Sauvignon Blanc\" 2024",
@@ -3921,7 +3866,7 @@ export const BOIR_CATALOG = [
     "v": "LAURENT PERRIER DIFUSION BUIV",
     "u": "https://boir.be/fr/products/thelema-cabernet-sauvignon-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/0e4697a89d2797f4f60cf52ccf3264d4.png?v=1733413336",
-    "r": "Autre",
+    "r": "Stellenbosch",
     "c": "Afrique du Sud",
     "a": "N/A",
     "y": "Rouge"
@@ -4002,17 +3947,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Via Caritatis - Côtes du Ventoux \"Vox Turturis\" 2023",
-    "p": 13.95,
-    "v": "Invinova",
-    "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Viñas Leizaola \"El Sacramento\" 2015",
