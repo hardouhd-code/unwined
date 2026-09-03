@@ -1045,11 +1045,33 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Corvers Kauter - Hattenheim \"Nussbrunnen Riesling\" 2025",
+    "p": 17.45,
+    "v": "Weinhaus Dr. Corvers-Kauter",
+    "u": "https://boir.be/fr/products/corvers-kauter-hattenheim-nussbrunnen-riesling-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a4c98f0e63cbfc2fc7980d87ecb1770b.png?v=1788346824",
+    "r": "Autre",
+    "c": "Allemagne",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Corvers Kauter - Rheingau \"Riesling Remastered R3\" 2024",
     "p": 12.95,
     "v": "Weinhaus Dr. Corvers-Kauter",
     "u": "https://boir.be/fr/products/corvers-kauter-rheingau-riesling-remastered-r3-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69126c0df37fc2ec4a9ae0ae91fb5d75.png?v=1758537702",
+    "r": "Autre",
+    "c": "Allemagne",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Corvers Kauter - Rheingau \"Weissburgunder-Chardonnay\" 2025",
+    "p": 15.95,
+    "v": "Weinhaus Dr. Corvers-Kauter",
+    "u": "https://boir.be/fr/products/corvers-kauter-rheingau-weissburgunder-chardonnay-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e1411540d80e9e7ee17b720859c61a46.png?v=1788345231",
     "r": "Autre",
     "c": "Allemagne",
     "a": "N/A",
@@ -1065,6 +1087,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
+  },
+  {
+    "t": "Corvers Kauter - Sekt \"Riesling\" Zero Dosage 2024",
+    "p": 19.95,
+    "v": "Weinhaus Dr. Corvers-Kauter",
+    "u": "https://boir.be/fr/products/corvers-kauter-sekt-riesling-zero-dosage-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f298d0d64048ef82093a6ec147b8ade4.png?v=1788348150",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Effervescent"
   },
   {
     "t": "Cos d'Estournel 2022",
