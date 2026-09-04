@@ -1716,6 +1716,17 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
+    "t": "Domaine du Clos Frantin - Vosne-Romanée 1er Cru \"Les Malconsorts\" 2019",
+    "p": 159,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/domaine-du-clos-frantin-vosne-romanee-1er-cru-les-malcosorts-2019",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/41b8023c8e9877ea5c94bc12da9c4c94.png?v=1733467805",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine du Clos Frantin - Vosne-Romanée 1er Cru \"Les Malconsorts\" 2023",
     "p": 295,
     "v": "MAISON ALBERT BICHOT SARL",
@@ -2568,6 +2579,17 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/876ad24fc0ce51ab23e8ce4c3763924d.png?v=1733410303",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Jean Chartron - Bourgogne \"Pinot Noir Vieilles Vignes\" 2022",
+    "p": 23.95,
+    "v": "GENESTIERE ST ANTHELME SCEA",
+    "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ChartronPN.png?v=1769519414",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
