@@ -77,17 +77,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "ALT \"Rosé\"",
-    "p": 12.5,
-    "v": "Brandstof",
-    "u": "https://boir.be/fr/products/alt-rose",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/700039_ALT.png?v=1770119347",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "ALTER \"Cuvée Blanc Cedro\"",
     "p": 17.95,
     "v": "A.I.R. Distillations - (HtweeO BV)",
