@@ -407,17 +407,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Borie La Vitarèle - Saint-Chinian \"Les Crès\" 2018",
-    "p": 22.5,
-    "v": "ROQUETA ORIGEN SL",
-    "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-cres-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/11b04ef18a4cdde288b176a55289db0e.png?v=1733321200",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Borie La Vitarèle - Saint-Chinian \"Les Schistes\" 2020",
     "p": 19.95,
     "v": "JEAN CHARTRON EURL",
