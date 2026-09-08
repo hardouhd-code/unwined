@@ -539,17 +539,6 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Champ Divin - Côtes de Jura \"Savagnin\" 2023",
-    "p": 34.45,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/champ-divin-cotes-de-jura-savagnin-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champ_Divin_Savagnin_2023.png?v=1740040145",
-    "r": "Autre",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Champ Divin - Côtes du Jura \"Castor\" 2022",
     "p": 29.85,
     "v": "BOIR.",
