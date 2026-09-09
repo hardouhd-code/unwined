@@ -1,5 +1,16 @@
 export const BOIR_CATALOG = [
   {
+    "t": "Albert Bichot - Crémant de Bourgogne \"Pure\" Extra Brut",
+    "p": 27.95,
+    "v": "MAISON ALBERT BICHOT SARL",
+    "u": "https://boir.be/fr/products/albert-bichot-cremant-de-bourgogne-pure-extra-brut",
+    "img": "",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "CREMANT DE BOURGOGNE",
+    "y": "Effervescent"
+  },
+  {
     "t": "Albert Bichot - Gevrey-Chambertin \"Les Evocelles\" 2023",
     "p": 79.95,
     "v": "MAISON ALBERT BICHOT SARL",
@@ -16,6 +27,17 @@ export const BOIR_CATALOG = [
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-hautes-cotes-de-nuits-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/77c6dc5264a4d6eb56da29c022a6d949.png?v=1743755410",
+    "r": "Bourgogne",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Albert Bichot - Hautes-Côtes de Nuits 2024",
+    "p": 24.95,
+    "v": "MAISON ALBERT BICHOT SARL",
+    "u": "https://boir.be/fr/products/albert-bichot-hautes-cotes-de-nuits-2024",
+    "img": "",
     "r": "Bourgogne",
     "c": "Autre",
     "a": "N/A",
@@ -72,6 +94,17 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/alt-blanc-de-blancs",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fce4000c417af5f7805f572731dc391b.png?v=1769768575",
     "r": "Champagne",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Effervescent"
+  },
+  {
+    "t": "ALT \"Rosé\"",
+    "p": 12.5,
+    "v": "Brandstof",
+    "u": "https://boir.be/fr/products/alt-rose",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/700039_ALT.png?v=1770119347",
+    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Effervescent"
@@ -2068,6 +2101,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Michel Briday - Bouzeron \"Cuvée Axelle\" 2023",
+    "p": 19.95,
+    "v": "Domaine Michel Briday",
+    "u": "https://boir.be/fr/products/domaine-michel-briday-bouzeron-cuvee-axelle-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d59cdd9e-a4eb-43e6-a40c-b6369f42d594.png?v=1788862514",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Michel Briday - Rully 1er Cru \"Grésigny\" 2023",
     "p": 36.95,
     "v": "Domaine Michel Briday",
@@ -3498,6 +3542,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Podere Casisano - Rosso di Montalcino 2024",
+    "p": 16.95,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/podere-casisano-rosso-di-montalcino-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5120cdc8552ea3de614a211a04e4164a_57f0933a-eb4f-47a2-acfc-1a7ae2c66f54.png?v=1788862848",
+    "r": "Toscane",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Quinta de Lemos \"Gégé Espumante Rosé\"",
     "p": 17.95,
     "v": "Quinta de Lemos",
@@ -3814,6 +3869,17 @@ export const BOIR_CATALOG = [
     "r": "Toscane",
     "c": "Italie",
     "a": "CHIANTI CLASSICO",
+    "y": "Rouge"
+  },
+  {
+    "t": "Tenuta di Gracciano della Seta - Vino Nobile di Montepulciano 2023",
+    "p": 14.95,
+    "v": "Della Seta S.S Società Agricola",
+    "u": "https://boir.be/fr/products/tenuta-di-gracciano-della-seta-vino-nobile-di-montepulciano-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ff9bd5527ac155dfe201741e9ad4007_c3f67eef-9fdf-459f-aeb0-6db390c4f7bc.png?v=1788863285",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "N/A",
     "y": "Rouge"
   },
   {
