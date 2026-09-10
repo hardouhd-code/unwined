@@ -4,7 +4,7 @@ export const BOIR_CATALOG = [
     "p": 27.95,
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-cremant-de-bourgogne-pure-extra-brut",
-    "img": "",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1702371338_PURE_2.png?v=1788941793",
     "r": "Bourgogne",
     "c": "France",
     "a": "CREMANT DE BOURGOGNE",
@@ -37,8 +37,8 @@ export const BOIR_CATALOG = [
     "p": 24.95,
     "v": "MAISON ALBERT BICHOT SARL",
     "u": "https://boir.be/fr/products/albert-bichot-hautes-cotes-de-nuits-2024",
-    "img": "",
-    "r": "Bourgogne",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/hcdntransparant_9e55fb0e-dbf2-45c2-8d35-29451940f7c9.png?v=1788942561",
+    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
@@ -2418,6 +2418,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "N/A",
     "y": "Blanc"
+  },
+  {
+    "t": "Gloire de Duras \"Cuvée H\" Brut Nature 2022",
+    "p": 21.95,
+    "v": "Gloire de Duras - Nijskens Peter",
+    "u": "https://boir.be/fr/products/gloire-de-duras-cuvee-h-brut-nature-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/03a3f81099c4ca1c18b4b3fd6c56d4e3.png?v=1788952637",
+    "r": "Loire",
+    "c": "France",
+    "a": "N/A",
+    "y": "Effervescent"
   },
   {
     "t": "Gloire de Duras \"Pinot Gris Barrique La Colline\" 2022",
