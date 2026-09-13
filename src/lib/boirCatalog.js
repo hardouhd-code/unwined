@@ -1419,17 +1419,6 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Domaine Brusset - Côtes du Rhône Villages Cairanne \"Les Travers\" 2021",
-    "p": 13.5,
-    "v": "MICHELE CHIARLO SRL A V P S",
-    "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-villages-cairanne-les-travers-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/000149fbb0b834f8cd7b4093fc17bf3c.png?v=1733406223",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Brusset - Gigondas \"Les Secrets de Montmirail\" 2022",
     "p": 49.45,
     "v": "MAISON SICHEL SA",
@@ -1593,17 +1582,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Domaine de Poulvarel - Costières de Nîmes \"Les Grès\" 2020",
-    "p": 9.95,
-    "v": "FAMILLE COMBE EURL",
-    "u": "https://boir.be/fr/products/domaine-de-poulvarel-costieres-de-nimes-les-gres-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2c0299531ad784c981d741358e993c1a.png?v=1733356204",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Domaine de Suremain - Mercurey 1er Cru \"Clos L’Evêque\" 2023",
@@ -1947,17 +1925,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine François Legros - Nuits-Saint-Georges \"Vieilles Vignes\" 2021",
-    "p": 44.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-francois-legros-nuits-saint-georges-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5da13fa8354b047421fef74bfc0d2dc3.png?v=1733421886",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Grenaudière \"No0ba\"",
     "p": 12.49,
     "v": "LESTAPIS ET CIE SARL",
@@ -2189,17 +2156,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2022",
-    "p": 24.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/chene-marchard-sancerre-vieilles-vignes-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7c2ef887630165c9738e2030f5c95457.png?v=1733466123",
-    "r": "Loire",
-    "c": "France",
-    "a": "SANCERRE",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2023",
     "p": 27.95,
     "v": "L REVERDY SAS",
@@ -2208,17 +2164,6 @@ export const BOIR_CATALOG = [
     "r": "Loire",
     "c": "France",
     "a": "SANCERRE",
-    "y": "Blanc"
-  },
-  {
-    "t": "Domaine Sébastien Giroux - Pouilly-Fuissé 2021",
-    "p": 24.95,
-    "v": "Domaine Sébastien Giroux",
-    "u": "https://boir.be/fr/products/domaine-sebastien-giroux-pouilly-fuisse-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Giroux.png?v=1753688593",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
     "y": "Blanc"
   },
   {
@@ -2240,17 +2185,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4a69d2696f5e84c6be40f4368e530b8.png?v=1733323161",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Donnafugata - Cerasuolo di Vittoria \"Floramundi\" 2021",
-    "p": 16.95,
-    "v": "CANTINE VINCENZO IPPOLITO",
-    "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ffe6aa3d9829f3fc469aad5271939aa.png?v=1733410042",
-    "r": "Sicile",
-    "c": "Italie",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -2574,17 +2508,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Gurashvili's Family Vineyard \"Saperavi\" 2020",
-    "p": 16.49,
-    "v": "VERTICALE VINS SAS",
-    "u": "https://boir.be/fr/products/gurashvilis-family-vineyard-saperavi-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ca1fdb92ce9b19bbd6b933f98734164.png?v=1733409714",
-    "r": "Autre",
-    "c": "Georgie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Hardy's \"HRB D680 Shiraz\" 2017",
     "p": 19.99,
     "v": "SALIN SAS",
@@ -2627,17 +2550,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Icardi - Barbaresco \"Montubert\" 2020 BIO",
-    "p": 29.95,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/icardi-barbaresco-montubert-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8e53286326c086103b7771c1d666592d.png?v=1733417890",
-    "r": "Piémont",
-    "c": "Autre",
-    "a": "BARBARESCO",
-    "y": "Autre"
   },
   {
     "t": "Icardi - Barbera d'Asti \"Nuj Suj\" 2022",
@@ -2832,17 +2744,6 @@ export const BOIR_CATALOG = [
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d_89240568-2c10-428a-871d-4c68e050fce9.png?v=1769517932",
-    "r": "Bourgogne",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Jean Chartron - Rully \"Montmorin\" 2022",
-    "p": 29.95,
-    "v": "GRANDS CRUS HERITAGE SARL",
-    "u": "https://boir.be/fr/products/jean-chartron-rully-montmorin-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/030c0bf128db3a43408f38e2888d44b6.png?v=1733428578",
     "r": "Bourgogne",
     "c": "Autre",
     "a": "N/A",
@@ -3102,6 +3003,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Laurent Perrachon - Julienas \"Vignes Centenaires\" 2020",
+    "p": 14.5,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/laurent-perrachon-julienas-vignes-centenaires-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e5dc29a06fc03831233f7eccb6500fe1.png?v=1733406838",
+    "r": "Beaujolais",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Laurent Perrachon - Julienas \"Vignes Centenaires\" 2022",
     "p": 15.95,
     "v": "CASTEL FRERES SAS",
@@ -3306,17 +3218,6 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/madrevite-trasimeno-cosa-riserva-2017",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Madrevite_Trasimeno_C_osa_Riserva_2017.png?v=1771235901",
     "r": "Beaujolais",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Madrevite - Trasimeno \"Glanio\" 2020",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/madrevite-trasimeno-glanio-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a7e5a3985c563b9f7efc587d6ba89c16.png?v=1733408918",
-    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
@@ -3817,17 +3718,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Richard Hamilton \"Centurion 127 Year Old Vine Shiraz\" 2019",
-    "p": 34.95,
-    "v": "SPH-GERARD BERTRAND SASU",
-    "u": "https://boir.be/fr/products/richard-hamilton-centurion-127-year-old-vine-shiraz-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/68b6431302ba1e2d2db7a3b30ea5f1d8.png?v=1733323437",
-    "r": "Provence",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Richard Hamilton \"Hut Block Cabernet Sauvignon\" 2018",
     "p": 12.99,
     "v": "VIGN GUY MOUSSET EARL",
@@ -4037,17 +3927,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Tenuta di Nozzole - Chianti Classico Riserva \"La Forra\" 2020",
-    "p": 22.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/tenuta-di-nozzole-chianti-classico-riserva-la-forra-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Tenutadinozzole-LaForra2020.png?v=1740040701",
-    "r": "Toscane",
-    "c": "Italie",
-    "a": "CHIANTI CLASSICO",
-    "y": "Rouge"
-  },
-  {
     "t": "Tenuta di Nozzole - Chianti Classico Riserva \"La Forra\" 2021",
     "p": 23.5,
     "v": "Ambrogio e Giovanni Folonari",
@@ -4180,6 +4059,50 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Tommasi Viticoltori - Lugana \"Le Fornaci\" 2025",
+    "p": 12.95,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/tommasi-viticoltori-lugana-le-fornaci-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/839efc09bd9df83672d598b800873c7f.png?v=1789054428",
+    "r": "Douro",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Tommasi Viticoltori - Recioto della Valpolicella Classico \"Fiorato\" 2022",
+    "p": 24,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/tommasi-viticoltori-recioto-della-valpolicella-classico-fiorato-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e17c84e80164a38c2bb1f06b5eb0a003.png?v=1789057885",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "VALPOLICELLA",
+    "y": "Autre"
+  },
+  {
+    "t": "Tommasi Viticoltori - Valpolicella Classico Superiore \"Rafaèl\" 2023",
+    "p": 13.85,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/tommasi-viticoltori-valpolicella-classico-superiore-rafael-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ad7b80c704612b6b1e3e7a6b0cbb69cb.png?v=1789056525",
+    "r": "Vénétie",
+    "c": "Italie",
+    "a": "VALPOLICELLA",
+    "y": "Rouge"
+  },
+  {
+    "t": "Tommasi Viticoltori - Valpolicella Classico Superiore \"Ripasso\" 2022",
+    "p": 17.95,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/tommasi-viticoltori-valpolicella-classico-superiore-ripasso-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4daac41a421fa7fb31804da345da8e2f.png?v=1789057185",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "VALPOLICELLA",
+    "y": "Rouge"
+  },
+  {
     "t": "Umani Ronchi - Montepulciano d'Abruzzo \"Jorio\" 2021",
     "p": 11.95,
     "v": "SALIN SAS",
@@ -4200,17 +4123,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Via Caritatis - Côtes du Ventoux \"Vox Turturis\" 2023",
-    "p": 13.95,
-    "v": "Invinova",
-    "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Viñas Leizaola \"El Sacramento\" 2015",
