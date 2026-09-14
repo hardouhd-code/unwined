@@ -385,6 +385,28 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
+    "p": 12.95,
+    "v": "DELTA FIJNE WIJNEN NV",
+    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-chardonnay-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600471_CatalpaChardonnay2024.png?v=1787927676",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Bodega Atamisque \"Catalpa Malbec\" 2023",
+    "p": 12.95,
+    "v": "DELTA FIJNE WIJNEN NV",
+    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-malbec-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce.png?v=1773235359",
+    "r": "Mendoza",
+    "c": "Argentine",
+    "a": "MENDOZA",
+    "y": "Rouge"
+  },
+  {
     "t": "Bodega Catena Zapata \"Angélica Zapata Cabernet Franc Alta\" 2019",
     "p": 29.95,
     "v": "Boir shop",
@@ -1474,17 +1496,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Courbis - Cornas \"Champelrose\" 2021",
-    "p": 37.95,
-    "v": "LECONFIELD WINES PTY LTD",
-    "u": "https://boir.be/fr/products/domaine-courbis-cornas-champelrose-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d8265f026fd64421f915741362f376c4.png?v=1733322355",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Domaine Courbis - Cornas \"Les Eygats\" 2021",
     "p": 59.85,
     "v": "Boir shop",
@@ -2508,6 +2519,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Gloire de Duras \"Zweigelt-Sankt Laurent\" 2023",
+    "p": 23.5,
+    "v": "Gloire de Duras - Nijskens Peter",
+    "u": "https://boir.be/fr/products/gloire-de-duras-zweigelt-sankt-laurent-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/GloiredeDurasZSLNV.png?v=1789372480",
+    "r": "Loire",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Hardy's \"HRB D680 Shiraz\" 2017",
     "p": 19.99,
     "v": "SALIN SAS",
@@ -2579,6 +2601,17 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barolo-parej-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92cff27321a226090498e8263119a919.png?v=1772814308",
+    "r": "Piémont",
+    "c": "Italie",
+    "a": "BAROLO",
+    "y": "Blanc"
+  },
+  {
+    "t": "Icardi - Dolcetto d'Alba \"Rousori\" 2024",
+    "p": 11.95,
+    "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
+    "u": "https://boir.be/fr/products/icardi-dolcetto-dalba-rousori-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/263e6c12194b758c54310a02c46fd668.png?v=1772439158",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
