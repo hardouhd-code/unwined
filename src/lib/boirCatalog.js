@@ -308,17 +308,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bestheim Crémant d'Alsace \"Grand Prestige Rosé\" Brut",
-    "p": 17.99,
-    "v": "ROQUETA ORIGEN SL",
-    "u": "https://boir.be/fr/products/bestheim-cremant-dalsace-grand-prestige-rose-brut-1",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d62c671e311c9bf9afa5ffea49854000_52abeac0-d2e6-4ace-9b36-28bffc561145.png?v=1734019941",
-    "r": "Alsace",
-    "c": "France",
-    "a": "N/A",
-    "y": "Effervescent"
-  },
-  {
     "t": "Bestheim Crémant d'Alsace \"Grand Prestige\" Brut",
     "p": 17.99,
     "v": "VINICOLE BESTHEIM COOP",
@@ -880,11 +869,33 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "Champagne Voirin-Jumel \"La V.1\" Grand Cru Brut",
+    "p": 21.95,
+    "v": "SCEV CHAMP VOIRIN JUMEL",
+    "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut-2",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485_181279ad-ce5e-4e09-95ff-225ce8b4b4bb.png?v=1758539841",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
     "t": "Champagne Voirin-Jumel \"La V.2\" Grand Cru Brut Zéro",
     "p": 42.95,
     "v": "SCEV CHAMP VOIRIN JUMEL",
     "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-2-grand-cru-brut-zero",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/986de6384057901cb20c37802465c8a4.png?v=1769527196",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
+    "t": "Champagne Voirin-Jumel \"Ratafia\"",
+    "p": 29.95,
+    "v": "SCEV CHAMP VOIRIN JUMEL",
+    "u": "https://boir.be/fr/products/champagne-voirin-jumel-ratafia",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2280ac4c53b4b426ba6775410030d678.png?v=1758540632",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -3157,17 +3168,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Leconfield \"Shiraz\" 2019",
-    "p": 13.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/leconfield-shiraz-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Leconfield_Shiraz_2019.png?v=1752133121",
-    "r": "McLaren Vale",
-    "c": "Australie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Leeuwenkuil \"Reserve Red\" 2019",
     "p": 14.95,
     "v": "CANALS & MUNNE SL",
@@ -3861,17 +3861,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Sutherland \"Chardonnay\" 2020",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/sutherland-chardonnay-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/944cd45c02e08d9e9755d1b3d6099878.png?v=1733408518",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Sutherland \"Pinot Noir\" 2018",
     "p": 16.95,
     "v": "Boir shop",
@@ -4059,11 +4048,11 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Thymiopoulos Vineyards \"Rosé de Xinomavro\" 2024",
+    "t": "Thymiopoulos Vineyards \"Rosé de Xinomavro\" 2025",
     "p": 14.95,
     "v": "KOUTOUPAS S.A. GASTROLOGIQ S.A.",
     "u": "https://boir.be/fr/products/thymiopoulos-vineyards-rose-de-xinomavro-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bfe83fa71b6e795fe0958915efcf71de.png?v=1782980240",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/bfe83fa71b6e795fe0958915efcf71de.png?v=1789388236",
     "r": "Autre",
     "c": "Grèce",
     "a": "N/A",
@@ -4133,17 +4122,6 @@ export const BOIR_CATALOG = [
     "r": "Toscane",
     "c": "Italie",
     "a": "VALPOLICELLA",
-    "y": "Rouge"
-  },
-  {
-    "t": "Umani Ronchi - Montepulciano d'Abruzzo \"Jorio\" 2021",
-    "p": 11.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/umani-ronchi-montepulciano-dabrruzo-jorio-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Umani_Ronchi_Montepulciano_d_Abruzzo_Jorio_2021.png?v=1771235435",
-    "r": "Autre",
-    "c": "Italie",
-    "a": "DOC",
     "y": "Rouge"
   },
   {
