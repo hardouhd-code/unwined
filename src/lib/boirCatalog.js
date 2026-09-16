@@ -66,17 +66,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Albert Bichot - Santenay 2022",
-    "p": 39.95,
-    "v": "MAISON ALBERT BICHOT SARL",
-    "u": "https://boir.be/fr/products/albert-bichot-santenay-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600020.png?v=1750840060",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Albert Bichot Crémant de Bourgogne \"Rosé\" Brut",
     "p": 16.5,
     "v": "Boir shop",
