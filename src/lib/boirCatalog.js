@@ -517,6 +517,17 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
+    "t": "Carillon d'Angelus 2023",
+    "p": 109,
+    "v": "Joanne",
+    "u": "https://boir.be/fr/products/carillon-dangelus-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ca77e52a87f8075df27b87344015efed_b9256230-3427-4e57-b822-fadbd0e0504b.png?v=1789630197",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Carmes de Rieussec 2018",
     "p": 21.95,
     "v": "VIGNOBLES DELAY SAS",
@@ -1138,6 +1149,17 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/chateau-cos-destournel-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/40b8ea2c927b753e5ff1f2e3995cdfcf_fa283793-c445-45a0-83f1-1c2d0f3cac72.png?v=1748425370",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Cos d'Estournel 2023",
+    "p": 185,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/chateau-cos-destournel-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/57512741-c3bc-4cee-b23a-034777b9b51e_e12b8867-0473-40ef-b0ad-36e533b18e44.png?v=1789565057",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -2332,17 +2354,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Familia Torres \"Salmos\" 2019",
-    "p": 32.95,
-    "v": "COLLEGIALE DES DOMAINES DE LOI",
-    "u": "https://boir.be/fr/products/familia-torres-salmos-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/becc5d45dbac4e2df5ecccee4bbadd29.png?v=1733323170",
-    "r": "Priorat",
-    "c": "Espagne",
-    "a": "PRIORAT",
-    "y": "Rouge"
-  },
-  {
     "t": "Fattoria La Valentina - Montepulciano d'Abruzzo \"Spelt\" 2020",
     "p": 18.95,
     "v": "LESTAPIS ET CIE SARL",
@@ -2374,6 +2385,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Fleur de Pédesclaux 2023",
+    "p": 23.8,
+    "v": "DESCAS PERE ET FILS SA",
+    "u": "https://boir.be/fr/products/fleur-de-pedesclaux-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c06a870269ce833cfad35494c5c39edd.png?v=1789630278",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Autre"
   },
   {
     "t": "Fog Mountain \"Pinot Noir\" 2023",
