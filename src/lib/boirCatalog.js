@@ -242,6 +242,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Baron de Brane 2023",
+    "p": 29.95,
+    "v": "ROLAND COIFFE & ASSOCIES",
+    "u": "https://boir.be/fr/products/baron-de-brane-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/802af4a2bd01f4e363114465297ce34e.png?v=1789645767",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "BAUDRY & DUTOUR - Val de Loire \"Petit Lieu-dit Sauvignon\" 2024",
     "p": 11.95,
     "v": "BAUDRY DUTOUR SAS",
@@ -1573,6 +1584,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine de Chevalier 2023",
+    "p": 119,
+    "v": "SAS SALIN",
+    "u": "https://boir.be/fr/products/domaine-de-chevalier-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/299aa513c422c139ffbcca4d0b1f6d02_e9478406-7f11-4de6-aaf6-55a77deba5a2.png?v=1789645540",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine de Chevalier Blanc 2022",
     "p": 129.95,
     "v": "SAS SALIN",
@@ -2585,6 +2607,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Haut-Bailly II 2023",
+    "p": 43.7,
+    "v": "Dubos Freres Et Cie",
+    "u": "https://boir.be/fr/products/haut-bailly-ii-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5bed3626551711c12cdc41989eca4932.webp?v=1789648943",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Haut-Bailly II 2025",
     "p": 30.85,
     "v": "BOIR.",
@@ -2992,6 +3025,17 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
+    "t": "La Dame de Montrose 2023",
+    "p": 39.95,
+    "v": "Dubos Freres Et Cie",
+    "u": "https://boir.be/fr/products/la-dame-de-montrose-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73_41a9289c-98b3-4c0e-95f5-b049a60e4982.png?v=1789649031",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rosé"
+  },
+  {
     "t": "La Dame de Montrose 2025",
     "p": 37.25,
     "v": "BOIR.",
@@ -3133,6 +3177,17 @@ export const BOIR_CATALOG = [
     "c": "Espagne",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Le Grand Vin Rauzan Despagne 2023",
+    "p": 15.95,
+    "v": "DESPAGNE SAS",
+    "u": "https://boir.be/fr/products/le-grand-vin-rauzan-despagne-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a1c73828a05ce5aca15fd89a8e1a449f_33d1448e-2acb-4f27-95b2-c1660231bb77.png?v=1789649255",
+    "r": "Autre",
+    "c": "Espagne",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Le Marquis de Calon Ségur 2019",
