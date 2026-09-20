@@ -253,7 +253,7 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "BAUDRY & DUTOUR - Val de Loire \"Petit Lieu-dit Sauvignon\" 2024",
+    "t": "BAUDRY & DUTOUR - Val de Loire \"Petit Lieu-dit Sauvignon\" 2025",
     "p": 11.95,
     "v": "BAUDRY DUTOUR SAS",
     "u": "https://boir.be/fr/products/baudry-dutour-val-de-loire-petit-lieu-dit-sauvignon-2024",
@@ -3987,17 +3987,6 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-santa-teresa-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c7a64e6f295d35c0dc8d5b3ad926d1db.png?v=1733412588",
-    "r": "Toscane",
-    "c": "Italie",
-    "a": "CHIANTI CLASSICO",
-    "y": "Rouge"
-  },
-  {
-    "t": "Tenuta di Campomaggio - Chianti Classico Riserva 2020",
-    "p": 22.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-riserva-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f66086ff9046054085cf544a1af6cee1.png?v=1733412626",
     "r": "Toscane",
     "c": "Italie",
     "a": "CHIANTI CLASSICO",
