@@ -154,17 +154,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Arômes de Pavie 2025",
-    "p": 62.9,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/aromes-de-pavie-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4ffc2138ab4e6e7a222b16b3b60e1149_93092b41-9fcb-4ed8-97f6-a7167aa7fed8.png?v=1780474353",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Artisans Partisans -  \"Sous le Bouchon\" 2022 BIO",
     "p": 12.5,
     "v": "VIGN GUY MOUSSET EARL",
@@ -328,17 +317,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rosé"
-  },
-  {
-    "t": "Blanc de Chasse-Spleen 2025",
-    "p": 23.55,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/blanc-de-chasse-spleen-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/55e0243c534c753bbd43825ed3b0ffdb.png?v=1779434109",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Blason d'Issan 2021",
@@ -548,17 +526,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Carruades de Lafite 2025",
-    "p": 194.8,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/carruades-de-lafite-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/31e7b61dd7f9795622c540cc23ba8487.png?v=1779434448",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Casa Darei \"Rodeio Tinto Reserva\" 2022",
@@ -924,6 +891,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Claudio Quarta - Salice Salento Riserva \"Moros\" 2019 (Copy)",
+    "p": 29.95,
+    "v": "CLAUDIO QUARTA VIGNAIOLO SRL",
+    "u": "https://boir.be/fr/products/claudio-quarta-salice-salento-riserva-moros-2019-copy",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32220a92f4bc91e266fb79a8a1600c8d.png?v=1759321251",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Clos de l'Oratoire 2020",
     "p": 39.95,
     "v": "PLAIMONT PRODUCT SARL",
@@ -957,17 +935,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Clos de l'Oratoire 2025",
-    "p": 28.05,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-de-loratoire-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a51b74112d3387a019d0b87f8b39c15d_d5f12763-1ef1-4679-9b22-73c06f18675e.png?v=1779433971",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Autre"
-  },
-  {
     "t": "Clos de Sarpe 2022",
     "p": 81.95,
     "v": "SAS SALIN",
@@ -979,33 +946,11 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Clos des Jacobins 2025",
-    "p": 27.6,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-des-jacobins-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/dbec42c742c1394b98caf66d676ac784_3b5f6aaf-d819-409f-bcc9-418f98d0d090.png?v=1778601363",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Autre"
-  },
-  {
     "t": "Clos du Marquis 2021",
     "p": 68.95,
     "v": "MICHELE CHIARLO SRL A V P S",
     "u": "https://boir.be/fr/products/clos-du-marquis-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5c091ba0e00372cd095b0997584387cc.png?v=1733467570",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Clos la Gaffelière 2025",
-    "p": 20.4,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-la-gaffeliere-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/9fed1becce88cddea3ccadad6f1945b5_a0d6cfe5-b4c1-4ae3-8e5b-c4d2b22fea6b.png?v=1779464051",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -1029,17 +974,6 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/clos-marsalette-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1d3b01544f4c8a6a2410851670b79c39.png?v=1733412897",
     "r": "Douro",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Clos René 2025",
-    "p": 28.99,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/clos-rene-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ec998f39b4b15021e2584c80ae484be6_fb4cfa3e-279f-4306-bde0-6bdff0df7ce3.png?v=1780384925",
-    "r": "Autre",
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
@@ -1285,17 +1219,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Domaine Augustin - Collioure \"Adeodat\" 2019",
-    "p": 27.45,
-    "v": "JOANNE SAS",
-    "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32443a8706f47e76a63c1574cf48bbc0.png?v=1733413305",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Domaine Augustin - Collioure \"Adeodat\" 2020",
@@ -1600,17 +1523,6 @@ export const BOIR_CATALOG = [
     "v": "SAS SALIN",
     "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d183be6cf5bb5612fec757f489a4d9fc.png?v=1749799590",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Domaine de Chevalier Blanc 2025",
-    "p": 99.3,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/domaine-de-chevalier-blanc-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cf9b739ab64fd09b3d7821770080e924.png?v=1778576425",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -2618,17 +2530,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Haut-Bailly II 2025",
-    "p": 30.85,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/haut-bailly-ii-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2159d57390a5d8cfab682f8e68054978_8df06b39-b47f-41b3-80e7-6b8de9e0a61e.png?v=1780574673",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Icardi - Barbera d'Asti \"Nuj Suj\" 2022",
     "p": 19.95,
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
@@ -2959,17 +2860,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "L'Esprit de Chevalier Blanc 2025",
-    "p": 25,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/lesprit-de-chevalier-blanc-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/57e9414acead3d7b55eb15e96cf15bd1.png?v=1778576699",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "La Belle Connivence 2022",
     "p": 64.95,
     "v": "Bertrand Ravache",
@@ -3030,17 +2920,6 @@ export const BOIR_CATALOG = [
     "v": "Dubos Freres Et Cie",
     "u": "https://boir.be/fr/products/la-dame-de-montrose-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73_41a9289c-98b3-4c0e-95f5-b049a60e4982.png?v=1789649031",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
-    "t": "La Dame de Montrose 2025",
-    "p": 37.25,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/la-dame-de-montrose-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/cb91b59dc56aac45e0397bfbe88ceb73_8de4c0cf-4506-4782-81e2-6d0d84ce6c79.png?v=1781260265",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -3212,17 +3091,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Le Marquis de Calon Ségur 2025",
-    "p": 23.7,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/le-marquis-de-calon-segur-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d79ba22ba01ca63612b58a7fe904bfd3_7a76ef9a-3c42-4ba8-8de8-7be630158d34.png?v=1781248680",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Leconfield \"Cabernet Sauvignon\" 2018",
     "p": 17.8,
     "v": "PERRIN ET FILS SASU",
@@ -3239,28 +3107,6 @@ export const BOIR_CATALOG = [
     "v": "CANALS & MUNNE SL",
     "u": "https://boir.be/fr/products/leeuwenkuil-reserve-red-2019",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/819caea6420aae8b06ff831f84c2aa22.png?v=1733406981",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Les Arums de Lagrange 2025",
-    "p": 23.7,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/les-arums-de-lagrange-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/14872dc3de6ad90641a9d425555ab512.png?v=1780473791",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Les Fiefs de Lagrange 2025",
-    "p": 21.17,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/les-fiefs-de-lagrange-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6efdf676da296e55717104dea344ce92.png?v=1780473575",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -3591,17 +3437,6 @@ export const BOIR_CATALOG = [
     "v": "J.J.M & CIE SA",
     "u": "https://boir.be/fr/products/pichon-comtesse-reserve-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa.png?v=1749753351",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Pichon Comtesse Réserve 2025",
-    "p": 42.35,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/pichon-comtesse-reserve-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa_1131c225-48b9-4b72-8451-bcad97908396.png?v=1780475337",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
