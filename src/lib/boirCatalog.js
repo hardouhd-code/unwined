@@ -385,17 +385,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Catena Zapata \"Angélica Zapata Cabernet Sauvignon Alta\" 2018",
-    "p": 29.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-cabernet-sauvignon-alta-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5db3f08a9374d71449329c32ad02aa7e.png?v=1733423039",
-    "r": "Mendoza",
-    "c": "Argentine",
-    "a": "MENDOZA",
-    "y": "Rouge"
-  },
-  {
     "t": "Bodega Catena Zapata \"Angélica Zapata Malbec Alta\" 2019",
     "p": 29.95,
     "v": "Boir shop",
@@ -988,6 +977,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Autre"
+  },
+  {
+    "t": "Compagnie de Burgondie - Viré-Clessé \"Vieilles Vignes\" 2024",
+    "p": 12.95,
+    "v": "LA COMPAGNIE DE BURGONDIE",
+    "u": "https://boir.be/fr/products/compagnie-de-burgondie-vire-clesse-vieilles-vignes-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Vire-Clesse2024.png?v=1787928182",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Conde de San Cristóbal \"880 m\" 2020",
@@ -2981,17 +2981,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Laurent Perrachon - Julienas \"Vignes Centenaires\" 2020",
-    "p": 14.5,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/laurent-perrachon-julienas-vignes-centenaires-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e5dc29a06fc03831233f7eccb6500fe1.png?v=1733406838",
-    "r": "Beaujolais",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Laurent Perrachon - Julienas \"Vignes Centenaires\" 2022",
     "p": 15.95,
     "v": "CASTEL FRERES SAS",
@@ -3506,17 +3495,6 @@ export const BOIR_CATALOG = [
     "r": "Toscane",
     "c": "Italie",
     "a": "BRUNELLO DI MONTALCINO",
-    "y": "Rouge"
-  },
-  {
-    "t": "Podere Casisano - Rosso di Montalcino 2023",
-    "p": 16.95,
-    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
-    "u": "https://boir.be/fr/products/podere-casisano-rosso-di-montalcino-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5120cdc8552ea3de614a211a04e4164a.png?v=1772009731",
-    "r": "Toscane",
-    "c": "Autre",
-    "a": "N/A",
     "y": "Rouge"
   },
   {
