@@ -523,8 +523,8 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/casa-darei-rodeio-tinto-reserva-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3a938587e164f9e773f482b2fa8f3a0c_00b25601-1830-4755-9b1d-88662e058f0c.png?v=1784542772",
     "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
+    "c": "Portugal",
+    "a": "DAO",
     "y": "Rouge"
   },
   {
@@ -2953,17 +2953,6 @@ export const BOIR_CATALOG = [
     "v": "LES CAPUCINS SASU",
     "u": "https://boir.be/fr/products/lacoste-borie-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6f423b49a18878f0c9ee5c60cf681237_b81d80c2-45b4-4f0e-9dab-75b69428c49d.png?v=1749799130",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "LAFOU Celler \"El Sender\" 2020",
-    "p": 13.99,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/lafou-celler-el-sender-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00b2a51467dd52b9882a6cabf6c8676b.png?v=1734095508",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
