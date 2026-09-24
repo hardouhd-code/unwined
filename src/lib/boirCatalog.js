@@ -1221,6 +1221,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Augustin - Collioure \"Adeodat\" 2019",
+    "p": 27.45,
+    "v": "JOANNE SAS",
+    "u": "https://boir.be/fr/products/domaine-augustin-collioure-adeodat-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32443a8706f47e76a63c1574cf48bbc0.png?v=1733413305",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine Augustin - Collioure \"Adeodat\" 2020",
     "p": 27.95,
     "v": "S DELAFONT ARTISAN NEGOCIANT",
@@ -3417,6 +3428,17 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa.png?v=1749753351",
     "r": "Autre",
     "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Piekenierskloof \"Pinotage\" 2020",
+    "p": 15,
+    "v": "SCEV CHAMP VOIRIN JUMEL",
+    "u": "https://boir.be/fr/products/piekenierskloof-pinotage-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e7f74a7a4b90a3c99d3cf07b27fb6066.png?v=1733407980",
+    "r": "Autre",
+    "c": "Afrique du Sud",
     "a": "N/A",
     "y": "Rouge"
   },
