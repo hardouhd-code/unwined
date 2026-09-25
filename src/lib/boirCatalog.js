@@ -1353,17 +1353,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine Bouchié-Chatellier - Pouilly-Fumé \"Les Rochailles Silex\" 2022",
-    "p": 17.95,
-    "v": "LECONFIELD WINES PTY LTD",
-    "u": "https://boir.be/fr/products/domaine-bouchie-chatellier-pouilly-fume-les-rochailles-silex-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/00a79f85fa612a171428d9e7febfe6dc.png?v=1734342644",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Bouchié-Chatellier - Pouilly-Fumé \"Les Rochailles Silex\" 2025",
     "p": 19.95,
     "v": "Domaine Bouchié Chatellier",
