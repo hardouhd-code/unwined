@@ -880,17 +880,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Claudio Quarta - Salice Salento Riserva \"Moros\" 2019 (Copy)",
-    "p": 29.95,
-    "v": "CLAUDIO QUARTA VIGNAIOLO SRL",
-    "u": "https://boir.be/fr/products/claudio-quarta-salice-salento-riserva-moros-2019-copy",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/32220a92f4bc91e266fb79a8a1600c8d.png?v=1759321251",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Clos de l'Oratoire 2020",
     "p": 39.95,
     "v": "PLAIMONT PRODUCT SARL",
@@ -2557,17 +2546,6 @@ export const BOIR_CATALOG = [
     "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
     "u": "https://boir.be/fr/products/icardi-barolo-parej-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92cff27321a226090498e8263119a919.png?v=1772814308",
-    "r": "Piémont",
-    "c": "Italie",
-    "a": "BAROLO",
-    "y": "Blanc"
-  },
-  {
-    "t": "Icardi - Dolcetto d'Alba \"Rousori\" 2024",
-    "p": 11.95,
-    "v": "AZ AGR ICARDI SS AGRICOLA SIGLABILE AZ AGR ICARDI S.S.A. O AZIENDA AGRICOLA ICARDI SSA O ICARDI SSA",
-    "u": "https://boir.be/fr/products/icardi-dolcetto-dalba-rousori-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/263e6c12194b758c54310a02c46fd668.png?v=1772439158",
     "r": "Piémont",
     "c": "Italie",
     "a": "BAROLO",
