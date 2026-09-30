@@ -1650,17 +1650,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Domaine des Billards - Saint-Amour 2022",
-    "p": 15.49,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-des-billards-saint-amour-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fdf4fbe7573246bdac16e3227a8fc8e8.png?v=1733408213",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine des Escaravailles - Cairanne 2021",
     "p": 18.95,
     "v": "BOIR.",
@@ -2141,6 +2130,17 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4a69d2696f5e84c6be40f4368e530b8.png?v=1733323161",
     "r": "Autre",
     "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Donnafugata - Cerasuolo di Vittoria \"Floramundi\" 2021",
+    "p": 16.95,
+    "v": "CANTINE VINCENZO IPPOLITO",
+    "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ffe6aa3d9829f3fc469aad5271939aa.png?v=1733410042",
+    "r": "Sicile",
+    "c": "Italie",
     "a": "N/A",
     "y": "Rouge"
   },
@@ -3278,17 +3278,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Michele Chiarlo - Langhe Nebbiolo 'Il Principe' 2023",
-    "p": 19.95,
-    "v": "MICHELE CHIARLO SRL A V P S",
-    "u": "https://boir.be/fr/products/michele-chiarlo-langhe-nebbiolo-il-principe-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/368b69d9dd83344126583533a742c891.png?v=1769606681",
-    "r": "Piémont",
-    "c": "Italie",
-    "a": "BAROLO",
-    "y": "Rouge"
-  },
-  {
     "t": "Michele Chiarlo - Monferrato \"Countacc!\" 2021",
     "p": 13.95,
     "v": "CASTEL FRERES SAS",
@@ -3784,17 +3773,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Tenuta di Gracciano della Seta - Vino Nobile di Montepulciano 2023",
-    "p": 14.95,
-    "v": "Della Seta S.S Società Agricola",
-    "u": "https://boir.be/fr/products/tenuta-di-gracciano-della-seta-vino-nobile-di-montepulciano-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ff9bd5527ac155dfe201741e9ad4007_c3f67eef-9fdf-459f-aeb0-6db390c4f7bc.png?v=1788863285",
-    "r": "Toscane",
-    "c": "Italie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Tenuta di Nozzole - Chianti Classico Riserva \"La Forra\" 2021",
     "p": 23.5,
     "v": "Ambrogio e Giovanni Folonari",
@@ -3980,6 +3958,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Via Caritatis - Côtes du Ventoux \"Vox Turturis\" 2023",
+    "p": 13.95,
+    "v": "Invinova",
+    "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
+    "r": "Rhône",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Viñas Leizaola \"El Sacramento\" 2015",
