@@ -2101,6 +2101,28 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Domaine Prunier - Auxey-Duresses 2022",
+    "p": 39.95,
+    "v": "Domaine Prunier",
+    "u": "https://boir.be/fr/products/domaine-prunier-auxey-duresses-2022",
+    "img": "",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Domaine Prunier - Auxey-Duresses Blanc 2023",
+    "p": 39.95,
+    "v": "Domaine Prunier",
+    "u": "https://boir.be/fr/products/domaine-prunier-auxey-duresses-blanc-2023",
+    "img": "",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Domaine Reverdy-Ducroux - Sancerre \"Chêne Marchand Vieilles Vignes\" 2023",
     "p": 27.95,
     "v": "L REVERDY SAS",
@@ -2130,17 +2152,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f4a69d2696f5e84c6be40f4368e530b8.png?v=1733323161",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Donnafugata - Cerasuolo di Vittoria \"Floramundi\" 2021",
-    "p": 16.95,
-    "v": "CANTINE VINCENZO IPPOLITO",
-    "u": "https://boir.be/fr/products/donnafugata-cerasuolo-di-vittoria-floramundi-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ffe6aa3d9829f3fc469aad5271939aa.png?v=1733410042",
-    "r": "Sicile",
-    "c": "Italie",
     "a": "N/A",
     "y": "Rouge"
   },
