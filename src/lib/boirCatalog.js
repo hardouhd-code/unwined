@@ -176,17 +176,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Artisans Partisans - Vin de France \"Tèrra Nature\" 2020",
-    "p": 10.79,
-    "v": "DOMAINE VICO SCEA",
-    "u": "https://boir.be/fr/products/terra-nature-vin-de-france-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fff9df4328c0c63de6ffb9cc32f4bc70.png?v=1733322977",
-    "r": "Autre",
-    "c": "France",
-    "a": "VIN DE FRANCE",
-    "y": "Blanc"
-  },
-  {
     "t": "Artisans Partisans - Vin de France \"Tèrra Nature\" 2021",
     "p": 10.79,
     "v": "Boir shop",
@@ -3969,17 +3958,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Via Caritatis - Côtes du Ventoux \"Vox Turturis\" 2023",
-    "p": 13.95,
-    "v": "Invinova",
-    "u": "https://boir.be/fr/products/via-caritatis-cotes-du-ventoux-vox-caritatis-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Via_Caritatis_Cotes_du_Ventoux_Vox_Turturis_2023.png?v=1757499082",
-    "r": "Rhône",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Viñas Leizaola \"El Sacramento\" 2015",
