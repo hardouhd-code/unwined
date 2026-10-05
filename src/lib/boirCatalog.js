@@ -3883,17 +3883,6 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
-    "t": "Tommasi Viticoltori - Amarone delle Valpolicella 2016",
-    "p": 44.99,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/tommasi-viticoltori-amarone-delle-valpolicella-2016",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/09e406d3799f70d1e8194a063ff47cee.png?v=1733322969",
-    "r": "Vénétie",
-    "c": "Italie",
-    "a": "VALPOLICELLA",
-    "y": "Rouge"
-  },
-  {
     "t": "Tommasi Viticoltori - Amarone delle Valpolicella 2019",
     "p": 44.99,
     "v": "SPH-GERARD BERTRAND SASU",
