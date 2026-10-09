@@ -330,17 +330,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Atamisque \"Atamisque Malbec\" 2022",
-    "p": 19.5,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/bodega-atamisque-atamisque-malbec-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8fc932afd145591af68f7f093ac472a3.png?v=1779213941",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
     "p": 12.95,
     "v": "DELTA FIJNE WIJNEN NV",
@@ -3770,6 +3759,28 @@ export const BOIR_CATALOG = [
     "r": "Toscane",
     "c": "Italie",
     "a": "CHIANTI CLASSICO",
+    "y": "Rouge"
+  },
+  {
+    "t": "Tenuta di Campomaggio - Chianti Classico Riserva 2020",
+    "p": 22.95,
+    "v": "SALIN SAS",
+    "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-riserva-2020",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f66086ff9046054085cf544a1af6cee1.png?v=1733412626",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "CHIANTI CLASSICO",
+    "y": "Rouge"
+  },
+  {
+    "t": "Tenuta di Gracciano della Seta - Vino Nobile di Montepulciano 2023",
+    "p": 14.95,
+    "v": "Della Seta S.S Società Agricola",
+    "u": "https://boir.be/fr/products/tenuta-di-gracciano-della-seta-vino-nobile-di-montepulciano-2023",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ff9bd5527ac155dfe201741e9ad4007_c3f67eef-9fdf-459f-aeb0-6db390c4f7bc.png?v=1788863285",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "N/A",
     "y": "Rouge"
   },
   {
