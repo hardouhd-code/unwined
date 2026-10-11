@@ -407,17 +407,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Borie La Vitarèle - Saint-Chinian \"Les Schistes\" 2020",
-    "p": 19.95,
-    "v": "JEAN CHARTRON EURL",
-    "u": "https://boir.be/fr/products/borie-la-vitarele-saint-chinian-les-schistes-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/803ab2d3b3cd7d782cacbd6d09b61e4e.png?v=1733321202",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "DOC",
-    "y": "Rouge"
-  },
-  {
     "t": "Borie La Vitarèle - Saint-Chinian \"Les Terres Blanches\" 2021",
     "p": 16.5,
     "v": "DOMAINE GRANDES MAISONS SARL",
@@ -709,6 +698,17 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/champagne-laurent-perrier-grand-siecle-brut",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/550cec6768030a75ee1f3ebb56b5d11d.png?v=1733263938",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
+    "t": "Champagne Laurent-Perrier \"Héritage Brut\"",
+    "p": 89,
+    "v": "LAURENT PERRIER DIFUSION BUIV",
+    "u": "https://boir.be/fr/products/champagne-laurent-perrier-heritage-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Champagne-Heritage-Laurent-Perrier.png?v=1791553937",
     "r": "Champagne",
     "c": "France",
     "a": "CHAMPAGNE",
@@ -3373,17 +3373,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/afcb96bf5b52671e74da5fda9e6511aa.png?v=1749753351",
     "r": "Autre",
     "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Piekenierskloof \"Pinotage\" 2020",
-    "p": 15,
-    "v": "SCEV CHAMP VOIRIN JUMEL",
-    "u": "https://boir.be/fr/products/piekenierskloof-pinotage-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e7f74a7a4b90a3c99d3cf07b27fb6066.png?v=1733407980",
-    "r": "Autre",
-    "c": "Afrique du Sud",
     "a": "N/A",
     "y": "Rouge"
   },
