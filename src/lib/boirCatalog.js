@@ -1364,6 +1364,17 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
+    "t": "Domaine Brusset - Côtes du Rhône \"Laurent B.\" 2025",
+    "p": 10.85,
+    "v": "DOMAINE BRUSSET SA",
+    "u": "https://boir.be/fr/products/domaine-brusset-cotes-du-rhone-laurent-b-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/947d2467b6fb15e9119f9743a2fe9de2_471ca79f-3aee-4892-a1be-a79c2d25da64.png?v=1791789054",
+    "r": "Rhône",
+    "c": "France",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine Brusset - Gigondas \"Les Secrets de Montmirail\" 2022",
     "p": 49.45,
     "v": "MAISON SICHEL SA",
@@ -3267,6 +3278,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Michele Chiarlo - Langhe Nebbiolo \"Il Principe\" 2024",
+    "p": 19.95,
+    "v": "MICHELE CHIARLO SRL A V P S",
+    "u": "https://boir.be/fr/products/michele-chiarlo-langhe-nebbiolo-il-principe-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/368b69d9dd83344126583533a742c891_7c7d1bb3-aa99-499e-92e2-b61a9594a8ff.png?v=1791788409",
+    "r": "Piémont",
+    "c": "Italie",
+    "a": "BAROLO",
+    "y": "Rouge"
+  },
+  {
     "t": "Michele Chiarlo - Monferrato \"Countacc!\" 2021",
     "p": 13.95,
     "v": "CASTEL FRERES SAS",
@@ -3771,6 +3793,17 @@ export const BOIR_CATALOG = [
     "c": "Italie",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Tenuta di Montefoscoli - Costa Toscana \"Fontemaggiore\" 2024",
+    "p": 17.95,
+    "v": "CASTELLANI SPA",
+    "u": "https://boir.be/fr/products/tenuta-di-montefoscoli-costa-toscana-fontemaggiore-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/66a0ae1e7d3c2ee6c84c4f2940e867ac.png?v=1791791373",
+    "r": "Toscane",
+    "c": "Italie",
+    "a": "N/A",
+    "y": "Autre"
   },
   {
     "t": "Tenuta di Nozzole - Chianti Classico Riserva \"La Forra\" 2021",
