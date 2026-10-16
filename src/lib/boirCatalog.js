@@ -2849,17 +2849,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "La Chapelle de Haut-Bages Libéral 2020",
-    "p": 27.95,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/la-chapelle-haut-bages-liberal-2020-75cl",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5ed6e57f7e0db38c2b56dd2e94a7c4f2.png?v=1733323014",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Autre"
-  },
-  {
     "t": "La Dame de Montrose 2020",
     "p": 49.95,
     "v": "Boir shop",
