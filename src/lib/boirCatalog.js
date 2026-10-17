@@ -330,6 +330,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Bodega Atamisque \"Atamisque Malbec\" 2022",
+    "p": 19.5,
+    "v": "DELTA FIJNE WIJNEN NV",
+    "u": "https://boir.be/fr/products/bodega-atamisque-atamisque-malbec-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/8fc932afd145591af68f7f093ac472a3.png?v=1779213941",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
     "p": 12.95,
     "v": "DELTA FIJNE WIJNEN NV",
