@@ -2673,17 +2673,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Jean Chartron - Pernand-Vergelesses 2024",
-    "p": 43.45,
-    "v": "JEAN CHARTRON EURL",
-    "u": "https://boir.be/fr/products/jean-chartron-pernand-vergelesses-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5a0b179af04bf8f733256996216fbfe9_fbfd0994-50fc-4180-886d-5b995965f27a.png?v=1780908116",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Jean Chartron - Puligny & Chevalier-Montrachet \"Caisse Centenaire\" 2017",
     "p": 1289,
     "v": "BOIR.",
