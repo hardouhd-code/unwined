@@ -275,17 +275,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Bestheim \"L'Impatient\" 2019",
-    "p": 19.95,
-    "v": "DOMAINE DENIS CARRE EARL",
-    "u": "https://boir.be/fr/products/bestheim-pinot-noir-limpatient-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2017c95381cb399b920006507c260e1b.png?v=1733411431",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Bestheim Crémant d'Alsace \"Grand Prestige\" Brut",
     "p": 17.99,
     "v": "VINICOLE BESTHEIM COOP",
@@ -460,6 +449,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Bruno Lafon \"Lucy in the Sky Rosé\" 2025",
+    "p": 9.95,
+    "v": "BF SAS Nos vins du Sud",
+    "u": "https://boir.be/fr/products/bruno-lafon-lucy-in-the-sky-rose-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b5f31f2d3af76ee01a9680445b20de32.png?v=1777392964",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rosé"
   },
   {
     "t": "Canals & Munné \"Cava Dionysus Reserva\" Brut Nature",
@@ -2766,17 +2766,6 @@ export const BOIR_CATALOG = [
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/kanonkop-estate-wine-kadette-pinotage-2023",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Kanonkop_KadettePinotage_NV.png?v=1757494867",
-    "r": "Piémont",
-    "c": "Afrique du Sud",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Kanonkop Estate Wine \"Late Release Pinotage\" 2015",
-    "p": 46.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/kanonkop-estate-wine-late-release-pinotage-2015",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/04039f515c7d65d276df9ce43ea0c521_ab622379-2f03-446d-819a-84c66ebc0669.png?v=1772008686",
     "r": "Piémont",
     "c": "Afrique du Sud",
     "a": "N/A",
