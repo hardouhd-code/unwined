@@ -341,17 +341,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Bodega Atamisque \"Catalpa Malbec\" 2023",
-    "p": 12.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-malbec-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce.png?v=1773235359",
-    "r": "Mendoza",
-    "c": "Argentine",
-    "a": "MENDOZA",
-    "y": "Rouge"
-  },
-  {
     "t": "Bodega Catena Zapata \"Angélica Zapata Cabernet Franc Alta\" 2019",
     "p": 29.95,
     "v": "Boir shop",
@@ -2579,17 +2568,6 @@ export const BOIR_CATALOG = [
     "v": "SALIN SAS",
     "u": "https://boir.be/fr/products/jean-chartron-brougogne-chardonnay-2022",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Jean_Chartron_Bourgogne_Chardonnay_2022_9ea2f69c-98ef-4f9f-944c-43ac757d98e1.png?v=1760686342",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Jean Chartron - Bourgogne \"Pinot Noir Vieilles Vignes\" 2020",
-    "p": 17.95,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/jean-chartron-bourgogne-pinot-noir-vieilles-vignes-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/876ad24fc0ce51ab23e8ce4c3763924d.png?v=1733410303",
     "r": "Bourgogne",
     "c": "France",
     "a": "N/A",
