@@ -869,17 +869,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Clos de l'Oratoire 2020",
-    "p": 39.95,
-    "v": "PLAIMONT PRODUCT SARL",
-    "u": "https://boir.be/fr/products/clos-de-loratoire-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/20f843282e2fee3fd0a5d0d5daee8efd.png?v=1733467244",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Clos de l'Oratoire 2021",
     "p": 41.5,
     "v": "S DELAFONT ARTISAN NEGOCIANT",
