@@ -858,7 +858,7 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Claudio Quarta - Salice Salento Riserva \"Moros\" 2019",
+    "t": "Claudio Quarta Vignaiolo - Salice Salentino Riserva \"Moros\" 2019",
     "p": 29.95,
     "v": "CLAUDIO QUARTA VIGNAIOLO SRL",
     "u": "https://boir.be/fr/products/claudio-quarta-salice-salento-riserva-moros-2019",
@@ -1881,17 +1881,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine La Fourmone - Gigondas \"Le Secret\" 2022",
-    "p": 24.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-la-fourmone-gigondas-le-secret-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/588b9bf25d6ef641f78bebe64b6096f8.png?v=1733424883",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "GIGONDAS",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine La Fourmone - Vacqueyras \"Le Poète\" 2021",
     "p": 16.99,
     "v": "SALIN SAS",
@@ -2761,6 +2750,28 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "L'Avenir \"Provenance Chenin Blanc\" 2025",
+    "p": 18.95,
+    "v": "AdVini SA",
+    "u": "https://boir.be/fr/products/lavenir-provenance-chenin-blanc-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/43607176f87024637b41a49235252cd2.png?v=1793730482",
+    "r": "Stellenbosch",
+    "c": "Afrique du Sud",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "L'Avenir \"Single Block Chenin Blanc\" 2024",
+    "p": 36.5,
+    "v": "AdVini SA",
+    "u": "https://boir.be/fr/products/lavenir-single-block-chenin-blanc-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4414730536c74afcd13c64a2c4cebec9.png?v=1793730540",
+    "r": "Stellenbosch",
+    "c": "Afrique du Sud",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "L'Enclos de Carbonnieux 2022",
     "p": 24.95,
     "v": "SAS SALIN",
@@ -2847,6 +2858,17 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rosé"
+  },
+  {
+    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2022",
+    "p": 13.75,
+    "v": "WINCO NV",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
+    "r": "Champagne",
+    "c": "Italie",
+    "a": "PROSECCO",
+    "y": "Effervescent"
   },
   {
     "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2025",
