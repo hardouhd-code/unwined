@@ -1562,17 +1562,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine de Tournelles - Buzet \"Le Chant des Abeilles\" 2020",
-    "p": 12.95,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/domaine-de-tournet-buzet-le-chant-des-abeilles-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/61def4c546fc4248d3e4afaae7de1680.png?v=1733323007",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Domaine Denis Carré - Auxey-Duresses \"Les Vireux\" 2023",
     "p": 36.95,
     "v": "DOMAINE DENIS CARRE EARL",
@@ -1878,17 +1867,6 @@ export const BOIR_CATALOG = [
     "r": "Rhône",
     "c": "France",
     "a": "GIGONDAS",
-    "y": "Rouge"
-  },
-  {
-    "t": "Domaine La Fourmone - Vacqueyras \"Le Poète\" 2021",
-    "p": 16.99,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/domaine-la-fourmone-vacqueyras-le-poete-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/280136134991dd7c64cd804fcec80e1a.png?v=1733410380",
-    "r": "Rhône",
-    "c": "Autre",
-    "a": "N/A",
     "y": "Rouge"
   },
   {
@@ -4035,17 +4013,6 @@ export const BOIR_CATALOG = [
     "c": "Autriche",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Winzer Krems \"Edition Chremisa Grüner Veltliner\" 2021",
-    "p": 13.5,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/winzer-krems-edition-chremisa-gruner-veltliner-2021",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/6ba7dd0ef5105415521f94dab41522fc.png?v=1733356463",
-    "r": "Autre",
-    "c": "Autriche",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Winzer Krems \"Grüner Veltliner Orange\" 2024",
