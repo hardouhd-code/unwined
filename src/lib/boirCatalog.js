@@ -2838,17 +2838,6 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
-    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2022",
-    "p": 13.75,
-    "v": "WINCO NV",
-    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
-    "r": "Champagne",
-    "c": "Italie",
-    "a": "PROSECCO",
-    "y": "Effervescent"
-  },
-  {
     "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2025",
     "p": 16.95,
     "v": "AZ AGR LA FARRA SS SOC AGR",
