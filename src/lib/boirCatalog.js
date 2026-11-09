@@ -1870,6 +1870,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Domaine La Fourmone - Vacqueyras \"Le Poète\" 2022",
+    "p": 16.95,
+    "v": "VIGN GUY MOUSSET EARL",
+    "u": "https://boir.be/fr/products/domaine-la-fourmone-vacqueyras-le-poete-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/518d90c20fd512026371caa489386a0c.png?v=1733424887",
+    "r": "Rhône",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Domaine Lez-Envies \"Pas de Soucis\" 2025",
     "p": 17.95,
     "v": "Colruyt Food Retail (INTERCOMPANY BE3Y)",
