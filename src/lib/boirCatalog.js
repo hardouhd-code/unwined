@@ -286,17 +286,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Black Cottage \"Rosé\" 2022",
-    "p": 11.9,
-    "v": "MAISON SICHEL SA",
-    "u": "https://boir.be/fr/products/black-cottage-rose-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/38710bfd01312fea38b6992335d89253.png?v=1733323333",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rosé"
-  },
-  {
     "t": "Blason d'Issan 2021",
     "p": 26.95,
     "v": "VINS & PASSIONS SAS",
@@ -342,7 +331,7 @@ export const BOIR_CATALOG = [
   },
   {
     "t": "Bodega Atamisque \"Catalpa Malbec\" 2024",
-    "p": 12.95,
+    "p": 13.45,
     "v": "DELTA FIJNE WIJNEN NV",
     "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-malbec-2024",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b60c3f1fbdc745a35fb1da7e8ba585ce_0f325220-4b74-4f2d-a59c-672101ac277a.png?v=1793002597",
@@ -2655,7 +2644,7 @@ export const BOIR_CATALOG = [
     "p": 77.89,
     "v": "BOIR.",
     "u": "https://boir.be/fr/products/jean-chartron-puligny-montrachet-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/f19c1f13d36b92e3269a5d4e21fb730d_89240568-2c10-428a-871d-4c68e050fce9.png?v=1769517932",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/JeanChartronPMnovintage.png?v=1794325350",
     "r": "Bourgogne",
     "c": "Autre",
     "a": "N/A",
