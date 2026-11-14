@@ -319,17 +319,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
-    "p": 12.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-chardonnay-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600471_CatalpaChardonnay2024.png?v=1787927676",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Bodega Atamisque \"Catalpa Malbec\" 2024",
     "p": 13.45,
     "v": "DELTA FIJNE WIJNEN NV",
