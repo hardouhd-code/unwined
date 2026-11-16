@@ -3124,17 +3124,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Masseria Surani - Primitivo di Manduria \"Heracles\" 2022",
-    "p": 14.5,
-    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
-    "u": "https://boir.be/fr/products/masseria-surani-primitivo-di-manduria-heracles-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5e50eae4a3b618b37d914b1236f7c9be.png?v=1781079869",
-    "r": "Autre",
-    "c": "Italie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Masseria Surani - Puglia \"Fiano Eméra\" 2025",
     "p": 12.95,
     "v": "TOMMASI VITICOLTORI SS AGRICOLA",
@@ -3624,17 +3613,6 @@ export const BOIR_CATALOG = [
     "v": "ALCOBRANDS NV",
     "u": "https://boir.be/fr/products/stark-conde-lingen-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/34e186ba06badee3cdf82c46f195f0b4.png?v=1733411582",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Sutherland \"Pinot Noir\" 2018",
-    "p": 16.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/sutherland-pinot-noir-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a381f9040de165f26ef663e01eea3fad.png?v=1733409800",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
