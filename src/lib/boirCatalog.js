@@ -1254,17 +1254,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Domaine Bernard Defaix - Chablis 1er Cru \"Côte de Léchet Réserve\" 2023",
-    "p": 36,
-    "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
-    "u": "https://boir.be/fr/products/domaine-bernard-defaix-chablis-1er-cru-cote-de-lechet-reserve-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/64d4acb1b10911fbdfb1850800976b9c.png?v=1785922961",
-    "r": "Bourgogne",
-    "c": "Autre",
-    "a": "CHABLIS",
-    "y": "Blanc"
-  },
-  {
     "t": "Domaine Bernard Defaix - Chablis 2025",
     "p": 22.95,
     "v": "DOMAINE BERNARD DEFAIX ET SES FILS",
@@ -1482,6 +1471,17 @@ export const BOIR_CATALOG = [
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Domaine de la Grenaudière \"No0ba\"",
+    "p": 12.49,
+    "v": "LESTAPIS ET CIE SARL",
+    "u": "https://boir.be/fr/products/domaine-grenaudiere-no0ba",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1159b5d3fdb3c89693eb50b6733b3e6f.png?v=1733404358",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "MUSCADET",
     "y": "Blanc"
   },
   {
@@ -1812,17 +1812,6 @@ export const BOIR_CATALOG = [
     "r": "Bourgogne",
     "c": "Autre",
     "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Domaine Grenaudière \"No0ba\"",
-    "p": 12.49,
-    "v": "LESTAPIS ET CIE SARL",
-    "u": "https://boir.be/fr/products/domaine-grenaudiere-no0ba",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/1159b5d3fdb3c89693eb50b6733b3e6f.png?v=1733404358",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "MUSCADET",
     "y": "Blanc"
   },
   {
@@ -3124,6 +3113,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Masseria Surani - Primitivo di Manduria \"Heracles\" 2022",
+    "p": 14.5,
+    "v": "TOMMASI VITICOLTORI SS AGRICOLA",
+    "u": "https://boir.be/fr/products/masseria-surani-primitivo-di-manduria-heracles-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/5e50eae4a3b618b37d914b1236f7c9be.png?v=1781079869",
+    "r": "Autre",
+    "c": "Italie",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Masseria Surani - Puglia \"Fiano Eméra\" 2025",
     "p": 12.95,
     "v": "TOMMASI VITICOLTORI SS AGRICOLA",
@@ -3660,17 +3660,6 @@ export const BOIR_CATALOG = [
     "r": "Toscane",
     "c": "Autre",
     "a": "N/A",
-    "y": "Rouge"
-  },
-  {
-    "t": "Tenuta di Campomaggio - Chianti Classico \"Santa Teresa\" 2020",
-    "p": 29.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/tenuta-di-campomaggio-chianti-classico-santa-teresa-2020",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/c7a64e6f295d35c0dc8d5b3ad926d1db.png?v=1733412588",
-    "r": "Toscane",
-    "c": "Italie",
-    "a": "CHIANTI CLASSICO",
     "y": "Rouge"
   },
   {
