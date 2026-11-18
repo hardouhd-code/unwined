@@ -275,6 +275,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Bestheim \"L'Impatient\" 2019",
+    "p": 19.95,
+    "v": "DOMAINE DENIS CARRE EARL",
+    "u": "https://boir.be/fr/products/bestheim-pinot-noir-limpatient-2019",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2017c95381cb399b920006507c260e1b.png?v=1733411431",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Bestheim Crémant d'Alsace \"Grand Prestige\" Brut",
     "p": 17.99,
     "v": "VINICOLE BESTHEIM COOP",
@@ -319,6 +330,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
+    "p": 12.95,
+    "v": "DELTA FIJNE WIJNEN NV",
+    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-chardonnay-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600471_CatalpaChardonnay2024.png?v=1787927676",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Bodega Atamisque \"Catalpa Malbec\" 2024",
     "p": 13.45,
     "v": "DELTA FIJNE WIJNEN NV",
@@ -339,6 +361,17 @@ export const BOIR_CATALOG = [
     "c": "France",
     "a": "MENDOZA",
     "y": "Rouge"
+  },
+  {
+    "t": "Bodega Catena Zapata \"Angélica Zapata Chardonnay Alta\" 2019",
+    "p": 29.95,
+    "v": "INVINITY NV",
+    "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-chardonnay-alta-2019",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d45c46651a37b2a2fb7adff8c54f008a.png?v=1733423041",
+    "r": "Mendoza",
+    "c": "Argentine",
+    "a": "MENDOZA",
+    "y": "Blanc"
   },
   {
     "t": "Bodega Catena Zapata \"Angélica Zapata Malbec Alta\" 2019",
@@ -2244,6 +2277,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Fleur de Pédesclaux 2022",
+    "p": 25.95,
+    "v": "ROLAND COIFFE & ASSOCIES",
+    "u": "https://boir.be/fr/products/fleur-de-pedesclaux-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/583503d32851955c8ddaeb759d380dd8.png?v=1794935921",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "Fleur de Pédesclaux 2023",
     "p": 23.8,
     "v": "DESCAS PERE ET FILS SA",
@@ -2662,6 +2706,50 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "Jörg Geiger \"35°\"",
+    "p": 16.5,
+    "v": "CHACALLI FINE WINE SOCIETY NV",
+    "u": "https://boir.be/fr/products/jorg-geiger-35",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/a7c37aba345be90dc030c301f7b20dad.png?v=1794927259",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Jörg Geiger \"37°\"",
+    "p": 18.5,
+    "v": "CHACALLI FINE WINE SOCIETY NV",
+    "u": "https://boir.be/fr/products/jorg-geiger-37",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/871a6a265707f89e988c29992fb80e3e.png?v=1794927283",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Jörg Geiger \"Blanc de Blancs\"",
+    "p": 25.95,
+    "v": "CHACALLI FINE WINE SOCIETY NV",
+    "u": "https://boir.be/fr/products/jorg-geiger-blanc-de-blancs",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e495a5354750e33a7ac49e6591f94da6.png?v=1794927331",
+    "r": "Champagne",
+    "c": "France",
+    "a": "CHAMPAGNE",
+    "y": "Effervescent"
+  },
+  {
+    "t": "Jörg Geiger \"TEASECCO Rosé\"",
+    "p": 15.5,
+    "v": "CHACALLI FINE WINE SOCIETY NV",
+    "u": "https://boir.be/fr/products/jorg-geiger-teasecco-rose",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/fba6111e8a2757028e549321176e50b9.png?v=1794927378",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rosé"
+  },
+  {
     "t": "Kanonkop Estate Wine \"Cabernet Sauvignon\" 2020",
     "p": 34.95,
     "v": "DELTA FIJNE WIJNEN NV",
@@ -2761,6 +2849,17 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
+    "t": "La Bastide \"Hominia Rive Gauche\" 2018",
+    "p": 11.49,
+    "v": "SALIN SAS",
+    "u": "https://boir.be/fr/products/la-bastide-cahors-hominia-rive-gauche-2018",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2f2b6495bddab05a501d4916e50a1237.png?v=1733404974",
+    "r": "Piémont",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
     "t": "La Belle Connivence 2022",
     "p": 64.95,
     "v": "Bertrand Ravache",
@@ -2822,6 +2921,17 @@ export const BOIR_CATALOG = [
     "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut-2025",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995_6a9725d6-cb3a-43b9-8043-7b0f59656c53.png?v=1785152807",
     "r": "Champagne",
+    "c": "Italie",
+    "a": "PROSECCO",
+    "y": "Effervescent"
+  },
+  {
+    "t": "La Farra - Valdobbiadene Prosecco Superiore Brut",
+    "p": 11.95,
+    "v": "EIB SRL",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8.png?v=1733264119",
+    "r": "Vénétie",
     "c": "Italie",
     "a": "PROSECCO",
     "y": "Effervescent"
@@ -2953,6 +3063,17 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/marquis-de-calon-2021",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/798adc2820a16efa23d9920af869e8b6.png?v=1733466901",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Rouge"
+  },
+  {
+    "t": "Le Petit Smith Haut Lafitte 2022",
+    "p": 34.95,
+    "v": "ROLAND COIFFE & ASSOCIES",
+    "u": "https://boir.be/fr/products/le-petit-smith-haut-lafitte-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/92b18d1fe3b2bf851c20702739a32556.png?v=1794935948",
     "r": "Autre",
     "c": "Autre",
     "a": "N/A",
@@ -3099,6 +3220,17 @@ export const BOIR_CATALOG = [
     "r": "Rioja",
     "c": "Espagne",
     "a": "RIOJA",
+    "y": "Rouge"
+  },
+  {
+    "t": "Marquis de Calon 2017",
+    "p": 29.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/marquis-de-calon-2017",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e0163149b574743f5ad41df514679b24.png?v=1733264128",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
     "y": "Rouge"
   },
   {
@@ -3617,6 +3749,28 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
+  },
+  {
+    "t": "Stark-Condé 'Kara Tara Chardonnay\" 2022",
+    "p": 15.95,
+    "v": "Boir shop",
+    "u": "https://boir.be/fr/products/stark-conde-kara-tara-chardonnay-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Stark_Conde_Kara_Tara_Chardonnay_2022.png?v=1757499248",
+    "r": "Bourgogne",
+    "c": "France",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
+    "t": "Sutherland \"Sauvignon Blanc\" 2022",
+    "p": 11.5,
+    "v": "ALCOBRANDS NV",
+    "u": "https://boir.be/fr/products/sutherland-sauvignon-blanc-2022",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Sutherland_Sauvignon_Blanc_2022.png?v=1753185744",
+    "r": "Autre",
+    "c": "Autre",
+    "a": "N/A",
+    "y": "Blanc"
   },
   {
     "t": "Tenimenti Grieco - Terre degli Osci Aglianico \"Passo alle Tremiti\" 2017",
