@@ -330,17 +330,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Atamisque \"Catalpa Chardonnay\" 2024",
-    "p": 12.95,
-    "v": "DELTA FIJNE WIJNEN NV",
-    "u": "https://boir.be/fr/products/bodega-atamisque-catalpa-chardonnay-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/600471_CatalpaChardonnay2024.png?v=1787927676",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Bodega Atamisque \"Catalpa Malbec\" 2024",
     "p": 13.45,
     "v": "DELTA FIJNE WIJNEN NV",
@@ -515,6 +504,17 @@ export const BOIR_CATALOG = [
     "c": "Portugal",
     "a": "DAO",
     "y": "Rouge"
+  },
+  {
+    "t": "Casa Darei \"Rodeio\" 2021",
+    "p": 9.95,
+    "v": "PASCAL PRUNIER BONHEUR SARL",
+    "u": "https://boir.be/fr/products/casa-darei-rodeio-reserva-2021",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Rodeio_Dao_2021_-_Vinho_Branco.png?v=1740040145",
+    "r": "Douro",
+    "c": "Portugal",
+    "a": "DAO",
+    "y": "Blanc"
   },
   {
     "t": "Casalino - Chianti Classico 2024",
@@ -2849,17 +2849,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "La Bastide \"Hominia Rive Gauche\" 2018",
-    "p": 11.49,
-    "v": "SALIN SAS",
-    "u": "https://boir.be/fr/products/la-bastide-cahors-hominia-rive-gauche-2018",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2f2b6495bddab05a501d4916e50a1237.png?v=1733404974",
-    "r": "Piémont",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "La Belle Connivence 2022",
     "p": 64.95,
     "v": "Bertrand Ravache",
@@ -2915,23 +2904,23 @@ export const BOIR_CATALOG = [
     "y": "Rosé"
   },
   {
-    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2025",
-    "p": 16.95,
-    "v": "AZ AGR LA FARRA SS SOC AGR",
-    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut-2025",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995_6a9725d6-cb3a-43b9-8043-7b0f59656c53.png?v=1785152807",
+    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2022",
+    "p": 13.75,
+    "v": "WINCO NV",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995.png?v=1733264116",
     "r": "Champagne",
     "c": "Italie",
     "a": "PROSECCO",
     "y": "Effervescent"
   },
   {
-    "t": "La Farra - Valdobbiadene Prosecco Superiore Brut",
-    "p": 11.95,
-    "v": "EIB SRL",
-    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-brut",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/4defb1fec5b72ec311362c35901193c8.png?v=1733264119",
-    "r": "Vénétie",
+    "t": "La Farra - Valdobbiadene Prosecco Superiore \"Rive di Farra di Soligo Millesimato\" Extra Brut 2025",
+    "p": 16.95,
+    "v": "AZ AGR LA FARRA SS SOC AGR",
+    "u": "https://boir.be/fr/products/la-farra-valdobbiadene-prosecco-superiore-rive-di-farra-di-soligo-millesimato-extra-brut-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/b9bdb88448e0239ecd0dba564c78f995_6a9725d6-cb3a-43b9-8043-7b0f59656c53.png?v=1785152807",
+    "r": "Champagne",
     "c": "Italie",
     "a": "PROSECCO",
     "y": "Effervescent"
