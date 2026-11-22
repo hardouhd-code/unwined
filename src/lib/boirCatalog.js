@@ -352,17 +352,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Bodega Catena Zapata \"Angélica Zapata Chardonnay Alta\" 2019",
-    "p": 29.95,
-    "v": "INVINITY NV",
-    "u": "https://boir.be/fr/products/bodega-catena-zapata-angelica-zapata-chardonnay-alta-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/d45c46651a37b2a2fb7adff8c54f008a.png?v=1733423041",
-    "r": "Mendoza",
-    "c": "Argentine",
-    "a": "MENDOZA",
-    "y": "Blanc"
-  },
-  {
     "t": "Bodega Catena Zapata \"Angélica Zapata Malbec Alta\" 2019",
     "p": 29.95,
     "v": "Boir shop",
@@ -3212,17 +3201,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Marquis de Calon 2017",
-    "p": 29.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/marquis-de-calon-2017",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/e0163149b574743f5ad41df514679b24.png?v=1733264128",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Masseria Surani - Primitivo di Manduria \"Eméra\" 2022",
     "p": 12.95,
     "v": "TOMMASI VITICOLTORI SS AGRICOLA",
@@ -3586,17 +3564,6 @@ export const BOIR_CATALOG = [
     "y": "Autre"
   },
   {
-    "t": "Rapaura Springs \"Rohe Blind River Sauvignon Blanc\" 2024",
-    "p": 15.95,
-    "v": "INTERVINOS NV",
-    "u": "https://boir.be/fr/products/rapaura-springs-rohe-blind-river-sauvignon-blanc-2024",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/59bcee01f9bacb60ac948f28b3483deb.png?v=1769595055",
-    "r": "Marlborough",
-    "c": "Nouvelle-Zélande",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
     "t": "Rapaura Springs \"Rohe Blind River Sauvignon Blanc\" 2025",
     "p": 15.95,
     "v": "INTERVINOS NV",
@@ -3747,17 +3714,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Stark_Conde_Kara_Tara_Chardonnay_2022.png?v=1757499248",
     "r": "Bourgogne",
     "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
-  },
-  {
-    "t": "Sutherland \"Sauvignon Blanc\" 2022",
-    "p": 11.5,
-    "v": "ALCOBRANDS NV",
-    "u": "https://boir.be/fr/products/sutherland-sauvignon-blanc-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Sutherland_Sauvignon_Blanc_2022.png?v=1753185744",
-    "r": "Autre",
-    "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
   },
