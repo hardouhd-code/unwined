@@ -275,17 +275,6 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
-    "t": "Bestheim \"L'Impatient\" 2019",
-    "p": 19.95,
-    "v": "DOMAINE DENIS CARRE EARL",
-    "u": "https://boir.be/fr/products/bestheim-pinot-noir-limpatient-2019",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/2017c95381cb399b920006507c260e1b.png?v=1733411431",
-    "r": "Autre",
-    "c": "Autre",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Bestheim Crémant d'Alsace \"Grand Prestige\" Brut",
     "p": 17.99,
     "v": "VINICOLE BESTHEIM COOP",
@@ -368,6 +357,28 @@ export const BOIR_CATALOG = [
     "v": "Boir shop",
     "u": "https://boir.be/fr/products/bodega-catena-zapata-d-v-catena-cabernet-sauvignon-2020",
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/ab91c0f11e0f6db5503dc75d7de2e242.png?v=1733407574",
+    "r": "Mendoza",
+    "c": "Argentine",
+    "a": "MENDOZA",
+    "y": "Rouge"
+  },
+  {
+    "t": "Bodega Catena Zapata \"D.V. Catena Chardonnay\" 2025",
+    "p": 16.95,
+    "v": "INTERVINOS NV",
+    "u": "https://boir.be/fr/products/bodega-catena-zapata-d-v-catena-chardonnay-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/7a91a95b5a21568fb0b8a10b7da0b2c2_c517178d-5438-4fd2-99f7-90d48eee56fd.png?v=1795435552",
+    "r": "Mendoza",
+    "c": "Argentine",
+    "a": "MENDOZA",
+    "y": "Blanc"
+  },
+  {
+    "t": "Bodega Catena Zapata \"D.V. Catena Malbec\" 2024",
+    "p": 16.95,
+    "v": "INTERVINOS NV",
+    "u": "https://boir.be/fr/products/bodega-catena-zapata-d-v-catena-malbec-2024",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/10a90936b39959d847058b85a2fccd47_43e7a373-01db-497e-8c36-4a6143fd0539.png?v=1795437732",
     "r": "Mendoza",
     "c": "Argentine",
     "a": "MENDOZA",
@@ -1023,6 +1034,17 @@ export const BOIR_CATALOG = [
     "y": "Blanc"
   },
   {
+    "t": "Corvers Kauter - Rheingau \"Riesling Remastered R3\" 2025",
+    "p": 13.5,
+    "v": "Weinhaus Dr. Corvers-Kauter",
+    "u": "https://boir.be/fr/products/corvers-kauter-rheingau-riesling-remastered-r3-2025",
+    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/69126c0df37fc2ec4a9ae0ae91fb5d75_e893eb64-5d31-4781-af75-ec5927281d07.png?v=1795423924",
+    "r": "Autre",
+    "c": "Allemagne",
+    "a": "N/A",
+    "y": "Blanc"
+  },
+  {
     "t": "Corvers Kauter - Rheingau \"Weissburgunder-Chardonnay\" 2025",
     "p": 15.95,
     "v": "Weinhaus Dr. Corvers-Kauter",
@@ -1371,17 +1393,6 @@ export const BOIR_CATALOG = [
     "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/452f26ac662e8ecd7325e5de748767ab.png?v=1733417829",
     "r": "Rhône",
     "c": "France",
-    "a": "GIGONDAS",
-    "y": "Rouge"
-  },
-  {
-    "t": "Domaine Brusset - Gigondas \"Tradition Le Grand Montmirail\" 2022",
-    "p": 18.89,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/domaine-brusset-gigondas-tradition-le-grand-montmirail-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/36f2865f80d1e1144fd68d5d95c105e3.png?v=1733411103",
-    "r": "Rhône",
-    "c": "Autre",
     "a": "GIGONDAS",
     "y": "Rouge"
   },
@@ -3773,17 +3784,6 @@ export const BOIR_CATALOG = [
     "y": "Rouge"
   },
   {
-    "t": "Tenuta di Gracciano della Seta - Vino Nobile di Montepulciano 2023",
-    "p": 14.95,
-    "v": "Della Seta S.S Società Agricola",
-    "u": "https://boir.be/fr/products/tenuta-di-gracciano-della-seta-vino-nobile-di-montepulciano-2023",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/3ff9bd5527ac155dfe201741e9ad4007_c3f67eef-9fdf-459f-aeb0-6db390c4f7bc.png?v=1788863285",
-    "r": "Toscane",
-    "c": "Italie",
-    "a": "N/A",
-    "y": "Rouge"
-  },
-  {
     "t": "Tenuta di Montefoscoli - Costa Toscana \"Fontemaggiore\" 2024",
     "p": 17.95,
     "v": "CASTELLANI SPA",
@@ -4046,17 +4046,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Blanc"
-  },
-  {
-    "t": "Winzer Krems \"Edition Chremisa Blauer Zweigelt\" 2022",
-    "p": 13,
-    "v": "BOIR.",
-    "u": "https://boir.be/fr/products/blauer-zweigelt-edition-chremisa-22-75cl",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/WinzerKremsZweigelt.png?v=1753776735",
-    "r": "Autre",
-    "c": "Autriche",
-    "a": "N/A",
-    "y": "Rouge"
   },
   {
     "t": "Winzer Krems \"Grüner Veltliner Orange\" 2024",
