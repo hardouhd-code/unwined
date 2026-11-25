@@ -836,17 +836,6 @@ export const BOIR_CATALOG = [
     "y": "Effervescent"
   },
   {
-    "t": "Champagne Voirin-Jumel \"La V.1\" Grand Cru Brut",
-    "p": 21.95,
-    "v": "SCEV CHAMP VOIRIN JUMEL",
-    "u": "https://boir.be/fr/products/champagne-voirin-jumel-la-v-1-grand-cru-brut-2",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/533c2dc2ce98dc3847f3c0bad3e73485_181279ad-ce5e-4e09-95ff-225ce8b4b4bb.png?v=1758539841",
-    "r": "Champagne",
-    "c": "France",
-    "a": "CHAMPAGNE",
-    "y": "Effervescent"
-  },
-  {
     "t": "Champagne Voirin-Jumel \"La V.2\" Grand Cru Brut Zéro",
     "p": 42.95,
     "v": "SCEV CHAMP VOIRIN JUMEL",
@@ -3716,17 +3705,6 @@ export const BOIR_CATALOG = [
     "c": "Autre",
     "a": "N/A",
     "y": "Rouge"
-  },
-  {
-    "t": "Stark-Condé 'Kara Tara Chardonnay\" 2022",
-    "p": 15.95,
-    "v": "Boir shop",
-    "u": "https://boir.be/fr/products/stark-conde-kara-tara-chardonnay-2022",
-    "img": "https://cdn.shopify.com/s/files/1/0860/4893/2174/files/Stark_Conde_Kara_Tara_Chardonnay_2022.png?v=1757499248",
-    "r": "Bourgogne",
-    "c": "France",
-    "a": "N/A",
-    "y": "Blanc"
   },
   {
     "t": "Tenimenti Grieco - Terre degli Osci Aglianico \"Passo alle Tremiti\" 2017",
